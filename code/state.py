@@ -477,6 +477,11 @@ class StateBuilder:
 
         # ---- one-off confirmed incomes ----
         for d, amt, cur, label in one_offs:
+            # already settled (e.g. an arrears adjustment paid with the previous payroll) -> in the balance already
+            settled_dup = [e for e in hist if e.currency == cur and self.amount_of(e) is not None and abs(self.amount_of(e) - amt) < 0.01 and 0 <= (rq - e.settlement_date).days <= 45]
+            if settled_dup:
+                st.notes.append(f"one-off {label} {amt} {cur} already settled as {settled_dup[-1].event_id} on {settled_dup[-1].settlement_date}; not counted again")
+                continue
             if d is None:
                 future = [x for x in st.salary_dates if x >= rq]
                 d = min(future) if future else None

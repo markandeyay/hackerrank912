@@ -166,7 +166,7 @@ def normalize_model_adjustment(message, res: dict) -> dict:
     rec = regex_adjustment(message)  # start from the regex view for the metadata fields
     rec["source"] = "model"
     rec["adjustment_type"] = res.get("adjustment_type") or "no_effect"
-    rec["scope"] = res.get("scope")
+    rec["scope"] = res.get("scope") if res.get("scope") in ("permanent", "next_payment_only") else None
     rec["target"] = res.get("target") or "none"
     rec["amount"] = res.get("amount")
     rec["currency"] = res.get("currency")

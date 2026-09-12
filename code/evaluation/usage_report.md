@@ -1,6 +1,6 @@
 # Token usage and cost report
 
-Generated 2026-09-12 19:32:55 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
+Generated 2026-09-12 20:24:02 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
 
 ## Architecture recap
 
@@ -16,21 +16,24 @@ All calls go through `code/llm.py`, which caches results under `code/cache/` (so
 
 | Provider | Model | Calls | Input tokens | Output tokens | Total tokens | Price (in/out per 1M) | Estimated cost (USD) |
 |---|---|---:|---:|---:|---:|---|---:|
-| Anthropic | `claude-fable-5-1` | 0 | 0 | 0 | 0 | $10.00 / $50.00 | $0.0000 |
+| Anthropic | `claude-sonnet-5` | 487 | 590,908 | 49,837 | 640,745 | $2.00 / $10.00 | $1.6802 |
 
 ## Overall totals
 
-- Model calls: **0**
-- Input tokens: **0**
-- Output tokens: **0**
-- Total tokens: **0**
-- Average tokens per request (250 requests): **0.0**
-- Estimated total cost: **$0.0000**
-- Estimated cost per request: **$0.00000**
+- Model calls: **487**
+- Input tokens: **590,908**
+- Output tokens: **49,837**
+- Total tokens: **640,745**
+- Average tokens per request (250 requests): **2,563.0**
+- Estimated total cost: **$1.6802**
+- Estimated cost per request: **$0.00672**
 
 ## Calls by job
 
 | Model | Job | Calls | Input tokens | Output tokens |
 |---|---|---:|---:|---:|
+| `claude-sonnet-5` | explanation_polish | 256 | 126,628 | 14,428 |
+| `claude-sonnet-5` | image_extraction | 16 | 43,208 | 5,438 |
+| `claude-sonnet-5` | message_adjustment | 215 | 421,072 | 29,971 |
 
 Cost is estimated from Anthropic list prices (input / output tokens; prompt-cache reads and writes are billed at the same rate here, i.e. conservatively). No API keys or credentials are stored in this package; the key is read from the `ANTHROPIC_API_KEY` environment variable or a git-ignored `.env` file.

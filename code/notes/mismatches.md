@@ -45,6 +45,8 @@ The organizers' reserve (balance − minimum − answer) is always a round numbe
 
 ## Message and image interpretation
 
-* Every one of the 215 messages matches one of 35 generator templates (`message_templates.json`); the model extraction (`evidence.py`) and the regex fallback agree on the adjustment type in the final run, and any field the model leaves empty is filled from the regex capture.
+* Every one of the 215 messages matches one of 35 generator templates (`message_templates.json`). In the final run (`claude-sonnet-5`) the model extraction and the regex template agree on the adjustment type for 200 of 215 messages; the 15 disagreements (prize proceeds already received, prize-claim notices, reimbursements, foreign-currency bills, and the "regular salary plus arrears" template) are resolved to the exact template capture, with the model's reading recorded in the adjustment (`model_adjustment_type`). Literal slots (amounts, dates, percentages, scope) always come from the template capture when it exists.
+* The eight "regular salary plus one-time arrears" messages describe an arrears amount that is already settled on the 20th of the previous month; the one-off is deduplicated against settled credits within the last 45 days and not counted again (financially safer, and the balance already contains it).
+* All 16 image amounts extracted by the model match an independent manual transcription (`02_images_manual.json`); the pharmacy bill (image_14, handwritten) needed the itemized cross-check in the prompt to read 4543 instead of 4593.
 * Two advance-fee scam messages instruct the reader to pay a "release charge"; they are classified `scam_ignore` and never reach the forecast.
 * image_05 shows 704.05 due by 6 Feb and 822.05 after; the event settles on 9 Feb. Sample 20's answer ends in `.05`, which confirms the 704.05 figure is the one to use.

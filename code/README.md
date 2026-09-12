@@ -14,6 +14,7 @@ Create a `.env` file in the repository root (git-ignored) or export the variable
 
 ```text
 ANTHROPIC_API_KEY=sk-ant-...
+ANTHROPIC_MODEL=claude-sonnet-5
 ```
 
 Python 3.10+ is required (developed on 3.14). Dependencies: `pandas`, `anthropic`, `python-dotenv`, `pillow`.
@@ -37,7 +38,7 @@ Every model result is cached as JSON under `code/cache/` (keyed by a content has
 | Module | Role |
 |---|---|
 | `data.py` | Loads and joins the dataset; exchange-rate lookup by settlement date and stated direction (inverse pair as fallback). |
-| `llm.py` | The single Claude API wrapper (`claude-fable-5-1`): JSON-schema output, on-disk cache, `usage.jsonl` token log. |
+| `llm.py` | The single Claude API wrapper (model from `ANTHROPIC_MODEL`, default `claude-sonnet-5`): JSON-schema output, on-disk cache, `usage.jsonl` token log. |
 | `evidence.py` | Two narrow model jobs: amount/date extraction from the 16 images, and one structured adjustment per message (fixed schema: salary amount/date change, one-time confirmed income, income ended, unconfirmed income, pending credit, expense increase, transfer/dispute/scam/duplicate ignore, no effect). All content is treated as untrusted data; embedded instructions are never followed. |
 | `messages_regex.py` + `message_templates.json` | Deterministic regex fallback for the 35 message templates; also fills fields the model leaves empty. |
 | `state.py` | Financial state as of `request_date`: reserves pending/scheduled debits at settlement date; ignores pending credits, refunds, failed/cancelled rows, duplicates and unrealized values; resolves `linked_event_id` chains; fills blank amounts from the image cache; detects recurring debit series per category (monthly on the same day of month, or shorter cycles at the observed gap) at the historical mean; projects salary from the scheduled row or the settled payroll history and applies message adjustments. |

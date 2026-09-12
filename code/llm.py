@@ -22,14 +22,14 @@ from pathlib import Path
 CODE_DIR = Path(__file__).resolve().parent
 CACHE_DIR = CODE_DIR / "cache"
 USAGE_PATH = CACHE_DIR / "usage.jsonl"
-MODEL = os.environ.get("BUY_OR_WAIT_MODEL", "claude-fable-5-1")
 PROVIDER = "Anthropic"
+DEFAULT_MODEL = "claude-sonnet-5"  # latest Sonnet; override with ANTHROPIC_MODEL in .env
 
-# USD per 1M tokens (Anthropic first-party list price for claude-fable-5-1).
+# USD per 1M tokens (Anthropic first-party list prices).
 PRICING = {
-    "claude-fable-5-1": {"input": 10.0, "output": 50.0},
-    "claude-opus-5": {"input": 5.0, "output": 25.0},
     "claude-sonnet-5": {"input": 2.0, "output": 10.0},
+    "claude-sonnet-4-6": {"input": 3.0, "output": 15.0},
+    "claude-haiku-4-5": {"input": 1.0, "output": 5.0},
 }
 
 _client = None
@@ -42,6 +42,10 @@ def _load_env() -> None:
         load_dotenv(CODE_DIR.parent / ".env")
     except Exception:  # pragma: no cover - dotenv is optional at runtime
         pass
+
+
+_load_env()
+MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip() or DEFAULT_MODEL
 
 
 def api_key_available() -> bool:
@@ -179,7 +183,7 @@ def usage_summary(n_requests: int) -> dict:
         k["input_tokens"] += r["input_tokens"]
         k["output_tokens"] += r["output_tokens"]
     for name, m in per_model.items():
-        price = PRICING.get(name) or PRICING.get(name.rsplit("-", 1)[0], {"input": 0.0, "output": 0.0})
+        price = PRICING.get(name) or next((v for k, v in PRICING.items() if name.startswith(k)), {"input": 0.0, "output": 0.0})
         m["cost_usd"] = m["input_tokens"] / 1e6 * price["input"] + m["output_tokens"] / 1e6 * price["output"]
         m["price"] = price
     total_in = sum(m["input_tokens"] for m in per_model.values())
