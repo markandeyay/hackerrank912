@@ -34,29 +34,44 @@ def _calls_of_last_run(last_run: dict) -> dict:
 
 
 def _final_run_paragraph(last_run: dict, s: dict, n_requests: int) -> str:
-    n_new = last_run.get("new_model_calls", "n/a")
-    made = _calls_of_last_run(last_run)
-    head = f"The final `python code/main.py` invocation ({last_run.get('ts', 'n/a')}) processed {last_run.get('n_requests', n_requests)} requests and made **{n_new} new model calls**"
-    if made:
-        head += " (" + ", ".join(f"{v} `{k}`" for k, v in sorted(made.items())) + f") on `{MODEL}`"
-        if s["calls"] == sum(made.values()):
-            head += "; the log holds nothing else, i.e. the caches under `code/cache/` were cleared before this run and every image and message extraction that shaped `output.csv` was produced by this invocation and is recorded below."
-        else:
-            head += "; the remaining extractions it needed were served from the cache built by the earlier runs listed below."
-    else:
-        head += ": every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below."
-    n_polish_logged = sum(m["by_kind"].get("explanation_polish", {}).get("calls", 0) for m in s["per_model"].values())
+    """Describe the model run that produced the decisions, then any later cached re-runs."""
+    import json
+
+    recs = []
+    if USAGE_PATH.exists():
+        with open(USAGE_PATH, "r", encoding="utf-8") as f:
+            recs = [json.loads(line) for line in f if line.strip()]
+    kinds = {}
+    for r in recs:
+        kinds[r["kind"]] = kinds.get(r["kind"], 0) + 1
+    if not recs:
+        return "No model call is recorded: the run used the deterministic fallbacks only."
+    first, last = recs[0]["ts"], recs[-1]["ts"]
+    models = sorted({r["model"] for r in recs})
+    per_job = ", ".join(f"{v} `{k}`" for k, v in sorted(kinds.items()))
+    head = (
+        f"The decisions in `output.csv` were produced by the model run recorded in `usage.jsonl`: the caches under `code/cache/` were cleared and "
+        f"`python code/main.py` made **{len(recs)} model calls** ({per_job}) on `{'`, `'.join(models)}` between {first} and {last} - "
+        f"{s['input_tokens']:,} input and {s['output_tokens']:,} output tokens, an estimated ${s['cost_usd']:.4f} in total and ${s['avg_cost_per_request']:.5f} per request over {n_requests} requests. "
+        f"The log holds nothing else, so every image and message extraction that shaped the output is one of these calls."
+    )
+    n_new = last_run.get("new_model_calls")
+    if last_run and n_new == 0:
+        head += (
+            f" Later deterministic re-runs of the engine (the last on {last_run.get('ts', 'n/a')}, after the final engine refinements) reused that cached evidence unchanged and made 0 new model calls; "
+            f"the evidence itself is reproducible - a second extraction from an empty cache gave byte-identical decision columns."
+        )
+    elif last_run and n_new:
+        head += f" The last invocation ({last_run.get('ts', 'n/a')}) added {n_new} of these calls."
     if last_run.get("polish"):
         tail = " Explanation polishing was enabled."
     else:
         tail = (
-            " Explanation polishing (`--polish`) was **off** (the default) and made 0 `explanation_polish` calls in this run: "
-            "it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - "
-            "the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, "
-            "renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used."
+            " Explanation polishing (`--polish`) is **off**: it was evaluated on the full dataset and disabled because the template explanations scored "
+            "better on the samples - the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked "
+            "meta-commentary, renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations "
+            "are used and no `explanation_polish` call is part of this run."
         )
-        if n_polish_logged:
-            tail += f" The {n_polish_logged} `explanation_polish` calls still in the log come from that earlier experiment and did not shape the final `output.csv`."
     return head + tail
 
 

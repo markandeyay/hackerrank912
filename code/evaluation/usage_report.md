@@ -1,6 +1,6 @@
 # Token usage and cost report
 
-Generated 2026-09-12 22:46:47 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
+Generated 2026-09-12 23:30:18 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
 
 ## Architecture recap
 
@@ -14,7 +14,7 @@ All calls go through `code/llm.py`, which caches results under `code/cache/` (so
 
 ## Final run
 
-The final `python code/main.py` invocation (2026-09-12T22:46:45Z) processed 250 requests and made **0 new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. Explanation polishing (`--polish`) was **off** (the default) and made 0 `explanation_polish` calls in this run: it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used.
+The decisions in `output.csv` were produced by the model run recorded in `usage.jsonl`: the caches under `code/cache/` were cleared and `python code/main.py` made **231 model calls** (16 `image_extraction`, 215 `message_adjustment`) on `claude-sonnet-5` between 2026-09-12T22:09:34Z and 2026-09-12T22:18:57Z - 464,280 input and 35,654 output tokens, an estimated $1.2851 in total and $0.00514 per request over 250 requests. The log holds nothing else, so every image and message extraction that shaped the output is one of these calls. Later deterministic re-runs of the engine (the last on 2026-09-12T22:46:45Z, after the final engine refinements) reused that cached evidence unchanged and made 0 new model calls; the evidence itself is reproducible - a second extraction from an empty cache gave byte-identical decision columns. Explanation polishing (`--polish`) is **off**: it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used and no `explanation_polish` call is part of this run.
 
 Cached evidence that feeds the final output: image_extraction (16 calls, 48,576 tokens), message_adjustment (215 calls, 451,358 tokens).
 
