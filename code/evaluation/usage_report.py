@@ -17,6 +17,49 @@ from llm import MODEL, PRICING, USAGE_PATH, usage_summary  # noqa: E402
 OUT = CODE_DIR / "evaluation" / "usage_report.md"
 
 
+def _calls_of_last_run(last_run: dict) -> dict:
+    """Per-job counts of the calls made by the last `main.py` invocation.
+
+    `usage.jsonl` is append-only and chronological and `last_run.json` records
+    how many lines that invocation appended, so its calls are the last
+    `new_model_calls` lines of the log."""
+    import json
+    from collections import Counter
+
+    n = int(last_run.get("new_model_calls") or 0)
+    if n <= 0 or not USAGE_PATH.exists():
+        return {}
+    rows = [json.loads(line) for line in USAGE_PATH.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return dict(Counter(r["kind"] for r in rows[-n:]))
+
+
+def _final_run_paragraph(last_run: dict, s: dict, n_requests: int) -> str:
+    n_new = last_run.get("new_model_calls", "n/a")
+    made = _calls_of_last_run(last_run)
+    head = f"The final `python code/main.py` invocation ({last_run.get('ts', 'n/a')}) processed {last_run.get('n_requests', n_requests)} requests and made **{n_new} new model calls**"
+    if made:
+        head += " (" + ", ".join(f"{v} `{k}`" for k, v in sorted(made.items())) + f") on `{MODEL}`"
+        if s["calls"] == sum(made.values()):
+            head += "; the log holds nothing else, i.e. the caches under `code/cache/` were cleared before this run and every image and message extraction that shaped `output.csv` was produced by this invocation and is recorded below."
+        else:
+            head += "; the remaining extractions it needed were served from the cache built by the earlier runs listed below."
+    else:
+        head += ": every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below."
+    n_polish_logged = sum(m["by_kind"].get("explanation_polish", {}).get("calls", 0) for m in s["per_model"].values())
+    if last_run.get("polish"):
+        tail = " Explanation polishing was enabled."
+    else:
+        tail = (
+            " Explanation polishing (`--polish`) was **off** (the default) and made 0 `explanation_polish` calls in this run: "
+            "it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - "
+            "the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, "
+            "renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used."
+        )
+        if n_polish_logged:
+            tail += f" The {n_polish_logged} `explanation_polish` calls still in the log come from that earlier experiment and did not shape the final `output.csv`."
+    return head + tail
+
+
 def main() -> None:
     n_requests = sum(1 for _ in open(DATASET_DIR / "requests.csv", encoding="utf-8")) - 1
     s = usage_summary(n_requests)
@@ -45,8 +88,7 @@ def main() -> None:
         "",
         "## Final run",
         "",
-        (f"The final `python code/main.py` invocation ({last_run.get('ts', 'n/a')}) processed {last_run.get('n_requests', n_requests)} requests and made **{last_run.get('new_model_calls', 'n/a')} new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. "
-         + ("Explanation polishing was enabled." if last_run.get("polish") else "Explanation polishing was **off** (the default), so the `explanation_polish` calls in the log come from an earlier experimental run and did not shape the final `output.csv`; the template explanations are used.")),
+        _final_run_paragraph(last_run, s, n_requests),
         "",
         "Cached evidence that feeds the final output: " + ", ".join(f"{k} ({v['calls']} calls, {v['input_tokens'] + v['output_tokens']:,} tokens)" for k, v in sorted(used.items())) + ".",
         "",

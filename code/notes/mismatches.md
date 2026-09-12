@@ -3,23 +3,51 @@
 Score of the engine against `dataset/sample_requests.csv` (25 rows), run with
 `python code/evaluation/main.py --llm --table -v`:
 
-| column | first full run | after the payday rule | after the improvement pass |
-|---|---|---|---|
-| affordability_status | 23 / 25 | 24 / 25 | 24 / 25 |
-| recommended_payment_method | 24 / 25 | 24 / 25 | 24 / 25 |
-| payment_plan | 23 / 25 | 23 / 25 | 23 / 25 |
-| earliest_date_for_full_payment | 22 / 25 | 23 / 25 | 23 / 25 |
-| spending_changes_needed | 22 / 25 | 23 / 25 | 23 / 25 |
-| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 | 4 / 25 |
-| amount_safe_to_pay within 2 % | 11 / 25 | 16 / 25 | **17 / 25** |
-| overall exact (6 scored columns) | 118 / 150 (78.7 %) | 121 / 150 (80.7 %) | 121 / 150 (80.7 %) |
+| column | first full run | after the payday rule | after pass 1 | after pass 2 |
+|---|---|---|---|---|
+| affordability_status | 23 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
+| recommended_payment_method | 24 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
+| payment_plan | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| earliest_date_for_full_payment | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| spending_changes_needed | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 | 4 / 25 | **6 / 25** |
+| amount_safe_to_pay within 2 % | 11 / 25 | 16 / 25 | 17 / 25 | 17 / 25 |
+| overall exact (6 scored columns) | 118 / 150 (78.7 %) | 121 / 150 (80.7 %) | 121 / 150 (80.7 %) | **123 / 150 (82.0 %)** |
 
 Nothing is hardcoded per request; every number comes from the dataset through the rules in `state.py` / `planner.py`.
 The traces and experiments behind this page are in `notes/experiments/` (one `trace_request_XX.md` per mismatched
 sample, `reserve_hypotheses.md`, `horizon_test.md`) and the six audit reports of the improvement pass are in
 `notes/improve/` (reserve model, invariants, evidence application, outliers, explanations, tests).
 
-## Improvement pass (six audits) - what changed and what did not
+## Improvement pass 2 (four studies, reports in `notes/improve2/`)
+
+Adopted:
+
+* **Band-clamped, grid-snapped mean for variable series without a leaked nominal** (`clamp_to_band`). The noise around the
+  leaked nominals is exactly uniform: observed / nominal lies flat on [0.72, 1.28] for dining and on [0.88, 1.12] for
+  entertainment and shopping (Kolmogorov-Smirnov and chi-square both accept uniformity, zero skew, band identical across
+  currencies), and the fixed categories show the same half-widths (groceries/transport 0.28, utilities/healthcare 0.12). Under
+  such a band the nominal must lie in [max/(1+a), min/(1-a)], so the mean is clamped into that interval and then snapped to the
+  nearest point of the currency grid the leaked nominals sit on (EUR/USD 1, INR 10, IDR 100, ZAR 0.2). Both the band per
+  category and the grid per currency are derived from the dataset at run time (largest per-series spread rounded up to 0.02;
+  greatest common decimal divisor of the leaked nominals). It is a strict refinement of the mean (untouched whenever the mean is
+  feasible), preserves every column and makes samples 08 and 18 exact on `amount_safe_to_pay` (121 -> 123 / 150). The pure
+  midrange, feasible-interval midpoint, uniform MLE and posterior-mean estimators were rejected: each moves every series and flips
+  request_11's plan.
+* **The submitted run is a real one**: the caches were cleared and `python code/main.py` made the 16 image and 215 message
+  calls on `claude-sonnet-5` with polishing off (231 calls, about $1.29); the six decision columns and the explanations were
+  byte-identical to the previous output. Model non-determinism did appear in the raw evidence (one image read 8528.1 instead of
+  8528 for an already-settled row; 14 message classifications differed from the template) and never reached a decision because
+  the template capture wins on disagreement. The usage report describes that run and explains why polishing is off; the README
+  gained an Architecture section.
+
+Verified without change: every short-cycle series in the dataset has a constant gap (5/7/10/14/21 days) and every monthly
+series recurs on the same day of month, so the engine's projection already is the exact-interval projection; removing the
+request-date skip or the bring-forward rule loses request_21's three columns and 6-10 within-2 % samples and moves neither
+request_04 nor request_06. Scheduled salaries, history salaries, monthly debit series and month-end handling were audited on
+all 275 users with no violation; reserving both a scheduled row and its recurring series is what samples 16, 23 and 24 support.
+
+## Improvement pass 1 (six audits) - what changed and what did not
 
 Adopted:
 

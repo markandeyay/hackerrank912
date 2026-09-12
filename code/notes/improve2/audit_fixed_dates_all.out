@@ -1,0 +1,943 @@
+=== COUNTS ===
+freelance income: 19
+gig payout: 11
+history_salary: 198
+known_row_same_cat_as_series: 35
+monthly_series: 1644
+no_regular_salary: 30
+requests: 275
+scheduled_salary: 47
+
+=== VIOLATIONS (35) ===
+* user_16/request_16 rent: POSSIBLE DOUBLE COUNT: scheduled row event_1442 'Outstanding rent balance' 100000.0 INR on 2023-08-16 (in flows=True) + series 'Monthly rent' 63952.00 projected ['2023-09-01', '2023-10-01', '2023-11-01']; same-month=[] within20d=['2023-09-01']; history=[('2023-05-01', 57100.0), ('2023-06-01', 57100.0), ('2023-07-01', 57100.0), ('2023-08-01', 57100.0)]
+* user_20/request_20 utilities: POSSIBLE DOUBLE COUNT: pending row event_1786 'Outstanding telecom bill' 704.05 INR on 2026-02-09 (in flows=True) + series 'Municipal utilities' 7665.16 projected ['2026-03-05', '2026-04-05']; same-month=[] within20d=[]; history=[('2025-11-05', 8058.75), ('2025-12-05', 6848.62), ('2026-01-05', 7551.74), ('2026-02-05', 7769.87)]
+* user_23/request_23 healthcare: POSSIBLE DOUBLE COUNT: pending row event_2042 'Pending pharmacy card charge' 1553.2 ZAR on 2025-05-11 (in flows=True) + series 'Clinic payment' 1361.55 projected ['2025-05-12', '2025-06-12', '2025-07-12']; same-month=['2025-05-12'] within20d=['2025-05-12']; history=[('2025-01-12', 1331.22), ('2025-02-12', 1439.91), ('2025-03-12', 1317.68), ('2025-04-12', 1377.89)]
+* user_24/request_24 insurance: POSSIBLE DOUBLE COUNT: scheduled row event_2166 'Scheduled insurance payment' 1830.0 INR on 2026-01-11 (in flows=True) + series 'Insurance policy payment' 2510.00 projected ['2026-01-06', '2026-02-06', '2026-03-06']; same-month=['2026-01-06'] within20d=['2026-01-06']; history=[('2025-09-06', 2510.0), ('2025-10-06', 2510.0), ('2025-11-06', 2510.0), ('2025-12-06', 2510.0)]
+* user_42/request_42 shopping: POSSIBLE DOUBLE COUNT: pending row event_3957 'Pending merchant debit' 8100.0 INR on 2026-01-08 (in flows=True) + series 'Clothing and household items' 3389.68 projected ['2026-01-13', '2026-02-13', '2026-03-13']; same-month=['2026-01-13'] within20d=['2026-01-13']; history=[('2025-09-13', 3295.86), ('2025-10-13', 3406.05), ('2025-11-13', 3196.37), ('2025-12-13', 3534.51)]
+* user_44/request_44 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_4114 'Scheduled utility debit' 4830.0 INR on 2025-02-11 (in flows=True) + series 'Municipal utilities' 7835.16 projected ['2025-02-05', '2025-03-05', '2025-04-05']; same-month=['2025-02-05'] within20d=['2025-02-05']; history=[('2024-10-05', 7895.92), ('2024-11-05', 7321.8), ('2024-12-05', 8642.12), ('2025-01-05', 7930.55)]
+* user_55/request_55 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_5169 'Scheduled bill payment retry' 13800.0 INR on 2026-06-12 (in flows=True) + series 'Water and power payment' 13884.03 projected ['2026-06-08', '2026-07-08', '2026-08-08']; same-month=['2026-06-08'] within20d=['2026-06-08']; history=[('2026-02-08', 14594.03), ('2026-03-08', 13286.23), ('2026-04-08', 12810.93), ('2026-05-08', 15199.62)]
+* user_60/request_60 shopping: POSSIBLE DOUBLE COUNT: pending row event_5660 'Pending online order charge' 35.0 USD on 2026-01-07 (in flows=True) + series 'Clothing and household items' 18.72 projected ['2026-01-11', '2026-02-11', '2026-03-11']; same-month=['2026-01-11'] within20d=['2026-01-11']; history=[('2025-09-11', 19.39), ('2025-10-11', 17.27), ('2025-11-11', 19.31), ('2025-12-11', 16.75)]
+* user_62/request_62 shopping: POSSIBLE DOUBLE COUNT: pending row event_5789 'Pending merchant debit' 145.0 USD on 2025-08-08 (in flows=True) + series 'Clothing and household items' 65.41 projected ['2025-08-13', '2025-09-13', '2025-10-13']; same-month=['2025-08-13'] within20d=['2025-08-13']; history=[('2025-04-13', 59.08), ('2025-05-13', 70.68), ('2025-06-13', 62.15), ('2025-07-13', 72.5)]
+* user_82/request_82 shopping: POSSIBLE DOUBLE COUNT: pending row event_7739 'Pending merchant debit' 91.0 USD on 2024-12-08 (in flows=True) + series 'Personal shopping' 80.73 projected ['2024-12-13', '2025-01-13', '2025-02-13']; same-month=['2024-12-13'] within20d=['2024-12-13']; history=[('2024-08-13', 83.13), ('2024-09-13', 81.08), ('2024-10-13', 74.8), ('2024-11-13', 85.29)]
+* user_83/request_83 healthcare: POSSIBLE DOUBLE COUNT: pending row event_7819 'Pending pharmacy card charge' 2800.0 INR on 2025-05-11 (in flows=True) + series 'Therapy appointment' 4737.12 projected ['2025-05-12', '2025-06-12', '2025-07-12']; same-month=['2025-05-12'] within20d=['2025-05-12']; history=[('2025-01-12', 4611.74), ('2025-02-12', 4802.9), ('2025-03-12', 4522.3), ('2025-04-12', 4681.41)]
+* user_84/request_84 insurance: POSSIBLE DOUBLE COUNT: scheduled row event_7942 'Scheduled insurance payment' 6080.0 INR on 2026-04-11 (in flows=True) + series 'Vehicle insurance premium' 4790.00 projected ['2026-04-06', '2026-05-06', '2026-06-06']; same-month=['2026-04-06'] within20d=['2026-04-06']; history=[('2025-12-06', 4790.0), ('2026-01-06', 4790.0), ('2026-02-06', 4790.0), ('2026-03-06', 4790.0)]
+* user_91/request_91 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_8576 'Scheduled bill payment retry' 166.0 EUR on 2024-09-07 (in flows=True) + series 'Electricity bill' 165.86 projected ['2024-09-08', '2024-10-08', '2024-11-08']; same-month=['2024-09-08'] within20d=['2024-09-08']; history=[('2024-05-08', 171.62), ('2024-06-08', 156.12), ('2024-07-08', 178.65), ('2024-08-08', 168.18)]
+* user_100/request_100 shopping: POSSIBLE DOUBLE COUNT: pending row event_9337 'Pending online order charge' 1027.4 ZAR on 2024-06-07 (in flows=True) + series 'Household shopping' 1783.20 projected ['2024-06-11', '2024-07-11', '2024-08-11']; same-month=['2024-06-11'] within20d=['2024-06-11']; history=[('2024-02-11', 1868.05), ('2024-03-11', 1735.99), ('2024-04-11', 1742.28), ('2024-05-11', 1742.86)]
+* user_102/request_102 shopping: POSSIBLE DOUBLE COUNT: pending row event_9495 'Pending merchant debit' 86.0 EUR on 2026-04-08 (in flows=True) + series 'Household shopping' 60.00 projected ['2026-04-13', '2026-05-13', '2026-06-13']; same-month=['2026-04-13'] within20d=['2026-04-13']; history=[('2025-12-13', 62.58), ('2026-01-13', 66.83), ('2026-02-13', 57.81), ('2026-03-13', 62.9)]
+* user_104/request_104 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_9681 'Scheduled utility debit' 1964.6 ZAR on 2025-02-11 (in flows=True) + series 'Energy provider bill' 2347.95 projected ['2025-02-05', '2025-03-05', '2025-04-05']; same-month=['2025-02-05'] within20d=['2025-02-05']; history=[('2024-10-05', 2163.23), ('2024-11-05', 2422.97), ('2024-12-05', 2341.92), ('2025-01-05', 2314.0)]
+* user_120/request_120 shopping: POSSIBLE DOUBLE COUNT: pending row event_11130 'Pending online order charge' 587100.0 IDR on 2026-04-07 (in flows=True) + series 'Online retail purchases' 661204.16 projected ['2026-04-11', '2026-05-11', '2026-06-11']; same-month=['2026-04-11'] within20d=['2026-04-11']; history=[('2025-12-11', 747715.81), ('2026-01-11', 689405.84), ('2026-02-11', 607692.8), ('2026-03-11', 646179.19)]
+* user_122/request_122 shopping: POSSIBLE DOUBLE COUNT: pending row event_11307 'Pending merchant debit' 950000.0 IDR on 2025-08-08 (in flows=True) + series 'Household shopping' 699184.80 projected ['2025-08-13', '2025-09-13', '2025-10-13']; same-month=['2025-08-13'] within20d=['2025-08-13']; history=[('2025-04-13', 647226.12), ('2025-05-13', 699655.05), ('2025-06-13', 748017.53), ('2025-07-13', 663092.97)]
+* user_138/request_138 shopping: POSSIBLE DOUBLE COUNT: pending row event_12709 'Possible duplicate card charge' 134.75 EUR on 2026-04-10 (in flows=False) + series 'Clothing and household items' 113.00 projected ['2026-04-13', '2026-05-13', '2026-06-13']; same-month=['2026-04-13'] within20d=['2026-04-13']; history=[('2025-12-13', 100.0), ('2026-01-13', 120.01), ('2026-02-13', 114.8), ('2026-03-13', 103.86)]
+* user_139/request_139 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_12809 'Scheduled bill payment retry' 82.0 USD on 2024-09-08 (in flows=True) + series 'Electricity bill' 84.09 projected ['2024-09-08', '2024-10-08', '2024-11-08']; same-month=['2024-09-08'] within20d=['2024-09-08']; history=[('2024-05-08', 80.61), ('2024-06-08', 89.41), ('2024-07-08', 73.15), ('2024-08-08', 90.17)]
+* user_142/request_142 shopping: POSSIBLE DOUBLE COUNT: pending row event_13106 'Pending merchant debit' 65.0 USD on 2024-12-08 (in flows=True) + series 'Online retail purchases' 69.00 projected ['2024-12-13', '2025-01-13', '2025-02-13']; same-month=['2024-12-13'] within20d=['2024-12-13']; history=[('2024-08-13', 60.82), ('2024-09-13', 73.91), ('2024-10-13', 70.28), ('2024-11-13', 77.09)]
+* user_156/request_156 shopping: POSSIBLE DOUBLE COUNT: pending row event_14399 'Possible duplicate card charge' 1617.0 ZAR on 2026-04-06 (in flows=False) + series 'Online retail purchases' 992.20 projected ['2026-04-11', '2026-05-11', '2026-06-11']; same-month=['2026-04-11'] within20d=['2026-04-11']; history=[('2025-12-11', 1058.91), ('2026-01-11', 912.11), ('2026-02-11', 957.02), ('2026-03-11', 952.32)]
+* user_164/request_164 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_15106 'Scheduled utility debit' 1335700.0 IDR on 2025-02-11 (in flows=True) + series 'Energy provider bill' 2852097.13 projected ['2025-02-05', '2025-03-05', '2025-04-05']; same-month=['2025-02-05'] within20d=['2025-02-05']; history=[('2024-10-05', 2888381.44), ('2024-11-05', 2658261.05), ('2024-12-05', 2775803.27), ('2025-01-05', 2917512.19)]
+* user_181/request_181 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_16691 'Scheduled bill payment retry' 129.0 USD on 2024-03-07 (in flows=True) + series 'Water and power payment' 123.61 projected ['2024-03-06', '2024-04-06', '2024-05-06']; same-month=['2024-03-06'] within20d=['2024-03-06']; history=[('2023-11-06', 140.66), ('2023-12-06', 115.1), ('2024-01-06', 116.79), ('2024-02-06', 116.35)]
+* user_202/request_202 shopping: POSSIBLE DOUBLE COUNT: pending row event_18613 'Pending merchant debit' 9930.0 INR on 2024-12-08 (in flows=True) + series 'Household shopping' 4174.23 projected ['2024-12-13', '2025-01-13', '2025-02-13']; same-month=['2024-12-13'] within20d=['2024-12-13']; history=[('2024-08-13', 4687.26), ('2024-09-13', 3755.14), ('2024-10-13', 4349.46), ('2024-11-13', 4061.97)]
+* user_210/request_210 shopping: POSSIBLE DOUBLE COUNT: pending row event_19334 'Possible duplicate card charge' 145.8 USD on 2026-04-09 (in flows=False) + series 'Monthly shopping spend' 162.47 projected ['2026-04-13', '2026-05-13', '2026-06-13']; same-month=['2026-04-13'] within20d=['2026-04-13']; history=[('2025-12-13', 173.29), ('2026-01-13', 154.43), ('2026-02-13', 149.83), ('2026-03-13', 160.26)]
+* user_222/request_222 shopping: POSSIBLE DOUBLE COUNT: pending row event_20453 'Pending merchant debit' 1139.6 ZAR on 2026-01-08 (in flows=True) + series 'Personal shopping' 1313.71 projected ['2026-01-13', '2026-02-13', '2026-03-13']; same-month=['2026-01-13'] within20d=['2026-01-13']; history=[('2025-09-13', 1251.56), ('2025-10-13', 1414.98), ('2025-11-13', 1329.57), ('2025-12-13', 1292.74)]
+* user_224/request_224 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_20616 'Scheduled utility debit' 1806900.0 IDR on 2025-02-11 (in flows=True) + series 'Water and power payment' 2498161.47 projected ['2025-02-05', '2025-03-05', '2025-04-05']; same-month=['2025-02-05'] within20d=['2025-02-05']; history=[('2024-10-05', 2485406.99), ('2024-11-05', 2312367.65), ('2024-12-05', 2678229.73), ('2025-01-05', 2677836.72)]
+* user_229/request_229 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_21102 'Scheduled bill payment retry' 73.0 EUR on 2024-03-08 (in flows=True) + series 'Household utility payment' 72.28 projected ['2024-03-06', '2024-04-06', '2024-05-06']; same-month=['2024-03-06'] within20d=['2024-03-06']; history=[('2023-11-06', 64.64), ('2023-12-06', 79.33), ('2024-01-06', 68.97), ('2024-02-06', 79.43)]
+* user_243/request_243 healthcare: POSSIBLE DOUBLE COUNT: pending row event_22362 'Pending pharmacy card charge' 1071.4 ZAR on 2026-07-11 (in flows=True) + series 'Therapy appointment' 1340.97 projected ['2026-07-12', '2026-08-12', '2026-09-12']; same-month=['2026-07-12'] within20d=['2026-07-12']; history=[('2026-03-12', 1185.91), ('2026-04-12', 1319.34), ('2026-05-12', 1375.7), ('2026-06-12', 1413.47)]
+* user_244/request_244 education: POSSIBLE DOUBLE COUNT: scheduled row event_22462 'Scheduled school fee' 3517.8 ZAR on 2024-06-11 (in flows=True) + series 'Course tuition' 2945.80 projected ['2024-06-07', '2024-07-07', '2024-08-07']; same-month=['2024-06-07'] within20d=['2024-06-07']; history=[('2024-02-07', 2945.8), ('2024-03-07', 2945.8), ('2024-04-07', 2945.8), ('2024-05-07', 2945.8)]
+* user_253/request_253 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_23307 'Scheduled bill payment retry' 192.0 EUR on 2024-03-11 (in flows=True) + series 'Electricity bill' 192.64 projected ['2024-04-06', '2024-05-06']; same-month=[] within20d=[]; history=[('2023-12-06', 213.78), ('2024-01-06', 188.44), ('2024-02-06', 175.52), ('2024-03-06', 186.2)]
+* user_259/request_259 utilities: POSSIBLE DOUBLE COUNT: scheduled row event_23856 'Scheduled bill payment retry' 42.0 EUR on 2024-09-08 (in flows=True) + series 'Municipal utilities' 41.13 projected ['2024-09-08', '2024-10-08', '2024-11-08']; same-month=['2024-09-08'] within20d=['2024-09-08']; history=[('2024-05-08', 39.93), ('2024-06-08', 37.95), ('2024-07-08', 46.4), ('2024-08-08', 39.44)]
+* user_260/request_260 shopping: POSSIBLE DOUBLE COUNT: pending row event_23979 'Pending online order charge' 1537100.0 IDR on 2025-02-07 (in flows=True) + series 'Online retail purchases' 1195100.00 projected ['2025-02-11', '2025-03-11', '2025-04-11']; same-month=['2025-02-11'] within20d=['2025-02-11']; history=[('2024-10-11', 1091724.51), ('2024-11-11', 1155009.38), ('2024-12-11', 1217772.81), ('2025-01-11', 1330372.23)]
+* user_262/request_262 shopping: POSSIBLE DOUBLE COUNT: pending row event_24162 'Pending merchant debit' 2941200.0 IDR on 2024-12-08 (in flows=True) + series 'Household shopping' 1371800.00 projected ['2024-12-13', '2025-01-13', '2025-02-13']; same-month=['2024-12-13'] within20d=['2024-12-13']; history=[('2024-08-13', 1469924.66), ('2024-09-13', 1240936.11), ('2024-10-13', 1492159.53), ('2024-11-13', 1310015.03)]
+
+=== INFO (895) ===
+- user_01/request_01 utilities: variable monthly history mean 1507.80 (min 1386.17 max 1651.81) used
+- user_02/request_02 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 42750000.0, 'IDR', '2025-08-15', 'T01_salary_increase')] last=2025-07-15 33345000.0 IDR modal=33345000.0x5 dom=15 -> flows=[('2025-08-15', 42750000.0), ('2025-09-15', 42750000.0), ('2025-10-15', 42750000.0)]
+- user_02/request_02 utilities: variable monthly history mean 2035830.50 (min 1830311.06 max 2143659.02) used
+- user_02/request_02 healthcare: variable monthly history mean 1538993.97 (min 1452405.16 max 1641668.72) used
+- user_02/request_02 entertainment: variable history mean 1298171.69 (min 1193699.10 max 1367779.89) -> series amount 1341400.00 (nominal-from-minimum? min_allowed=670700.0)
+- user_02/request_02 known pending row event_185 'Pending merchant debit' 1651100.0 IDR cat=shopping on 2025-08-08; no series in that category (history n=0)
+- user_03/request_03 salary history DOMs not constant: {15: 5, 31: 1} rows=[('Payroll credit', '2019-04-15'), ('Payroll credit', '2019-05-15'), ('Payroll credit', '2019-06-15'), ('Payroll credit', '2019-07-15'), ('Payroll credit', '2019-08-15'), ('August 2019 net sala', '2019-08-31')]
+- user_03/request_03 utilities: variable monthly history mean 284387.81 (min 262344.55 max 303042.45) used
+- user_03/request_03 shopping: variable history mean 168697.75 (min 151493.37 max 184274.02) -> series amount 165300.00 (nominal-from-minimum? min_allowed=66120.0)
+- user_03/request_03 known pending row event_254 'Pending pharmacy card charge' 95000.0 IDR cat=healthcare on 2019-09-07; no series in that category (history n=0)
+- user_04/request_04 utilities: variable monthly history mean 2003395.62 (min 1980834.82 max 2033868.83) used
+- user_04/request_04 entertainment: variable history mean 1385201.35 (min 1231859.39 max 1542620.00) -> series amount 1385100.00 (nominal-from-minimum? min_allowed=692550.0)
+- user_04/request_04 known scheduled row event_357 'Scheduled school fee' 1704300.0 IDR cat=education on 2024-06-11; no series in that category (history n=0)
+- user_05/request_05 salary: none projected (stale=False ended=False final=True last=2025-10-15)
+- user_05/request_05 utilities: projected occurrence on request_date 2025-11-06 (counted)
+- user_05/request_05 utilities: variable monthly history mean 686.71 (min 604.15 max 750.89) used
+- user_05/request_05 healthcare: variable monthly history mean 699.01 (min 632.59 max 777.27) used
+- user_05/request_05 shopping: variable history mean 397.85 (min 362.09 max 422.67) -> series amount 402.60 (nominal-from-minimum? min_allowed=161.04)
+- user_06/request_06 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1037.52, 'EUR', None, 'T04_temporary_reduced_pay')] last=2025-12-15 1037.52 EUR modal=1441.0x3 dom=15 -> flows=[('2026-01-15', 1037.52), ('2026-02-15', 1441.0), ('2026-03-15', 1441.0)]
+- user_06/request_06 rent: projected occurrence on request_date 2026-01-03 (counted)
+- user_06/request_06 utilities: variable monthly history mean 55.70 (min 51.86 max 58.98) used
+- user_06/request_06 shopping: variable monthly history mean 41.00 (min 37.96 max 46.25) used
+- user_06/request_06 entertainment: variable monthly history mean 35.01 (min 32.10 max 38.33) used
+- user_07/request_07 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2024-09-23', 'T05_salary_date_change')] last=2024-08-23 149000.0 INR modal=149000.0x5 dom=15 -> flows=[('2024-09-23', 149000.0), ('2024-10-23', 149000.0), ('2024-11-23', 149000.0)]
+- user_07/request_07 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-04-15'), ('Payroll credit', '2024-05-15'), ('Payroll credit', '2024-06-15'), ('Payroll credit', '2024-07-15'), ('Payroll credit', '2024-08-23')]
+- user_07/request_07 utilities: variable monthly history mean 6789.44 (min 6081.25 max 7387.41) used
+- user_08/request_08 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1422.85, 'EUR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-01-15 782.57 EUR modal=1422.85x4 dom=15 -> flows=[('2025-02-15', 1422.85), ('2025-03-15', 1422.85), ('2025-04-15', 1422.85)]
+- user_08/request_08 utilities: variable monthly history mean 76.83 (min 68.44 max 82.61) used
+- user_08/request_08 education: projected occurrence on request_date 2025-02-07 (counted)
+- user_09/request_09 salary: no regular payroll history and no scheduled row; income flows=[('2026-07-16', 481.17, 'freelance income'), ('2026-07-29', 481.17, 'freelance income'), ('2026-08-11', 481.17, 'freelance income'), ('2026-08-24', 481.17, 'freelance income')]
+- user_09/request_09 freelance income: step=13 gaps=[13, 15, 13, 18, 13, 17, 13, 18, 13] n=10 first=2026-07-16 amt=481.17
+- user_09/request_09 utilities: variable monthly history mean 64.36 (min 59.39 max 71.04) used
+- user_09/request_09 shopping: variable monthly history mean 26.63 (min 24.68 max 29.14) used
+- user_10/request_10 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_10/request_10 gig payout: 21 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_10/request_10 utilities: variable monthly history mean 17103.95 (min 15236.94 max 19224.83) used
+- user_10/request_10 entertainment: variable history mean 4645.19 (min 4366.61 max 4883.78) -> series amount 4390.00 (nominal-from-minimum? min_allowed=2195.0)
+- user_11/request_11 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 38760000.0, 'IDR', None, 'T07_base_salary_commission_pending')] last=2025-04-15 23256000.0 IDR modal=23256000.0x5 dom=15 -> flows=[('2025-05-15', 23256000.0), ('2025-06-15', 23256000.0), ('2025-07-15', 23256000.0)]
+- user_11/request_11 utilities: variable monthly history mean 2720215.11 (min 2488665.63 max 2916312.61) used
+- user_11/request_11 healthcare: variable monthly history mean 2943993.42 (min 2635764.61 max 3165638.30) used
+- user_11/request_11 entertainment: variable history mean 1600926.75 (min 1404572.90 max 1688239.04) -> series amount 1510500.00 (nominal-from-minimum? min_allowed=755250.0)
+- user_12/request_12 salary: none projected (stale=True ended=True final=False last=2026-01-15)
+- user_12/request_12 utilities: projected occurrence on request_date 2026-04-05 (counted)
+- user_12/request_12 utilities: variable monthly history mean 3509.72 (min 3103.78 max 3755.96) used
+- user_12/request_12 shopping: variable history mean 1255.89 (min 1169.42 max 1401.99) -> series amount 1278.20 (nominal-from-minimum? min_allowed=511.28)
+- user_13/request_13 utilities: variable monthly history mean 143.66 (min 131.53 max 162.77) used
+- user_13/request_13 entertainment: variable monthly history mean 32.96 (min 30.39 max 37.90) used
+- user_14/request_14 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2717.0, 'EUR', '2025-08-15', 'T09_salary_resumes_childcare')] last=2025-07-15 2717.0 EUR modal=2717.0x1 dom=15 -> flows=[('2025-08-15', 2717.0), ('2025-09-15', 2717.0), ('2025-10-15', 2717.0)]
+- user_14/request_14 utilities: variable monthly history mean 148.22 (min 141.46 max 156.08) used
+- user_14/request_14 healthcare: variable monthly history mean 91.90 (min 87.84 max 95.17) used
+- user_14/request_14 shopping: variable history mean 129.47 (min 123.04 max 140.39) -> series amount 127.00 (nominal-from-minimum? min_allowed=50.8)
+- user_15/request_15 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1661.0, 'EUR', '2026-01-15', 'T10_first_salary_credit_date')] last=2025-12-15 1661.0 EUR modal=1661.0x2 dom=15 -> flows=[('2026-01-15', 1661.0), ('2026-02-15', 1661.0), ('2026-03-15', 1661.0)]
+- user_15/request_15 utilities: variable monthly history mean 86.39 (min 84.12 max 90.39) used
+- user_16/request_16 utilities: variable monthly history mean 10407.43 (min 9402.67 max 11512.87) used
+- user_16/request_16 shopping: variable monthly history mean 9179.84 (min 8414.47 max 10178.56) used
+- user_17/request_17 utilities: variable monthly history mean 9538.75 (min 8487.15 max 10246.53) used
+- user_18/request_18 utilities: projected occurrence on request_date 2026-07-07 (counted)
+- user_18/request_18 utilities: variable monthly history mean 111.27 (min 100.59 max 125.40) used
+- user_18/request_18 healthcare: variable monthly history mean 155.41 (min 147.96 max 164.10) used
+- user_19/request_19 rent: projected occurrence on request_date 2024-09-04 (counted)
+- user_19/request_19 utilities: variable monthly history mean 5955.64 (min 5525.82 max 6141.28) used
+- user_19/request_19 healthcare: variable monthly history mean 8808.57 (min 8335.20 max 9619.88) used
+- user_19/request_19 shopping: variable history mean 5833.87 (min 5431.12 max 6302.66) -> series amount 6080.00 (nominal-from-minimum? min_allowed=2432.0)
+- user_20/request_20 utilities: variable monthly history mean 7665.16 (min 6848.62 max 8058.75) used
+- user_20/request_20 education: projected occurrence on request_date 2026-02-07 (counted)
+- user_20/request_20 healthcare: variable monthly history mean 6336.85 (min 5907.73 max 6654.33) used
+- user_20/request_20 entertainment: variable history mean 2148.27 (min 1949.86 max 2298.76) -> series amount 2170.00 (nominal-from-minimum? min_allowed=1085.0)
+- user_20/request_20 known pending row event_1787 'Pending online order charge' 4470.0 INR cat=shopping on 2026-02-08; no series in that category (history n=0)
+- user_21/request_21 utilities: variable monthly history mean 121.18 (min 115.31 max 124.08) used
+- user_21/request_21 shopping: variable history mean 122.41 (min 115.71 max 133.38) -> series amount 124.00 (nominal-from-minimum? min_allowed=49.6)
+- user_22/request_22 utilities: variable monthly history mean 30.56 (min 27.34 max 33.73) used
+- user_22/request_22 entertainment: variable monthly history mean 20.87 (min 18.94 max 23.29) used
+- user_22/request_22 known pending row event_1961 'Pending merchant debit' 43.0 EUR cat=shopping on 2024-12-08; no series in that category (history n=0)
+- user_23/request_23 utilities: variable monthly history mean 2754.39 (min 2484.32 max 2915.67) used
+- user_23/request_23 healthcare: variable monthly history mean 1361.55 (min 1317.68 max 1439.91) used
+- user_23/request_23 shopping: variable history mean 1315.73 (min 1232.23 max 1396.33) -> series amount 1271.60 (nominal-from-minimum? min_allowed=508.64)
+- user_24/request_24 utilities: variable monthly history mean 3303.91 (min 3049.81 max 3490.50) used
+- user_24/request_24 shopping: variable monthly history mean 2513.65 (min 2398.76 max 2680.78) used
+- user_24/request_24 entertainment: variable monthly history mean 1930.70 (min 1845.75 max 2124.72) used
+- user_25/request_25 utilities: projected occurrence on request_date 2024-03-06 (counted)
+- user_25/request_25 utilities: variable monthly history mean 1323654.72 (min 1201903.67 max 1401205.21) used
+- user_25/request_25 shopping: variable monthly history mean 1059028.74 (min 966785.96 max 1170271.29) used
+- user_25/request_25 entertainment: variable monthly history mean 459592.42 (min 415734.51 max 504697.37) used
+- user_26/request_26 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-15', 30780000.0, 'T20_invoice_approved')]
+- user_26/request_26 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_26/request_26 rent: projected occurrence on request_date 2025-08-03 (counted)
+- user_26/request_26 utilities: variable monthly history mean 1968091.23 (min 1786852.60 max 2081148.84) used
+- user_26/request_26 shopping: variable monthly history mean 1370626.94 (min 1241687.85 max 1465974.22) used
+- user_27/request_27 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_27/request_27 gig payout: 20 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_27/request_27 utilities: variable monthly history mean 2026.85 (min 1834.93 max 2189.78) used
+- user_27/request_27 entertainment: variable monthly history mean 1220.25 (min 1186.49 max 1257.93) used
+- user_28/request_28 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 653.4, 'EUR', None, 'T14_regular_plus_arrears')] last=2024-05-15 1452.0 EUR modal=1452.0x5 dom=15 -> flows=[('2024-06-15', 1452.0), ('2024-07-15', 1452.0), ('2024-08-15', 1452.0)]
+- user_28/request_28 utilities: variable monthly history mean 80.80 (min 72.66 max 87.94) used
+- user_28/request_28 shopping: variable monthly history mean 28.83 (min 26.91 max 31.14) used
+- user_29/request_29 salary: none projected (stale=True ended=True final=False last=2025-08-15)
+- user_29/request_29 utilities: variable monthly history mean 2569.16 (min 2377.32 max 2705.96) used
+- user_29/request_29 healthcare: variable monthly history mean 3131.96 (min 2855.03 max 3322.86) used
+- user_29/request_29 entertainment: variable monthly history mean 1565.29 (min 1351.50 max 1689.25) used
+- user_30/request_30 salary: no regular payroll history and no scheduled row; income flows=[('2026-04-13', 548.64, 'freelance income'), ('2026-04-25', 548.64, 'freelance income'), ('2026-05-07', 548.64, 'freelance income'), ('2026-05-19', 548.64, 'freelance income')]
+- user_30/request_30 freelance income: step=12 gaps=[12, 18, 12, 19, 12, 19, 12, 16, 12] n=10 first=2026-04-13 amt=548.64
+- user_30/request_30 utilities: variable monthly history mean 87.84 (min 76.37 max 94.01) used
+- user_30/request_30 shopping: variable monthly history mean 46.91 (min 41.98 max 52.34) used
+- user_31/request_31 utilities: variable monthly history mean 1143683.94 (min 1008797.67 max 1253938.07) used
+- user_31/request_31 entertainment: variable monthly history mean 350960.39 (min 313503.16 max 385049.16) used
+- user_32/request_32 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 54120.0, 'ZAR', '2025-02-15', 'T10_first_salary_credit_date')] last=2025-01-15 54120.0 ZAR modal=54120.0x2 dom=15 -> flows=[('2025-02-15', 54120.0), ('2025-03-15', 54120.0), ('2025-04-15', 54120.0)]
+- user_32/request_32 utilities: projected occurrence on request_date 2025-02-05 (counted)
+- user_32/request_32 utilities: variable monthly history mean 3448.26 (min 3248.06 max 3787.62) used
+- user_33/request_33 utilities: variable monthly history mean 7194.48 (min 6552.65 max 8063.79) used
+- user_33/request_33 insurance: projected occurrence on request_date 2026-01-07 (counted)
+- user_33/request_33 shopping: variable history mean 5610.45 (min 4976.38 max 6144.25) -> series amount 5600.00 (nominal-from-minimum? min_allowed=2240.0)
+- user_33/request_33 entertainment: variable history mean 3961.74 (min 3659.83 max 4296.59) -> series amount 4120.00 (nominal-from-minimum? min_allowed=2060.0)
+- user_34/request_34 salary: no regular payroll history and no scheduled row; income flows=[('2024-12-15', 196000.0, 'T20_invoice_approved')]
+- user_34/request_34 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_34/request_34 utilities: variable monthly history mean 11143.50 (min 10464.04 max 12130.82) used
+- user_34/request_34 shopping: variable monthly history mean 7446.61 (min 6843.44 max 8423.11) used
+- user_35/request_35 utilities: variable monthly history mean 11226.21 (min 9781.39 max 12109.61) used
+- user_36/request_36 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2988.0, 'USD', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 2330.64 USD modal=2330.64x5 dom=15 -> flows=[('2026-07-15', 2988.0), ('2026-08-15', 2988.0), ('2026-09-15', 2988.0)]
+- user_36/request_36 utilities: variable monthly history mean 167.14 (min 150.63 max 188.45) used
+- user_36/request_36 healthcare: variable monthly history mean 184.68 (min 174.40 max 189.35) used
+- user_37/request_37 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 9490500.0, 'IDR', None, 'T14_regular_plus_arrears')] last=2024-02-15 21090000.0 IDR modal=21090000.0x5 dom=15 -> flows=[('2024-03-15', 21090000.0), ('2024-04-15', 21090000.0), ('2024-05-15', 21090000.0)]
+- user_37/request_37 utilities: variable monthly history mean 1353926.01 (min 1319874.42 max 1395569.91) used
+- user_37/request_37 shopping: variable monthly history mean 435801.09 (min 389820.28 max 462899.27) used
+- user_38/request_38 utilities: projected occurrence on request_date 2025-08-07 (counted)
+- user_38/request_38 utilities: variable monthly history mean 42.19 (min 39.22 max 46.31) used
+- user_38/request_38 healthcare: variable monthly history mean 33.70 (min 31.03 max 37.34) used
+- user_38/request_38 entertainment: variable monthly history mean 11.09 (min 9.98 max 12.12) used
+- user_39/request_39 rent: projected occurrence on request_date 2026-04-04 (counted)
+- user_39/request_39 utilities: variable monthly history mean 13917.11 (min 12624.54 max 15188.58) used
+- user_39/request_39 shopping: variable monthly history mean 9716.62 (min 8883.54 max 10493.10) used
+- user_39/request_39 entertainment: variable monthly history mean 9248.94 (min 8391.59 max 10303.77) used
+- user_40/request_40 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1760.0, 'EUR', '2024-06-15', 'T10_first_salary_credit_date')] last=2024-05-15 1760.0 EUR modal=1760.0x2 dom=15 -> flows=[('2024-06-15', 1760.0), ('2024-07-15', 1760.0), ('2024-08-15', 1760.0)]
+- user_40/request_40 utilities: variable monthly history mean 112.92 (min 103.23 max 125.80) used
+- user_40/request_40 known pending row event_3711 'Pending online order charge' 43.0 EUR cat=shopping on 2024-06-07; no series in that category (history n=0)
+- user_41/request_41 utilities: variable monthly history mean 2991860.33 (min 2768119.17 max 3289546.81) used
+- user_41/request_41 shopping: variable history mean 904377.28 (min 834688.72 max 1020016.13) -> series amount 927200.00 (nominal-from-minimum? min_allowed=370880.0)
+- user_41/request_41 entertainment: variable monthly history mean 1161969.37 (min 1059461.44 max 1250235.16) used
+- user_42/request_42 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 148000.0, 'INR', None, 'T15_household_income_ended')] last=2025-12-15 91760.0 INR modal=91760.0x5 dom=15 -> flows=[('2026-01-15', 148000.0), ('2026-02-15', 148000.0), ('2026-03-15', 148000.0)]
+- user_42/request_42 utilities: variable monthly history mean 8050.60 (min 7397.60 max 8833.75) used
+- user_42/request_42 shopping: variable monthly history mean 3389.68 (min 3196.37 max 3534.51) used
+- user_42/request_42 entertainment: variable monthly history mean 5572.48 (min 5009.99 max 6006.30) used
+- user_43/request_43 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 32870000.0, 'IDR', '2024-09-15', 'T11_first_salary_new_employer')] last=2024-08-15 32870000.0 IDR modal=32870000.0x1 dom=15 -> flows=[('2024-09-15', 32870000.0), ('2024-10-15', 32870000.0), ('2024-11-15', 32870000.0)]
+- user_43/request_43 utilities: variable monthly history mean 1655271.89 (min 1583105.94 max 1708050.90) used
+- user_43/request_43 known pending row event_4015 'Pending pharmacy card charge' 1254000.0 IDR cat=healthcare on 2024-09-11; no series in that category (history n=0)
+- user_44/request_44 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 115000.0, 'INR', '2025-02-15', 'T10_first_salary_credit_date')] last=2025-01-15 115000.0 INR modal=115000.0x2 dom=15 -> flows=[('2025-02-15', 115000.0), ('2025-03-15', 115000.0), ('2025-04-15', 115000.0)]
+- user_44/request_44 utilities: variable monthly history mean 7835.16 (min 7321.80 max 8642.12) used
+- user_45/request_45 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 17290000.0, 'IDR', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 13486200.0 IDR modal=13486200.0x5 dom=15 -> flows=[('2026-07-15', 17290000.0), ('2026-08-15', 17290000.0), ('2026-09-15', 17290000.0)]
+- user_45/request_45 utilities: projected occurrence on request_date 2026-07-06 (counted)
+- user_45/request_45 utilities: variable monthly history mean 1166928.51 (min 1013909.42 max 1228559.79) used
+- user_45/request_45 healthcare: variable monthly history mean 1219807.17 (min 1148608.81 max 1306215.24) used
+- user_46/request_46 rent: projected occurrence on request_date 2024-12-03 (counted)
+- user_46/request_46 utilities: variable monthly history mean 7215.52 (min 6669.77 max 7551.34) used
+- user_46/request_46 shopping: variable monthly history mean 5588.77 (min 5163.45 max 5990.36) used
+- user_47/request_47 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_47/request_47 gig payout: 20 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_47/request_47 utilities: variable monthly history mean 2251869.77 (min 2097774.61 max 2367661.34) used
+- user_47/request_47 entertainment: variable history mean 1189937.25 (min 1078404.28 max 1315156.69) -> series amount 1210300.00 (nominal-from-minimum? min_allowed=605150.0)
+- user_48/request_48 utilities: variable monthly history mean 5648.10 (min 5161.18 max 6006.38) used
+- user_48/request_48 shopping: variable monthly history mean 2640.34 (min 2326.78 max 2936.13) used
+- user_48/request_48 entertainment: variable monthly history mean 2148.76 (min 1894.74 max 2342.85) used
+- user_49/request_49 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 31464000.0, 'IDR', None, 'T04_temporary_reduced_pay')] last=2024-02-15 31464000.0 IDR modal=43700000.0x3 dom=15 -> flows=[('2024-03-15', 31464000.0), ('2024-04-15', 43700000.0), ('2024-05-15', 43700000.0)]
+- user_49/request_49 utilities: variable monthly history mean 2038243.26 (min 1812360.01 max 2279326.25) used
+- user_49/request_49 entertainment: variable monthly history mean 677905.07 (min 613672.21 max 740156.74) used
+- user_50/request_50 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 126000.0, 'INR', None, 'T15_household_income_ended')] last=2025-07-15 78120.0 INR modal=78120.0x5 dom=15 -> flows=[('2025-08-15', 126000.0), ('2025-09-15', 126000.0), ('2025-10-15', 126000.0)]
+- user_50/request_50 utilities: variable monthly history mean 6467.38 (min 6157.86 max 6857.48) used
+- user_50/request_50 healthcare: variable monthly history mean 6012.70 (min 5467.16 max 6450.99) used
+- user_50/request_50 shopping: variable history mean 4963.83 (min 4505.07 max 5255.01) -> series amount 4820.00 (nominal-from-minimum? min_allowed=1928.0)
+- user_51/request_51 salary: no regular payroll history and no scheduled row; income flows=[('2026-01-09', 2751728.53, 'gig payout'), ('2026-01-16', 2751728.53, 'gig payout'), ('2026-01-23', 2751728.53, 'gig payout'), ('2026-01-30', 2751728.53, 'gig payout')]
+- user_51/request_51 gig payout: step=7 gaps=[7, 7, 7, 10, 7, 7, 7, 9, 7, 7, 7, 10, 7, 7, 7, 9, 7, 7, 7] n=20 first=2026-01-09 amt=2751728.53
+- user_51/request_51 utilities: variable monthly history mean 741536.28 (min 650667.31 max 782054.34) used
+- user_51/request_51 entertainment: variable monthly history mean 237594.71 (min 226071.45 max 242265.51) used
+- user_52/request_52 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 69000.0, 'INR', '2024-06-15', 'T11_first_salary_new_employer')] last=2024-05-15 69000.0 INR modal=69000.0x1 dom=15 -> flows=[('2024-06-15', 69000.0), ('2024-07-15', 69000.0), ('2024-08-15', 69000.0)]
+- user_52/request_52 utilities: projected occurrence on request_date 2024-06-05 (counted)
+- user_52/request_52 utilities: variable monthly history mean 4564.04 (min 4279.06 max 5012.69) used
+- user_53/request_53 utilities: variable monthly history mean 166.27 (min 153.43 max 186.52) used
+- user_54/request_54 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 42460.0, 'ZAR', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 33118.8 ZAR modal=33118.8x5 dom=15 -> flows=[('2026-07-15', 42460.0), ('2026-08-15', 42460.0), ('2026-09-15', 42460.0)]
+- user_54/request_54 housing: projected occurrence on request_date 2026-07-04 (counted)
+- user_54/request_54 utilities: variable monthly history mean 2890.05 (min 2660.37 max 3100.80) used
+- user_54/request_54 healthcare: variable monthly history mean 1448.19 (min 1363.36 max 1519.50) used
+- user_55/request_55 utilities: projected occurrence on request_date 2026-06-08 (counted)
+- user_55/request_55 utilities: variable monthly history mean 13884.03 (min 12810.93 max 15199.62) used
+- user_55/request_55 shopping: variable history mean 6314.51 (min 5898.00 max 7021.57) -> series amount 6340.00 (nominal-from-minimum? min_allowed=2536.0)
+- user_56/request_56 utilities: variable monthly history mean 114.35 (min 104.64 max 127.41) used
+- user_56/request_56 healthcare: variable monthly history mean 115.00 (min 104.66 max 123.35) used
+- user_56/request_56 entertainment: variable history mean 49.65 (min 45.43 max 52.02) -> series amount 48.00 (nominal-from-minimum? min_allowed=24.0)
+- user_57/request_57 utilities: variable monthly history mean 3020.48 (min 2770.52 max 3218.83) used
+- user_57/request_57 shopping: variable history mean 1742.27 (min 1580.60 max 1971.76) -> series amount 1782.00 (nominal-from-minimum? min_allowed=712.8)
+- user_58/request_58 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 25840000.0, 'IDR', None, 'T15_household_income_ended')] last=2024-11-15 16020800.0 IDR modal=16020800.0x5 dom=15 -> flows=[('2024-12-15', 25840000.0), ('2025-01-15', 25840000.0), ('2025-02-15', 25840000.0)]
+- user_58/request_58 utilities: projected occurrence on request_date 2024-12-07 (counted)
+- user_58/request_58 utilities: variable monthly history mean 1648445.06 (min 1484132.55 max 1791244.63) used
+- user_58/request_58 entertainment: variable monthly history mean 757537.80 (min 690896.88 max 811878.97) used
+- user_59/request_59 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_59/request_59 gig payout: 20 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_59/request_59 rent: projected occurrence on request_date 2025-05-04 (counted)
+- user_59/request_59 utilities: variable monthly history mean 10564.21 (min 9900.11 max 11566.10) used
+- user_59/request_59 entertainment: variable monthly history mean 4959.84 (min 4598.72 max 5170.02) used
+- user_60/request_60 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 530.4, 'USD', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 291.72 USD modal=530.4x4 dom=15 -> flows=[('2026-01-15', 530.4), ('2026-02-15', 530.4), ('2026-03-15', 530.4)]
+- user_60/request_60 utilities: variable monthly history mean 36.88 (min 32.59 max 40.96) used
+- user_60/request_60 insurance: projected occurrence on request_date 2026-01-06 (counted)
+- user_60/request_60 shopping: variable monthly history mean 18.72 (min 16.75 max 20.90) used
+- user_60/request_60 entertainment: variable monthly history mean 14.37 (min 12.43 max 15.49) used
+- user_61/request_61 salary: none projected (stale=True ended=True final=False last=2023-12-15)
+- user_61/request_61 utilities: variable monthly history mean 2488.93 (min 2215.99 max 2676.42) used
+- user_62/request_62 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-15', 2112.0, 'T20_invoice_approved')]
+- user_62/request_62 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_62/request_62 utilities: variable monthly history mean 118.53 (min 106.31 max 124.55) used
+- user_62/request_62 shopping: variable monthly history mean 65.41 (min 59.08 max 72.50) used
+- user_63/request_63 utilities: variable monthly history mean 10651.69 (min 9613.50 max 11575.24) used
+- user_63/request_63 shopping: variable history mean 7760.07 (min 7439.52 max 8038.75) -> series amount 7960.00 (nominal-from-minimum? min_allowed=3184.0)
+- user_63/request_63 entertainment: variable monthly history mean 5155.69 (min 4881.96 max 5596.18) used
+- user_63/request_63 known pending row event_5910 'Pending pharmacy card charge' 8150.0 INR cat=healthcare on 2026-07-11; no series in that category (history n=0)
+- user_64/request_64 utilities: variable monthly history mean 3477.94 (min 3170.43 max 3839.55) used
+- user_64/request_64 shopping: variable monthly history mean 3078.92 (min 2635.53 max 3303.46) used
+- user_64/request_64 entertainment: variable history mean 2045.52 (min 2006.74 max 2122.81) -> series amount 1900.00 (nominal-from-minimum? min_allowed=950.0)
+- user_64/request_64 known scheduled row event_6034 'Scheduled school fee' 2240.0 INR cat=education on 2024-06-11; no series in that category (history n=0)
+- user_65/request_65 utilities: projected occurrence on request_date 2025-11-06 (counted)
+- user_65/request_65 utilities: variable monthly history mean 1197.21 (min 1137.69 max 1270.04) used
+- user_65/request_65 healthcare: variable monthly history mean 1440.75 (min 1339.59 max 1538.45) used
+- user_65/request_65 entertainment: variable history mean 770.35 (min 660.34 max 822.90) -> series amount 739.20 (nominal-from-minimum? min_allowed=369.6)
+- user_66/request_66 salary: no regular payroll history and no scheduled row; income flows=[('2026-04-15', 116000.0, 'T20_invoice_approved')]
+- user_66/request_66 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_66/request_66 rent: projected occurrence on request_date 2026-04-03 (counted)
+- user_66/request_66 utilities: variable monthly history mean 5798.33 (min 5079.84 max 6267.73) used
+- user_66/request_66 shopping: variable monthly history mean 4657.50 (min 4429.00 max 4938.86) used
+- user_67/request_67 utilities: variable monthly history mean 117.38 (min 104.89 max 128.02) used
+- user_67/request_67 entertainment: variable history mean 65.31 (min 63.95 max 67.72) -> series amount 70.00 (nominal-from-minimum? min_allowed=35.0)
+- user_68/request_68 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-02-23', 'T05_salary_date_change')] last=2025-01-23 2496.0 USD modal=2496.0x5 dom=15 -> flows=[('2025-02-23', 2496.0), ('2025-03-23', 2496.0), ('2025-04-23', 2496.0)]
+- user_68/request_68 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-09-15'), ('Payroll credit', '2024-10-15'), ('Payroll credit', '2024-11-15'), ('Payroll credit', '2024-12-15'), ('Payroll credit', '2025-01-23')]
+- user_68/request_68 utilities: variable monthly history mean 164.85 (min 145.47 max 181.59) used
+- user_68/request_68 healthcare: variable monthly history mean 112.02 (min 108.25 max 117.43) used
+- user_68/request_68 shopping: variable history mean 60.09 (min 56.41 max 66.23) -> series amount 62.00 (nominal-from-minimum? min_allowed=24.8)
+- user_69/request_69 utilities: variable monthly history mean 77.43 (min 70.38 max 84.39) used
+- user_69/request_69 shopping: variable history mean 41.21 (min 38.19 max 42.89) -> series amount 41.00 (nominal-from-minimum? min_allowed=16.4)
+- user_70/request_70 utilities: variable monthly history mean 11887.28 (min 11373.53 max 12717.79) used
+- user_71/request_71 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 696.0, 'USD', '2025-05-15', 'T13_foreign_salary_confirmed')] last=2025-04-15 696.0 USD modal=696.0x5 dom=15 -> flows=[('2025-05-15', 11019997.68), ('2025-06-15', 11019997.68), ('2025-07-15', 11019997.68)]
+- user_71/request_71 utilities: variable monthly history mean 728622.27 (min 647373.55 max 775045.22) used
+- user_71/request_71 shopping: variable monthly history mean 328026.21 (min 300830.90 max 351876.20) used
+- user_71/request_71 entertainment: variable monthly history mean 395659.59 (min 356863.20 max 414853.49) used
+- user_72/request_72 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 18700.0, 'ZAR', '2026-07-15', 'T10_first_salary_credit_date')] last=2026-06-15 18700.0 ZAR modal=18700.0x2 dom=15 -> flows=[('2026-07-15', 18700.0), ('2026-08-15', 18700.0), ('2026-09-15', 18700.0)]
+- user_72/request_72 utilities: projected occurrence on request_date 2026-07-05 (counted)
+- user_72/request_72 utilities: variable monthly history mean 1153.38 (min 1039.01 max 1284.83) used
+- user_73/request_73 utilities: variable monthly history mean 6952.47 (min 6230.21 max 7828.45) used
+- user_73/request_73 shopping: variable monthly history mean 4788.85 (min 4490.47 max 5227.88) used
+- user_73/request_73 known scheduled row event_6859 'Hospital bill payable' 3650.0 INR cat=healthcare on 2023-01-23; no series in that category (history n=0)
+- user_74/request_74 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-15', 26180.0, 'T20_invoice_approved')]
+- user_74/request_74 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_74/request_74 utilities: variable monthly history mean 1382.82 (min 1244.61 max 1520.49) used
+- user_74/request_74 shopping: variable monthly history mean 1114.64 (min 1043.52 max 1213.50) used
+- user_75/request_75 salary: none projected (stale=False ended=True final=True last=2026-03-15)
+- user_75/request_75 utilities: variable monthly history mean 2325.45 (min 2136.08 max 2544.70) used
+- user_75/request_75 shopping: variable history mean 1022.66 (min 925.62 max 1114.29) -> series amount 1049.40 (nominal-from-minimum? min_allowed=419.76)
+- user_76/request_76 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 3072.0, 'USD', None, 'T07_base_salary_commission_pending')] last=2024-05-15 1843.2 USD modal=1843.2x5 dom=15 -> flows=[('2024-06-15', 1843.2), ('2024-07-15', 1843.2), ('2024-08-15', 1843.2)]
+- user_76/request_76 utilities: variable monthly history mean 167.11 (min 153.12 max 175.66) used
+- user_76/request_76 entertainment: variable monthly history mean 109.22 (min 98.25 max 123.11) used
+- user_77/request_77 utilities: variable monthly history mean 7471.63 (min 7056.24 max 7787.06) used
+- user_77/request_77 healthcare: variable monthly history mean 7953.76 (min 7019.28 max 8570.67) used
+- user_77/request_77 shopping: variable monthly history mean 5519.49 (min 5011.43 max 6004.91) used
+- user_78/request_78 utilities: variable monthly history mean 5409.06 (min 4762.24 max 5823.32) used
+- user_78/request_78 shopping: variable history mean 3510.58 (min 3269.80 max 3836.29) -> series amount 3700.00 (nominal-from-minimum? min_allowed=1480.0)
+- user_78/request_78 entertainment: variable monthly history mean 2284.52 (min 2143.02 max 2422.15) used
+- user_79/request_79 rent: projected occurrence on request_date 2024-09-04 (counted)
+- user_79/request_79 utilities: variable monthly history mean 87.27 (min 81.09 max 97.50) used
+- user_79/request_79 shopping: variable monthly history mean 51.98 (min 48.22 max 54.45) used
+- user_79/request_79 entertainment: variable monthly history mean 33.02 (min 30.15 max 35.99) used
+- user_80/request_80 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 158000.0, 'INR', None, 'T07_base_salary_commission_pending')] last=2025-01-15 94800.0 INR modal=94800.0x5 dom=15 -> flows=[('2025-02-15', 94800.0), ('2025-03-15', 94800.0), ('2025-04-15', 94800.0)]
+- user_80/request_80 utilities: variable monthly history mean 7016.85 (min 6413.34 max 7945.29) used
+- user_80/request_80 known pending row event_7535 'Pending online order charge' 6710.0 INR cat=shopping on 2025-02-07; no series in that category (history n=0)
+- user_81/request_81 utilities: variable monthly history mean 180.79 (min 157.66 max 192.07) used
+- user_81/request_81 shopping: variable monthly history mean 75.32 (min 68.95 max 82.98) used
+- user_82/request_82 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 788.4, 'USD', None, 'T14_regular_plus_arrears')] last=2024-11-15 1752.0 USD modal=1752.0x5 dom=15 -> flows=[('2024-12-15', 1752.0), ('2025-01-15', 1752.0), ('2025-02-15', 1752.0)]
+- user_82/request_82 utilities: variable monthly history mean 98.35 (min 93.66 max 104.35) used
+- user_82/request_82 shopping: variable monthly history mean 80.73 (min 74.80 max 85.29) used
+- user_83/request_83 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 62000.0, 'INR', '2025-05-15', 'T09_salary_resumes_childcare')] last=2025-04-15 62000.0 INR modal=62000.0x1 dom=15 -> flows=[('2025-05-15', 62000.0), ('2025-06-15', 62000.0), ('2025-07-15', 62000.0)]
+- user_83/request_83 utilities: variable monthly history mean 4050.18 (min 3677.77 max 4586.06) used
+- user_83/request_83 healthcare: variable monthly history mean 4737.12 (min 4522.30 max 5067.26) used
+- user_83/request_83 entertainment: variable history mean 1039.99 (min 961.69 max 1172.80) -> series amount 1090.00 (nominal-from-minimum? min_allowed=545.0)
+- user_84/request_84 utilities: variable monthly history mean 5400.76 (min 4737.81 max 5843.30) used
+- user_84/request_84 shopping: variable history mean 5909.35 (min 5102.24 max 6291.13) -> series amount 5650.00 (nominal-from-minimum? min_allowed=2260.0)
+- user_84/request_84 entertainment: variable monthly history mean 3977.08 (min 3721.43 max 4428.25) used
+- user_85/request_85 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 8618400.0, 'IDR', None, 'T04_temporary_reduced_pay')] last=2024-02-15 8618400.0 IDR modal=11970000.0x3 dom=15 -> flows=[('2024-03-15', 8618400.0), ('2024-04-15', 11970000.0), ('2024-05-15', 11970000.0)]
+- user_85/request_85 utilities: projected occurrence on request_date 2024-03-06 (counted)
+- user_85/request_85 utilities: variable monthly history mean 450134.27 (min 408477.25 max 486483.88) used
+- user_85/request_85 entertainment: variable history mean 298184.59 (min 264634.75 max 330784.55) -> series amount 296400.00 (nominal-from-minimum? min_allowed=148200.0)
+- user_86/request_86 salary: scheduled DOM 23 differs from history modal DOM 15 (history ['2025-05-15', '2025-06-15', '2025-07-23'])
+- user_86/request_86 rent: projected occurrence on request_date 2025-08-03 (counted)
+- user_86/request_86 utilities: variable monthly history mean 6458.83 (min 6174.58 max 6931.79) used
+- user_86/request_86 healthcare: variable monthly history mean 4026.85 (min 3802.72 max 4428.10) used
+- user_86/request_86 shopping: variable history mean 6003.54 (min 5493.01 max 6464.35) -> series amount 5900.00 (nominal-from-minimum? min_allowed=2360.0)
+- user_87/request_87 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 251000.0, 'INR', '2026-01-15', 'T09_salary_resumes_childcare')] last=2025-12-15 251000.0 INR modal=251000.0x1 dom=15 -> flows=[('2026-01-15', 251000.0), ('2026-02-15', 251000.0), ('2026-03-15', 251000.0)]
+- user_87/request_87 utilities: variable monthly history mean 16043.28 (min 15086.91 max 16998.34) used
+- user_87/request_87 shopping: variable history mean 11255.92 (min 10657.86 max 12019.51) -> series amount 11990.00 (nominal-from-minimum? min_allowed=4796.0)
+- user_87/request_87 entertainment: variable monthly history mean 6646.04 (min 6018.66 max 7010.18) used
+- user_88/request_88 utilities: variable monthly history mean 1772.40 (min 1683.30 max 1894.20) used
+- user_89/request_89 utilities: variable monthly history mean 785241.84 (min 713128.15 max 876562.83) used
+- user_89/request_89 shopping: variable history mean 668463.77 (min 633240.30 max 698960.74) -> series amount 666900.00 (nominal-from-minimum? min_allowed=266760.0)
+- user_90/request_90 salary: no regular payroll history and no scheduled row; income flows=[('2026-07-15', 13420.0, 'T20_invoice_approved')]
+- user_90/request_90 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_90/request_90 utilities: variable monthly history mean 688.15 (min 653.69 max 735.95) used
+- user_90/request_90 shopping: variable history mean 563.31 (min 528.80 max 633.05) -> series amount 587.40 (nominal-from-minimum? min_allowed=234.96)
+- user_91/request_91 utilities: variable monthly history mean 165.86 (min 154.74 max 178.65) used
+- user_91/request_91 shopping: variable history mean 106.46 (min 95.13 max 112.67) -> series amount 108.00 (nominal-from-minimum? min_allowed=43.2)
+- user_92/request_92 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 49280.0, 'ZAR', None, 'T07_base_salary_commission_pending')] last=2025-01-15 29568.0 ZAR modal=29568.0x5 dom=15 -> flows=[('2025-02-15', 29568.0), ('2025-03-15', 29568.0), ('2025-04-15', 29568.0)]
+- user_92/request_92 utilities: projected occurrence on request_date 2025-02-05 (counted)
+- user_92/request_92 utilities: variable monthly history mean 2614.42 (min 2341.04 max 2742.93) used
+- user_92/request_92 healthcare: variable monthly history mean 3212.37 (min 3123.86 max 3474.75) used
+- user_92/request_92 entertainment: variable history mean 1100.32 (min 1025.78 max 1176.59) -> series amount 1117.60 (nominal-from-minimum? min_allowed=558.8)
+- user_93/request_93 utilities: variable monthly history mean 114.23 (min 102.26 max 123.81) used
+- user_93/request_93 shopping: variable monthly history mean 67.26 (min 60.00 max 73.43) used
+- user_94/request_94 salary: no regular payroll history and no scheduled row; income flows=[('2024-12-15', 924.0, 'T20_invoice_approved')]
+- user_94/request_94 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_94/request_94 utilities: variable monthly history mean 52.36 (min 49.91 max 56.92) used
+- user_94/request_94 shopping: variable monthly history mean 48.57 (min 46.20 max 50.56) used
+- user_95/request_95 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-05-23', 'T05_salary_date_change')] last=2025-04-23 251000.0 INR modal=251000.0x5 dom=15 -> flows=[('2025-05-23', 251000.0), ('2025-06-23', 251000.0), ('2025-07-23', 251000.0)]
+- user_95/request_95 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-12-15'), ('Payroll credit', '2025-01-15'), ('Payroll credit', '2025-02-15'), ('Payroll credit', '2025-03-15'), ('Payroll credit', '2025-04-23')]
+- user_95/request_95 utilities: variable monthly history mean 14451.87 (min 14004.78 max 15545.89) used
+- user_95/request_95 healthcare: variable monthly history mean 15418.07 (min 14519.05 max 16130.10) used
+- user_95/request_95 shopping: variable history mean 9065.10 (min 8279.95 max 9872.80) -> series amount 9050.00 (nominal-from-minimum? min_allowed=3620.0)
+- user_96/request_96 utilities: variable monthly history mean 5094.57 (min 4428.84 max 5453.24) used
+- user_97/request_97 utilities: variable monthly history mean 2078.47 (min 1763.97 max 2205.47) used
+- user_98/request_98 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1804.0, 'EUR', '2025-08-15', 'T13_foreign_salary_confirmed')] last=2025-07-15 1804.0 EUR modal=1804.0x5 dom=15 -> flows=[('2025-08-15', 36080.0), ('2025-09-15', 36080.0), ('2025-10-15', 36080.0)]
+- user_98/request_98 utilities: projected occurrence on request_date 2025-08-07 (counted)
+- user_98/request_98 utilities: variable monthly history mean 1925.09 (min 1822.50 max 2109.72) used
+- user_98/request_98 shopping: variable monthly history mean 1381.74 (min 1249.65 max 1512.37) used
+- user_98/request_98 entertainment: variable history mean 1244.84 (min 1127.26 max 1371.15) -> series amount 1240.80 (nominal-from-minimum? min_allowed=620.4)
+- user_99/request_99 utilities: variable monthly history mean 4067.19 (min 3655.51 max 4308.00) used
+- user_99/request_99 healthcare: variable monthly history mean 2612.97 (min 2315.88 max 2762.75) used
+- user_100/request_100 utilities: variable monthly history mean 2657.85 (min 2455.32 max 2995.95) used
+- user_100/request_100 shopping: variable monthly history mean 1783.20 (min 1735.99 max 1868.05) used
+- user_101/request_101 housing: projected occurrence on request_date 2025-11-03 (counted)
+- user_101/request_101 utilities: variable monthly history mean 14779.93 (min 13273.01 max 16002.55) used
+- user_101/request_101 healthcare: variable monthly history mean 9832.48 (min 9351.95 max 10657.14) used
+- user_101/request_101 entertainment: variable history mean 5459.90 (min 4698.74 max 5758.84) -> series amount 5320.00 (nominal-from-minimum? min_allowed=2660.0)
+- user_102/request_102 salary: no regular payroll history and no scheduled row; income flows=[('2026-04-15', 1419.0, 'T20_invoice_approved')]
+- user_102/request_102 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_102/request_102 utilities: variable monthly history mean 63.80 (min 60.24 max 74.38) used
+- user_102/request_102 shopping: variable history mean 63.41 (min 57.81 max 66.94) -> series amount 60.00 (nominal-from-minimum? min_allowed=24.0)
+- user_103/request_103 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 164880.0, 'INR', None, 'T04_temporary_reduced_pay')] last=2024-08-15 164880.0 INR modal=229000.0x3 dom=15 -> flows=[('2024-09-15', 164880.0), ('2024-10-15', 229000.0), ('2024-11-15', 229000.0)]
+- user_103/request_103 utilities: variable monthly history mean 8085.08 (min 7382.03 max 8912.34) used
+- user_103/request_103 entertainment: variable history mean 6460.16 (min 6151.21 max 6752.45) -> series amount 6220.00 (nominal-from-minimum? min_allowed=3110.0)
+- user_103/request_103 known pending row event_9595 'Pending pharmacy card charge' 7490.0 INR cat=healthcare on 2024-09-11; no series in that category (history n=0)
+- user_104/request_104 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 35860.0, 'ZAR', None, 'T07_base_salary_commission_pending')] last=2025-01-15 21516.0 ZAR modal=21516.0x5 dom=15 -> flows=[('2025-02-15', 21516.0), ('2025-03-15', 21516.0), ('2025-04-15', 21516.0)]
+- user_104/request_104 utilities: variable monthly history mean 2347.95 (min 2163.23 max 2497.65) used
+- user_104/request_104 healthcare: variable monthly history mean 2227.48 (min 2027.23 max 2467.95) used
+- user_104/request_104 shopping: variable monthly history mean 796.02 (min 731.66 max 839.99) used
+- user_105/request_105 utilities: variable monthly history mean 6177.86 (min 5658.42 max 6847.76) used
+- user_105/request_105 shopping: variable history mean 4015.93 (min 3634.89 max 4530.01) -> series amount 4080.00 (nominal-from-minimum? min_allowed=1632.0)
+- user_105/request_105 entertainment: variable history mean 3532.89 (min 3084.92 max 3799.96) -> series amount 3440.00 (nominal-from-minimum? min_allowed=1720.0)
+- user_106/request_106 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1815.0, 'EUR', '2024-12-15', 'T11_first_salary_new_employer')] last=2024-11-15 1815.0 EUR modal=1815.0x1 dom=15 -> flows=[('2024-12-15', 1815.0), ('2025-01-15', 1815.0), ('2025-02-15', 1815.0)]
+- user_106/request_106 rent: projected occurrence on request_date 2024-12-03 (counted)
+- user_106/request_106 utilities: variable monthly history mean 95.22 (min 83.44 max 100.56) used
+- user_107/request_107 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2123.0, 'EUR', '2025-05-15', 'T12_first_salary_scheduled')] last=2025-04-15 1167.65 EUR modal=1167.65x1 dom=15 -> flows=[('2025-05-15', 2123.0), ('2025-06-15', 2123.0), ('2025-07-15', 2123.0)]
+- user_107/request_107 utilities: variable monthly history mean 127.40 (min 119.90 max 135.96) used
+- user_108/request_108 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 33440.0, 'ZAR', None, 'T07_base_salary_commission_pending')] last=2026-06-15 20064.0 ZAR modal=20064.0x5 dom=15 -> flows=[('2026-07-15', 20064.0), ('2026-08-15', 20064.0), ('2026-09-15', 20064.0)]
+- user_108/request_108 utilities: variable monthly history mean 1795.54 (min 1605.32 max 2002.90) used
+- user_108/request_108 healthcare: variable monthly history mean 2199.69 (min 2046.14 max 2303.25) used
+- user_109/request_109 utilities: variable monthly history mean 121.57 (min 108.76 max 132.99) used
+- user_109/request_109 shopping: variable monthly history mean 94.25 (min 86.48 max 102.85) used
+- user_109/request_109 entertainment: variable monthly history mean 97.57 (min 88.89 max 104.44) used
+- user_110/request_110 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-15', 16720.0, 'T20_invoice_approved')]
+- user_110/request_110 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_110/request_110 utilities: variable monthly history mean 1143.10 (min 1103.24 max 1244.40) used
+- user_110/request_110 shopping: variable history mean 465.65 (min 432.33 max 519.46) -> series amount 484.00 (nominal-from-minimum? min_allowed=193.6)
+- user_111/request_111 salary: none projected (stale=False ended=True final=True last=2026-03-15)
+- user_111/request_111 utilities: variable monthly history mean 1664998.40 (min 1519038.39 max 1776011.08) used
+- user_111/request_111 shopping: variable monthly history mean 558528.88 (min 512473.62 max 594479.55) used
+- user_112/request_112 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 627.0, 'EUR', '2024-06-15', 'T10_first_salary_credit_date')] last=2024-05-15 627.0 EUR modal=627.0x2 dom=15 -> flows=[('2024-06-15', 627.0), ('2024-07-15', 627.0), ('2024-08-15', 627.0)]
+- user_112/request_112 utilities: projected occurrence on request_date 2024-06-05 (counted)
+- user_112/request_112 utilities: variable monthly history mean 42.94 (min 40.44 max 44.40) used
+- user_113/request_113 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1296.0, 'USD', '2026-09-15', 'T22_wallet_charge_plus_foreign_salary')] last=2026-08-15 1296.0 USD modal=1296.0x5 dom=15 -> flows=[('2026-09-15', 107995.68), ('2026-10-15', 107995.68), ('2026-11-15', 107995.68)]
+- user_113/request_113 utilities: variable monthly history mean 5003.26 (min 4457.96 max 5407.29) used
+- user_113/request_113 shopping: variable monthly history mean 5159.35 (min 4820.14 max 5360.65) used
+- user_113/request_113 entertainment: variable history mean 2856.31 (min 2701.27 max 3154.17) -> series amount 2980.00 (nominal-from-minimum? min_allowed=1490.0)
+- user_114/request_114 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 148200.0, 'INR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 81510.0 INR modal=148200.0x4 dom=15 -> flows=[('2026-01-15', 148200.0), ('2026-02-15', 148200.0), ('2026-03-15', 148200.0)]
+- user_114/request_114 utilities: variable monthly history mean 6504.05 (min 6203.99 max 6859.86) used
+- user_114/request_114 shopping: variable monthly history mean 7721.90 (min 6639.49 max 8202.80) used
+- user_114/request_114 entertainment: variable history mean 3586.03 (min 3329.91 max 4015.73) -> series amount 3780.00 (nominal-from-minimum? min_allowed=1890.0)
+- user_115/request_115 utilities: variable monthly history mean 3247.29 (min 3109.90 max 3588.29) used
+- user_116/request_116 utilities: variable monthly history mean 5849.30 (min 5489.84 max 6571.21) used
+- user_117/request_117 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1188.0, 'EUR', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 926.64 EUR modal=926.64x5 dom=15 -> flows=[('2026-07-15', 1188.0), ('2026-08-15', 1188.0), ('2026-09-15', 1188.0)]
+- user_117/request_117 utilities: variable monthly history mean 56.70 (min 54.36 max 58.16) used
+- user_117/request_117 healthcare: variable monthly history mean 83.61 (min 73.55 max 89.50) used
+- user_118/request_118 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 341.55, 'EUR', None, 'T14_regular_plus_arrears')] last=2024-11-15 759.0 EUR modal=759.0x5 dom=15 -> flows=[('2024-12-15', 759.0), ('2025-01-15', 759.0), ('2025-02-15', 759.0)]
+- user_118/request_118 utilities: projected occurrence on request_date 2024-12-07 (counted)
+- user_118/request_118 utilities: variable monthly history mean 48.12 (min 44.92 max 53.75) used
+- user_118/request_118 shopping: variable history mean 36.99 (min 34.27 max 39.08) -> series amount 35.00 (nominal-from-minimum? min_allowed=14.0)
+- user_119/request_119 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 176000.0, 'INR', '2025-05-15', 'T09_salary_resumes_childcare')] last=2025-04-15 176000.0 INR modal=176000.0x1 dom=15 -> flows=[('2025-05-15', 176000.0), ('2025-06-15', 176000.0), ('2025-07-15', 176000.0)]
+- user_119/request_119 utilities: variable monthly history mean 11987.18 (min 11155.13 max 12732.95) used
+- user_119/request_119 healthcare: variable monthly history mean 7673.24 (min 7475.93 max 8043.37) used
+- user_119/request_119 entertainment: variable history mean 5037.62 (min 4834.39 max 5444.94) -> series amount 5310.00 (nominal-from-minimum? min_allowed=2655.0)
+- user_120/request_120 utilities: variable monthly history mean 1355037.95 (min 1252224.53 max 1506728.29) used
+- user_120/request_120 shopping: variable monthly history mean 661204.16 (min 607692.80 max 747715.81) used
+- user_121/request_121 utilities: variable monthly history mean 58.25 (min 55.75 max 62.38) used
+- user_121/request_121 entertainment: variable history mean 15.44 (min 14.48 max 16.69) -> series amount 16.00 (nominal-from-minimum? min_allowed=8.0)
+- user_122/request_122 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-15', 15390000.0, 'T20_invoice_approved')]
+- user_122/request_122 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_122/request_122 utilities: variable monthly history mean 764138.48 (min 706344.94 max 852115.92) used
+- user_122/request_122 shopping: variable monthly history mean 699184.80 (min 647226.12 max 748017.53) used
+- user_123/request_123 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_123/request_123 gig payout: 21 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_123/request_123 utilities: variable monthly history mean 1022040.71 (min 909444.74 max 1081312.85) used
+- user_123/request_123 entertainment: variable monthly history mean 622717.12 (min 576578.09 max 713881.96) used
+- user_123/request_123 known pending row event_11423 'Pending pharmacy card charge' 1388900.0 IDR cat=healthcare on 2026-01-11; no series in that category (history n=0)
+- user_124/request_124 utilities: variable monthly history mean 156.13 (min 139.64 max 171.64) used
+- user_124/request_124 known scheduled row event_11481 'Scheduled school fee' 60.0 EUR cat=education on 2024-06-11; no series in that category (history n=0)
+- user_125/request_125 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 748.0, 'EUR', '2025-11-15', 'T13_foreign_salary_confirmed')] last=2025-10-15 748.0 EUR modal=748.0x5 dom=15 -> flows=[('2025-11-15', 14960.0), ('2025-12-15', 14960.0), ('2026-01-15', 14960.0)]
+- user_125/request_125 utilities: projected occurrence on request_date 2025-11-06 (counted)
+- user_125/request_125 utilities: variable monthly history mean 1038.25 (min 923.31 max 1110.39) used
+- user_125/request_125 shopping: variable monthly history mean 441.89 (min 400.22 max 497.80) used
+- user_125/request_125 entertainment: variable monthly history mean 472.45 (min 417.72 max 498.30) used
+- user_126/request_126 salary: no regular payroll history and no scheduled row; income flows=[('2026-07-15', 152000.0, 'T20_invoice_approved')]
+- user_126/request_126 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_126/request_126 rent: projected occurrence on request_date 2026-07-03 (counted)
+- user_126/request_126 utilities: variable monthly history mean 8385.96 (min 7973.39 max 8926.20) used
+- user_126/request_126 shopping: variable history mean 4371.24 (min 4141.76 max 4985.97) -> series amount 4460.00 (nominal-from-minimum? min_allowed=1784.0)
+- user_127/request_127 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 50160.0, 'ZAR', '2024-09-15', 'T09_salary_resumes_childcare')] last=2024-08-15 50160.0 ZAR modal=50160.0x1 dom=15 -> flows=[('2024-09-15', 50160.0), ('2024-10-15', 50160.0), ('2024-11-15', 50160.0)]
+- user_127/request_127 utilities: variable monthly history mean 3314.29 (min 3092.37 max 3400.65) used
+- user_127/request_127 shopping: variable monthly history mean 1770.37 (min 1675.18 max 1913.33) used
+- user_128/request_128 utilities: variable monthly history mean 3353.28 (min 3087.56 max 3778.07) used
+- user_128/request_128 education: projected occurrence on request_date 2025-02-07 (counted)
+- user_128/request_128 healthcare: variable monthly history mean 3072.32 (min 2827.33 max 3423.06) used
+- user_128/request_128 entertainment: variable history mean 2181.00 (min 2015.19 max 2289.12) -> series amount 2116.40 (nominal-from-minimum? min_allowed=1058.2)
+- user_129/request_129 utilities: variable monthly history mean 55.00 (min 52.01 max 60.76) used
+- user_129/request_129 shopping: variable monthly history mean 46.53 (min 42.70 max 50.68) used
+- user_130/request_130 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 2177.28, 'USD', None, 'T04_temporary_reduced_pay')] last=2024-11-15 2177.28 USD modal=3024.0x3 dom=15 -> flows=[('2024-12-15', 2177.28), ('2025-01-15', 3024.0), ('2025-02-15', 3024.0)]
+- user_130/request_130 utilities: variable monthly history mean 127.89 (min 118.26 max 136.92) used
+- user_130/request_130 entertainment: variable monthly history mean 68.93 (min 63.38 max 76.82) used
+- user_131/request_131 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-05-23', 'T05_salary_date_change')] last=2025-04-23 1632.0 USD modal=1632.0x5 dom=15 -> flows=[('2025-05-23', 1632.0), ('2025-06-23', 1632.0), ('2025-07-23', 1632.0)]
+- user_131/request_131 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-12-15'), ('Payroll credit', '2025-01-15'), ('Payroll credit', '2025-02-15'), ('Payroll credit', '2025-03-15'), ('Payroll credit', '2025-04-23')]
+- user_131/request_131 utilities: variable monthly history mean 91.56 (min 88.11 max 95.45) used
+- user_131/request_131 healthcare: variable monthly history mean 51.13 (min 47.54 max 55.05) used
+- user_131/request_131 shopping: variable history mean 53.38 (min 49.87 max 56.03) -> series amount 53.00 (nominal-from-minimum? min_allowed=21.2)
+- user_132/request_132 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1193.4, 'USD', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 656.37 USD modal=1193.4x4 dom=15 -> flows=[('2026-01-15', 1193.4), ('2026-02-15', 1193.4), ('2026-03-15', 1193.4)]
+- user_132/request_132 utilities: projected occurrence on request_date 2026-01-05 (counted)
+- user_132/request_132 utilities: variable monthly history mean 53.07 (min 49.77 max 60.13) used
+- user_132/request_132 shopping: variable history mean 63.60 (min 60.71 max 68.82) -> series amount 65.00 (nominal-from-minimum? min_allowed=26.0)
+- user_132/request_132 entertainment: variable monthly history mean 39.63 (min 37.77 max 40.92) used
+- user_133/request_133 salary: none projected (stale=True ended=True final=False last=2023-12-15)
+- user_133/request_133 utilities: variable monthly history mean 958276.03 (min 889670.31 max 1059614.05) used
+- user_134/request_134 utilities: variable monthly history mean 1148480.63 (min 1070182.14 max 1307689.62) used
+- user_135/request_135 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 828.0, 'USD', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 645.84 USD modal=645.84x5 dom=15 -> flows=[('2026-07-15', 828.0), ('2026-08-15', 828.0), ('2026-09-15', 828.0)]
+- user_135/request_135 utilities: variable monthly history mean 58.64 (min 54.58 max 64.25) used
+- user_135/request_135 healthcare: variable monthly history mean 57.48 (min 50.55 max 63.33) used
+- user_136/request_136 utilities: variable monthly history mean 80.06 (min 75.06 max 84.56) used
+- user_136/request_136 healthcare: variable monthly history mean 93.17 (min 82.69 max 101.54) used
+- user_136/request_136 shopping: variable history mean 67.60 (min 62.96 max 72.54) -> series amount 68.00 (nominal-from-minimum? min_allowed=27.2)
+- user_137/request_137 utilities: variable monthly history mean 7743.38 (min 7208.14 max 8816.70) used
+- user_137/request_137 shopping: variable history mean 5140.92 (min 4722.53 max 5539.38) -> series amount 5170.00 (nominal-from-minimum? min_allowed=2068.0)
+- user_138/request_138 utilities: projected occurrence on request_date 2026-04-07 (counted)
+- user_138/request_138 utilities: variable monthly history mean 149.37 (min 137.30 max 162.37) used
+- user_138/request_138 shopping: variable history mean 107.80 (min 100.00 max 120.01) -> series amount 113.00 (nominal-from-minimum? min_allowed=45.2)
+- user_139/request_139 rent: projected occurrence on request_date 2024-09-04 (counted)
+- user_139/request_139 utilities: variable monthly history mean 84.09 (min 73.15 max 90.17) used
+- user_139/request_139 entertainment: variable monthly history mean 30.89 (min 28.54 max 34.26) used
+- user_140/request_140 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 31900.0, 'ZAR', '2025-02-15', 'T10_first_salary_credit_date')] last=2025-01-15 31900.0 ZAR modal=31900.0x2 dom=15 -> flows=[('2025-02-15', 31900.0), ('2025-03-15', 31900.0), ('2025-04-15', 31900.0)]
+- user_140/request_140 utilities: variable monthly history mean 1898.81 (min 1711.96 max 2049.42) used
+- user_140/request_140 known pending row event_12910 'Pending online order charge' 2004.2 ZAR cat=shopping on 2025-02-07; no series in that category (history n=0)
+- user_141/request_141 utilities: variable monthly history mean 5083.91 (min 4767.37 max 5928.28) used
+- user_141/request_141 shopping: variable monthly history mean 3712.39 (min 3360.12 max 4154.16) used
+- user_141/request_141 entertainment: variable monthly history mean 2048.06 (min 1845.02 max 2261.30) used
+- user_142/request_142 salary: no regular payroll history and no scheduled row; income flows=[('2024-12-15', 2040.0, 'T20_invoice_approved')]
+- user_142/request_142 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_142/request_142 utilities: variable monthly history mean 102.27 (min 96.90 max 115.00) used
+- user_142/request_142 shopping: variable history mean 70.59 (min 60.82 max 77.09) -> series amount 69.00 (nominal-from-minimum? min_allowed=27.6)
+- user_143/request_143 utilities: variable monthly history mean 743.47 (min 705.60 max 767.22) used
+- user_143/request_143 known pending row event_13208 'Pending pharmacy card charge' 426.8 ZAR cat=healthcare on 2025-05-11; no series in that category (history n=0)
+- user_144/request_144 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 864.0, 'USD', '2026-07-15', 'T10_first_salary_credit_date')] last=2026-06-15 864.0 USD modal=864.0x2 dom=15 -> flows=[('2026-07-15', 864.0), ('2026-08-15', 864.0), ('2026-09-15', 864.0)]
+- user_144/request_144 utilities: variable monthly history mean 48.63 (min 44.94 max 53.68) used
+- user_144/request_144 known scheduled row event_13307 'Scheduled insurance payment' 51.0 USD cat=insurance on 2026-07-11; no series in that category (history n=0)
+- user_145/request_145 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 116100.0, 'INR', None, 'T14_regular_plus_arrears')] last=2024-02-15 258000.0 INR modal=258000.0x5 dom=15 -> flows=[('2024-03-15', 258000.0), ('2024-04-15', 258000.0), ('2024-05-15', 258000.0)]
+- user_145/request_145 utilities: projected occurrence on request_date 2024-03-06 (counted)
+- user_145/request_145 utilities: variable monthly history mean 16998.71 (min 15463.11 max 18915.23) used
+- user_145/request_145 shopping: variable monthly history mean 13325.63 (min 12129.25 max 14466.22) used
+- user_146/request_146 utilities: variable monthly history mean 10895.56 (min 10083.67 max 11874.23) used
+- user_146/request_146 healthcare: variable monthly history mean 10270.95 (min 9366.53 max 11135.61) used
+- user_146/request_146 entertainment: variable monthly history mean 2875.60 (min 2677.55 max 3089.31) used
+- user_147/request_147 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1529.0, 'EUR', '2026-04-15', 'T09_salary_resumes_childcare')] last=2026-03-15 1529.0 EUR modal=1529.0x1 dom=15 -> flows=[('2026-04-15', 1529.0), ('2026-05-15', 1529.0), ('2026-06-15', 1529.0)]
+- user_147/request_147 utilities: variable monthly history mean 83.85 (min 77.54 max 93.69) used
+- user_147/request_147 shopping: variable history mean 71.09 (min 65.42 max 75.96) -> series amount 73.00 (nominal-from-minimum? min_allowed=29.2)
+- user_148/request_148 utilities: variable monthly history mean 2018.80 (min 1805.31 max 2175.96) used
+- user_148/request_148 entertainment: variable history mean 1185.15 (min 1150.40 max 1239.47) -> series amount 1152.80 (nominal-from-minimum? min_allowed=576.4)
+- user_149/request_149 utilities: variable monthly history mean 2935.27 (min 2692.64 max 3185.66) used
+- user_149/request_149 healthcare: variable monthly history mean 1926.33 (min 1821.29 max 2131.77) used
+- user_149/request_149 shopping: variable history mean 2507.24 (min 2267.30 max 2742.61) -> series amount 2534.40 (nominal-from-minimum? min_allowed=1013.76)
+- user_150/request_150 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 893.75, 'EUR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 491.56 EUR modal=893.75x4 dom=15 -> flows=[('2026-01-15', 893.75), ('2026-02-15', 893.75), ('2026-03-15', 893.75)]
+- user_150/request_150 utilities: variable monthly history mean 58.26 (min 53.02 max 62.91) used
+- user_150/request_150 shopping: variable history mean 37.79 (min 35.89 max 40.79) -> series amount 40.00 (nominal-from-minimum? min_allowed=16.0)
+- user_150/request_150 entertainment: variable monthly history mean 26.70 (min 24.09 max 29.29) used
+- user_151/request_151 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 46170000.0, 'IDR', '2024-09-15', 'T11_first_salary_new_employer')] last=2024-08-15 46170000.0 IDR modal=46170000.0x1 dom=15 -> flows=[('2024-09-15', 46170000.0), ('2024-10-15', 46170000.0), ('2024-11-15', 46170000.0)]
+- user_151/request_151 utilities: variable monthly history mean 2791681.05 (min 2651930.79 max 3013296.95) used
+- user_152/request_152 utilities: projected occurrence on request_date 2025-02-05 (counted)
+- user_152/request_152 utilities: variable monthly history mean 797.15 (min 757.76 max 876.50) used
+- user_153/request_153 utilities: variable monthly history mean 87.97 (min 80.64 max 93.27) used
+- user_153/request_153 insurance: projected occurrence on request_date 2026-07-07 (counted)
+- user_153/request_153 shopping: variable monthly history mean 81.52 (min 72.25 max 87.66) used
+- user_153/request_153 entertainment: variable monthly history mean 53.45 (min 48.93 max 60.34) used
+- user_154/request_154 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1628.0, 'EUR', None, 'T15_household_income_ended')] last=2024-11-15 1009.36 EUR modal=1009.36x5 dom=15 -> flows=[('2024-12-15', 1628.0), ('2025-01-15', 1628.0), ('2025-02-15', 1628.0)]
+- user_154/request_154 utilities: variable monthly history mean 107.07 (min 100.46 max 112.63) used
+- user_154/request_154 shopping: variable history mean 67.81 (min 63.57 max 74.51) -> series amount 68.00 (nominal-from-minimum? min_allowed=27.2)
+- user_155/request_155 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 84000.0, 'INR', '2025-05-15', 'T09_salary_resumes_childcare')] last=2025-04-15 84000.0 INR modal=84000.0x1 dom=15 -> flows=[('2025-05-15', 84000.0), ('2025-06-15', 84000.0), ('2025-07-15', 84000.0)]
+- user_155/request_155 utilities: variable monthly history mean 5095.87 (min 4697.91 max 5480.76) used
+- user_155/request_155 healthcare: variable monthly history mean 6884.06 (min 6280.42 max 7398.25) used
+- user_155/request_155 entertainment: variable monthly history mean 1911.47 (min 1684.63 max 2058.88) used
+- user_156/request_156 utilities: variable monthly history mean 1779.27 (min 1716.40 max 1904.78) used
+- user_156/request_156 shopping: variable history mean 993.58 (min 912.11 max 1087.55) -> series amount 992.20 (nominal-from-minimum? min_allowed=396.88)
+- user_157/request_157 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 23940000.0, 'IDR', None, 'T04_temporary_reduced_pay')] last=2024-02-15 23940000.0 IDR modal=33250000.0x3 dom=15 -> flows=[('2024-03-15', 23940000.0), ('2024-04-15', 33250000.0), ('2024-05-15', 33250000.0)]
+- user_157/request_157 utilities: variable monthly history mean 1403013.95 (min 1277123.16 max 1477172.83) used
+- user_157/request_157 entertainment: variable history mean 399082.11 (min 377533.51 max 442121.35) -> series amount 395200.00 (nominal-from-minimum? min_allowed=197600.0)
+- user_158/request_158 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-19', 114243.23, 'freelance income'), ('2025-09-02', 114243.23, 'freelance income'), ('2025-09-16', 114243.23, 'freelance income'), ('2025-09-30', 114243.23, 'freelance income')]
+- user_158/request_158 freelance income: step=14 gaps=[14, 17, 14, 16, 14, 17, 14, 16, 14] n=10 first=2025-08-19 amt=114243.23
+- user_158/request_158 utilities: projected occurrence on request_date 2025-08-07 (counted)
+- user_158/request_158 utilities: variable monthly history mean 13043.95 (min 12501.31 max 13873.88) used
+- user_158/request_158 shopping: variable monthly history mean 10643.20 (min 9769.31 max 11530.92) used
+- user_159/request_159 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_159/request_159 gig payout: 20 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_159/request_159 rent: projected occurrence on request_date 2026-01-04 (counted)
+- user_159/request_159 utilities: variable monthly history mean 664.48 (min 591.01 max 751.40) used
+- user_159/request_159 entertainment: variable monthly history mean 444.76 (min 403.45 max 468.72) used
+- user_160/request_160 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1672.0, 'EUR', '2024-06-15', 'T11_first_salary_new_employer')] last=2024-05-15 1672.0 EUR modal=1672.0x1 dom=15 -> flows=[('2024-06-15', 1672.0), ('2024-07-15', 1672.0), ('2024-08-15', 1672.0)]
+- user_160/request_160 utilities: variable monthly history mean 102.80 (min 98.52 max 107.60) used
+- user_160/request_160 known pending row event_14744 'Pending online order charge' 87.0 EUR cat=shopping on 2024-06-07; no series in that category (history n=0)
+- user_161/request_161 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 26790000.0, 'IDR', '2025-11-15', 'T12_first_salary_scheduled')] last=2025-10-15 14734500.0 IDR modal=14734500.0x1 dom=15 -> flows=[('2025-11-15', 26790000.0), ('2025-12-15', 26790000.0), ('2026-01-15', 26790000.0)]
+- user_161/request_161 utilities: variable monthly history mean 1803779.95 (min 1631523.70 max 1971928.05) used
+- user_162/request_162 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 29070000.0, 'IDR', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 22674600.0 IDR modal=22674600.0x5 dom=15 -> flows=[('2026-07-15', 29070000.0), ('2026-08-15', 29070000.0), ('2026-09-15', 29070000.0)]
+- user_162/request_162 utilities: variable monthly history mean 1431972.34 (min 1366853.80 max 1496668.17) used
+- user_162/request_162 healthcare: variable monthly history mean 1025830.06 (min 906152.79 max 1072993.99) used
+- user_162/request_162 known pending row event_14918 'Pending merchant debit' 1844900.0 IDR cat=shopping on 2026-07-08; no series in that category (history n=0)
+- user_163/request_163 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 13680000.0, 'IDR', None, 'T14_regular_plus_arrears')] last=2024-08-15 30400000.0 IDR modal=30400000.0x5 dom=15 -> flows=[('2024-09-15', 30400000.0), ('2024-10-15', 30400000.0), ('2024-11-15', 30400000.0)]
+- user_163/request_163 utilities: variable monthly history mean 1458602.74 (min 1318290.39 max 1589775.80) used
+- user_163/request_163 shopping: variable monthly history mean 762421.86 (min 722194.59 max 805211.81) used
+- user_163/request_163 known pending row event_15019 'Pending pharmacy card charge' 1711900.0 IDR cat=healthcare on 2024-09-11; no series in that category (history n=0)
+- user_164/request_164 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 44270000.0, 'IDR', None, 'T07_base_salary_commission_pending')] last=2025-01-15 26562000.0 IDR modal=26562000.0x5 dom=15 -> flows=[('2025-02-15', 26562000.0), ('2025-03-15', 26562000.0), ('2025-04-15', 26562000.0)]
+- user_164/request_164 utilities: variable monthly history mean 2852097.13 (min 2658261.05 max 3020527.72) used
+- user_164/request_164 healthcare: variable monthly history mean 3234609.54 (min 3070385.76 max 3467909.66) used
+- user_164/request_164 entertainment: variable history mean 802434.24 (min 735053.97 max 866244.86) -> series amount 830300.00 (nominal-from-minimum? min_allowed=415150.0)
+- user_165/request_165 salary: none projected (stale=False ended=True final=True last=2026-03-15)
+- user_165/request_165 utilities: projected occurrence on request_date 2026-04-06 (counted)
+- user_165/request_165 utilities: variable monthly history mean 7694.69 (min 7108.92 max 8422.84) used
+- user_165/request_165 shopping: variable history mean 2706.29 (min 2337.00 max 2933.32) -> series amount 2620.00 (nominal-from-minimum? min_allowed=1048.0)
+- user_166/request_166 salary: no regular payroll history and no scheduled row; income flows=[('2024-12-15', 2340.0, 'T20_invoice_approved')]
+- user_166/request_166 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_166/request_166 rent: projected occurrence on request_date 2024-12-03 (counted)
+- user_166/request_166 utilities: variable monthly history mean 158.80 (min 145.89 max 172.98) used
+- user_166/request_166 shopping: variable history mean 114.41 (min 101.26 max 122.89) -> series amount 113.00 (nominal-from-minimum? min_allowed=45.2)
+- user_167/request_167 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-05-23', 'T05_salary_date_change')] last=2025-04-23 47740.0 ZAR modal=47740.0x5 dom=15 -> flows=[('2025-05-23', 47740.0), ('2025-06-23', 47740.0), ('2025-07-23', 47740.0)]
+- user_167/request_167 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-12-15'), ('Payroll credit', '2025-01-15'), ('Payroll credit', '2025-02-15'), ('Payroll credit', '2025-03-15'), ('Payroll credit', '2025-04-23')]
+- user_167/request_167 utilities: variable monthly history mean 2197.13 (min 2002.22 max 2481.11) used
+- user_167/request_167 healthcare: variable monthly history mean 2306.96 (min 2111.34 max 2547.63) used
+- user_167/request_167 shopping: variable history mean 2183.66 (min 2079.47 max 2246.61) -> series amount 2283.60 (nominal-from-minimum? min_allowed=913.44)
+- user_168/request_168 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 137150.0, 'INR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 75432.5 INR modal=137150.0x4 dom=15 -> flows=[('2026-01-15', 137150.0), ('2026-02-15', 137150.0), ('2026-03-15', 137150.0)]
+- user_168/request_168 utilities: variable monthly history mean 9516.16 (min 8828.01 max 9909.83) used
+- user_168/request_168 shopping: variable history mean 6804.32 (min 6254.09 max 7505.87) -> series amount 6820.00 (nominal-from-minimum? min_allowed=2728.0)
+- user_168/request_168 entertainment: variable history mean 5046.54 (min 4654.74 max 5532.40) -> series amount 4950.00 (nominal-from-minimum? min_allowed=2475.0)
+- user_169/request_169 utilities: variable monthly history mean 1631.92 (min 1555.40 max 1755.25) used
+- user_169/request_169 shopping: variable monthly history mean 1352.20 (min 1243.35 max 1467.30) used
+- user_169/request_169 entertainment: variable monthly history mean 942.38 (min 851.94 max 995.32) used
+- user_170/request_170 utilities: variable monthly history mean 1770416.25 (min 1579111.28 max 1977476.83) used
+- user_171/request_171 utilities: variable monthly history mean 41.85 (min 37.61 max 44.92) used
+- user_171/request_171 healthcare: variable monthly history mean 37.26 (min 33.95 max 39.62) used
+- user_172/request_172 utilities: projected occurrence on request_date 2024-06-05 (counted)
+- user_172/request_172 utilities: variable monthly history mean 1754.99 (min 1617.26 max 1888.13) used
+- user_172/request_172 healthcare: variable monthly history mean 1433.52 (min 1340.66 max 1543.73) used
+- user_172/request_172 shopping: variable history mean 804.80 (min 720.85 max 874.64) -> series amount 805.20 (nominal-from-minimum? min_allowed=322.08)
+- user_173/request_173 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1284.0, 'USD', '2025-11-15', 'T13_foreign_salary_confirmed')] last=2025-10-15 1284.0 USD modal=1284.0x5 dom=15 -> flows=[('2025-11-15', 106995.72), ('2025-12-15', 106995.72), ('2026-01-15', 106995.72)]
+- user_173/request_173 utilities: variable monthly history mean 5479.11 (min 5090.45 max 6073.32) used
+- user_173/request_173 insurance: projected occurrence on request_date 2025-11-07 (counted)
+- user_173/request_173 shopping: variable history mean 3385.49 (min 3058.81 max 3551.22) -> series amount 3180.00 (nominal-from-minimum? min_allowed=1272.0)
+- user_173/request_173 entertainment: variable monthly history mean 1806.85 (min 1779.00 max 1866.94) used
+- user_174/request_174 salary: none projected (stale=False ended=False final=True last=2026-03-15)
+- user_174/request_174 utilities: variable monthly history mean 60.68 (min 54.50 max 65.48) used
+- user_174/request_174 shopping: variable history mean 42.48 (min 39.60 max 44.60) -> series amount 42.00 (nominal-from-minimum? min_allowed=16.8)
+- user_175/request_175 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1924.56, 'EUR', None, 'T04_temporary_reduced_pay')] last=2024-08-15 1924.56 EUR modal=2673.0x3 dom=15 -> flows=[('2024-09-15', 1924.56), ('2024-10-15', 2673.0), ('2024-11-15', 2673.0)]
+- user_175/request_175 utilities: variable monthly history mean 106.67 (min 96.88 max 112.04) used
+- user_175/request_175 entertainment: variable monthly history mean 30.03 (min 27.71 max 32.85) used
+- user_176/request_176 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 847.0, 'EUR', None, 'T07_base_salary_commission_pending')] last=2025-01-15 508.2 EUR modal=508.2x5 dom=15 -> flows=[('2025-02-15', 508.2), ('2025-03-15', 508.2), ('2025-04-15', 508.2)]
+- user_176/request_176 utilities: variable monthly history mean 57.99 (min 53.42 max 63.28) used
+- user_176/request_176 healthcare: variable monthly history mean 25.47 (min 22.84 max 27.83) used
+- user_176/request_176 shopping: variable history mean 29.45 (min 26.80 max 31.88) -> series amount 29.00 (nominal-from-minimum? min_allowed=11.6)
+- user_177/request_177 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1731.6, 'USD', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 952.38 USD modal=1731.6x4 dom=15 -> flows=[('2026-01-15', 1731.6), ('2026-02-15', 1731.6), ('2026-03-15', 1731.6)]
+- user_177/request_177 utilities: variable monthly history mean 79.03 (min 71.40 max 87.45) used
+- user_177/request_177 shopping: variable history mean 82.91 (min 76.28 max 89.41) -> series amount 86.00 (nominal-from-minimum? min_allowed=34.4)
+- user_177/request_177 entertainment: variable history mean 32.93 (min 28.80 max 34.57) -> series amount 31.00 (nominal-from-minimum? min_allowed=15.5)
+- user_178/request_178 salary: no regular payroll history and no scheduled row; income flows=[('2024-12-15', 2376.0, 'T20_invoice_approved')]
+- user_178/request_178 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_178/request_178 utilities: projected occurrence on request_date 2024-12-07 (counted)
+- user_178/request_178 utilities: variable monthly history mean 144.54 (min 131.64 max 154.73) used
+- user_178/request_178 shopping: variable history mean 118.82 (min 114.02 max 123.90) -> series amount 116.00 (nominal-from-minimum? min_allowed=46.4)
+- user_179/request_179 rent: projected occurrence on request_date 2025-05-04 (counted)
+- user_179/request_179 utilities: variable monthly history mean 3257693.91 (min 2997806.63 max 3423052.97) used
+- user_180/request_180 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 59000.0, 'INR', '2026-07-15', 'T10_first_salary_credit_date')] last=2026-06-15 59000.0 INR modal=59000.0x2 dom=15 -> flows=[('2026-07-15', 59000.0), ('2026-08-15', 59000.0), ('2026-09-15', 59000.0)]
+- user_180/request_180 utilities: variable monthly history mean 3437.93 (min 3184.69 max 3686.27) used
+- user_180/request_180 known pending row event_16588 'Pending online order charge' 2290.0 INR cat=shopping on 2026-07-07; no series in that category (history n=0)
+- user_181/request_181 utilities: variable monthly history mean 123.61 (min 115.10 max 140.66) used
+- user_181/request_181 shopping: variable monthly history mean 141.81 (min 127.88 max 148.08) used
+- user_182/request_182 utilities: variable monthly history mean 3169.35 (min 2958.34 max 3497.36) used
+- user_182/request_182 healthcare: variable monthly history mean 2312.81 (min 2153.76 max 2446.65) used
+- user_182/request_182 entertainment: variable history mean 2095.67 (min 1830.99 max 2259.19) -> series amount 2057.00 (nominal-from-minimum? min_allowed=1028.5)
+- user_182/request_182 known pending row event_16776 'Pending merchant debit' 1243.0 ZAR cat=shopping on 2025-08-08; no series in that category (history n=0)
+- user_183/request_183 utilities: variable monthly history mean 1092575.49 (min 998528.45 max 1214067.39) used
+- user_183/request_183 shopping: variable history mean 912964.46 (min 833984.66 max 965808.79) -> series amount 913900.00 (nominal-from-minimum? min_allowed=365560.0)
+- user_183/request_183 entertainment: variable history mean 697895.94 (min 607320.47 max 764665.23) -> series amount 684000.00 (nominal-from-minimum? min_allowed=342000.0)
+- user_183/request_183 known pending row event_16897 'Pending pharmacy card charge' 1330000.0 IDR cat=healthcare on 2026-04-11; no series in that category (history n=0)
+- user_184/request_184 utilities: variable monthly history mean 8483.75 (min 7883.60 max 9383.20) used
+- user_184/request_184 shopping: variable monthly history mean 3005.44 (min 2773.86 max 3309.69) used
+- user_184/request_184 entertainment: variable monthly history mean 3823.96 (min 3637.02 max 3919.02) used
+- user_184/request_184 known scheduled row event_17019 'Scheduled school fee' 4820.0 INR cat=education on 2024-06-11; no series in that category (history n=0)
+- user_185/request_185 utilities: projected occurrence on request_date 2025-11-06 (counted)
+- user_185/request_185 utilities: variable monthly history mean 95.25 (min 89.45 max 104.62) used
+- user_185/request_185 shopping: variable monthly history mean 57.56 (min 50.56 max 61.38) used
+- user_186/request_186 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 31889.0, 'ZAR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 17538.95 ZAR modal=31889.0x4 dom=15 -> flows=[('2026-01-15', 31889.0), ('2026-02-15', 31889.0), ('2026-03-15', 31889.0)]
+- user_186/request_186 rent: projected occurrence on request_date 2026-01-03 (counted)
+- user_186/request_186 utilities: variable monthly history mean 1928.01 (min 1863.95 max 2009.88) used
+- user_186/request_186 shopping: variable history mean 1674.02 (min 1581.76 max 1813.21) -> series amount 1650.00 (nominal-from-minimum? min_allowed=660.0)
+- user_186/request_186 entertainment: variable monthly history mean 1050.86 (min 950.07 max 1129.83) used
+- user_187/request_187 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 145000.0, 'INR', '2024-09-15', 'T11_first_salary_new_employer')] last=2024-08-15 145000.0 INR modal=145000.0x1 dom=15 -> flows=[('2024-09-15', 145000.0), ('2024-10-15', 145000.0), ('2024-11-15', 145000.0)]
+- user_187/request_187 utilities: variable monthly history mean 6381.30 (min 5980.75 max 6717.13) used
+- user_188/request_188 utilities: variable monthly history mean 75.80 (min 66.24 max 82.96) used
+- user_188/request_188 education: projected occurrence on request_date 2025-02-07 (counted)
+- user_189/request_189 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 627.0, 'EUR', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 489.06 EUR modal=489.06x5 dom=15 -> flows=[('2026-07-15', 627.0), ('2026-08-15', 627.0), ('2026-09-15', 627.0)]
+- user_189/request_189 utilities: variable monthly history mean 39.62 (min 37.39 max 43.77) used
+- user_189/request_189 healthcare: variable monthly history mean 36.09 (min 32.03 max 38.56) used
+- user_190/request_190 utilities: variable monthly history mean 183.85 (min 165.13 max 195.37) used
+- user_190/request_190 shopping: variable monthly history mean 75.92 (min 66.16 max 83.93) used
+- user_191/request_191 utilities: variable monthly history mean 48.86 (min 43.85 max 51.21) used
+- user_191/request_191 healthcare: variable monthly history mean 38.67 (min 36.83 max 42.83) used
+- user_191/request_191 entertainment: variable monthly history mean 13.11 (min 11.85 max 13.84) used
+- user_192/request_192 utilities: projected occurrence on request_date 2026-04-05 (counted)
+- user_192/request_192 utilities: variable monthly history mean 75.67 (min 71.25 max 82.21) used
+- user_192/request_192 shopping: variable monthly history mean 39.99 (min 35.34 max 42.46) used
+- user_193/request_193 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1750.32, 'EUR', None, 'T04_temporary_reduced_pay')] last=2024-02-15 1750.32 EUR modal=2431.0x3 dom=15 -> flows=[('2024-03-15', 1750.32), ('2024-04-15', 2431.0), ('2024-05-15', 2431.0)]
+- user_193/request_193 utilities: variable monthly history mean 93.87 (min 83.44 max 103.21) used
+- user_193/request_193 entertainment: variable monthly history mean 32.21 (min 29.92 max 33.65) used
+- user_194/request_194 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-08-23', 'T05_salary_date_change')] last=2025-07-23 137000.0 INR modal=137000.0x5 dom=15 -> flows=[('2025-08-23', 137000.0), ('2025-09-23', 137000.0), ('2025-10-23', 137000.0)]
+- user_194/request_194 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2025-03-15'), ('Payroll credit', '2025-04-15'), ('Payroll credit', '2025-05-15'), ('Payroll credit', '2025-06-15'), ('Payroll credit', '2025-07-23')]
+- user_194/request_194 utilities: variable monthly history mean 8963.15 (min 8158.95 max 9899.38) used
+- user_194/request_194 healthcare: variable monthly history mean 4520.65 (min 4221.84 max 4873.10) used
+- user_194/request_194 shopping: variable history mean 4564.43 (min 4294.62 max 4825.71) -> series amount 4490.00 (nominal-from-minimum? min_allowed=1796.0)
+- user_195/request_195 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1222.65, 'EUR', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 672.46 EUR modal=1222.65x4 dom=15 -> flows=[('2026-01-15', 1222.65), ('2026-02-15', 1222.65), ('2026-03-15', 1222.65)]
+- user_195/request_195 utilities: variable monthly history mean 56.55 (min 53.85 max 60.61) used
+- user_195/request_195 shopping: variable monthly history mean 68.56 (min 65.00 max 72.23) used
+- user_195/request_195 entertainment: variable history mean 25.31 (min 23.37 max 27.80) -> series amount 26.00 (nominal-from-minimum? min_allowed=13.0)
+- user_196/request_196 utilities: variable monthly history mean 53.86 (min 48.54 max 57.87) used
+- user_197/request_197 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 38190000.0, 'IDR', '2025-11-15', 'T12_first_salary_scheduled')] last=2025-10-15 21004500.0 IDR modal=21004500.0x1 dom=15 -> flows=[('2025-11-15', 38190000.0), ('2025-12-15', 38190000.0), ('2026-01-15', 38190000.0)]
+- user_197/request_197 utilities: variable monthly history mean 1951750.96 (min 1738935.05 max 2156129.36) used
+- user_198/request_198 utilities: projected occurrence on request_date 2026-07-07 (counted)
+- user_198/request_198 utilities: variable monthly history mean 11732.52 (min 10684.70 max 12399.94) used
+- user_198/request_198 healthcare: variable monthly history mean 9209.18 (min 8529.66 max 10096.56) used
+- user_198/request_198 known pending row event_18269 'Possible duplicate card charge' 8800.0 INR cat=shopping on 2026-07-10; no series in that category (history n=0)
+- user_199/request_199 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_199/request_199 gig payout: 20 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_199/request_199 rent: projected occurrence on request_date 2024-09-04 (counted)
+- user_199/request_199 utilities: variable monthly history mean 2146379.95 (min 1862069.39 max 2240484.42) used
+- user_199/request_199 entertainment: variable history mean 1478422.42 (min 1364905.98 max 1661245.42) -> series amount 1506700.00 (nominal-from-minimum? min_allowed=753350.0)
+- user_200/request_200 utilities: variable monthly history mean 1317370.59 (min 1210408.65 max 1432361.49) used
+- user_200/request_200 insurance: projected occurrence on request_date 2025-02-06 (counted)
+- user_200/request_200 healthcare: variable monthly history mean 1745570.75 (min 1622655.54 max 1993059.73) used
+- user_200/request_200 entertainment: variable history mean 825910.22 (min 758865.65 max 878294.09) -> series amount 788500.00 (nominal-from-minimum? min_allowed=394250.0)
+- user_200/request_200 known pending row event_18466 'Pending online order charge' 1014600.0 IDR cat=shopping on 2025-02-07; no series in that category (history n=0)
+- user_201/request_201 salary: none projected (stale=True ended=True final=False last=2026-01-15)
+- user_201/request_201 utilities: variable monthly history mean 1025776.59 (min 938896.83 max 1092838.41) used
+- user_201/request_201 shopping: variable monthly history mean 839855.68 (min 800504.47 max 916621.11) used
+- user_202/request_202 utilities: variable monthly history mean 8141.53 (min 7350.98 max 8824.18) used
+- user_202/request_202 healthcare: variable monthly history mean 7167.50 (min 6754.48 max 7498.45) used
+- user_202/request_202 shopping: variable monthly history mean 4174.23 (min 3755.14 max 4687.26) used
+- user_203/request_203 salary: no regular payroll history and no scheduled row; income flows=[('2025-05-12', 643.81, 'gig payout'), ('2025-05-19', 643.81, 'gig payout'), ('2025-05-26', 643.81, 'gig payout'), ('2025-06-02', 643.81, 'gig payout')]
+- user_203/request_203 gig payout: step=7 gaps=[7, 7, 7, 10, 7, 7, 7, 10, 7, 7, 7, 7, 7, 7, 7, 10, 7, 7, 7, 9] n=21 first=2025-05-12 amt=643.81
+- user_203/request_203 utilities: variable monthly history mean 146.38 (min 135.60 max 158.29) used
+- user_203/request_203 entertainment: variable history mean 67.21 (min 62.60 max 70.99) -> series amount 70.00 (nominal-from-minimum? min_allowed=35.0)
+- user_203/request_203 known pending row event_18729 'Pending pharmacy card charge' 97.0 EUR cat=healthcare on 2025-05-11; no series in that category (history n=0)
+- user_204/request_204 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2024.0, 'EUR', '2026-01-15', 'T10_first_salary_credit_date')] last=2025-12-15 2024.0 EUR modal=2024.0x2 dom=15 -> flows=[('2026-01-15', 2024.0), ('2026-02-15', 2024.0), ('2026-03-15', 2024.0)]
+- user_204/request_204 utilities: variable monthly history mean 127.32 (min 121.93 max 138.24) used
+- user_204/request_204 known scheduled row event_18828 'Scheduled insurance payment' 77.0 EUR cat=insurance on 2026-01-11; no series in that category (history n=0)
+- user_205/request_205 utilities: projected occurrence on request_date 2024-03-06 (counted)
+- user_205/request_205 utilities: variable monthly history mean 943601.25 (min 900242.29 max 993830.60) used
+- user_205/request_205 shopping: variable history mean 600565.74 (min 555143.33 max 639835.88) -> series amount 590900.00 (nominal-from-minimum? min_allowed=236360.0)
+- user_206/request_206 salary: no regular payroll history and no scheduled row; income flows=[('2025-08-05', 691.45, 'freelance income'), ('2025-08-19', 691.45, 'freelance income'), ('2025-09-02', 691.45, 'freelance income'), ('2025-09-16', 691.45, 'freelance income')]
+- user_206/request_206 freelance income: step=14 gaps=[14, 17, 14, 16, 14, 17, 14, 16, 14] n=10 first=2025-08-05 amt=691.45
+- user_206/request_206 rent: projected occurrence on request_date 2025-08-03 (counted)
+- user_206/request_206 utilities: variable monthly history mean 95.66 (min 86.71 max 102.86) used
+- user_206/request_206 shopping: variable monthly history mean 59.93 (min 54.19 max 64.74) used
+- user_207/request_207 housing: projected occurrence on request_date 2026-07-05 (counted)
+- user_207/request_207 utilities: variable monthly history mean 1038.87 (min 978.78 max 1116.33) used
+- user_207/request_207 healthcare: variable monthly history mean 1280.42 (min 1149.93 max 1403.86) used
+- user_208/request_208 utilities: variable monthly history mean 880331.19 (min 782127.92 max 948667.13) used
+- user_208/request_208 shopping: variable monthly history mean 632611.56 (min 581735.89 max 680553.59) used
+- user_209/request_209 utilities: variable monthly history mean 1275.65 (min 1174.70 max 1388.06) used
+- user_209/request_209 healthcare: variable monthly history mean 1202.57 (min 1080.04 max 1303.38) used
+- user_209/request_209 entertainment: variable history mean 473.97 (min 426.60 max 514.97) -> series amount 484.00 (nominal-from-minimum? min_allowed=242.0)
+- user_210/request_210 utilities: variable monthly history mean 158.01 (min 145.67 max 168.60) used
+- user_210/request_210 shopping: variable monthly history mean 162.47 (min 149.83 max 174.56) used
+- user_211/request_211 utilities: variable monthly history mean 118.86 (min 106.95 max 134.29) used
+- user_211/request_211 entertainment: variable history mean 53.73 (min 48.68 max 56.91) -> series amount 55.00 (nominal-from-minimum? min_allowed=27.5)
+- user_212/request_212 salary MOVED/RESIZED by message (history-based): adjs=[('salary_date_change', 'next_payment_only', None, None, '2025-02-23', 'T05_salary_date_change')] last=2025-01-23 33440000.0 IDR modal=33440000.0x5 dom=15 -> flows=[('2025-02-23', 33440000.0), ('2025-03-23', 33440000.0), ('2025-04-23', 33440000.0)]
+- user_212/request_212 salary history DOMs not constant: {15: 4, 23: 1} rows=[('Payroll credit', '2024-09-15'), ('Payroll credit', '2024-10-15'), ('Payroll credit', '2024-11-15'), ('Payroll credit', '2024-12-15'), ('Payroll credit', '2025-01-23')]
+- user_212/request_212 utilities: projected occurrence on request_date 2025-02-05 (counted)
+- user_212/request_212 utilities: variable monthly history mean 2304905.13 (min 2017035.98 max 2535417.01) used
+- user_212/request_212 healthcare: variable monthly history mean 2383653.76 (min 2167007.53 max 2480255.06) used
+- user_212/request_212 shopping: variable history mean 1568283.19 (min 1404824.98 max 1679726.08) -> series amount 1508600.00 (nominal-from-minimum? min_allowed=603440.0)
+- user_213/request_213 salary: none projected (stale=True ended=True final=False last=2025-10-15)
+- user_213/request_213 utilities: variable monthly history mean 127.63 (min 118.50 max 138.16) used
+- user_213/request_213 insurance: projected occurrence on request_date 2026-01-07 (counted)
+- user_213/request_213 shopping: variable history mean 88.11 (min 82.16 max 97.32) -> series amount 87.00 (nominal-from-minimum? min_allowed=34.8)
+- user_213/request_213 entertainment: variable monthly history mean 67.57 (min 60.56 max 73.49) used
+- user_214/request_214 utilities: variable monthly history mean 11892.47 (min 10803.07 max 12713.22) used
+- user_214/request_214 shopping: variable history mean 10639.79 (min 9652.11 max 11622.98) -> series amount 10550.00 (nominal-from-minimum? min_allowed=4220.0)
+- user_214/request_214 entertainment: variable monthly history mean 6967.93 (min 6306.91 max 7621.44) used
+- user_215/request_215 salary: no regular payroll history and no scheduled row; income flows=[]
+- user_215/request_215 gig payout: 21 rows but not projected; notes=['gig payout not projected (message: ended/pending/only confirmed invoices count)']
+- user_215/request_215 utilities: variable monthly history mean 1518.88 (min 1400.02 max 1616.39) used
+- user_215/request_215 entertainment: variable history mean 760.95 (min 732.14 max 822.23) -> series amount 781.00 (nominal-from-minimum? min_allowed=390.5)
+- user_216/request_216 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2424.0, 'USD', '2026-07-15', 'T01_salary_increase')] last=2026-06-15 1890.72 USD modal=1890.72x5 dom=15 -> flows=[('2026-07-15', 2424.0), ('2026-08-15', 2424.0), ('2026-09-15', 2424.0)]
+- user_216/request_216 utilities: variable monthly history mean 167.87 (min 149.64 max 182.83) used
+- user_216/request_216 healthcare: variable monthly history mean 103.16 (min 93.95 max 112.68) used
+- user_217/request_217 utilities: variable monthly history mean 2397.15 (min 2215.44 max 2631.22) used
+- user_217/request_217 shopping: variable history mean 1404.36 (min 1278.99 max 1549.93) -> series amount 1403.60 (nominal-from-minimum? min_allowed=561.44)
+- user_218/request_218 utilities: projected occurrence on request_date 2025-08-07 (counted)
+- user_218/request_218 utilities: variable monthly history mean 2652464.10 (min 2492990.70 max 2801292.78) used
+- user_218/request_218 healthcare: variable monthly history mean 1778004.67 (min 1611929.77 max 1903321.36) used
+- user_218/request_218 entertainment: variable monthly history mean 1271964.95 (min 1133260.41 max 1344821.99) used
+- user_219/request_219 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1914.0, 'EUR', '2026-04-15', 'T09_salary_resumes_childcare')] last=2026-03-15 1914.0 EUR modal=1914.0x1 dom=15 -> flows=[('2026-04-15', 1914.0), ('2026-05-15', 1914.0), ('2026-06-15', 1914.0)]
+- user_219/request_219 rent: projected occurrence on request_date 2026-04-04 (counted)
+- user_219/request_219 utilities: variable monthly history mean 113.16 (min 97.85 max 119.56) used
+- user_219/request_219 shopping: variable monthly history mean 83.75 (min 78.57 max 88.04) used
+- user_220/request_220 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1346.4, 'EUR', None, 'T04_temporary_reduced_pay')] last=2024-05-15 1346.4 EUR modal=1870.0x3 dom=15 -> flows=[('2024-06-15', 1346.4), ('2024-07-15', 1870.0), ('2024-08-15', 1870.0)]
+- user_220/request_220 utilities: variable monthly history mean 72.08 (min 64.73 max 77.99) used
+- user_220/request_220 entertainment: variable history mean 36.07 (min 32.76 max 41.24) -> series amount 37.00 (nominal-from-minimum? min_allowed=18.5)
+- user_220/request_220 known pending row event_20297 'Pending online order charge' 80.0 EUR cat=shopping on 2024-06-07; no series in that category (history n=0)
+- user_221/request_221 utilities: variable monthly history mean 5385.86 (min 4818.47 max 5879.61) used
+- user_221/request_221 healthcare: variable monthly history mean 4306.43 (min 4181.65 max 4608.15) used
+- user_221/request_221 shopping: variable history mean 4073.17 (min 3881.43 max 4302.13) -> series amount 4050.00 (nominal-from-minimum? min_allowed=1620.0)
+- user_222/request_222 salary: no regular payroll history and no scheduled row; income flows=[('2026-01-15', 35200.0, 'T20_invoice_approved')]
+- user_222/request_222 freelance income: 10 rows but not projected; notes=['freelance income not projected (message: ended/pending/only confirmed invoices count)']
+- user_222/request_222 utilities: variable monthly history mean 2090.62 (min 1877.15 max 2255.45) used
+- user_222/request_222 shopping: variable monthly history mean 1313.71 (min 1251.56 max 1414.98) used
+- user_223/request_223 utilities: variable monthly history mean 61.41 (min 57.45 max 65.86) used
+- user_223/request_223 known pending row event_20511 'Pending pharmacy card charge' 64.0 EUR cat=healthcare on 2024-09-11; no series in that category (history n=0)
+- user_224/request_224 utilities: variable monthly history mean 2498161.47 (min 2312367.65 max 2678229.73) used
+- user_225/request_225 utilities: projected occurrence on request_date 2026-07-06 (counted)
+- user_225/request_225 utilities: variable monthly history mean 1294139.50 (min 1142505.24 max 1401153.94) used
+- user_225/request_225 shopping: variable monthly history mean 1234413.59 (min 1158063.80 max 1316605.30) used
+- user_226/request_226 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 117000.0, 'INR', None, 'T14_regular_plus_arrears')] last=2024-11-15 260000.0 INR modal=260000.0x5 dom=15 -> flows=[('2024-12-15', 260000.0), ('2025-01-15', 260000.0), ('2025-02-15', 260000.0)]
+- user_226/request_226 rent: projected occurrence on request_date 2024-12-03 (counted)
+- user_226/request_226 utilities: variable monthly history mean 13501.71 (min 12067.21 max 14879.63) used
+- user_226/request_226 shopping: variable history mean 8808.97 (min 7976.82 max 9688.97) -> series amount 8880.00 (nominal-from-minimum? min_allowed=3552.0)
+- user_227/request_227 housing: projected occurrence on request_date 2025-05-05 (counted)
+- user_227/request_227 utilities: variable monthly history mean 4870.51 (min 4758.92 max 5024.41) used
+- user_227/request_227 healthcare: variable monthly history mean 3185.47 (min 2772.79 max 3489.74) used
+- user_227/request_227 entertainment: variable history mean 3810.53 (min 3720.50 max 3967.79) -> series amount 3580.00 (nominal-from-minimum? min_allowed=1790.0)
+- user_228/request_228 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 30400000.0, 'IDR', '2026-04-15', 'T10_first_salary_credit_date')] last=2026-03-15 30400000.0 IDR modal=30400000.0x2 dom=15 -> flows=[('2026-04-15', 30400000.0), ('2026-05-15', 30400000.0), ('2026-06-15', 30400000.0)]
+- user_228/request_228 utilities: variable monthly history mean 1645598.11 (min 1543604.98 max 1772590.87) used
+- user_228/request_228 education: projected occurrence on request_date 2026-04-07 (counted)
+- user_229/request_229 utilities: variable monthly history mean 72.28 (min 64.64 max 79.43) used
+- user_229/request_229 entertainment: variable monthly history mean 40.72 (min 38.07 max 45.95) used
+- user_230/request_230 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2827.0, 'EUR', None, 'T15_household_income_ended')] last=2025-07-15 1752.74 EUR modal=1752.74x5 dom=15 -> flows=[('2025-08-15', 2827.0), ('2025-09-15', 2827.0), ('2025-10-15', 2827.0)]
+- user_230/request_230 utilities: variable monthly history mean 143.56 (min 129.18 max 156.45) used
+- user_230/request_230 healthcare: variable monthly history mean 116.19 (min 107.15 max 121.48) used
+- user_230/request_230 shopping: variable monthly history mean 82.93 (min 71.12 max 87.74) used
+- user_231/request_231 utilities: variable monthly history mean 3131.34 (min 2972.83 max 3377.55) used
+- user_231/request_231 shopping: variable monthly history mean 883.21 (min 790.54 max 991.30) used
+- user_231/request_231 entertainment: variable monthly history mean 1246.90 (min 1157.98 max 1315.79) used
+- user_232/request_232 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 2772.0, 'EUR', '2024-06-15', 'T10_first_salary_credit_date')] last=2024-05-15 2772.0 EUR modal=2772.0x2 dom=15 -> flows=[('2024-06-15', 2772.0), ('2024-07-15', 2772.0), ('2024-08-15', 2772.0)]
+- user_232/request_232 utilities: projected occurrence on request_date 2024-06-05 (counted)
+- user_232/request_232 utilities: variable monthly history mean 182.38 (min 165.60 max 202.65) used
+- user_233/request_233 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 16910000.0, 'IDR', '2025-11-15', 'T12_first_salary_scheduled')] last=2025-10-15 9300500.0 IDR modal=9300500.0x1 dom=15 -> flows=[('2025-11-15', 16910000.0), ('2025-12-15', 16910000.0), ('2026-01-15', 16910000.0)]
+- user_233/request_233 utilities: variable monthly history mean 1082057.05 (min 1012817.30 max 1158999.75) used
+- user_234/request_234 housing: projected occurrence on request_date 2026-07-04 (counted)
+- user_234/request_234 utilities: variable monthly history mean 61.63 (min 57.03 max 64.13) used
+- user_234/request_234 healthcare: variable monthly history mean 38.77 (min 36.28 max 41.46) used
+- user_234/request_234 known pending row event_21582 'Possible duplicate card charge' 45.65 EUR cat=shopping on 2026-07-07; no series in that category (history n=0)
+- user_235/request_235 utilities: variable monthly history mean 51.19 (min 47.35 max 54.61) used
+- user_235/request_235 shopping: variable history mean 40.28 (min 37.10 max 43.49) -> series amount 40.00 (nominal-from-minimum? min_allowed=16.0)
+- user_235/request_235 entertainment: variable history mean 17.93 (min 16.32 max 20.00) -> series amount 18.00 (nominal-from-minimum? min_allowed=9.0)
+- user_236/request_236 utilities: variable monthly history mean 1486049.46 (min 1344396.44 max 1657888.36) used
+- user_236/request_236 healthcare: variable monthly history mean 1672016.80 (min 1493958.89 max 1840765.68) used
+- user_236/request_236 entertainment: variable monthly history mean 461625.13 (min 430511.34 max 494914.12) used
+- user_237/request_237 salary: none projected (stale=True ended=True final=False last=2026-01-15)
+- user_237/request_237 utilities: variable monthly history mean 1975800.06 (min 1833100.55 max 2150724.21) used
+- user_237/request_237 shopping: variable history mean 1379920.17 (min 1249197.04 max 1509740.57) -> series amount 1371800.00 (nominal-from-minimum? min_allowed=548720.0)
+- user_238/request_238 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 912.0, 'USD', None, 'T15_household_income_ended')] last=2024-11-15 565.44 USD modal=565.44x5 dom=15 -> flows=[('2024-12-15', 912.0), ('2025-01-15', 912.0), ('2025-02-15', 912.0)]
+- user_238/request_238 utilities: projected occurrence on request_date 2024-12-07 (counted)
+- user_238/request_238 utilities: variable monthly history mean 50.72 (min 45.06 max 53.75) used
+- user_238/request_238 entertainment: variable monthly history mean 28.34 (min 25.18 max 30.94) used
+- user_239/request_239 rent: projected occurrence on request_date 2025-05-04 (counted)
+- user_239/request_239 utilities: variable monthly history mean 68.79 (min 63.58 max 72.93) used
+- user_239/request_239 healthcare: variable monthly history mean 72.60 (min 67.85 max 77.67) used
+- user_239/request_239 shopping: variable history mean 23.34 (min 20.80 max 25.32) -> series amount 23.00 (nominal-from-minimum? min_allowed=9.2)
+- user_240/request_240 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 62000.0, 'INR', '2026-01-15', 'T10_first_salary_credit_date')] last=2025-12-15 62000.0 INR modal=62000.0x2 dom=15 -> flows=[('2026-01-15', 62000.0), ('2026-02-15', 62000.0), ('2026-03-15', 62000.0)]
+- user_240/request_240 utilities: variable monthly history mean 3540.55 (min 3220.24 max 3951.14) used
+- user_240/request_240 known pending row event_22131 'Pending online order charge' 2520.0 INR cat=shopping on 2026-01-07; no series in that category (history n=0)
+- user_241/request_241 salary: none projected (stale=True ended=True final=False last=2023-12-15)
+- user_241/request_241 utilities: variable monthly history mean 1436215.14 (min 1286458.46 max 1595763.92) used
+- user_242/request_242 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 968.0, 'EUR', '2025-08-15', 'T12_first_salary_scheduled')] last=2025-07-15 532.4 EUR modal=532.4x1 dom=15 -> flows=[('2025-08-15', 968.0), ('2025-09-15', 968.0), ('2025-10-15', 968.0)]
+- user_242/request_242 utilities: variable monthly history mean 68.11 (min 62.00 max 72.01) used
+- user_242/request_242 known pending row event_22284 'Pending merchant debit' 68.0 EUR cat=shopping on 2025-08-08; no series in that category (history n=0)
+- user_243/request_243 utilities: variable monthly history mean 1479.11 (min 1353.06 max 1664.29) used
+- user_243/request_243 healthcare: variable monthly history mean 1340.97 (min 1185.91 max 1413.47) used
+- user_244/request_244 utilities: variable monthly history mean 2911.72 (min 2540.59 max 3181.44) used
+- user_245/request_245 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1680.0, 'USD', '2025-11-15', 'T13_foreign_salary_confirmed')] last=2025-10-15 1680.0 USD modal=1680.0x5 dom=15 -> flows=[('2025-11-15', 139994.4), ('2025-12-15', 139994.4), ('2026-01-15', 139994.4)]
+- user_245/request_245 utilities: projected occurrence on request_date 2025-11-06 (counted)
+- user_245/request_245 utilities: variable monthly history mean 7007.69 (min 6494.28 max 7623.45) used
+- user_245/request_245 shopping: variable monthly history mean 6144.35 (min 5539.09 max 6613.91) used
+- user_245/request_245 entertainment: variable monthly history mean 3374.57 (min 3171.07 max 3597.07) used
+- user_246/request_246 salary: none projected (stale=False ended=True final=True last=2026-03-15)
+- user_246/request_246 rent: projected occurrence on request_date 2026-04-03 (counted)
+- user_246/request_246 utilities: variable monthly history mean 3317.59 (min 3113.72 max 3700.91) used
+- user_246/request_246 shopping: variable history mean 2372.05 (min 2153.22 max 2570.28) -> series amount 2316.60 (nominal-from-minimum? min_allowed=926.64)
+- user_247/request_247 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1528.56, 'EUR', None, 'T04_temporary_reduced_pay')] last=2024-08-15 1528.56 EUR modal=2123.0x3 dom=15 -> flows=[('2024-09-15', 1528.56), ('2024-10-15', 2123.0), ('2024-11-15', 2123.0)]
+- user_247/request_247 utilities: variable monthly history mean 100.57 (min 89.84 max 106.51) used
+- user_247/request_247 entertainment: variable monthly history mean 33.42 (min 31.69 max 36.98) used
+- user_248/request_248 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 1548.0, 'USD', None, 'T07_base_salary_commission_pending')] last=2025-01-15 928.8 USD modal=928.8x5 dom=15 -> flows=[('2025-02-15', 928.8), ('2025-03-15', 928.8), ('2025-04-15', 928.8)]
+- user_248/request_248 utilities: variable monthly history mean 90.86 (min 85.75 max 98.84) used
+- user_248/request_248 healthcare: variable monthly history mean 85.32 (min 80.61 max 92.43) used
+- user_248/request_248 shopping: variable history mean 39.15 (min 38.23 max 40.50) -> series amount 38.00 (nominal-from-minimum? min_allowed=15.2)
+- user_249/request_249 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 702.0, 'USD', None, 'T06_salary_reduced_unpaid_leave')] last=2025-12-15 386.1 USD modal=702.0x4 dom=15 -> flows=[('2026-01-15', 702.0), ('2026-02-15', 702.0), ('2026-03-15', 702.0)]
+- user_249/request_249 utilities: variable monthly history mean 38.52 (min 35.73 max 40.56) used
+- user_249/request_249 shopping: variable monthly history mean 27.02 (min 25.56 max 30.99) used
+- user_249/request_249 entertainment: variable monthly history mean 12.94 (min 12.02 max 13.97) used
+- user_250/request_250 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 53680.0, 'ZAR', '2024-12-15', 'T11_first_salary_new_employer')] last=2024-11-15 53680.0 ZAR modal=53680.0x1 dom=15 -> flows=[('2024-12-15', 53680.0), ('2025-01-15', 53680.0), ('2025-02-15', 53680.0)]
+- user_250/request_250 utilities: variable monthly history mean 3174.66 (min 2849.96 max 3475.30) used
+- user_251/request_251 salary: no regular payroll history and no scheduled row; income flows=[('2025-05-10', 370.4, 'gig payout'), ('2025-05-17', 370.4, 'gig payout'), ('2025-05-24', 370.4, 'gig payout'), ('2025-05-31', 370.4, 'gig payout')]
+- user_251/request_251 gig payout: step=7 gaps=[7, 7, 7, 10, 7, 7, 7, 10, 7, 7, 7, 7, 7, 7, 7, 10, 7, 7, 7] n=20 first=2025-05-10 amt=370.40
+- user_251/request_251 utilities: variable monthly history mean 102.10 (min 89.58 max 107.91) used
+- user_251/request_251 entertainment: variable monthly history mean 46.10 (min 42.53 max 48.66) used
+- user_252/request_252 utilities: projected occurrence on request_date 2026-07-05 (counted)
+- user_252/request_252 utilities: variable monthly history mean 920505.29 (min 865272.87 max 1001208.64) used
+- user_252/request_252 healthcare: variable monthly history mean 1234537.61 (min 1164150.18 max 1395289.47) used
+- user_252/request_252 known pending row event_23203 'Possible duplicate card charge' 988000.0 IDR cat=shopping on 2026-07-08; no series in that category (history n=0)
+- user_253/request_253 utilities: variable monthly history mean 192.64 (min 175.52 max 213.78) used
+- user_253/request_253 shopping: variable monthly history mean 82.82 (min 79.11 max 90.41) used
+- user_254/request_254 housing: projected occurrence on request_date 2025-08-04 (counted)
+- user_254/request_254 utilities: variable monthly history mean 176.91 (min 167.30 max 188.74) used
+- user_254/request_254 healthcare: variable monthly history mean 139.42 (min 132.82 max 144.61) used
+- user_254/request_254 entertainment: variable history mean 103.01 (min 94.34 max 110.02) -> series amount 106.00 (nominal-from-minimum? min_allowed=53.0)
+- user_255/request_255 salary: none projected (stale=False ended=False final=True last=2026-03-15)
+- user_255/request_255 utilities: variable monthly history mean 1058077.05 (min 958054.21 max 1179687.44) used
+- user_255/request_255 shopping: variable monthly history mean 338698.58 (min 328485.06 max 349586.56) used
+- user_256/request_256 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 214000.0, 'INR', '2024-06-15', 'T10_first_salary_credit_date')] last=2024-05-15 214000.0 INR modal=214000.0x2 dom=15 -> flows=[('2024-06-15', 214000.0), ('2024-07-15', 214000.0), ('2024-08-15', 214000.0)]
+- user_256/request_256 utilities: variable monthly history mean 11398.21 (min 10020.25 max 12532.23) used
+- user_257/request_257 utilities: variable monthly history mean 128.53 (min 119.37 max 138.06) used
+- user_257/request_257 shopping: variable monthly history mean 76.67 (min 70.59 max 84.46) used
+- user_257/request_257 entertainment: variable history mean 76.05 (min 72.26 max 84.61) -> series amount 78.00 (nominal-from-minimum? min_allowed=39.0)
+- user_258/request_258 utilities: projected occurrence on request_date 2026-01-07 (counted)
+- user_258/request_258 utilities: variable monthly history mean 61.02 (min 55.73 max 66.50) used
+- user_258/request_258 shopping: variable monthly history mean 27.89 (min 25.62 max 30.20) used
+- user_258/request_258 entertainment: variable monthly history mean 30.69 (min 28.98 max 32.24) used
+- user_259/request_259 rent: projected occurrence on request_date 2024-09-04 (counted)
+- user_259/request_259 utilities: variable monthly history mean 41.13 (min 37.95 max 46.40) used
+- user_260/request_260 utilities: variable monthly history mean 1393406.10 (min 1335669.78 max 1513544.02) used
+- user_260/request_260 insurance: projected occurrence on request_date 2025-02-06 (counted)
+- user_260/request_260 shopping: variable history mean 1190616.47 (min 1091724.51 max 1330372.23) -> series amount 1195100.00 (nominal-from-minimum? min_allowed=478040.0)
+- user_260/request_260 entertainment: variable history mean 680233.21 (min 578152.38 max 724281.68) -> series amount 651700.00 (nominal-from-minimum? min_allowed=325850.0)
+- user_261/request_261 housing: projected occurrence on request_date 2026-07-03 (counted)
+- user_261/request_261 utilities: variable monthly history mean 163.43 (min 148.94 max 183.63) used
+- user_261/request_261 healthcare: variable monthly history mean 156.06 (min 142.83 max 168.33) used
+- user_262/request_262 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 48260000.0, 'IDR', None, 'T15_household_income_ended')] last=2024-11-15 29921200.0 IDR modal=29921200.0x5 dom=15 -> flows=[('2024-12-15', 48260000.0), ('2025-01-15', 48260000.0), ('2025-02-15', 48260000.0)]
+- user_262/request_262 utilities: variable monthly history mean 2543605.75 (min 2461506.79 max 2662460.23) used
+- user_262/request_262 shopping: variable history mean 1383697.95 (min 1240936.11 max 1492159.53) -> series amount 1371800.00 (nominal-from-minimum? min_allowed=548720.0)
+- user_263/request_263 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'next_payment_only', 1485.0, 'EUR', '2025-05-15', 'T13_foreign_salary_confirmed')] last=2025-04-15 1485.0 EUR modal=1485.0x5 dom=15 -> flows=[('2025-05-15', 29700.0), ('2025-06-15', 29700.0), ('2025-07-15', 29700.0)]
+- user_263/request_263 utilities: variable monthly history mean 1380.92 (min 1256.95 max 1528.66) used
+- user_263/request_263 shopping: variable history mean 1289.51 (min 1173.14 max 1395.41) -> series amount 1265.00 (nominal-from-minimum? min_allowed=506.0)
+- user_263/request_263 entertainment: variable monthly history mean 869.55 (min 792.85 max 947.45) used
+- user_263/request_263 known pending row event_24283 'Pending pharmacy card charge' 968.0 ZAR cat=healthcare on 2025-05-11; no series in that category (history n=0)
+- user_264/request_264 utilities: variable monthly history mean 5550.33 (min 5147.14 max 5986.66) used
+- user_264/request_264 shopping: variable history mean 4032.55 (min 3914.35 max 4125.12) -> series amount 3760.00 (nominal-from-minimum? min_allowed=1504.0)
+- user_264/request_264 known scheduled row event_24353 'Scheduled insurance payment' 5080.0 INR cat=insurance on 2026-04-11; no series in that category (history n=0)
+- user_265/request_265 salary: none projected (stale=True ended=True final=False last=2023-12-15)
+- user_265/request_265 utilities: projected occurrence on request_date 2024-03-06 (counted)
+- user_265/request_265 utilities: variable monthly history mean 13556.43 (min 12603.67 max 15363.94) used
+- user_265/request_265 entertainment: variable monthly history mean 5225.32 (min 4874.91 max 5763.36) used
+- user_266/request_266 rent: projected occurrence on request_date 2025-08-03 (counted)
+- user_266/request_266 utilities: variable monthly history mean 67.94 (min 64.40 max 73.15) used
+- user_266/request_266 healthcare: variable monthly history mean 44.38 (min 39.27 max 48.47) used
+- user_266/request_266 shopping: variable monthly history mean 26.72 (min 24.22 max 30.06) used
+- user_267/request_267 utilities: variable monthly history mean 108.61 (min 100.36 max 114.87) used
+- user_267/request_267 shopping: variable monthly history mean 45.26 (min 40.66 max 49.07) used
+- user_267/request_267 entertainment: variable monthly history mean 69.68 (min 66.15 max 72.29) used
+- user_268/request_268 utilities: variable monthly history mean 152.73 (min 147.64 max 158.96) used
+- user_269/request_269 salary MOVED/RESIZED by message (history-based): adjs=[('salary_amount_change', 'permanent', 38280.0, 'ZAR', '2025-11-15', 'T12_first_salary_scheduled')] last=2025-10-15 21054.0 ZAR modal=21054.0x1 dom=15 -> flows=[('2025-11-15', 38280.0), ('2025-12-15', 38280.0), ('2026-01-15', 38280.0)]
+- user_269/request_269 utilities: variable monthly history mean 1771.18 (min 1630.24 max 1983.00) used
+- user_270/request_270 utilities: variable monthly history mean 93.44 (min 83.72 max 102.44) used
+- user_270/request_270 healthcare: variable monthly history mean 75.81 (min 72.00 max 84.03) used
+- user_271/request_271 salary MOVED/RESIZED by message (history-based): adjs=[('one_time_confirmed_income', None, 46350.0, 'INR', None, 'T14_regular_plus_arrears')] last=2024-08-15 103000.0 INR modal=103000.0x5 dom=15 -> flows=[('2024-09-15', 103000.0), ('2024-10-15', 103000.0), ('2024-11-15', 103000.0)]
+- user_271/request_271 utilities: variable monthly history mean 6126.27 (min 5774.50 max 6438.75) used
+- user_271/request_271 shopping: variable history mean 4162.60 (min 3760.08 max 4439.51) -> series amount 4040.00 (nominal-from-minimum? min_allowed=1616.0)
+- user_272/request_272 utilities: projected occurrence on request_date 2025-02-05 (counted)
+- user_272/request_272 utilities: variable monthly history mean 574674.64 (min 523883.25 max 598242.36) used
+- user_272/request_272 healthcare: variable monthly history mean 412768.82 (min 386827.61 max 427100.48) used
+- user_272/request_272 entertainment: variable history mean 423259.30 (min 389866.57 max 457665.38) -> series amount 433200.00 (nominal-from-minimum? min_allowed=216600.0)
+- user_273/request_273 utilities: variable monthly history mean 1526207.61 (min 1401906.12 max 1639730.47) used
+- user_273/request_273 shopping: variable monthly history mean 1389993.93 (min 1248771.48 max 1484654.11) used
+- user_274/request_274 utilities: variable monthly history mean 172.99 (min 154.55 max 182.27) used
+- user_274/request_274 shopping: variable history mean 123.97 (min 113.57 max 135.64) -> series amount 129.00 (nominal-from-minimum? min_allowed=51.6)
+- user_274/request_274 entertainment: variable monthly history mean 74.37 (min 69.71 max 80.97) used
+- user_275/request_275 utilities: variable monthly history mean 1267147.40 (min 1173094.13 max 1397870.05) used
+- user_275/request_275 healthcare: variable monthly history mean 1234735.42 (min 1128337.74 max 1325567.69) used
+- user_275/request_275 shopping: variable history mean 924867.93 (min 827731.99 max 1038116.00) -> series amount 940500.00 (nominal-from-minimum? min_allowed=376200.0)

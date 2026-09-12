@@ -16,6 +16,7 @@ exchange-rate row for the settlement date and the stated from->to direction.
 from __future__ import annotations
 
 import calendar
+import math
 import statistics
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
@@ -43,6 +44,11 @@ OPTIONS = {
     # (0.5 for dining/entertainment/gym/streaming, 0.4 for shopping); the nominal recovered
     # from it is used as the forecast amount instead of the noisy mean.
     "nominal_from_minimum": True,
+    # Variable series without a leaked nominal: the observed amounts are nominal x U(1-a, 1+a)
+    # with a category-specific half-width a (derived from the data), so the nominal must lie in
+    # [max/(1+a), min/(1-a)]. The mean is clamped into that interval and snapped to the nearest
+    # currency grid point inside it (grid derived from the leaked nominals).
+    "clamp_to_band": True,
 }
 
 # --- salary description classes ------------------------------------------------
@@ -189,6 +195,51 @@ class StateBuilder:
         if options:
             self.opt.update(options)
         self.min_factor = self._minimum_factors() if self.opt.get("nominal_from_minimum") else {}
+        self.band = self._noise_bands() if self.opt.get("clamp_to_band") else {}
+        self.grid = self._currency_grid() if self.opt.get("clamp_to_band") else {}
+
+    def _noise_bands(self) -> dict[str, float]:
+        """Per category: half-width a of the multiplicative noise band, from the largest
+        per-series (max-min)/(max+min) over settled debit series with >= 3 rows, rounded
+        up to 0.02 (a series never exceeds its band; the largest series approaches it)."""
+        per_series: dict[tuple[str, str], list[float]] = defaultdict(list)
+        linked_targets = {e.linked_event_id for e in self.ds.events.values() if e.linked_event_id}
+        for e in self.ds.events.values():
+            if e.status != "settled" or e.direction != "debit" or not e.amount or e.amount_source != "csv":
+                continue
+            if e.event_type in NON_RECURRING_TYPES or e.category in NON_RECURRING_CATEGORIES or e.linked_event_id or e.event_id in linked_targets:
+                continue
+            per_series[(e.user_id, e.category)].append(e.amount)
+        worst: dict[str, float] = defaultdict(float)
+        for (_, cat), amts in per_series.items():
+            if len(amts) >= 3 and max(amts) > min(amts):
+                worst[cat] = max(worst[cat], (max(amts) - min(amts)) / (max(amts) + min(amts)))
+        return {cat: math.ceil(w / 0.02 - 1e-9) * 0.02 for cat, w in worst.items()}
+
+    def _currency_grid(self) -> dict[str, float]:
+        """Per currency: the unit on which the leaked nominals (minimum x factor) lie, i.e. the
+        greatest common divisor of those nominals expressed in cents."""
+        cents: dict[str, list[int]] = defaultdict(list)
+        for e in self.ds.events.values():
+            if e.status == "settled" and e.direction == "debit" and e.minimum_allowed_amount and e.category in self.min_factor:
+                cents[e.currency].append(int(round(e.minimum_allowed_amount * self.min_factor[e.category] * 100)))
+        out = {}
+        for cur, vals in cents.items():
+            g = 0
+            for v in vals:
+                g = math.gcd(g, v)
+            if g <= 0:
+                continue
+            # keep only the decimal part of the common divisor (1, 2 or 5 times a power of ten):
+            # an accidental common factor (e.g. 11 or 19) is not a rounding unit
+            best = 1
+            for k in range(0, 8):
+                for m in (1, 2, 5):
+                    u = m * 10**k
+                    if g % u == 0 and u > best:
+                        best = u
+            out[cur] = best / 100.0
+        return out
 
     def _minimum_factors(self) -> dict[str, float]:
         """Per category: median(amount / minimum_allowed_amount) over settled debits,
@@ -333,10 +384,24 @@ class StateBuilder:
             est = self.opt.get("estimator", "mean")
             amount = statistics.median(amts) if est == "median" else amts[-1] if est == "last" else statistics.mean(amts)
             latest_min = rows[-1][2].minimum_allowed_amount
+            leaked = False
             if latest_min and cat in self.min_factor and all(r[2].minimum_allowed_amount == latest_min for r in rows):
                 nominal = self.to_home(latest_min * self.min_factor[cat], rows[-1][2].currency, home, rows[-1][0])
                 if 0.6 * amount <= nominal <= 1.4 * amount:
                     amount = nominal
+                    leaked = True
+            a = self.band.get(cat, 0.0)
+            if not leaked and a > 0 and max(amts) > min(amts) and est == "mean":
+                lo, hi = max(amts) / (1 + a), min(amts) / (1 - a)
+                if lo <= hi:
+                    clamped = min(max(amount, lo), hi)
+                    unit = self.grid.get(home)
+                    if unit:
+                        k_lo, k_hi = math.ceil(lo / unit - 1e-9), math.floor(hi / unit + 1e-9)
+                        if k_lo <= k_hi:
+                            k = min(max(round(clamped / unit), k_lo), k_hi)
+                            clamped = k * unit
+                    amount = clamped
             if cat == "rent" and rent_pct:
                 amount *= 1 + rent_pct / 100.0
                 st.notes.append(f"rent increased by {rent_pct}% per message")

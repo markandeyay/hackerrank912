@@ -46,8 +46,19 @@ def test_monthly_series_same_dom_includes_request_date_occurrence():
 def test_monthly_series_amount_is_mean_in_home_currency():
     rows = monthly_rows(amount=400.0)
     rows[-1].amount = 700.0
-    st = build(rows)
+    st = build(rows, options={"clamp_to_band": False})
     assert st.series[0].amount == pytest.approx((400 * 4 + 700) / 5)
+
+
+def test_monthly_series_amount_clamped_into_noise_band():
+    # observed = nominal x U(1-a, 1+a) => nominal in [max/(1+a), min/(1-a)]; the mean is
+    # clamped into that interval when it falls outside (band derived from the data itself)
+    rows = monthly_rows(amount=400.0)
+    rows[-1].amount = 700.0
+    st = build(rows)
+    a = 0.28  # (700-400)/(700+400) = 0.273 rounded up to 0.02
+    lo, hi = 700 / (1 + a), 400 / (1 - a)
+    assert lo - 1e-6 <= st.series[0].amount <= hi + 1e-6
 
 
 @pytest.mark.parametrize("step", [7, 10, 14])
