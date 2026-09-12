@@ -1,0 +1,4368 @@
+{
+ "baseline_mismatches": [],
+ "flips": {
+  "request_46": {
+   "requested": 49450.0,
+   "min_balance": 84000.0,
+   "balance": 202335.0,
+   "variable_block": 181290.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "38430",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2024-12-03:38430|2024-12-15:11020",
+    "earliest_date_for_full_payment": "2024-12-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -11020.0,
+    "full_today_trough_date": "2024-12-13",
+    "earliest": "2024-12-15",
+    "earliest_pass_margin": 10545.0,
+    "day_before_fail_margin": -11020.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2024-12-13",
+    "installments_opt125_margin": 8567.0,
+    "installments_opt126_margin": 20957.660000000003
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "39232.8",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-12-03:39232.80|2024-12-15:10217.20",
+      "earliest_date_for_full_payment": "2024-12-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -10217.199999999997,
+      "full_today_trough_date": "2024-12-13",
+      "earliest": "2024-12-15",
+      "earliest_pass_margin": 13456.500000000146,
+      "day_before_fail_margin": -10217.199999999968,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2024-12-13",
+      "installments_opt125_margin": 11478.500000000073,
+      "installments_opt126_margin": 21760.46000000002
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 7220.0,
+      "amount_scaled": 7003.4,
+      "occurrences_upto": [
+       "2024-12-07"
+      ],
+      "contrib_base": 7220.0,
+      "delta": -216.6000000000002
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "37627.2",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-12-03:37627.20|2024-12-15:11822.80",
+      "earliest_date_for_full_payment": "2024-12-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -11822.800000000003,
+      "full_today_trough_date": "2024-12-13",
+      "earliest": "2024-12-15",
+      "earliest_pass_margin": 7633.4999999998545,
+      "day_before_fail_margin": -11822.800000000032,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2024-12-13",
+      "installments_opt125_margin": 5655.499999999942,
+      "installments_opt126_margin": 20154.859999999986
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 7220.0,
+      "amount_scaled": 7436.6,
+      "occurrences_upto": [
+       "2024-12-07"
+      ],
+      "contrib_base": 7220.0,
+      "delta": 216.6000000000002
+     }
+    }
+   }
+  },
+  "request_49": {
+   "requested": 34333000.0,
+   "min_balance": 20275700.0,
+   "balance": 40504493.34,
+   "variable_block": 42234900.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "12552693.34",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67",
+    "earliest_date_for_full_payment": "2024-04-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -21780306.659999996,
+    "full_today_trough_date": "2024-03-14",
+    "earliest": "2024-04-15",
+    "earliest_pass_margin": 742693.3400000036,
+    "day_before_fail_margin": -17708906.659999996,
+    "plan_margin": 4721986.670000002,
+    "plan_trough_date": "2024-04-14",
+    "installments_opt133_margin": 4721986.670000002
+   },
+   "threshold": 1.0225,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "12365103.34",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67",
+      "earliest_date_for_full_payment": "2024-05-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -21967896.659999996,
+      "full_today_trough_date": "2024-03-14",
+      "earliest": "2024-05-15",
+      "earliest_pass_margin": 37494546.34,
+      "day_before_fail_margin": -353920.6599999964,
+      "plan_margin": 4047721.670000002,
+      "plan_trough_date": "2024-04-14",
+      "installments_opt133_margin": 4047721.670000002
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1452100.0,
+      "amount_scaled": 1495663.0,
+      "occurrences_upto": [
+       "2024-03-09",
+       "2024-03-16",
+       "2024-03-23",
+       "2024-03-30",
+       "2024-04-06",
+       "2024-04-13"
+      ],
+      "contrib_base": 8712600.0,
+      "delta": 261378.00000000023
+     }
+    }
+   }
+  },
+  "request_53": {
+   "requested": 1699.2,
+   "min_balance": 2100.0,
+   "balance": 3523.42,
+   "variable_block": 2860.0,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "459.42",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06",
+    "earliest_date_for_full_payment": "2026-01-15",
+    "spending_changes_needed": "stop:event_4925"
+   },
+   "margins_base": {
+    "full_today_margin": -1239.78,
+    "full_today_trough_date": "2025-11-14",
+    "earliest": "2026-01-15",
+    "earliest_pass_margin": 1829.2200000000003,
+    "day_before_fail_margin": -572.78,
+    "plan_margin": 71.30000000000109,
+    "plan_trough_date": "2026-01-14",
+    "plan_without_changes_margin": -51.69999999999891,
+    "installments_opt145_margin": 71.30000000000109
+   },
+   "threshold": 0.9775,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "467.07",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06",
+      "earliest_date_for_full_payment": "2026-01-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -1232.13,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2026-01-15",
+      "earliest_pass_margin": 1915.020000000005,
+      "day_before_fail_margin": -501.31999999999584,
+      "plan_margin": 19.760000000002037,
+      "plan_trough_date": "2026-01-14",
+      "installments_opt145_margin": 19.760000000002037
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 109.0,
+      "amount_scaled": 105.73,
+      "occurrences_upto": [
+       "2025-11-12",
+       "2025-11-19",
+       "2025-11-26",
+       "2025-12-03",
+       "2025-12-10",
+       "2025-12-17",
+       "2025-12-24",
+       "2025-12-31",
+       "2026-01-07",
+       "2026-01-14"
+      ],
+      "contrib_base": 1090.0,
+      "delta": -32.70000000000003
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "451.77",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06",
+      "earliest_date_for_full_payment": "2026-01-15",
+      "spending_changes_needed": "stop:event_4925|reduce_to:event_4992:44.50"
+     },
+     "margins": {
+      "full_today_margin": -1247.4299999999998,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2026-01-15",
+      "earliest_pass_margin": 1743.4199999999955,
+      "day_before_fail_margin": -644.2400000000041,
+      "plan_margin": 235.68999999999687,
+      "plan_trough_date": "2026-01-14",
+      "plan_without_changes_margin": -123.16000000000258,
+      "installments_opt145_margin": 235.68999999999687
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 109.0,
+      "amount_scaled": 112.27,
+      "occurrences_upto": [
+       "2025-11-12",
+       "2025-11-19",
+       "2025-11-26",
+       "2025-12-03",
+       "2025-12-10",
+       "2025-12-17",
+       "2025-12-24",
+       "2025-12-31",
+       "2026-01-07",
+       "2026-01-14"
+      ],
+      "contrib_base": 1090.0,
+      "delta": 32.70000000000003
+     }
+    }
+   }
+  },
+  "request_55": {
+   "requested": 218600.0,
+   "min_balance": 124300.0,
+   "balance": 314341.19,
+   "variable_block": 264660.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "114626.19",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33",
+    "earliest_date_for_full_payment": "2026-08-15",
+    "spending_changes_needed": "stop:event_5102|stop:event_5101"
+   },
+   "margins_base": {
+    "full_today_margin": -103973.81,
+    "full_today_trough_date": "2026-06-14",
+    "earliest": "2026-08-15",
+    "earliest_pass_margin": 167246.18999999994,
+    "day_before_fail_margin": -5273.809999999998,
+    "plan_margin": 4267.199999999953,
+    "plan_trough_date": "2026-08-14",
+    "plan_without_changes_margin": -14017.800000000047,
+    "installments_opt151_margin": 4267.199999999953
+   },
+   "threshold": 1.02,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "115825.29",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33",
+      "earliest_date_for_full_payment": "2026-07-15",
+      "spending_changes_needed": "stop:event_5102|stop:event_5101"
+     },
+     "margins": {
+      "full_today_margin": -102774.70999999999,
+      "full_today_trough_date": "2026-06-14",
+      "earliest": "2026-07-15",
+      "earliest_pass_margin": 1361.5900000000838,
+      "day_before_fail_margin": -53020.00999999995,
+      "plan_margin": 10902.599999999977,
+      "plan_trough_date": "2026-08-14",
+      "plan_without_changes_margin": -7382.400000000038,
+      "installments_opt151_margin": 10902.599999999977
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 9480.0,
+      "amount_scaled": 9195.6,
+      "occurrences_upto": [
+       "2026-06-14",
+       "2026-06-22",
+       "2026-06-29",
+       "2026-07-06",
+       "2026-07-13",
+       "2026-07-20",
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10"
+      ],
+      "contrib_base": 85320.0,
+      "delta": -2559.600000000002
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "113427.09",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33",
+      "earliest_date_for_full_payment": "2026-08-15",
+      "spending_changes_needed": "stop:event_5102|stop:event_5101|reduce_to:event_5167:2750"
+     },
+     "margins": {
+      "full_today_margin": -105172.91,
+      "full_today_trough_date": "2026-06-14",
+      "earliest": "2026-08-15",
+      "earliest_pass_margin": 159306.3899999999,
+      "day_before_fail_margin": -11909.21000000008,
+      "plan_margin": 12206.799999999988,
+      "plan_trough_date": "2026-08-14",
+      "plan_without_changes_margin": -20653.199999999983,
+      "installments_opt151_margin": 12206.799999999988
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 9480.0,
+      "amount_scaled": 9764.4,
+      "occurrences_upto": [
+       "2026-06-14",
+       "2026-06-22",
+       "2026-06-29",
+       "2026-07-06",
+       "2026-07-13",
+       "2026-07-20",
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10"
+      ],
+      "contrib_base": 85320.0,
+      "delta": 2559.600000000002
+     }
+    }
+   }
+  },
+  "request_56": {
+   "requested": 881.56,
+   "min_balance": 2100.0,
+   "balance": 3432.36,
+   "variable_block": 2399.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "527.36",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2025-02-03:527.36|2025-02-15:354.20",
+    "earliest_date_for_full_payment": "2025-02-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -354.1999999999998,
+    "full_today_trough_date": "2025-02-14",
+    "earliest": "2025-02-15",
+    "earliest_pass_margin": 779.8000000000006,
+    "day_before_fail_margin": -354.1999999999998,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2025-02-14",
+    "installments_opt155_margin": 68.94000000000005,
+    "installments_opt156_margin": 215.8699999999999
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "543.17",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-02-03:543.17|2025-02-15:338.39",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -338.3899999999999,
+      "full_today_trough_date": "2025-02-14",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 818.5299999999993,
+      "day_before_fail_margin": -338.3899999999999,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-02-14",
+      "installments_opt155_margin": 84.75,
+      "installments_opt156_margin": 231.6800000000003
+     },
+     "driver": {
+      "category": "healthcare",
+      "amount_base": 115.0,
+      "amount_scaled": 111.55,
+      "occurrences_upto": [
+       "2025-02-09"
+      ],
+      "contrib_base": 115.0,
+      "delta": -3.450000000000003
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "511.55",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-02-03:511.55|2025-02-15:370.01",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -370.00999999999976,
+      "full_today_trough_date": "2025-02-14",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 741.0699999999997,
+      "day_before_fail_margin": -370.00999999999976,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-02-14",
+      "installments_opt155_margin": 53.13000000000011,
+      "installments_opt156_margin": 200.0600000000004
+     },
+     "driver": {
+      "category": "healthcare",
+      "amount_base": 115.0,
+      "amount_scaled": 118.45,
+      "occurrences_upto": [
+       "2025-02-09"
+      ],
+      "contrib_base": 115.0,
+      "delta": 3.450000000000003
+     }
+    }
+   }
+  },
+  "request_59": {
+   "requested": 140600.0,
+   "min_balance": 132600.0,
+   "balance": 723245.99,
+   "variable_block": 248400.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "140600",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33",
+    "earliest_date_for_full_payment": "2025-05-04",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": 9105.98999999999,
+    "full_today_trough_date": "2025-07-27",
+    "earliest": "2025-05-04",
+    "earliest_pass_margin": 9105.98999999999,
+    "plan_margin": 3482.0,
+    "plan_trough_date": "2025-07-27",
+    "installments_opt163_margin": 3482.0
+   },
+   "threshold": 1.015,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "140600",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33",
+      "earliest_date_for_full_payment": "2025-05-04",
+      "spending_changes_needed": "stop:event_5471"
+     },
+     "margins": {
+      "full_today_margin": 1653.990000000078,
+      "full_today_trough_date": "2025-07-27",
+      "earliest": "2025-05-04",
+      "earliest_pass_margin": 1653.9899999996414,
+      "plan_margin": 4369.999999999738,
+      "plan_trough_date": "2025-07-27",
+      "plan_without_changes_margin": -3970.0000000002765,
+      "installments_opt163_margin": 4369.999999999738
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 8310.0,
+      "amount_scaled": 8559.300000000001,
+      "occurrences_upto": [
+       "2025-05-11",
+       "2025-05-18",
+       "2025-05-25",
+       "2025-06-01",
+       "2025-06-08",
+       "2025-06-15",
+       "2025-06-22",
+       "2025-06-29",
+       "2025-07-06",
+       "2025-07-13",
+       "2025-07-20",
+       "2025-07-27"
+      ],
+      "contrib_base": 99720.0,
+      "delta": 2991.6000000000026
+     }
+    }
+   }
+  },
+  "request_60": {
+   "requested": 199.89,
+   "min_balance": 400.0,
+   "balance": 683.69,
+   "variable_block": 831.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "116.69",
+    "affordability_status": "affordable_later",
+    "recommended_payment_method": "wait",
+    "payment_plan": "2026-02-15:199.89",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -83.19999999999993,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 96.80000000000018,
+    "day_before_fail_margin": -0.1999999999998181,
+    "plan_margin": 96.80000000000018,
+    "plan_trough_date": "2026-03-13"
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "119.72",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2026-01-15:199.89",
+      "earliest_date_for_full_payment": "2026-01-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -80.16999999999985,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-01-15",
+      "earliest_pass_margin": 11.649999999999864,
+      "day_before_fail_margin": -80.16999999999996,
+      "plan_margin": 11.650000000000034,
+      "plan_trough_date": "2026-02-13"
+     },
+     "driver": {
+      "category": "transport",
+      "amount_base": 14.0,
+      "amount_scaled": 13.58,
+      "occurrences_upto": [
+       "2026-01-09",
+       "2026-01-14",
+       "2026-01-19",
+       "2026-01-24",
+       "2026-01-29",
+       "2026-02-03",
+       "2026-02-08",
+       "2026-02-13"
+      ],
+      "contrib_base": 112.0,
+      "delta": -3.360000000000003
+     }
+    }
+   }
+  },
+  "request_68": {
+   "requested": 2091.6,
+   "min_balance": 1500.0,
+   "balance": 3657.83,
+   "variable_block": 2592.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "1332.83",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09",
+    "earliest_date_for_full_payment": "2025-03-23",
+    "spending_changes_needed": "stop:event_6330"
+   },
+   "margins_base": {
+    "full_today_margin": -758.77,
+    "full_today_trough_date": "2025-02-18",
+    "earliest": "2025-03-23",
+    "earliest_pass_margin": 62.23000000000002,
+    "day_before_fail_margin": -292.77,
+    "plan_margin": 8.55999999999949,
+    "plan_trough_date": "2025-04-22",
+    "plan_without_changes_margin": -21.44000000000051,
+    "installments_opt187_margin": 8.55999999999949
+   },
+   "threshold": 1.005,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "1346.75",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09",
+      "earliest_date_for_full_payment": "2025-03-23",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -744.85,
+      "full_today_trough_date": "2025-02-18",
+      "earliest": "2025-03-23",
+      "earliest_pass_margin": 134.61999999999853,
+      "day_before_fail_margin": -251.2800000000002,
+      "plan_margin": 50.94999999999891,
+      "plan_trough_date": "2025-04-22",
+      "installments_opt187_margin": 50.94999999999891
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 111.0,
+      "amount_scaled": 107.67,
+      "occurrences_upto": [
+       "2025-02-11",
+       "2025-02-18",
+       "2025-02-25",
+       "2025-03-04",
+       "2025-03-11",
+       "2025-03-18",
+       "2025-03-25",
+       "2025-04-01",
+       "2025-04-08",
+       "2025-04-15",
+       "2025-04-22"
+      ],
+      "contrib_base": 1221.0,
+      "delta": -36.63000000000003
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "1318.91",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09",
+      "earliest_date_for_full_payment": "2025-04-23",
+      "spending_changes_needed": "stop:event_6330|reduce_to:event_6331:24.80"
+     },
+     "margins": {
+      "full_today_margin": -772.6899999999999,
+      "full_today_trough_date": "2025-02-18",
+      "earliest": "2025-04-23",
+      "earliest_pass_margin": 1551.4700000000016,
+      "day_before_fail_margin": -10.159999999998945,
+      "plan_margin": 53.34999999999923,
+      "plan_trough_date": "2025-04-22",
+      "plan_without_changes_margin": -93.8299999999997,
+      "installments_opt187_margin": 53.34999999999923
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 111.0,
+      "amount_scaled": 114.33,
+      "occurrences_upto": [
+       "2025-02-11",
+       "2025-02-18",
+       "2025-02-25",
+       "2025-03-04",
+       "2025-03-11",
+       "2025-03-18",
+       "2025-03-25",
+       "2025-04-01",
+       "2025-04-08",
+       "2025-04-15",
+       "2025-04-22"
+      ],
+      "contrib_base": 1221.0,
+      "delta": 36.63000000000003
+     }
+    }
+   }
+  },
+  "request_77": {
+   "requested": 60700.0,
+   "min_balance": 82200.0,
+   "balance": 189860.5,
+   "variable_block": 128340.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "60095.5",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2025-11-05:60700",
+    "earliest_date_for_full_payment": "2025-11-15",
+    "spending_changes_needed": "stop:event_7143"
+   },
+   "margins_base": {
+    "full_today_margin": -604.5,
+    "full_today_trough_date": "2025-11-13",
+    "earliest": "2025-11-15",
+    "earliest_pass_margin": 22470.5,
+    "day_before_fail_margin": -604.5,
+    "plan_margin": 100.5,
+    "plan_trough_date": "2025-11-13",
+    "plan_without_changes_margin": -604.5
+   },
+   "threshold": 1.005,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "60700",
+      "affordability_status": "affordable_now",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2025-11-05:60700",
+      "earliest_date_for_full_payment": "2025-11-05",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": 224.10000000000582,
+      "full_today_trough_date": "2025-11-13",
+      "earliest": "2025-11-05",
+      "earliest_pass_margin": 224.10000000003492,
+      "plan_margin": 224.10000000000582,
+      "plan_trough_date": "2025-11-13"
+     },
+     "driver": {
+      "category": "healthcare",
+      "amount_base": 7950.0,
+      "amount_scaled": 7711.5,
+      "occurrences_upto": [
+       "2025-11-10"
+      ],
+      "contrib_base": 7950.0,
+      "delta": -238.5000000000002
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "59266.9",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2025-11-15:60700",
+      "earliest_date_for_full_payment": "2025-11-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -1433.1000000000058,
+      "full_today_trough_date": "2025-11-13",
+      "earliest": "2025-11-15",
+      "earliest_pass_margin": 20358.499999999884,
+      "day_before_fail_margin": -1433.100000000035,
+      "plan_margin": 20358.499999999884,
+      "plan_trough_date": "2025-12-13"
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 4240.0,
+      "amount_scaled": 4367.2,
+      "occurrences_upto": [
+       "2025-11-10",
+       "2025-11-17",
+       "2025-11-24",
+       "2025-12-01",
+       "2025-12-08"
+      ],
+      "contrib_base": 21200.0,
+      "delta": 636.0000000000006
+     }
+    }
+   }
+  },
+  "request_89": {
+   "requested": 13756000.0,
+   "min_balance": 12534700.0,
+   "balance": 27331862.01,
+   "variable_block": 20160300.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "9434562.01",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67",
+    "earliest_date_for_full_payment": "2026-01-15",
+    "spending_changes_needed": "stop:event_8336|stop:event_8335|reduce_to:event_8403:203300"
+   },
+   "margins_base": {
+    "full_today_margin": -4321437.989999998,
+    "full_today_trough_date": "2025-11-12",
+    "earliest": "2026-01-15",
+    "earliest_pass_margin": 11672262.010000005,
+    "day_before_fail_margin": -893737.9899999946,
+    "plan_margin": 786622.0000000019,
+    "plan_trough_date": "2026-01-13",
+    "plan_without_changes_margin": -1443977.9999999981,
+    "installments_opt248_margin": 786622.0000000019
+   },
+   "threshold": 0.985,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "9523734.01",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67",
+      "earliest_date_for_full_payment": "2026-01-15",
+      "spending_changes_needed": "stop:event_8336|stop:event_8335"
+     },
+     "margins": {
+      "full_today_margin": -4232265.989999998,
+      "full_today_trough_date": "2025-11-12",
+      "earliest": "2026-01-15",
+      "earliest_pass_margin": 12277071.010000005,
+      "day_before_fail_margin": -367948.98999999464,
+      "plan_margin": 295911.00000000186,
+      "plan_trough_date": "2026-01-13",
+      "plan_without_changes_margin": -918188.9999999981,
+      "installments_opt248_margin": 295911.00000000186
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 694700.0,
+      "amount_scaled": 673859.0,
+      "occurrences_upto": [
+       "2025-11-09",
+       "2025-11-16",
+       "2025-11-23",
+       "2025-11-30",
+       "2025-12-07",
+       "2025-12-14",
+       "2025-12-21",
+       "2025-12-28",
+       "2026-01-04",
+       "2026-01-11"
+      ],
+      "contrib_base": 6947000.0,
+      "delta": -208410.00000000017
+     }
+    }
+   }
+  },
+  "request_92": {
+   "requested": 34034.0,
+   "min_balance": 28100.0,
+   "balance": 78664.47,
+   "variable_block": 53764.200000000004,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "33829.17",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2025-02-05:34034",
+    "earliest_date_for_full_payment": "2025-02-15",
+    "spending_changes_needed": "stop:event_8621|reduce_to:event_8620:558.80"
+   },
+   "margins_base": {
+    "full_today_margin": -204.8299999999981,
+    "full_today_trough_date": "2025-02-14",
+    "earliest": "2025-02-15",
+    "earliest_pass_margin": 3591.0700000000215,
+    "day_before_fail_margin": -204.8299999999872,
+    "plan_margin": 504.6700000000019,
+    "plan_trough_date": "2025-02-14",
+    "plan_without_changes_margin": -204.8299999999981
+   },
+   "threshold": 0.995,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "34034",
+      "affordability_status": "affordable_now",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2025-02-05:34034",
+      "earliest_date_for_full_payment": "2025-02-05",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": 156.3520000000026,
+      "full_today_trough_date": "2025-02-14",
+      "earliest": "2025-02-05",
+      "earliest_pass_margin": 156.35200000000623,
+      "plan_margin": 156.3520000000026,
+      "plan_trough_date": "2025-02-14"
+     },
+     "driver": {
+      "category": "healthcare",
+      "amount_base": 3212.4,
+      "amount_scaled": 3116.028,
+      "occurrences_upto": [
+       "2025-02-09"
+      ],
+      "contrib_base": 3212.4,
+      "delta": -96.37200000000009
+     }
+    }
+   }
+  },
+  "request_96": {
+   "requested": 90200.0,
+   "min_balance": 56500.0,
+   "balance": 161635.49,
+   "variable_block": 100050.0,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "72795.49",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "stop:event_8914"
+   },
+   "margins_base": {
+    "full_today_margin": -17404.51000000001,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 1425.4899999999907,
+    "day_before_fail_margin": -8884.51000000001,
+    "plan_margin": 142.49999999995634,
+    "plan_trough_date": "2026-03-12",
+    "plan_without_changes_margin": -2182.5000000000437,
+    "installments_opt269_margin": 142.49999999995634
+   },
+   "threshold": 1.0025,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "73317.49",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -16882.510000000017,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 4002.1900000000605,
+      "day_before_fail_margin": -7308.309999999969,
+      "plan_margin": 394.2000000000189,
+      "plan_trough_date": "2026-03-12",
+      "installments_opt269_margin": 394.2000000000189
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 3680.0,
+      "amount_scaled": 3569.6,
+      "occurrences_upto": [
+       "2026-01-07",
+       "2026-01-14",
+       "2026-01-21",
+       "2026-01-28",
+       "2026-02-04",
+       "2026-02-11",
+       "2026-02-18",
+       "2026-02-25",
+       "2026-03-04",
+       "2026-03-11"
+      ],
+      "contrib_base": 36800.0,
+      "delta": -1104.000000000001
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "72273.49",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33",
+      "earliest_date_for_full_payment": "2026-03-15",
+      "spending_changes_needed": "stop:event_8914|reduce_to:event_8980:1610"
+     },
+     "margins": {
+      "full_today_margin": -17926.510000000002,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-03-15",
+      "earliest_pass_margin": 64263.9899999999,
+      "day_before_fail_margin": -1151.2100000000792,
+      "plan_margin": 6098.799999999981,
+      "plan_trough_date": "2026-03-12",
+      "plan_without_changes_margin": -4759.200000000048,
+      "installments_opt269_margin": 6098.799999999981
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 3680.0,
+      "amount_scaled": 3790.4,
+      "occurrences_upto": [
+       "2026-01-07",
+       "2026-01-14",
+       "2026-01-21",
+       "2026-01-28",
+       "2026-02-04",
+       "2026-02-11",
+       "2026-02-18",
+       "2026-02-25",
+       "2026-03-04",
+       "2026-03-11"
+      ],
+      "contrib_base": 36800.0,
+      "delta": 1104.000000000001
+     }
+    }
+   }
+  },
+  "request_97": {
+   "requested": 23496.0,
+   "min_balance": 29700.0,
+   "balance": 38565.89,
+   "variable_block": 22501.600000000002,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "0",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28",
+    "earliest_date_for_full_payment": "2024-04-15",
+    "spending_changes_needed": "stop:event_9006|reduce_to:event_9038:577.50"
+   },
+   "margins_base": {
+    "full_today_margin": -23787.61,
+    "full_today_trough_date": "2024-03-14",
+    "earliest": "2024-04-15",
+    "earliest_pass_margin": 2277.789999999979,
+    "day_before_fail_margin": -10754.910000000018,
+    "plan_margin": 504.7899999999936,
+    "plan_trough_date": "2024-03-14",
+    "plan_without_changes_margin": -291.61000000000786,
+    "installments_opt272_margin": 504.7899999999936
+   },
+   "threshold": 0.985,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "0",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28",
+      "earliest_date_for_full_payment": "2024-04-15",
+      "spending_changes_needed": "stop:event_9006"
+     },
+     "margins": {
+      "full_today_margin": -23625.382,
+      "full_today_trough_date": "2024-03-14",
+      "earliest": "2024-04-15",
+      "earliest_pass_margin": 2850.7420000000056,
+      "day_before_fail_margin": -10387.319999999992,
+      "plan_margin": 89.51800000000367,
+      "plan_trough_date": "2024-03-14",
+      "plan_without_changes_margin": -129.3819999999978,
+      "installments_opt272_margin": 89.51800000000367
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 2004.4,
+      "amount_scaled": 1944.268,
+      "occurrences_upto": [
+       "2024-03-06"
+      ],
+      "contrib_base": 2004.4,
+      "delta": -60.132000000000055
+     }
+    }
+   }
+  },
+  "request_99": {
+   "requested": 18062.0,
+   "min_balance": 49100.0,
+   "balance": 86706.58,
+   "variable_block": 59952.600000000006,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "17453.58",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2026-07-04:18062",
+    "earliest_date_for_full_payment": "2026-07-15",
+    "spending_changes_needed": "reduce_to:event_9188:525.80|reduce_to:event_9232:1065.90"
+   },
+   "margins_base": {
+    "full_today_margin": -608.4199999999983,
+    "full_today_trough_date": "2026-07-12",
+    "earliest": "2026-07-15",
+    "earliest_pass_margin": 27830.17999999998,
+    "day_before_fail_margin": -608.4199999999983,
+    "plan_margin": 983.2799999999988,
+    "plan_trough_date": "2026-07-12",
+    "plan_without_changes_margin": -608.4199999999983
+   },
+   "threshold": 0.9925,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "17827.5",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2026-07-04:18062",
+      "earliest_date_for_full_payment": "2026-07-15",
+      "spending_changes_needed": "reduce_to:event_9188:525.80"
+     },
+     "margins": {
+      "full_today_margin": -234.5,
+      "full_today_trough_date": "2026-07-12",
+      "earliest": "2026-07-15",
+      "earliest_pass_margin": 28829.671999999977,
+      "day_before_fail_margin": -234.5,
+      "plan_margin": 291.29999999999563,
+      "plan_trough_date": "2026-07-12",
+      "plan_without_changes_margin": -234.5
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 4067.2000000000003,
+      "amount_scaled": 3945.184,
+      "occurrences_upto": [
+       "2026-07-08"
+      ],
+      "contrib_base": 4067.2000000000003,
+      "delta": -122.01600000000012
+     }
+    }
+   }
+  },
+  "request_100": {
+   "requested": 37114.0,
+   "min_balance": 32500.0,
+   "balance": 68363.53,
+   "variable_block": 54044.8,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "25160.43",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19",
+    "earliest_date_for_full_payment": "2024-07-15",
+    "spending_changes_needed": "stop:event_9268|reduce_to:event_9267:508.20"
+   },
+   "margins_base": {
+    "full_today_margin": -11953.570000000003,
+    "full_today_trough_date": "2024-06-12",
+    "earliest": "2024-07-15",
+    "earliest_pass_margin": 398.2299999999959,
+    "day_before_fail_margin": -4373.269999999997,
+    "plan_margin": 1154.3599999999788,
+    "plan_trough_date": "2024-08-14",
+    "plan_without_changes_margin": -1086.3400000000183,
+    "installments_opt281_margin": 1154.3599999999788
+   },
+   "threshold": 0.99,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "25346.38",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19",
+      "earliest_date_for_full_payment": "2024-07-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -11767.612000000001,
+      "full_today_trough_date": "2024-06-12",
+      "earliest": "2024-07-15",
+      "earliest_pass_margin": 1802.8479999999545,
+      "day_before_fail_margin": -3620.114000000016,
+      "plan_margin": 318.2779999999475,
+      "plan_trough_date": "2024-08-14",
+      "installments_opt281_margin": 318.2779999999475
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1992.0,
+      "amount_scaled": 1932.24,
+      "occurrences_upto": [
+       "2024-06-10",
+       "2024-06-17",
+       "2024-06-24",
+       "2024-07-01",
+       "2024-07-08",
+       "2024-07-15",
+       "2024-07-22",
+       "2024-07-29",
+       "2024-08-05",
+       "2024-08-12"
+      ],
+      "contrib_base": 19920.0,
+      "delta": -597.6000000000005
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "24974.47",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2024-08-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -12139.528000000006,
+      "full_today_trough_date": "2024-06-12",
+      "earliest": "2024-08-15",
+      "earliest_pass_margin": 34232.686000000045,
+      "day_before_fail_margin": -1006.3879999999626
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1992.0,
+      "amount_scaled": 2051.76,
+      "occurrences_upto": [
+       "2024-06-10"
+      ],
+      "contrib_base": 1992.0,
+      "delta": 59.760000000000055
+     }
+    }
+   }
+  },
+  "request_101": {
+   "requested": 143500.0,
+   "min_balance": 187400.0,
+   "balance": 465868.5,
+   "variable_block": 246020.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "142183.5",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2025-11-03:143500",
+    "earliest_date_for_full_payment": "2025-11-15",
+    "spending_changes_needed": "stop:event_9378"
+   },
+   "margins_base": {
+    "full_today_margin": -1316.5,
+    "full_today_trough_date": "2025-11-14",
+    "earliest": "2025-11-15",
+    "earliest_pass_margin": 106958.5,
+    "day_before_fail_margin": -1316.5,
+    "plan_margin": 668.5,
+    "plan_trough_date": "2025-11-14",
+    "plan_without_changes_margin": -1316.5,
+    "installments_opt286_margin": 116353.5
+   },
+   "threshold": 1.0125,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "143500",
+      "affordability_status": "affordable_now",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2025-11-03:143500",
+      "earliest_date_for_full_payment": "2025-11-03",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": 306.5,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2025-11-03",
+      "earliest_pass_margin": 306.5000000000582,
+      "plan_margin": 306.5,
+      "plan_trough_date": "2025-11-14",
+      "installments_opt286_margin": 117976.50000000006
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 14780.0,
+      "amount_scaled": 14336.6,
+      "occurrences_upto": [
+       "2025-11-06"
+      ],
+      "contrib_base": 14780.0,
+      "delta": -443.4000000000004
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "140560.5",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2025-11-03:143500",
+      "earliest_date_for_full_payment": "2025-11-15",
+      "spending_changes_needed": "stop:event_9378|reduce_to:event_9377:2660"
+     },
+     "margins": {
+      "full_today_margin": -2939.5,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2025-11-15",
+      "earliest_pass_margin": 102959.5,
+      "day_before_fail_margin": -2939.500000000058,
+      "plan_margin": 1865.1000000000058,
+      "plan_trough_date": "2025-11-14",
+      "plan_without_changes_margin": -2939.5,
+      "installments_opt286_margin": 114730.49999999994
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 14780.0,
+      "amount_scaled": 15223.4,
+      "occurrences_upto": [
+       "2025-11-06"
+      ],
+      "contrib_base": 14780.0,
+      "delta": 443.4000000000004
+     }
+    }
+   }
+  },
+  "request_105": {
+   "requested": 53500.0,
+   "min_balance": 73900.0,
+   "balance": 147831.8,
+   "variable_block": 165050.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "51436.8",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2026-06-08:53500",
+    "earliest_date_for_full_payment": "2026-06-15",
+    "spending_changes_needed": "reduce_to:event_9721:1720|reduce_to:event_9720:1632"
+   },
+   "margins_base": {
+    "full_today_margin": -2063.2000000000116,
+    "full_today_trough_date": "2026-06-14",
+    "earliest": "2026-06-15",
+    "earliest_pass_margin": 18431.79999999999,
+    "day_before_fail_margin": -2063.2000000000116,
+    "plan_margin": 2104.7999999999884,
+    "plan_trough_date": "2026-06-14",
+    "plan_without_changes_margin": -2063.2000000000116,
+    "installments_opt297_margin": 41806.79999999999
+   },
+   "threshold": 0.9775,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "51998.7",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2026-06-08:53500",
+      "earliest_date_for_full_payment": "2026-06-15",
+      "spending_changes_needed": "reduce_to:event_9721:1720"
+     },
+     "margins": {
+      "full_today_margin": -1501.3000000000175,
+      "full_today_trough_date": "2026-06-14",
+      "earliest": "2026-06-15",
+      "earliest_pass_margin": 20727.099999999977,
+      "day_before_fail_margin": -1501.300000000003,
+      "plan_margin": 115.49999999998545,
+      "plan_trough_date": "2026-06-14",
+      "plan_without_changes_margin": -1501.3000000000175,
+      "installments_opt297_margin": 42368.69999999998
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 4980.0,
+      "amount_scaled": 4830.599999999999,
+      "occurrences_upto": [
+       "2026-06-11"
+      ],
+      "contrib_base": 4980.0,
+      "delta": -149.40000000000012
+     }
+    }
+   }
+  },
+  "request_109": {
+   "requested": 1863.4,
+   "min_balance": 1700.0,
+   "balance": 2976.46,
+   "variable_block": 3425.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "546.46",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98",
+    "earliest_date_for_full_payment": "2024-05-15",
+    "spending_changes_needed": "stop:event_10080|stop:event_10081"
+   },
+   "margins_base": {
+    "full_today_margin": -1316.94,
+    "full_today_trough_date": "2024-03-14",
+    "earliest": "2024-05-15",
+    "earliest_pass_margin": 1261.5000000000005,
+    "day_before_fail_margin": -669.1799999999998,
+    "plan_margin": 121.26000000000113,
+    "plan_trough_date": "2024-05-14",
+    "plan_without_changes_margin": -97.73999999999887,
+    "installments_opt307_margin": 121.26000000000113
+   },
+   "threshold": 0.985,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "563.59",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98",
+      "earliest_date_for_full_payment": "2024-05-15",
+      "spending_changes_needed": "stop:event_10080"
+     },
+     "margins": {
+      "full_today_margin": -1299.81,
+      "full_today_trough_date": "2024-03-14",
+      "earliest": "2024-05-15",
+      "earliest_pass_margin": 1364.2499999999995,
+      "day_before_fail_margin": -580.3800000000006,
+      "plan_margin": 51.059999999999945,
+      "plan_trough_date": "2024-05-14",
+      "plan_without_changes_margin": -8.940000000000055,
+      "installments_opt307_margin": 51.059999999999945
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 73.0,
+      "amount_scaled": 70.81,
+      "occurrences_upto": [
+       "2024-03-11",
+       "2024-03-18",
+       "2024-03-25",
+       "2024-04-01",
+       "2024-04-08",
+       "2024-04-15",
+       "2024-04-22",
+       "2024-04-29",
+       "2024-05-06",
+       "2024-05-13"
+      ],
+      "contrib_base": 730.0,
+      "delta": -21.90000000000002
+     }
+    }
+   }
+  },
+  "request_113": {
+   "requested": 36500.0,
+   "min_balance": 82300.0,
+   "balance": 141890.0,
+   "variable_block": 173530.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "23850",
+    "affordability_status": "affordable_later",
+    "recommended_payment_method": "wait",
+    "payment_plan": "2026-09-15:36500",
+    "earliest_date_for_full_payment": "2026-09-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -12650.0,
+    "full_today_trough_date": "2026-09-14",
+    "earliest": "2026-09-15",
+    "earliest_pass_margin": 515.679999999993,
+    "day_before_fail_margin": -12650.0,
+    "plan_margin": 515.679999999993,
+    "plan_trough_date": "2026-10-14"
+   },
+   "threshold": 1.0075,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "23046.3",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2026-10-15:36500",
+      "earliest_date_for_full_payment": "2026-10-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -13453.699999999997,
+      "full_today_trough_date": "2026-09-14",
+      "earliest": "2026-10-15",
+      "earliest_pass_margin": 4738.15999999996,
+      "day_before_fail_margin": -2045.4200000000274,
+      "plan_margin": 4738.159999999916,
+      "plan_trough_date": "2026-11-14"
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 4490.0,
+      "amount_scaled": 4624.7,
+      "occurrences_upto": [
+       "2026-09-11",
+       "2026-09-18",
+       "2026-09-25",
+       "2026-10-02",
+       "2026-10-09",
+       "2026-10-16",
+       "2026-10-23",
+       "2026-10-30",
+       "2026-11-06",
+       "2026-11-13"
+      ],
+      "contrib_base": 44900.0,
+      "delta": 1347.0000000000011
+     }
+    }
+   }
+  },
+  "request_118": {
+   "requested": 738.1,
+   "min_balance": 600.0,
+   "balance": 1538.51,
+   "variable_block": 963.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "650.51",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87",
+    "earliest_date_for_full_payment": "2025-01-15",
+    "spending_changes_needed": "reduce_to:event_10912:11"
+   },
+   "margins_base": {
+    "full_today_margin": -87.59000000000003,
+    "full_today_trough_date": "2024-12-14",
+    "earliest": "2025-01-15",
+    "earliest_pass_margin": 19.81000000000006,
+    "day_before_fail_margin": -18.889999999999986,
+    "plan_margin": 23.29999999999984,
+    "plan_trough_date": "2025-02-14",
+    "plan_without_changes_margin": -9.70000000000016,
+    "installments_opt334_margin": 23.29999999999984
+   },
+   "threshold": 0.9875,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "655.1",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87",
+      "earliest_date_for_full_payment": "2025-01-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -83.0,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2025-01-15",
+      "earliest_pass_margin": 44.560000000000514,
+      "day_before_fail_margin": -4.669999999999959,
+      "plan_margin": 15.050000000000296,
+      "plan_trough_date": "2025-02-14",
+      "installments_opt334_margin": 15.050000000000296
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 30.0,
+      "amount_scaled": 29.099999999999998,
+      "occurrences_upto": [
+       "2024-12-13",
+       "2024-12-20",
+       "2024-12-27",
+       "2025-01-03",
+       "2025-01-10",
+       "2025-01-17",
+       "2025-01-24",
+       "2025-01-31",
+       "2025-02-07",
+       "2025-02-14"
+      ],
+      "contrib_base": 300.0,
+      "delta": -9.000000000000007
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "645.92",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "reduce_to:event_10912:11|reduce_to:event_10914:14"
+     },
+     "margins": {
+      "full_today_margin": -92.18,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 611.9199999999996,
+      "day_before_fail_margin": -4.940000000000396,
+      "plan_margin": 64.69999999999948,
+      "plan_trough_date": "2025-02-14",
+      "plan_without_changes_margin": -34.45000000000016,
+      "installments_opt334_margin": 64.69999999999948
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 30.0,
+      "amount_scaled": 30.900000000000002,
+      "occurrences_upto": [
+       "2024-12-13",
+       "2024-12-20",
+       "2024-12-27",
+       "2025-01-03",
+       "2025-01-10",
+       "2025-01-17",
+       "2025-01-24",
+       "2025-01-31",
+       "2025-02-07",
+       "2025-02-14"
+      ],
+      "contrib_base": 300.0,
+      "delta": 9.000000000000007
+     }
+    }
+   }
+  },
+  "request_119": {
+   "requested": 203500.0,
+   "min_balance": 151200.0,
+   "balance": 282101.01,
+   "variable_block": 175310.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "54671.01",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-05-18:70546.67|2025-06-15:70546.67|2025-07-13:70546.67",
+    "earliest_date_for_full_payment": "2025-06-15",
+    "spending_changes_needed": "reduce_to:event_11057:2370"
+   },
+   "margins_base": {
+    "full_today_margin": -148828.99,
+    "full_today_trough_date": "2025-05-14",
+    "earliest": "2025-06-15",
+    "earliest_pass_margin": 2891.0100000000093,
+    "day_before_fail_margin": -72968.98999999999,
+    "plan_margin": 1861.0000000000582,
+    "plan_trough_date": "2025-07-14",
+    "plan_without_changes_margin": -5248.999999999942,
+    "installments_opt337_margin": 1861.0000000000582
+   },
+   "threshold": 1.015,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "53607.21",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-05-18:70546.67|2025-06-15:70546.67|2025-07-13:70546.67",
+      "earliest_date_for_full_payment": "2025-07-15",
+      "spending_changes_needed": "reduce_to:event_11057:2370|reduce_to:event_11016:2655"
+     },
+     "margins": {
+      "full_today_margin": -149892.78999999998,
+      "full_today_trough_date": "2025-05-14",
+      "earliest": "2025-07-15",
+      "earliest_pass_margin": 152521.71000000002,
+      "day_before_fail_margin": -1734.9899999999907,
+      "plan_margin": 3290.2000000000116,
+      "plan_trough_date": "2025-07-14",
+      "plan_without_changes_margin": -9875.0,
+      "installments_opt337_margin": 3290.2000000000116
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 7540.0,
+      "amount_scaled": 7766.2,
+      "occurrences_upto": [
+       "2025-05-09",
+       "2025-05-19",
+       "2025-05-29",
+       "2025-06-08",
+       "2025-06-18",
+       "2025-06-28",
+       "2025-07-08"
+      ],
+      "contrib_base": 52780.0,
+      "delta": 1583.4000000000015
+     }
+    }
+   }
+  },
+  "request_124": {
+   "requested": 3104.2,
+   "min_balance": 1600.0,
+   "balance": 3709.56,
+   "variable_block": 1662.0,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "1244.56",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12",
+    "earliest_date_for_full_payment": "2024-07-15",
+    "spending_changes_needed": "stop:event_11448"
+   },
+   "margins_base": {
+    "full_today_margin": -1859.6399999999999,
+    "full_today_trough_date": "2024-06-14",
+    "earliest": "2024-07-15",
+    "earliest_pass_margin": 26.5600000000004,
+    "day_before_fail_margin": -916.54,
+    "plan_margin": 4.400000000000091,
+    "plan_trough_date": "2024-08-12",
+    "plan_without_changes_margin": -97.59999999999991,
+    "installments_opt352_margin": 4.400000000000091
+   },
+   "threshold": 1.005,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "1232.44",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12",
+      "earliest_date_for_full_payment": "2024-08-15",
+      "spending_changes_needed": "stop:event_11448|reduce_to:event_11480:38"
+     },
+     "margins": {
+      "full_today_margin": -1871.7599999999998,
+      "full_today_trough_date": "2024-06-14",
+      "earliest": "2024-08-15",
+      "earliest_pass_margin": 2357.7000000000025,
+      "day_before_fail_margin": -15.859999999997854,
+      "plan_margin": 82.82000000000107,
+      "plan_trough_date": "2024-08-12",
+      "plan_without_changes_margin": -140.02000000000044,
+      "installments_opt352_margin": 82.82000000000107
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 101.0,
+      "amount_scaled": 104.03,
+      "occurrences_upto": [
+       "2024-06-08",
+       "2024-06-22",
+       "2024-07-06",
+       "2024-07-20",
+       "2024-08-03"
+      ],
+      "contrib_base": 505.0,
+      "delta": 15.150000000000013
+     }
+    }
+   }
+  },
+  "request_125": {
+   "requested": 6468.0,
+   "min_balance": 11300.0,
+   "balance": 22027.97,
+   "variable_block": 22375.800000000003,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "6334.67",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2025-11-06:6468",
+    "earliest_date_for_full_payment": "2025-11-15",
+    "spending_changes_needed": "stop:event_11519|reduce_to:event_11602:223.30"
+   },
+   "margins_base": {
+    "full_today_margin": -133.3299999999981,
+    "full_today_trough_date": "2025-11-14",
+    "earliest": "2025-11-15",
+    "earliest_pass_margin": 2655.570000000007,
+    "day_before_fail_margin": -133.3299999999981,
+    "plan_margin": 207.6700000000019,
+    "plan_trough_date": "2025-11-14",
+    "plan_without_changes_margin": -133.3299999999981
+   },
+   "threshold": 0.995,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "6434.29",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "full_payment",
+      "payment_plan": "2025-11-06:6468",
+      "earliest_date_for_full_payment": "2025-11-15",
+      "spending_changes_needed": "stop:event_11519"
+     },
+     "margins": {
+      "full_today_margin": -33.70599999999649,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2025-11-15",
+      "earliest_pass_margin": 2982.551999999996,
+      "day_before_fail_margin": -33.70599999999831,
+      "plan_margin": 83.99400000000242,
+      "plan_trough_date": "2025-11-14",
+      "plan_without_changes_margin": -33.70599999999649
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 1038.2,
+      "amount_scaled": 1007.054,
+      "occurrences_upto": [
+       "2025-11-06"
+      ],
+      "contrib_base": 1038.2,
+      "delta": -31.14600000000003
+     }
+    }
+   }
+  },
+  "request_131": {
+   "requested": 1855.2,
+   "min_balance": 1100.0,
+   "balance": 3387.16,
+   "variable_block": 1488.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "1178.96",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14",
+    "earliest_date_for_full_payment": "2025-07-23",
+    "spending_changes_needed": "reduce_to:event_12065:21.20"
+   },
+   "margins_base": {
+    "full_today_margin": -676.2400000000002,
+    "full_today_trough_date": "2025-05-17",
+    "earliest": "2025-07-23",
+    "earliest_pass_margin": 1553.3600000000006,
+    "day_before_fail_margin": -20.639999999999645,
+    "plan_margin": 0.5399999999999636,
+    "plan_trough_date": "2025-07-20",
+    "plan_without_changes_margin": -94.85999999999945,
+    "installments_opt372_margin": 0.5399999999999636
+   },
+   "threshold": 1.0025,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "1189.34",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14",
+      "earliest_date_for_full_payment": "2025-06-23",
+      "spending_changes_needed": "reduce_to:event_12065:21.20"
+     },
+     "margins": {
+      "full_today_margin": -665.8600000000002,
+      "full_today_trough_date": "2025-05-17",
+      "earliest": "2025-06-23",
+      "earliest_pass_margin": 22.259999999999536,
+      "day_before_fail_margin": -366.4200000000003,
+      "plan_margin": 38.669999999999845,
+      "plan_trough_date": "2025-07-20",
+      "plan_without_changes_margin": -51.960000000000264,
+      "installments_opt372_margin": 38.669999999999845
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 58.0,
+      "amount_scaled": 56.26,
+      "occurrences_upto": [
+       "2025-05-10",
+       "2025-05-17",
+       "2025-05-24",
+       "2025-05-31",
+       "2025-06-07",
+       "2025-06-14",
+       "2025-06-21",
+       "2025-06-28",
+       "2025-07-05",
+       "2025-07-12",
+       "2025-07-19"
+      ],
+      "contrib_base": 638.0,
+      "delta": -19.14000000000002
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "1168.58",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2025-07-23",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -686.6200000000002,
+      "full_today_trough_date": "2025-05-17",
+      "earliest": "2025-07-23",
+      "earliest_pass_margin": 1508.720000000002,
+      "day_before_fail_margin": -63.53999999999883
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 58.0,
+      "amount_scaled": 59.74,
+      "occurrences_upto": [
+       "2025-05-10",
+       "2025-05-17"
+      ],
+      "contrib_base": 116.0,
+      "delta": 3.480000000000003
+     }
+    }
+   }
+  },
+  "request_132": {
+   "requested": 379.86,
+   "min_balance": 1100.0,
+   "balance": 1744.55,
+   "variable_block": 1992.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "257.55",
+    "affordability_status": "affordable_later",
+    "recommended_payment_method": "wait",
+    "payment_plan": "2026-01-15:379.86",
+    "earliest_date_for_full_payment": "2026-01-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -122.30999999999995,
+    "full_today_trough_date": "2026-01-13",
+    "earliest": "2026-01-15",
+    "earliest_pass_margin": 2.4899999999997817,
+    "day_before_fail_margin": -122.31000000000006,
+    "plan_margin": 2.4900000000002365,
+    "plan_trough_date": "2026-02-13"
+   },
+   "threshold": 1.005,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "248.16",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2026-02-15:379.86",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -131.70000000000005,
+      "full_today_trough_date": "2026-01-13",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 77.51999999999998,
+      "day_before_fail_margin": -27.090000000000146,
+      "plan_margin": 77.51999999999998,
+      "plan_trough_date": "2026-03-14"
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 52.0,
+      "amount_scaled": 53.56,
+      "occurrences_upto": [
+       "2026-01-11",
+       "2026-01-18",
+       "2026-01-25",
+       "2026-02-01",
+       "2026-02-08",
+       "2026-02-15",
+       "2026-02-22",
+       "2026-03-01",
+       "2026-03-08"
+      ],
+      "contrib_base": 468.0,
+      "delta": 14.040000000000013
+     }
+    }
+   }
+  },
+  "request_136": {
+   "requested": 560.4,
+   "min_balance": 1100.0,
+   "balance": 2291.68,
+   "variable_block": 1683.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "528.68",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "full_payment",
+    "payment_plan": "2024-06-03:560.40",
+    "earliest_date_for_full_payment": "2024-06-15",
+    "spending_changes_needed": "reduce_to:event_12498:27.20"
+   },
+   "margins_base": {
+    "full_today_margin": -31.720000000000255,
+    "full_today_trough_date": "2024-06-14",
+    "earliest": "2024-06-15",
+    "earliest_pass_margin": 335.67999999999984,
+    "day_before_fail_margin": -31.720000000000255,
+    "plan_margin": 9.0799999999997,
+    "plan_trough_date": "2024-06-14",
+    "plan_without_changes_margin": -31.720000000000255
+   },
+   "threshold": 1.0275,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "516.65",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2024-06-15:560.40",
+      "earliest_date_for_full_payment": "2024-06-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -43.750000000000455,
+      "full_today_trough_date": "2024-06-14",
+      "earliest": "2024-06-15",
+      "earliest_pass_margin": 306.82000000000016,
+      "day_before_fail_margin": -43.75,
+      "plan_margin": 306.8200000000006,
+      "plan_trough_date": "2024-07-12"
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 63.0,
+      "amount_scaled": 64.89,
+      "occurrences_upto": [
+       "2024-06-07",
+       "2024-06-14",
+       "2024-06-21",
+       "2024-06-28",
+       "2024-07-05",
+       "2024-07-12"
+      ],
+      "contrib_base": 378.0,
+      "delta": 11.34000000000001
+     }
+    }
+   }
+  },
+  "request_138": {
+   "requested": 1256.94,
+   "min_balance": 2300.0,
+   "balance": 3644.65,
+   "variable_block": 2370.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "729.65",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2026-04-07:729.65|2026-04-15:527.29",
+    "earliest_date_for_full_payment": "2026-04-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -527.29,
+    "full_today_trough_date": "2026-04-14",
+    "earliest": "2026-04-15",
+    "earliest_pass_margin": 625.0099999999998,
+    "day_before_fail_margin": -527.29,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2026-04-14",
+    "installments_opt393_margin": 293.90999999999985,
+    "installments_opt394_margin": 396.55999999999995
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "745.34",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-07:745.34|2026-04-15:511.60",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -511.60000000000014,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 662.8700000000003,
+      "day_before_fail_margin": -511.60000000000036,
+      "plan_margin": 4.547473508864641e-13,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt393_margin": 309.5999999999999,
+      "installments_opt394_margin": 412.24999999999955
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 149.0,
+      "amount_scaled": 144.53,
+      "occurrences_upto": [
+       "2026-04-07"
+      ],
+      "contrib_base": 149.0,
+      "delta": -4.470000000000004
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "713.96",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-07:713.96|2026-04-15:542.98",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -542.9799999999998,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 587.150000000001,
+      "day_before_fail_margin": -542.9799999999996,
+      "plan_margin": 4.547473508864641e-13,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt393_margin": 278.2199999999998,
+      "installments_opt394_margin": 380.87000000000035
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 149.0,
+      "amount_scaled": 153.47,
+      "occurrences_upto": [
+       "2026-04-07"
+      ],
+      "contrib_base": 149.0,
+      "delta": 4.470000000000004
+     }
+    }
+   }
+  },
+  "request_139": {
+   "requested": 2316.0,
+   "min_balance": 1500.0,
+   "balance": 3767.84,
+   "variable_block": 2196.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "1323.84",
+    "affordability_status": "not_affordable",
+    "recommended_payment_method": "not_recommended",
+    "payment_plan": "none",
+    "earliest_date_for_full_payment": "2024-11-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -992.1599999999999,
+    "full_today_trough_date": "2024-09-13",
+    "earliest": "2024-11-15",
+    "earliest_pass_margin": 1462.8400000000001,
+    "day_before_fail_margin": -46.159999999999854
+   },
+   "threshold": 0.975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "1333.5",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2024-10-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -982.4999999999998,
+      "full_today_trough_date": "2024-09-13",
+      "earliest": "2024-10-15",
+      "earliest_pass_margin": 10.900000000004638,
+      "day_before_fail_margin": -429.5399999999977
+     },
+     "driver": {
+      "category": "transport",
+      "amount_base": 46.0,
+      "amount_scaled": 44.62,
+      "occurrences_upto": [
+       "2024-09-05",
+       "2024-09-12"
+      ],
+      "contrib_base": 92.0,
+      "delta": -2.7600000000000025
+     }
+    }
+   }
+  },
+  "request_145": {
+   "requested": 217400.0,
+   "min_balance": 155400.0,
+   "balance": 261013.66,
+   "variable_block": 322530.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "27478.66",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33",
+    "earliest_date_for_full_payment": "2024-05-15",
+    "spending_changes_needed": "stop:event_13342|reduce_to:event_13341:2920|reduce_to:event_13409:3335"
+   },
+   "margins_base": {
+    "full_today_margin": -189921.34,
+    "full_today_trough_date": "2024-03-13",
+    "earliest": "2024-05-15",
+    "earliest_pass_margin": 136358.66000000003,
+    "day_before_fail_margin": -83051.33999999997,
+    "plan_margin": 11558.0,
+    "plan_trough_date": "2024-05-14",
+    "plan_without_changes_margin": -16382.0,
+    "installments_opt412_margin": 11558.0
+   },
+   "threshold": 0.98,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "29067.46",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33",
+      "earliest_date_for_full_payment": "2024-05-15",
+      "spending_changes_needed": "stop:event_13342|reduce_to:event_13341:2920"
+     },
+     "margins": {
+      "full_today_margin": -188332.53999999998,
+      "full_today_trough_date": "2024-03-13",
+      "earliest": "2024-05-15",
+      "earliest_pass_margin": 146034.55999999988,
+      "day_before_fail_margin": -74533.14000000019,
+      "plan_margin": 3401.199999999837,
+      "plan_trough_date": "2024-05-14",
+      "plan_without_changes_margin": -7863.800000000163,
+      "installments_opt412_margin": 3401.199999999837
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 9650.0,
+      "amount_scaled": 9360.5,
+      "occurrences_upto": [
+       "2024-03-11",
+       "2024-03-18",
+       "2024-03-25",
+       "2024-04-01",
+       "2024-04-08",
+       "2024-04-15",
+       "2024-04-22",
+       "2024-04-29",
+       "2024-05-06",
+       "2024-05-13"
+      ],
+      "contrib_base": 96500.0,
+      "delta": -2895.0000000000027
+     }
+    }
+   }
+  },
+  "request_147": {
+   "requested": 1129.7,
+   "min_balance": 900.0,
+   "balance": 1641.53,
+   "variable_block": 1383.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "386.53",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-04-08:391.63|2026-05-08:391.63|2026-06-07:391.63",
+    "earliest_date_for_full_payment": "2026-05-15",
+    "spending_changes_needed": "stop:event_13520"
+   },
+   "margins_base": {
+    "full_today_margin": -743.1700000000001,
+    "full_today_trough_date": "2026-04-14",
+    "earliest": "2026-05-15",
+    "earliest_pass_margin": 400.43000000000006,
+    "day_before_fail_margin": -171.37000000000012,
+    "plan_margin": 3.900000000000091,
+    "plan_trough_date": "2026-04-14",
+    "plan_without_changes_margin": -5.099999999999909,
+    "installments_opt418_margin": 3.900000000000091
+   },
+   "threshold": 1.0125,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "396.01",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-04-08:391.63|2026-05-08:391.63|2026-06-07:391.63",
+      "earliest_date_for_full_payment": "2026-05-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -733.69,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-05-15",
+      "earliest_pass_margin": 437.15000000000214,
+      "day_before_fail_margin": -148.26999999999907,
+      "plan_margin": 4.3799999999999955,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt418_margin": 4.3799999999999955
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 84.0,
+      "amount_scaled": 81.48,
+      "occurrences_upto": [
+       "2026-04-08"
+      ],
+      "contrib_base": 84.0,
+      "delta": -2.5200000000000022
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "377.05",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-04-08:391.63|2026-05-08:391.63|2026-06-07:391.63",
+      "earliest_date_for_full_payment": "2026-05-15",
+      "spending_changes_needed": "stop:event_13520|stop:event_13521"
+     },
+     "margins": {
+      "full_today_margin": -752.6500000000001,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-05-15",
+      "earliest_pass_margin": 363.7099999999989,
+      "day_before_fail_margin": -194.47000000000025,
+      "plan_margin": 24.420000000000186,
+      "plan_trough_date": "2026-04-14",
+      "plan_without_changes_margin": -14.579999999999814,
+      "installments_opt418_margin": 24.420000000000186
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 84.0,
+      "amount_scaled": 86.52,
+      "occurrences_upto": [
+       "2026-04-08"
+      ],
+      "contrib_base": 84.0,
+      "delta": 2.5200000000000022
+     }
+    }
+   }
+  },
+  "request_148": {
+   "requested": 22242.0,
+   "min_balance": 20000.0,
+   "balance": 33181.08,
+   "variable_block": 41186.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "7134.08",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56",
+    "earliest_date_for_full_payment": "2024-08-15",
+    "spending_changes_needed": "stop:event_13591|stop:event_13592"
+   },
+   "margins_base": {
+    "full_today_margin": -15107.919999999998,
+    "full_today_trough_date": "2024-06-13",
+    "earliest": "2024-08-15",
+    "earliest_pass_margin": 29874.879999999976,
+    "day_before_fail_margin": -150.12000000002445,
+    "plan_margin": 327.7199999999975,
+    "plan_trough_date": "2024-06-14",
+    "plan_without_changes_margin": -576.4799999999996,
+    "installments_opt421_margin": 327.7199999999975
+   },
+   "threshold": 0.995,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "7268.82",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56",
+      "earliest_date_for_full_payment": "2024-07-15",
+      "spending_changes_needed": "stop:event_13591|stop:event_13592"
+     },
+     "margins": {
+      "full_today_margin": -14973.171999999999,
+      "full_today_trough_date": "2024-06-13",
+      "earliest": "2024-07-15",
+      "earliest_pass_margin": 917.010000000002,
+      "day_before_fail_margin": -5924.124000000018,
+      "plan_margin": 462.4679999999971,
+      "plan_trough_date": "2024-06-14",
+      "plan_without_changes_margin": -441.73199999999997,
+      "installments_opt421_margin": 462.4679999999971
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1378.4,
+      "amount_scaled": 1337.048,
+      "occurrences_upto": [
+       "2024-06-11"
+      ],
+      "contrib_base": 1378.4,
+      "delta": -41.35200000000004
+     }
+    }
+   }
+  },
+  "request_149": {
+   "requested": 36652.0,
+   "min_balance": 42100.0,
+   "balance": 84358.38,
+   "variable_block": 52466.4,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "22279.88",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03",
+    "earliest_date_for_full_payment": "2025-12-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -14372.119999999995,
+    "full_today_trough_date": "2025-11-13",
+    "earliest": "2025-12-15",
+    "earliest_pass_margin": 1512.0800000000454,
+    "day_before_fail_margin": -7343.019999999975,
+    "plan_margin": 45.990000000048894,
+    "plan_trough_date": "2026-01-13",
+    "installments_opt424_margin": 45.990000000048894
+   },
+   "threshold": 1.0025,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "21961.38",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03",
+      "earliest_date_for_full_payment": "2025-12-15",
+      "spending_changes_needed": "stop:event_13702|reduce_to:event_13703:1013.76"
+     },
+     "margins": {
+      "full_today_margin": -14690.611999999994,
+      "full_today_trough_date": "2025-11-13",
+      "earliest": "2025-12-15",
+      "earliest_pass_margin": 89.48000000001048,
+      "day_before_fail_margin": -8240.955999999991,
+      "plan_margin": 4512.306000000033,
+      "plan_trough_date": "2026-01-13",
+      "plan_without_changes_margin": -1376.609999999986,
+      "installments_opt424_margin": 4512.306000000033
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1826.0,
+      "amount_scaled": 1880.78,
+      "occurrences_upto": [
+       "2025-11-09",
+       "2025-11-16",
+       "2025-11-23",
+       "2025-11-30",
+       "2025-12-07",
+       "2025-12-14",
+       "2025-12-21",
+       "2025-12-28",
+       "2026-01-04",
+       "2026-01-11"
+      ],
+      "contrib_base": 18260.0,
+      "delta": 547.8000000000005
+     }
+    }
+   }
+  },
+  "request_150": {
+   "requested": 496.1,
+   "min_balance": 700.0,
+   "balance": 1257.44,
+   "variable_block": 1462.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "273.44",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-01-06:171.98|2026-02-05:171.98|2026-03-07:171.98",
+    "earliest_date_for_full_payment": "2026-03-15",
+    "spending_changes_needed": "stop:event_13785|reduce_to:event_13786:12.50|reduce_to:event_13787:16"
+   },
+   "margins_base": {
+    "full_today_margin": -222.65999999999997,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-03-15",
+    "earliest_pass_margin": 575.79,
+    "day_before_fail_margin": -83.96000000000015,
+    "plan_margin": 23.699999999999818,
+    "plan_trough_date": "2026-03-13",
+    "plan_without_changes_margin": -103.80000000000018,
+    "installments_opt427_margin": 23.699999999999818
+   },
+   "threshold": 1.0225,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "266.6",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2026-03-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -229.5,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-03-15",
+      "earliest_pass_margin": 531.9300000000003,
+      "day_before_fail_margin": -120.79999999999984
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 36.0,
+      "amount_scaled": 37.08,
+      "occurrences_upto": [
+       "2026-01-07",
+       "2026-01-14"
+      ],
+      "contrib_base": 72.0,
+      "delta": 2.160000000000002
+     }
+    }
+   }
+  },
+  "request_163": {
+   "requested": 19304000.0,
+   "min_balance": 26728700.0,
+   "balance": 49519524.26,
+   "variable_block": 37311600.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "10074724.26",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-09-10:6692053.33|2024-10-11:6692053.33|2024-11-11:6692053.33",
+    "earliest_date_for_full_payment": "2024-10-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -9229275.740000002,
+    "full_today_trough_date": "2024-09-14",
+    "earliest": "2024-10-15",
+    "earliest_pass_margin": 1228024.2599999905,
+    "day_before_fail_margin": -4367675.740000002,
+    "plan_margin": 455864.2700000033,
+    "plan_trough_date": "2024-11-14",
+    "installments_opt462_margin": 455864.2700000033
+   },
+   "threshold": 1.015,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "9911551.26",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-09-10:6692053.33|2024-10-11:6692053.33|2024-11-11:6692053.33",
+      "earliest_date_for_full_payment": "2024-10-15",
+      "spending_changes_needed": "stop:event_14953"
+     },
+     "margins": {
+      "full_today_margin": -9392448.740000002,
+      "full_today_trough_date": "2024-09-14",
+      "earliest": "2024-10-15",
+      "earliest_pass_margin": 296596.25999999046,
+      "day_before_fail_margin": -4925987.740000002,
+      "plan_margin": 151436.27000000328,
+      "plan_trough_date": "2024-11-14",
+      "plan_without_changes_margin": -475563.7299999967,
+      "installments_opt462_margin": 151436.27000000328
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1155900.0,
+      "amount_scaled": 1190577.0,
+      "occurrences_upto": [
+       "2024-09-14",
+       "2024-09-21",
+       "2024-09-28",
+       "2024-10-05",
+       "2024-10-12",
+       "2024-10-19",
+       "2024-10-26",
+       "2024-11-02",
+       "2024-11-09"
+      ],
+      "contrib_base": 10403100.0,
+      "delta": 312093.0000000003
+     }
+    }
+   }
+  },
+  "request_168": {
+   "requested": 49380.0,
+   "min_balance": 114400.0,
+   "balance": 173843.0,
+   "variable_block": 213360.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "30213",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2026-01-07:30213|2026-02-15:19167",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -19167.0,
+    "full_today_trough_date": "2026-01-13",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 12213.0,
+    "day_before_fail_margin": -6737.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2026-01-13"
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "30964.8",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-01-07:30964.80|2026-02-15:18415.20",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -18415.199999999997,
+      "full_today_trough_date": "2026-01-13",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 17487.600000000006,
+      "day_before_fail_margin": -3626.0,
+      "plan_margin": 2.9103830456733704e-11,
+      "plan_trough_date": "2026-01-13"
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 6820.0,
+      "amount_scaled": 6615.4,
+      "occurrences_upto": [
+       "2026-01-11"
+      ],
+      "contrib_base": 6820.0,
+      "delta": -204.6000000000002
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "29461.2",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-01-07:29461.20|2026-02-15:19918.80",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -19918.800000000003,
+      "full_today_trough_date": "2026-01-13",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 6938.399999999994,
+      "day_before_fail_margin": -9848.0,
+      "plan_margin": -1.4551915228366852e-11,
+      "plan_trough_date": "2026-01-13"
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 6820.0,
+      "amount_scaled": 7024.6,
+      "occurrences_upto": [
+       "2026-01-11"
+      ],
+      "contrib_base": 6820.0,
+      "delta": 204.6000000000002
+     }
+    }
+   }
+  },
+  "request_172": {
+   "requested": 10200.0,
+   "min_balance": 27200.0,
+   "balance": 50942.4,
+   "variable_block": 34210.2,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "9042.4",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2024-06-05:9042.40|2024-06-15:1157.60",
+    "earliest_date_for_full_payment": "2024-06-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -1157.599999999995,
+    "full_today_trough_date": "2024-06-12",
+    "earliest": "2024-06-15",
+    "earliest_pass_margin": 1647.5999999999913,
+    "day_before_fail_margin": -1157.5999999999985,
+    "plan_margin": 3.637978807091713e-12,
+    "plan_trough_date": "2024-06-12",
+    "installments_opt489_margin": 1239.5999999999985
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "9228.5",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-06-05:9228.50|2024-06-15:971.50",
+      "earliest_date_for_full_payment": "2024-06-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -971.4919999999947,
+      "full_today_trough_date": "2024-06-12",
+      "earliest": "2024-06-15",
+      "earliest_pass_margin": 2220.660000000018,
+      "day_before_fail_margin": -971.4919999999984,
+      "plan_margin": 0.008000000005267793,
+      "plan_trough_date": "2024-06-12",
+      "installments_opt489_margin": 1812.6599999999962
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 1755.0,
+      "amount_scaled": 1702.35,
+      "occurrences_upto": [
+       "2024-06-05"
+      ],
+      "contrib_base": 1755.0,
+      "delta": -52.65000000000005
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "8856.29",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-06-05:8856.29|2024-06-15:1343.71",
+      "earliest_date_for_full_payment": "2024-06-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -1343.7079999999987,
+      "full_today_trough_date": "2024-06-12",
+      "earliest": "2024-06-15",
+      "earliest_pass_margin": 1074.5399999999863,
+      "day_before_fail_margin": -1343.7079999999987,
+      "plan_margin": 0.0020000000004074536,
+      "plan_trough_date": "2024-06-12",
+      "installments_opt489_margin": 666.5400000000081
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 1755.0,
+      "amount_scaled": 1807.65,
+      "occurrences_upto": [
+       "2024-06-05"
+      ],
+      "contrib_base": 1755.0,
+      "delta": 52.65000000000005
+     }
+    }
+   }
+  },
+  "request_176": {
+   "requested": 1239.7,
+   "min_balance": 600.0,
+   "balance": 1286.95,
+   "variable_block": 942.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "24.35",
+    "affordability_status": "not_affordable",
+    "recommended_payment_method": "not_recommended",
+    "payment_plan": "none",
+    "earliest_date_for_full_payment": "",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -1215.35,
+    "full_today_trough_date": "2025-04-12",
+    "earliest": null,
+    "best_suffix_margin": -808.1499999999999
+   },
+   "threshold": 1.03,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "0",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -1240.5800000000002,
+      "full_today_trough_date": "2025-04-12",
+      "earliest": null,
+      "best_suffix_margin": -836.4100000000004
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 39.0,
+      "amount_scaled": 40.17,
+      "occurrences_upto": [
+       "2025-02-07",
+       "2025-02-14",
+       "2025-02-21",
+       "2025-02-28",
+       "2025-03-07",
+       "2025-03-14",
+       "2025-03-21",
+       "2025-03-28",
+       "2025-04-04",
+       "2025-04-11"
+      ],
+      "contrib_base": 390.0,
+      "delta": 11.70000000000001
+     }
+    }
+   }
+  },
+  "request_183": {
+   "requested": 26866000.0,
+   "min_balance": 11878300.0,
+   "balance": 42156223.74,
+   "variable_block": 31523000.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "23041523.74",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-04-10:9313546.67|2026-05-10:9313546.67|2026-06-09:9313546.67",
+    "earliest_date_for_full_payment": "2026-05-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -3824476.259999998,
+    "full_today_trough_date": "2026-04-14",
+    "earliest": "2026-05-15",
+    "earliest_pass_margin": 1209114.940000005,
+    "day_before_fail_margin": -1025480.6599999964,
+    "plan_margin": 134474.93000000156,
+    "plan_trough_date": "2026-06-14",
+    "installments_opt521_margin": 134474.93000000156
+   },
+   "threshold": 1.005,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "22903775.74",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-04-10:9313546.67|2026-05-10:9313546.67|2026-06-09:9313546.67",
+      "earliest_date_for_full_payment": "2026-05-15",
+      "spending_changes_needed": "stop:event_16813|stop:event_16814"
+     },
+     "margins": {
+      "full_today_margin": -3962224.259999998,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-05-15",
+      "earliest_pass_margin": 393822.94000000507,
+      "day_before_fail_margin": -1493534.6599999964,
+      "plan_margin": 1325582.9300000016,
+      "plan_trough_date": "2026-06-14",
+      "plan_without_changes_margin": -680817.0699999984,
+      "installments_opt521_margin": 1325582.9300000016
+     },
+     "driver": {
+      "category": "transport",
+      "amount_base": 513100.0,
+      "amount_scaled": 528493.0,
+      "occurrences_upto": [
+       "2026-04-08",
+       "2026-04-13",
+       "2026-04-18",
+       "2026-04-23",
+       "2026-04-28",
+       "2026-05-03",
+       "2026-05-08",
+       "2026-05-13",
+       "2026-05-18",
+       "2026-05-23",
+       "2026-05-28",
+       "2026-06-02",
+       "2026-06-07",
+       "2026-06-12"
+      ],
+      "contrib_base": 7183400.0,
+      "delta": 215502.0000000002
+     }
+    }
+   }
+  },
+  "request_195": {
+   "requested": 1170.4,
+   "min_balance": 700.0,
+   "balance": 2011.18,
+   "variable_block": 1697.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "967.18",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -203.22000000000003,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 57.279999999999745,
+    "day_before_fail_margin": -90.97000000000025,
+    "plan_margin": 10.460000000000264,
+    "plan_trough_date": "2026-03-14",
+    "installments_opt555_margin": 10.460000000000264
+   },
+   "threshold": 1.0075,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "959.38",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "reduce_to:event_17955:12"
+     },
+     "margins": {
+      "full_today_margin": -211.02000000000004,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 12.999999999999545,
+      "day_before_fail_margin": -117.55000000000018,
+      "plan_margin": 2.1799999999997226,
+      "plan_trough_date": "2026-03-14",
+      "plan_without_changes_margin": -33.82000000000028,
+      "installments_opt555_margin": 2.1799999999997226
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 36.0,
+      "amount_scaled": 37.08,
+      "occurrences_upto": [
+       "2026-01-10",
+       "2026-01-17",
+       "2026-01-24",
+       "2026-01-31",
+       "2026-02-07",
+       "2026-02-14",
+       "2026-02-21",
+       "2026-02-28",
+       "2026-03-07",
+       "2026-03-14"
+      ],
+      "contrib_base": 360.0,
+      "delta": 10.80000000000001
+     }
+    }
+   }
+  },
+  "request_210": {
+   "requested": 1360.02,
+   "min_balance": 2000.0,
+   "balance": 3525.32,
+   "variable_block": 2847.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "787.32",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2026-04-06:787.32|2026-04-15:572.70",
+    "earliest_date_for_full_payment": "2026-04-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -572.6999999999998,
+    "full_today_trough_date": "2026-04-14",
+    "earliest": "2026-04-15",
+    "earliest_pass_margin": 678.0999999999999,
+    "day_before_fail_margin": -572.6999999999998,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2026-04-14",
+    "installments_opt603_margin": 315.84000000000015,
+    "installments_opt604_margin": 426.9100000000003
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "806.31",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-06:806.31|2026-04-15:553.71",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -553.71,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 723.7000000000016,
+      "day_before_fail_margin": -553.7099999999996,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt603_margin": 334.8299999999999,
+      "installments_opt604_margin": 445.90000000000055
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 162.0,
+      "amount_scaled": 157.14,
+      "occurrences_upto": [
+       "2026-04-13"
+      ],
+      "contrib_base": 162.0,
+      "delta": -4.860000000000005
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "768.33",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-06:768.33|2026-04-15:591.69",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -591.6899999999996,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 632.4999999999991,
+      "day_before_fail_margin": -591.69,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt603_margin": 296.85000000000036,
+      "installments_opt604_margin": 407.9200000000001
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 162.0,
+      "amount_scaled": 166.86,
+      "occurrences_upto": [
+       "2026-04-13"
+      ],
+      "contrib_base": 162.0,
+      "delta": 4.860000000000005
+     }
+    }
+   }
+  },
+  "request_214": {
+   "requested": 69750.0,
+   "min_balance": 174900.0,
+   "balance": 292180.0,
+   "variable_block": 357800.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "44800",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2024-12-04:44800|2024-12-15:24950",
+    "earliest_date_for_full_payment": "2024-12-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -24950.0,
+    "full_today_trough_date": "2024-12-14",
+    "earliest": "2024-12-15",
+    "earliest_pass_margin": 12210.320000000007,
+    "day_before_fail_margin": -24950.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2024-12-14",
+    "installments_opt614_margin": 8530.0,
+    "installments_opt615_margin": 20155.0
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "46581.1",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-12-04:46581.10|2024-12-15:23168.90",
+      "earliest_date_for_full_payment": "2024-12-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -23168.899999999965,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2024-12-15",
+      "earliest_pass_margin": 17670.020000000193,
+      "day_before_fail_margin": -23168.899999999965,
+      "plan_margin": 2.9103830456733704e-11,
+      "plan_trough_date": "2024-12-14",
+      "installments_opt614_margin": 10311.100000000035,
+      "installments_opt615_margin": 21936.100000000035
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 8790.0,
+      "amount_scaled": 8526.3,
+      "occurrences_upto": [
+       "2024-12-05",
+       "2024-12-12"
+      ],
+      "contrib_base": 17580.0,
+      "delta": -527.4000000000004
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "43018.9",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2024-12-04:43018.90|2024-12-15:26731.10",
+      "earliest_date_for_full_payment": "2024-12-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -26731.100000000035,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2024-12-15",
+      "earliest_pass_margin": 6750.61999999985,
+      "day_before_fail_margin": -26731.100000000035,
+      "plan_margin": -2.9103830456733704e-11,
+      "plan_trough_date": "2024-12-14",
+      "installments_opt614_margin": 3960.619999999937,
+      "installments_opt615_margin": 18373.899999999965
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 8790.0,
+      "amount_scaled": 9053.7,
+      "occurrences_upto": [
+       "2024-12-05",
+       "2024-12-12"
+      ],
+      "contrib_base": 17580.0,
+      "delta": 527.4000000000004
+     }
+    }
+   }
+  },
+  "request_217": {
+   "requested": 37180.0,
+   "min_balance": 26800.0,
+   "balance": 58401.97,
+   "variable_block": 47283.600000000006,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "19601.47",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07",
+    "earliest_date_for_full_payment": "2024-05-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -17578.53,
+    "full_today_trough_date": "2024-03-12",
+    "earliest": "2024-05-15",
+    "earliest_pass_margin": 18815.469999999972,
+    "day_before_fail_margin": -10624.330000000016,
+    "plan_margin": 777.5300000000425,
+    "plan_trough_date": "2024-05-13",
+    "installments_opt622_margin": 777.5300000000425
+   },
+   "threshold": 1.02,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "19377.84",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07",
+      "earliest_date_for_full_payment": "2024-05-15",
+      "spending_changes_needed": "stop:event_19978"
+     },
+     "margins": {
+      "full_today_margin": -17802.156000000003,
+      "full_today_trough_date": "2024-03-12",
+      "earliest": "2024-05-15",
+      "earliest_pass_margin": 17396.962000000043,
+      "day_before_fail_margin": -11863.431999999972,
+      "plan_margin": 115.92800000002171,
+      "plan_trough_date": "2024-05-13",
+      "plan_without_changes_margin": -461.5719999999783,
+      "installments_opt622_margin": 115.92800000002171
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1567.6000000000001,
+      "amount_scaled": 1614.6280000000002,
+      "occurrences_upto": [
+       "2024-03-10",
+       "2024-03-17",
+       "2024-03-24",
+       "2024-03-31",
+       "2024-04-07",
+       "2024-04-14",
+       "2024-04-21",
+       "2024-04-28",
+       "2024-05-05",
+       "2024-05-12"
+      ],
+      "contrib_base": 15676.000000000002,
+      "delta": 470.2800000000005
+     }
+    }
+   }
+  },
+  "request_224": {
+   "requested": 10327000.0,
+   "min_balance": 22187600.0,
+   "balance": 49969400.0,
+   "variable_block": 37668600.0,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "10010600",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2025-02-04:10010600|2025-02-15:316400",
+    "earliest_date_for_full_payment": "2025-02-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -316400.0,
+    "full_today_trough_date": "2025-02-12",
+    "earliest": "2025-02-15",
+    "earliest_pass_margin": 3467400.0,
+    "day_before_fail_margin": -316400.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2025-02-12",
+    "installments_opt645_margin": 3054320.0
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "10176029",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-02-04:10176029|2025-02-15:150971",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -150971.0,
+      "full_today_trough_date": "2025-02-12",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 4009515.0,
+      "day_before_fail_margin": -150971.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-02-12",
+      "installments_opt645_margin": 3596435.0
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 2498200.0,
+      "amount_scaled": 2423254.0,
+      "occurrences_upto": [
+       "2025-02-05"
+      ],
+      "contrib_base": 2498200.0,
+      "delta": -74946.00000000007
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "9845171",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-02-04:9845171|2025-02-15:481829",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -481829.0,
+      "full_today_trough_date": "2025-02-12",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 2925285.0,
+      "day_before_fail_margin": -481829.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-02-12",
+      "installments_opt645_margin": 2512205.0
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 2498200.0,
+      "amount_scaled": 2573146.0,
+      "occurrences_upto": [
+       "2025-02-05"
+      ],
+      "contrib_base": 2498200.0,
+      "delta": 74946.00000000007
+     }
+    }
+   }
+  },
+  "request_225": {
+   "requested": 22059000.0,
+   "min_balance": 17670700.0,
+   "balance": 35791159.6,
+   "variable_block": 33496500.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "9560209.6",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-07-20:7647120|2026-08-19:7647120|2026-09-18:7647120",
+    "earliest_date_for_full_payment": "2026-09-15",
+    "spending_changes_needed": "stop:event_20650|reduce_to:event_20649:314450"
+   },
+   "margins_base": {
+    "full_today_margin": -12498790.399999999,
+    "full_today_trough_date": "2026-07-13",
+    "earliest": "2026-09-15",
+    "earliest_pass_margin": 12876769.600000001,
+    "day_before_fail_margin": -7694730.3999999985,
+    "plan_margin": 318329.6000000015,
+    "plan_trough_date": "2026-09-13",
+    "plan_without_changes_margin": -929970.3999999985,
+    "installments_opt647_margin": 318329.6000000015
+   },
+   "threshold": 1.0125,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "9715585.6",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-07-20:7647120|2026-08-19:7647120|2026-09-18:7647120",
+      "earliest_date_for_full_payment": "2026-09-15",
+      "spending_changes_needed": "stop:event_20650"
+     },
+     "margins": {
+      "full_today_margin": -12343414.399999999,
+      "full_today_trough_date": "2026-07-13",
+      "earliest": "2026-09-15",
+      "earliest_pass_margin": 13881664.600000001,
+      "day_before_fail_margin": -6819390.3999999985,
+      "plan_margin": 250319.6000000015,
+      "plan_trough_date": "2026-09-13",
+      "plan_without_changes_margin": -54630.39999999851,
+      "installments_opt647_margin": 250319.6000000015
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 972000.0,
+      "amount_scaled": 942840.0,
+      "occurrences_upto": [
+       "2026-07-11",
+       "2026-07-18",
+       "2026-07-25",
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-15",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ],
+      "contrib_base": 9720000.0,
+      "delta": -291600.00000000023
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "9404833.6",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2026-09-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -12654166.399999999,
+      "full_today_trough_date": "2026-07-13",
+      "earliest": "2026-09-15",
+      "earliest_pass_margin": 11871874.600000001,
+      "day_before_fail_margin": -8570070.399999999
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 1294100.0,
+      "amount_scaled": 1332923.0,
+      "occurrences_upto": [
+       "2026-07-06"
+      ],
+      "contrib_base": 1294100.0,
+      "delta": 38823.00000000004
+     }
+    }
+   }
+  },
+  "request_229": {
+   "requested": 1526.8,
+   "min_balance": 1000.0,
+   "balance": 1800.52,
+   "variable_block": 1530.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "433.52",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29",
+    "earliest_date_for_full_payment": "2024-05-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -1093.28,
+    "full_today_trough_date": "2024-03-14",
+    "earliest": "2024-05-15",
+    "earliest_pass_margin": 667.1199999999997,
+    "day_before_fail_margin": -432.88000000000034,
+    "plan_margin": 35.34000000000037,
+    "plan_trough_date": "2024-05-14",
+    "installments_opt659_margin": 35.34000000000037
+   },
+   "threshold": 1.0275,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "426.35",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29",
+      "earliest_date_for_full_payment": "2024-05-15",
+      "spending_changes_needed": "stop:event_21031"
+     },
+     "margins": {
+      "full_today_margin": -1100.45,
+      "full_today_trough_date": "2024-03-14",
+      "earliest": "2024-05-15",
+      "earliest_pass_margin": 621.2199999999991,
+      "day_before_fail_margin": -472.8400000000008,
+      "plan_margin": 25.37999999999988,
+      "plan_trough_date": "2024-05-14",
+      "plan_without_changes_margin": -4.620000000000118,
+      "installments_opt659_margin": 25.37999999999988
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 46.0,
+      "amount_scaled": 47.38,
+      "occurrences_upto": [
+       "2024-03-09",
+       "2024-03-16",
+       "2024-03-23",
+       "2024-03-30",
+       "2024-04-06",
+       "2024-04-13",
+       "2024-04-20",
+       "2024-04-27",
+       "2024-05-04",
+       "2024-05-11"
+      ],
+      "contrib_base": 460.0,
+      "delta": 13.800000000000011
+     }
+    }
+   }
+  },
+  "request_231": {
+   "requested": 35706.0,
+   "min_balance": 24300.0,
+   "balance": 84590.59,
+   "variable_block": 71501.40000000001,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "30665.49",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "stop:event_21223"
+   },
+   "margins_base": {
+    "full_today_margin": -5040.510000000006,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 966.0900000000038,
+    "day_before_fail_margin": -2640.409999999996,
+    "plan_margin": 201.1500000000051,
+    "plan_trough_date": "2026-03-14",
+    "plan_without_changes_margin": -462.1500000000051,
+    "installments_opt666_margin": 201.1500000000051
+   },
+   "threshold": 1.005,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "31051.95",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -4654.049999999999,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 2807.7660000000396,
+      "day_before_fail_margin": -1508.2459999999774,
+      "plan_margin": 1379.5260000000308,
+      "plan_trough_date": "2026-03-14",
+      "installments_opt666_margin": 1379.5260000000308
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 1691.8,
+      "amount_scaled": 1641.0459999999998,
+      "occurrences_upto": [
+       "2026-01-07",
+       "2026-01-14",
+       "2026-01-21",
+       "2026-01-28",
+       "2026-02-04",
+       "2026-02-11",
+       "2026-02-18",
+       "2026-02-25",
+       "2026-03-04",
+       "2026-03-11"
+      ],
+      "contrib_base": 16918.0,
+      "delta": -507.5400000000005
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "30279.03",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-06:12378.08|2026-02-05:12378.08|2026-03-07:12378.08",
+      "earliest_date_for_full_payment": "2026-03-15",
+      "spending_changes_needed": "stop:event_21223|stop:event_21224"
+     },
+     "margins": {
+      "full_today_margin": -5426.970000000008,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-03-15",
+      "earliest_pass_margin": 32708.847999999954,
+      "day_before_fail_margin": -875.5860000000539,
+      "plan_margin": 1072.0739999999496,
+      "plan_trough_date": "2026-03-14",
+      "plan_without_changes_margin": -2303.8260000000555,
+      "installments_opt666_margin": 1072.0739999999496
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 1691.8,
+      "amount_scaled": 1742.554,
+      "occurrences_upto": [
+       "2026-01-07",
+       "2026-01-14",
+       "2026-01-21",
+       "2026-01-28",
+       "2026-02-04",
+       "2026-02-11",
+       "2026-02-18",
+       "2026-02-25",
+       "2026-03-04",
+       "2026-03-11"
+      ],
+      "contrib_base": 16918.0,
+      "delta": 507.5400000000005
+     }
+    }
+   }
+  },
+  "request_233": {
+   "requested": 6241000.0,
+   "min_balance": 10365700.0,
+   "balance": 19341300.0,
+   "variable_block": 19590600.0,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "3736100",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2025-11-07:3736100|2025-11-15:2504900",
+    "earliest_date_for_full_payment": "2025-11-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -2504900.0,
+    "full_today_trough_date": "2025-11-14",
+    "earliest": "2025-11-15",
+    "earliest_pass_margin": 111800.0,
+    "day_before_fail_margin": -2504900.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2025-11-14",
+    "installments_opt673_margin": 490780.0
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "3788063",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-11-07:3788063|2025-11-15:2452937",
+      "earliest_date_for_full_payment": "2025-11-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -2452937.0,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2025-11-15",
+      "earliest_pass_margin": 370490.0,
+      "day_before_fail_margin": -2452937.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-11-14",
+      "installments_opt673_margin": 542743.0
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 752400.0,
+      "amount_scaled": 729828.0,
+      "occurrences_upto": [
+       "2025-11-12"
+      ],
+      "contrib_base": 752400.0,
+      "delta": -22572.000000000022
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "3684137",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2025-11-07:3684137|2025-12-15:2556863",
+      "earliest_date_for_full_payment": "2025-12-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -2556863.0,
+      "full_today_trough_date": "2025-11-14",
+      "earliest": "2025-12-15",
+      "earliest_pass_margin": 1488111.0,
+      "day_before_fail_margin": -146890.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2025-11-14",
+      "installments_opt673_margin": 438817.0
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 752400.0,
+      "amount_scaled": 774972.0,
+      "occurrences_upto": [
+       "2025-11-12"
+      ],
+      "contrib_base": 752400.0,
+      "delta": 22572.000000000022
+     }
+    }
+   }
+  },
+  "request_266": {
+   "requested": 935.0,
+   "min_balance": 900.0,
+   "balance": 2354.92,
+   "variable_block": 1053.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "769.72",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2025-08-03:324.13|2025-08-31:324.13|2025-09-28:324.13",
+    "earliest_date_for_full_payment": "2025-09-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -165.27999999999997,
+    "full_today_trough_date": "2025-08-14",
+    "earliest": "2025-09-15",
+    "earliest_pass_margin": 62.32000000000062,
+    "day_before_fail_margin": -72.47999999999956,
+    "plan_margin": 24.930000000000064,
+    "plan_trough_date": "2025-10-14",
+    "installments_opt764_margin": 24.930000000000064
+   },
+   "threshold": 1.0275,
+   "scales": {
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "763.63",
+      "affordability_status": "not_affordable",
+      "recommended_payment_method": "not_recommended",
+      "payment_plan": "none",
+      "earliest_date_for_full_payment": "2025-09-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -171.3699999999999,
+      "full_today_trough_date": "2025-08-14",
+      "earliest": "2025-09-15",
+      "earliest_pass_margin": 33.909999999999854,
+      "day_before_fail_margin": -90.36000000000013
+     },
+     "driver": {
+      "category": "utilities",
+      "amount_base": 68.0,
+      "amount_scaled": 70.04,
+      "occurrences_upto": [
+       "2025-08-07"
+      ],
+      "contrib_base": 68.0,
+      "delta": 2.040000000000002
+     }
+    }
+   }
+  },
+  "request_267": {
+   "requested": 1925.0,
+   "min_balance": 1500.0,
+   "balance": 3648.98,
+   "variable_block": 2597.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "1642.98",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2026-01-08:667.33|2026-02-07:667.33|2026-03-09:667.33",
+    "earliest_date_for_full_payment": "2026-02-15",
+    "spending_changes_needed": "stop:event_24573"
+   },
+   "margins_base": {
+    "full_today_margin": -282.02,
+    "full_today_trough_date": "2026-01-14",
+    "earliest": "2026-02-15",
+    "earliest_pass_margin": 70.57999999999993,
+    "day_before_fail_margin": -129.72000000000025,
+    "plan_margin": 149.59000000000015,
+    "plan_trough_date": "2026-03-14",
+    "plan_without_changes_margin": -6.4099999999998545,
+    "installments_opt767_margin": 149.59000000000015
+   },
+   "threshold": 0.995,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "1653.93",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2026-01-08:667.33|2026-02-07:667.33|2026-03-09:667.33",
+      "earliest_date_for_full_payment": "2026-02-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -271.07000000000016,
+      "full_today_trough_date": "2026-01-14",
+      "earliest": "2026-02-15",
+      "earliest_pass_margin": 137.26999999999998,
+      "day_before_fail_margin": -90.17999999999984,
+      "plan_margin": 60.2800000000002,
+      "plan_trough_date": "2026-03-14",
+      "installments_opt767_margin": 60.2800000000002
+     },
+     "driver": {
+      "category": "transport",
+      "amount_base": 45.0,
+      "amount_scaled": 43.65,
+      "occurrences_upto": [
+       "2026-01-06",
+       "2026-01-11",
+       "2026-01-16",
+       "2026-01-21",
+       "2026-01-26",
+       "2026-01-31",
+       "2026-02-05",
+       "2026-02-10",
+       "2026-02-15",
+       "2026-02-20",
+       "2026-02-25",
+       "2026-03-02",
+       "2026-03-07",
+       "2026-03-12"
+      ],
+      "contrib_base": 630.0,
+      "delta": -18.900000000000016
+     }
+    }
+   }
+  },
+  "request_269": {
+   "requested": 15490.0,
+   "min_balance": 23100.0,
+   "balance": 45307.9,
+   "variable_block": 39571.200000000004,
+   "n_variable_series": 4,
+   "baseline": {
+    "amount_safe_to_pay": "9891.8",
+    "affordability_status": "affordable_later",
+    "recommended_payment_method": "wait",
+    "payment_plan": "2025-12-15:15490",
+    "earliest_date_for_full_payment": "2025-12-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -5598.200000000001,
+    "full_today_trough_date": "2025-11-13",
+    "earliest": "2025-12-15",
+    "earliest_pass_margin": 4988.4000000000015,
+    "day_before_fail_margin": -511.29999999998836,
+    "plan_margin": 4988.400000000016,
+    "plan_trough_date": "2026-01-13"
+   },
+   "threshold": 0.9725,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "10046.68",
+      "affordability_status": "affordable_later",
+      "recommended_payment_method": "wait",
+      "payment_plan": "2025-11-15:15490",
+      "earliest_date_for_full_payment": "2025-11-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -5443.315999999999,
+      "full_today_trough_date": "2025-11-13",
+      "earliest": "2025-11-15",
+      "earliest_pass_margin": 80.25800000003073,
+      "day_before_fail_margin": -5443.315999999992,
+      "plan_margin": 80.2580000000089,
+      "plan_trough_date": "2025-12-14"
+     },
+     "driver": {
+      "category": "groceries",
+      "amount_base": 1365.4,
+      "amount_scaled": 1324.438,
+      "occurrences_upto": [
+       "2025-11-09",
+       "2025-11-16",
+       "2025-11-23",
+       "2025-11-30",
+       "2025-12-07",
+       "2025-12-14"
+      ],
+      "contrib_base": 8192.400000000001,
+      "delta": -245.77200000000028
+     }
+    }
+   }
+  },
+  "request_273": {
+   "requested": 15861000.0,
+   "min_balance": 18774600.0,
+   "balance": 32146800.0,
+   "variable_block": 26859300.0,
+   "n_variable_series": 5,
+   "baseline": {
+    "amount_safe_to_pay": "7456800",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "partial_payment",
+    "payment_plan": "2026-04-07:7456800|2026-04-15:8404200",
+    "earliest_date_for_full_payment": "2026-04-15",
+    "spending_changes_needed": "none"
+   },
+   "margins_base": {
+    "full_today_margin": -8404200.0,
+    "full_today_trough_date": "2026-04-14",
+    "earliest": "2026-04-15",
+    "earliest_pass_margin": 5346000.0,
+    "day_before_fail_margin": -8404200.0,
+    "plan_margin": 0.0,
+    "plan_trough_date": "2026-04-14",
+    "installments_opt784_margin": 1958320.0
+   },
+   "threshold": 0.9975,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "7599948",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-07:7599948|2026-04-15:8261052",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -8261052.0,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 5751408.0,
+      "day_before_fail_margin": -8261052.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt784_margin": 2101468.0
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 1390000.0,
+      "amount_scaled": 1348300.0,
+      "occurrences_upto": [
+       "2026-04-12"
+      ],
+      "contrib_base": 1390000.0,
+      "delta": -41700.00000000004
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "7313652",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "partial_payment",
+      "payment_plan": "2026-04-07:7313652|2026-04-15:8547348",
+      "earliest_date_for_full_payment": "2026-04-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -8547348.0,
+      "full_today_trough_date": "2026-04-14",
+      "earliest": "2026-04-15",
+      "earliest_pass_margin": 4940592.0,
+      "day_before_fail_margin": -8547348.0,
+      "plan_margin": 0.0,
+      "plan_trough_date": "2026-04-14",
+      "installments_opt784_margin": 1815172.0
+     },
+     "driver": {
+      "category": "shopping",
+      "amount_base": 1390000.0,
+      "amount_scaled": 1431700.0,
+      "occurrences_upto": [
+       "2026-04-12"
+      ],
+      "contrib_base": 1390000.0,
+      "delta": 41700.00000000004
+     }
+    }
+   }
+  },
+  "request_274": {
+   "requested": 2713.7,
+   "min_balance": 1800.0,
+   "balance": 4847.31,
+   "variable_block": 4069.0,
+   "n_variable_series": 6,
+   "baseline": {
+    "amount_safe_to_pay": "2188.31",
+    "affordability_status": "affordable_with_plan",
+    "recommended_payment_method": "installments",
+    "payment_plan": "2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75",
+    "earliest_date_for_full_payment": "2025-01-15",
+    "spending_changes_needed": "stop:event_25179"
+   },
+   "margins_base": {
+    "full_today_margin": -525.3899999999994,
+    "full_today_trough_date": "2024-12-14",
+    "earliest": "2025-01-15",
+    "earliest_pass_margin": 95.81000000000131,
+    "day_before_fail_margin": -172.78999999999905,
+    "plan_margin": 35.26000000000067,
+    "plan_trough_date": "2025-02-13",
+    "plan_without_changes_margin": -12.739999999999327,
+    "installments_opt785_margin": 35.26000000000067
+   },
+   "threshold": 0.995,
+   "scales": {
+    "0.97": {
+     "row": {
+      "amount_safe_to_pay": "2209.22",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75",
+      "earliest_date_for_full_payment": "2025-01-15",
+      "spending_changes_needed": "none"
+     },
+     "margins": {
+      "full_today_margin": -504.4799999999991,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2025-01-15",
+      "earliest_pass_margin": 202.82000000000244,
+      "day_before_fail_margin": -110.08999999999833,
+      "plan_margin": 94.27000000000135,
+      "plan_trough_date": "2025-02-13",
+      "installments_opt785_margin": 94.27000000000135
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 84.0,
+      "amount_scaled": 81.48,
+      "occurrences_upto": [
+       "2024-12-05",
+       "2024-12-12",
+       "2024-12-19",
+       "2024-12-26",
+       "2025-01-02",
+       "2025-01-09",
+       "2025-01-16",
+       "2025-01-23",
+       "2025-01-30",
+       "2025-02-06",
+       "2025-02-13"
+      ],
+      "contrib_base": 924.0,
+      "delta": -27.720000000000024
+     }
+    },
+    "1.03": {
+     "row": {
+      "amount_safe_to_pay": "2167.4",
+      "affordability_status": "affordable_with_plan",
+      "recommended_payment_method": "installments",
+      "payment_plan": "2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75",
+      "earliest_date_for_full_payment": "2025-02-15",
+      "spending_changes_needed": "stop:event_25179|reduce_to:event_25180:25"
+     },
+     "margins": {
+      "full_today_margin": -546.2999999999997,
+      "full_today_trough_date": "2024-12-14",
+      "earliest": "2025-02-15",
+      "earliest_pass_margin": 1955.7400000000007,
+      "day_before_fail_margin": -11.199999999999818,
+      "plan_margin": 3.2499999999990905,
+      "plan_trough_date": "2025-02-13",
+      "plan_without_changes_margin": -119.75000000000136,
+      "installments_opt785_margin": 3.2499999999990905
+     },
+     "driver": {
+      "category": "dining",
+      "amount_base": 84.0,
+      "amount_scaled": 86.52,
+      "occurrences_upto": [
+       "2024-12-05",
+       "2024-12-12",
+       "2024-12-19",
+       "2024-12-26",
+       "2025-01-02",
+       "2025-01-09",
+       "2025-01-16",
+       "2025-01-23",
+       "2025-01-30",
+       "2025-02-06",
+       "2025-02-13"
+      ],
+      "contrib_base": 924.0,
+      "delta": 27.720000000000024
+     }
+    }
+   }
+  }
+ },
+ "thresholds": {
+  "request_26": null,
+  "request_27": 1.0825,
+  "request_28": null,
+  "request_29": 1.07,
+  "request_30": null,
+  "request_31": null,
+  "request_32": null,
+  "request_33": null,
+  "request_34": null,
+  "request_35": null,
+  "request_36": null,
+  "request_37": null,
+  "request_38": null,
+  "request_39": null,
+  "request_40": null,
+  "request_41": null,
+  "request_42": null,
+  "request_43": null,
+  "request_44": null,
+  "request_45": null,
+  "request_46": 0.9975,
+  "request_47": null,
+  "request_48": null,
+  "request_49": 1.0225,
+  "request_50": null,
+  "request_51": null,
+  "request_52": null,
+  "request_53": 0.9775,
+  "request_54": null,
+  "request_55": 1.02,
+  "request_56": 0.9975,
+  "request_57": null,
+  "request_58": null,
+  "request_59": 1.015,
+  "request_60": 0.9975,
+  "request_61": 1.1,
+  "request_62": null,
+  "request_63": null,
+  "request_64": null,
+  "request_65": null,
+  "request_66": null,
+  "request_67": null,
+  "request_68": 1.005,
+  "request_69": 1.0575,
+  "request_70": null,
+  "request_71": 1.09,
+  "request_72": null,
+  "request_73": 1.04,
+  "request_74": null,
+  "request_75": 1.055,
+  "request_76": 1.1,
+  "request_77": 1.005,
+  "request_78": 1.0325,
+  "request_79": null,
+  "request_80": null,
+  "request_81": 1.0475,
+  "request_82": null,
+  "request_83": null,
+  "request_84": null,
+  "request_85": null,
+  "request_86": null,
+  "request_87": null,
+  "request_88": 0.9175,
+  "request_89": 0.985,
+  "request_90": null,
+  "request_91": null,
+  "request_92": 0.995,
+  "request_93": 1.0375,
+  "request_94": null,
+  "request_95": null,
+  "request_96": 1.0025,
+  "request_97": 0.985,
+  "request_98": null,
+  "request_99": 0.9925,
+  "request_100": 0.99,
+  "request_101": 1.0125,
+  "request_102": null,
+  "request_103": null,
+  "request_104": null,
+  "request_105": 0.9775,
+  "request_106": null,
+  "request_107": 0.965,
+  "request_108": null,
+  "request_109": 0.985,
+  "request_110": null,
+  "request_111": 1.095,
+  "request_112": 1.0975,
+  "request_113": 1.0075,
+  "request_114": 1.0975,
+  "request_115": null,
+  "request_116": null,
+  "request_117": 1.0425,
+  "request_118": 0.9875,
+  "request_119": 1.015,
+  "request_120": 0.9075,
+  "request_121": null,
+  "request_122": null,
+  "request_123": 1.0825,
+  "request_124": 1.005,
+  "request_125": 0.995,
+  "request_126": 1.04,
+  "request_127": 1.055,
+  "request_128": 0.9575,
+  "request_129": null,
+  "request_130": 1.06,
+  "request_131": 1.0025,
+  "request_132": 1.005,
+  "request_133": null,
+  "request_134": null,
+  "request_135": 1.045,
+  "request_136": 1.0275,
+  "request_137": null,
+  "request_138": 0.9975,
+  "request_139": 0.975,
+  "request_140": null,
+  "request_141": null,
+  "request_142": null,
+  "request_143": null,
+  "request_144": 1.08,
+  "request_145": 0.98,
+  "request_146": null,
+  "request_147": 1.0125,
+  "request_148": 0.995,
+  "request_149": 1.0025,
+  "request_150": 1.0225,
+  "request_151": 1.0425,
+  "request_152": 0.9525,
+  "request_153": 1.04,
+  "request_154": null,
+  "request_155": null,
+  "request_156": null,
+  "request_157": 1.0625,
+  "request_158": null,
+  "request_159": null,
+  "request_160": null,
+  "request_161": null,
+  "request_162": null,
+  "request_163": 1.015,
+  "request_164": 1.05,
+  "request_165": null,
+  "request_166": null,
+  "request_167": null,
+  "request_168": 0.9975,
+  "request_169": null,
+  "request_170": 1.0325,
+  "request_171": null,
+  "request_172": 0.9975,
+  "request_173": 1.0525,
+  "request_174": null,
+  "request_175": null,
+  "request_176": 1.03,
+  "request_177": null,
+  "request_178": null,
+  "request_179": null,
+  "request_180": null,
+  "request_181": null,
+  "request_182": null,
+  "request_183": 1.005,
+  "request_184": null,
+  "request_185": null,
+  "request_186": null,
+  "request_187": null,
+  "request_188": null,
+  "request_189": null,
+  "request_190": null,
+  "request_191": null,
+  "request_192": null,
+  "request_193": null,
+  "request_194": null,
+  "request_195": 1.0075,
+  "request_196": null,
+  "request_197": 1.045,
+  "request_198": null,
+  "request_199": 1.0875,
+  "request_200": null,
+  "request_201": null,
+  "request_202": null,
+  "request_203": null,
+  "request_204": 0.95,
+  "request_205": null,
+  "request_206": null,
+  "request_207": null,
+  "request_208": null,
+  "request_209": null,
+  "request_210": 0.9975,
+  "request_211": null,
+  "request_212": null,
+  "request_213": 1.0425,
+  "request_214": 0.9975,
+  "request_215": null,
+  "request_216": null,
+  "request_217": 1.02,
+  "request_218": null,
+  "request_219": null,
+  "request_220": null,
+  "request_221": null,
+  "request_222": null,
+  "request_223": null,
+  "request_224": 0.9975,
+  "request_225": 1.0125,
+  "request_226": null,
+  "request_227": null,
+  "request_228": null,
+  "request_229": 1.0275,
+  "request_230": null,
+  "request_231": 1.005,
+  "request_232": null,
+  "request_233": 0.9975,
+  "request_234": null,
+  "request_235": null,
+  "request_236": null,
+  "request_237": null,
+  "request_238": null,
+  "request_239": null,
+  "request_240": null,
+  "request_241": null,
+  "request_242": null,
+  "request_243": null,
+  "request_244": null,
+  "request_245": null,
+  "request_246": 1.085,
+  "request_247": null,
+  "request_248": null,
+  "request_249": null,
+  "request_250": null,
+  "request_251": null,
+  "request_252": null,
+  "request_253": 1.05,
+  "request_254": null,
+  "request_255": null,
+  "request_256": 1.0825,
+  "request_257": null,
+  "request_258": null,
+  "request_259": null,
+  "request_260": null,
+  "request_261": null,
+  "request_262": null,
+  "request_263": null,
+  "request_264": null,
+  "request_265": null,
+  "request_266": 1.0275,
+  "request_267": 0.995,
+  "request_268": null,
+  "request_269": 0.9725,
+  "request_270": null,
+  "request_271": null,
+  "request_272": null,
+  "request_273": 0.9975,
+  "request_274": 0.995,
+  "request_275": null
+ },
+ "near_boundary_3pct": {
+  "request_46": 0.9975,
+  "request_49": 1.0225,
+  "request_53": 0.9775,
+  "request_55": 1.02,
+  "request_56": 0.9975,
+  "request_59": 1.015,
+  "request_60": 0.9975,
+  "request_68": 1.005,
+  "request_77": 1.005,
+  "request_89": 0.985,
+  "request_92": 0.995,
+  "request_96": 1.0025,
+  "request_97": 0.985,
+  "request_99": 0.9925,
+  "request_100": 0.99,
+  "request_101": 1.0125,
+  "request_105": 0.9775,
+  "request_109": 0.985,
+  "request_113": 1.0075,
+  "request_118": 0.9875,
+  "request_119": 1.015,
+  "request_124": 1.005,
+  "request_125": 0.995,
+  "request_131": 1.0025,
+  "request_132": 1.005,
+  "request_136": 1.0275,
+  "request_138": 0.9975,
+  "request_139": 0.975,
+  "request_145": 0.98,
+  "request_147": 1.0125,
+  "request_148": 0.995,
+  "request_149": 1.0025,
+  "request_150": 1.0225,
+  "request_163": 1.015,
+  "request_168": 0.9975,
+  "request_172": 0.9975,
+  "request_176": 1.03,
+  "request_183": 1.005,
+  "request_195": 1.0075,
+  "request_210": 0.9975,
+  "request_214": 0.9975,
+  "request_217": 1.02,
+  "request_224": 0.9975,
+  "request_225": 1.0125,
+  "request_229": 1.0275,
+  "request_231": 1.005,
+  "request_233": 0.9975,
+  "request_266": 1.0275,
+  "request_267": 0.995,
+  "request_269": 0.9725,
+  "request_273": 0.9975,
+  "request_274": 0.995
+ },
+ "counts": {
+  "within_1pct": 29,
+  "within_3pct": 52,
+  "within_10pct": 91
+ }
+}

@@ -1,0 +1,60 @@
+request_46 user_46 scale=1.03 date=2024-12-03 amount=49450.0 by=2025-01-09 partial=True
+  balance=202335.0 min=84000.0 methods=['partial_payment', 'installments'] max_m=7
+  series:
+    rent               monthly  step= 30 n= 5 amt=    33800.00 flex=fixed                  min=None latest=event_4220 next=['2024-12-03', '2025-01-03', '2025-02-03']
+    utilities          monthly  step= 30 n= 5 amt=     7436.60 flex=fixed                  min=None latest=event_4221 next=['2024-12-07', '2025-01-07', '2025-02-07']
+    debt_repayment     monthly  step= 30 n= 5 amt=    14300.00 flex=fixed                  min=None latest=event_4222 next=['2024-12-12', '2025-01-12', '2025-02-12']
+    streaming          monthly  step= 30 n= 5 amt=     4030.00 flex=reducible_or_stoppable min=2015.0 latest=event_4223 next=['2024-12-10', '2025-01-10', '2025-02-10']
+    cloud_storage      monthly  step= 30 n= 5 amt=     1015.00 flex=stoppable              min=None latest=event_4224 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    shopping           monthly  step= 30 n= 5 amt=     5757.70 flex=fixed                  min=None latest=event_4225 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    groceries          periodic step=  7 n=26 amt=     6890.70 flex=fixed                  min=None latest=event_4251 next=['2024-12-09', '2024-12-16', '2024-12-23', '2024-12-30']
+    transport          periodic step=  7 n=25 amt=     3265.10 flex=fixed                  min=None latest=event_4276 next=['2024-12-10', '2024-12-17', '2024-12-24', '2024-12-31']
+    dining             periodic step= 14 n=13 amt=     4212.70 flex=fixed                  min=None latest=event_4289 next=['2024-12-11', '2024-12-25', '2025-01-08', '2025-01-22']
+  safe=37627.2 earliest=2024-12-15 -> partial_payment/affordable_with_plan plan=2024-12-03:37627.20|2024-12-15:11822.80 changes=none
+    cand partial_payment  deadline=True changes=0 total=49450.00 start=2024-12-03 n=2
+    cand installments     deadline=True changes=0 total=51428.00 start=2024-12-03 n=2
+    cand installments     deadline=False changes=0 total=52417.02 start=2024-12-04 n=3
+  daily projection (days with flows, no payment applied):
+    2024-12-03      168535.00  rent: Shared housing rent:-33800.00
+    2024-12-07      161098.40  utilities: Electricity and water bill:-7436.60
+    2024-12-09      154207.70  groceries: Household groceries:-6890.70
+    2024-12-10      146912.60  streaming: Streaming subscription:-4030.00, transport: Rail pass:-3265.10
+    2024-12-11      142699.90  dining: Weekend food delivery:-4212.70
+    2024-12-12      128399.90  debt_repayment: Credit card repayment:-14300.00
+    2024-12-13      121627.20  cloud_storage: Online backup subscription:-1015.00, shopping: Monthly shopping spend:-5757.70
+    2024-12-15      266627.20  salary:+145000.00
+    2024-12-16      259736.50  groceries: Household groceries:-6890.70
+    2024-12-17      256471.40  transport: Rail pass:-3265.10
+    2024-12-23      249580.70  groceries: Household groceries:-6890.70
+    2024-12-24      246315.60  transport: Rail pass:-3265.10
+    2024-12-25      242102.90  dining: Weekend food delivery:-4212.70
+    2024-12-30      235212.20  groceries: Household groceries:-6890.70
+    2024-12-31      231947.10  transport: Rail pass:-3265.10
+    2025-01-03      198147.10  rent: Shared housing rent:-33800.00
+    2025-01-06      191256.40  groceries: Household groceries:-6890.70
+    2025-01-07      180554.70  utilities: Electricity and water bill:-7436.60, transport: Rail pass:-3265.10
+    2025-01-08      176342.00  dining: Weekend food delivery:-4212.70
+    2025-01-10      172312.00  streaming: Streaming subscription:-4030.00
+    2025-01-12      158012.00  debt_repayment: Credit card repayment:-14300.00
+    2025-01-13      144348.60  cloud_storage: Online backup subscription:-1015.00, shopping: Monthly shopping spend:-5757.70, groceries: Household groceries:-6890.70
+    2025-01-14      141083.50  transport: Rail pass:-3265.10
+    2025-01-15      286083.50  salary:+145000.00
+    2025-01-20      279192.80  groceries: Household groceries:-6890.70
+    2025-01-21      275927.70  transport: Rail pass:-3265.10
+    2025-01-22      271715.00  dining: Weekend food delivery:-4212.70
+    2025-01-27      264824.30  groceries: Household groceries:-6890.70
+    2025-01-28      261559.20  transport: Rail pass:-3265.10
+    2025-02-03      220868.50  rent: Shared housing rent:-33800.00, groceries: Household groceries:-6890.70
+    2025-02-04      217603.40  transport: Rail pass:-3265.10
+    2025-02-05      213390.70  dining: Weekend food delivery:-4212.70
+    2025-02-07      205954.10  utilities: Electricity and water bill:-7436.60
+    2025-02-10      195033.40  streaming: Streaming subscription:-4030.00, groceries: Household groceries:-6890.70
+    2025-02-11      191768.30  transport: Rail pass:-3265.10
+    2025-02-12      177468.30  debt_repayment: Credit card repayment:-14300.00
+    2025-02-13      170695.60  cloud_storage: Online backup subscription:-1015.00, shopping: Monthly shopping spend:-5757.70
+    2025-02-15      315695.60  salary:+145000.00
+    2025-02-17      308804.90  groceries: Household groceries:-6890.70
+    2025-02-18      305539.80  transport: Rail pass:-3265.10
+    2025-02-19      301327.10  dining: Weekend food delivery:-4212.70
+    2025-02-24      294436.40  groceries: Household groceries:-6890.70
+    2025-02-25      291171.30  transport: Rail pass:-3265.10

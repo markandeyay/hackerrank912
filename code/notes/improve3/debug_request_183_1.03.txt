@@ -1,0 +1,64 @@
+request_183 user_183 scale=1.03 date=2026-04-07 amount=26866000.0 by=2026-06-18 partial=False
+  balance=42156223.74 min=11878300.0 methods=['installments'] max_m=11
+  series:
+    rent               monthly  step= 30 n= 6 amt=  5776000.00 flex=fixed                  min=None latest=event_16817 next=['2026-05-04', '2026-06-04']
+    utilities          monthly  step= 30 n= 5 amt=  1125378.00 flex=fixed                  min=None latest=event_16811 next=['2026-04-08', '2026-05-08', '2026-06-08']
+    insurance          monthly  step= 30 n= 5 amt=   646000.00 flex=fixed                  min=None latest=event_16812 next=['2026-04-09', '2026-05-09', '2026-06-09']
+    cloud_storage      monthly  step= 30 n= 5 amt=   157700.00 flex=stoppable              min=None latest=event_16813 next=['2026-04-14', '2026-05-14', '2026-06-14']
+    streaming          monthly  step= 30 n= 5 amt=   511100.00 flex=stoppable              min=None latest=event_16814 next=['2026-04-11', '2026-05-11', '2026-06-11']
+    shopping           monthly  step= 30 n= 5 amt=   941317.00 flex=reducible              min=365560.0 latest=event_16815 next=['2026-04-14', '2026-05-14', '2026-06-14']
+    entertainment      monthly  step= 30 n= 5 amt=   704520.00 flex=reducible              min=342000.0 latest=event_16816 next=['2026-04-16', '2026-05-16', '2026-06-16']
+    groceries          periodic step= 10 n=18 amt=  1024335.00 flex=fixed                  min=None latest=event_16835 next=['2026-04-12', '2026-04-22', '2026-05-02', '2026-05-12']
+    transport          periodic step=  5 n=35 amt=   528493.00 flex=fixed                  min=None latest=event_16870 next=['2026-04-08', '2026-04-13', '2026-04-18', '2026-04-23']
+    dining             periodic step=  7 n=26 amt=   581332.00 flex=fixed                  min=None latest=event_16896 next=['2026-04-11', '2026-04-18', '2026-04-25', '2026-05-02']
+  safe=22903775.74 earliest=2026-05-15 -> installments/affordable_with_plan plan=2026-04-10:9313546.67|2026-05-10:9313546.67|2026-06-09:9313546.67 changes=stop:event_16813|stop:event_16814
+    cand installments     deadline=True changes=2 total=27940640.01 start=2026-04-10 n=3
+  daily projection (days with flows, no payment applied):
+    2026-04-07    42156223.74  
+    2026-04-08    40502352.74  utilities: Electricity and water bill:-1125378.00, transport: Ride-hailing trip:-528493.00
+    2026-04-09    39856352.74  insurance: Vehicle insurance premium:-646000.00
+    2026-04-11    37433920.74  Pending pharmacy card charge:-1330000.00, streaming: Streaming subscription:-511100.00, dining: Lunch with colleagues:-581332.00
+    2026-04-12    36409585.74  groceries: Local market purchase:-1024335.00
+    2026-04-13    35881092.74  transport: Ride-hailing trip:-528493.00
+    2026-04-14    34782075.74  cloud_storage: Shared storage plan:-157700.00, shopping: Household shopping:-941317.00
+    2026-04-15    55682071.34  salary:+20899995.60
+    2026-04-16    54977551.34  entertainment: Cinema and events:-704520.00
+    2026-04-18    53867726.34  transport: Ride-hailing trip:-528493.00, dining: Lunch with colleagues:-581332.00
+    2026-04-22    52843391.34  groceries: Local market purchase:-1024335.00
+    2026-04-23    52314898.34  transport: Ride-hailing trip:-528493.00
+    2026-04-25    51733566.34  dining: Lunch with colleagues:-581332.00
+    2026-04-28    51205073.34  transport: Ride-hailing trip:-528493.00
+    2026-05-02    49599406.34  groceries: Local market purchase:-1024335.00, dining: Lunch with colleagues:-581332.00
+    2026-05-03    49070913.34  transport: Ride-hailing trip:-528493.00
+    2026-05-04    43294913.34  rent: Shared housing rent:-5776000.00
+    2026-05-08    41641042.34  utilities: Electricity and water bill:-1125378.00, transport: Ride-hailing trip:-528493.00
+    2026-05-09    40413710.34  insurance: Vehicle insurance premium:-646000.00, dining: Lunch with colleagues:-581332.00
+    2026-05-11    39902610.34  streaming: Streaming subscription:-511100.00
+    2026-05-12    38878275.34  groceries: Local market purchase:-1024335.00
+    2026-05-13    38349782.34  transport: Ride-hailing trip:-528493.00
+    2026-05-14    37250765.34  cloud_storage: Shared storage plan:-157700.00, shopping: Household shopping:-941317.00
+    2026-05-15    58150760.94  salary:+20899995.60
+    2026-05-16    56864908.94  entertainment: Cinema and events:-704520.00, dining: Lunch with colleagues:-581332.00
+    2026-05-18    56336415.94  transport: Ride-hailing trip:-528493.00
+    2026-05-22    55312080.94  groceries: Local market purchase:-1024335.00
+    2026-05-23    54202255.94  transport: Ride-hailing trip:-528493.00, dining: Lunch with colleagues:-581332.00
+    2026-05-28    53673762.94  transport: Ride-hailing trip:-528493.00
+    2026-05-30    53092430.94  dining: Lunch with colleagues:-581332.00
+    2026-06-01    52068095.94  groceries: Local market purchase:-1024335.00
+    2026-06-02    51539602.94  transport: Ride-hailing trip:-528493.00
+    2026-06-04    45763602.94  rent: Shared housing rent:-5776000.00
+    2026-06-06    45182270.94  dining: Lunch with colleagues:-581332.00
+    2026-06-07    44653777.94  transport: Ride-hailing trip:-528493.00
+    2026-06-08    43528399.94  utilities: Electricity and water bill:-1125378.00
+    2026-06-09    42882399.94  insurance: Vehicle insurance premium:-646000.00
+    2026-06-11    41346964.94  streaming: Streaming subscription:-511100.00, groceries: Local market purchase:-1024335.00
+    2026-06-12    40818471.94  transport: Ride-hailing trip:-528493.00
+    2026-06-13    40237139.94  dining: Lunch with colleagues:-581332.00
+    2026-06-14    39138122.94  cloud_storage: Shared storage plan:-157700.00, shopping: Household shopping:-941317.00
+    2026-06-15    60038118.54  salary:+20899995.60
+    2026-06-16    59333598.54  entertainment: Cinema and events:-704520.00
+    2026-06-17    58805105.54  transport: Ride-hailing trip:-528493.00
+    2026-06-20    58223773.54  dining: Lunch with colleagues:-581332.00
+    2026-06-21    57199438.54  groceries: Local market purchase:-1024335.00
+    2026-06-22    56670945.54  transport: Ride-hailing trip:-528493.00
+    2026-06-27    55561120.54  transport: Ride-hailing trip:-528493.00, dining: Lunch with colleagues:-581332.00

@@ -1,0 +1,49 @@
+request_77 user_77 scale=1.03 date=2025-11-05 amount=60700.0 by=2025-11-14 partial=False
+  balance=189860.5 min=82200.0 methods=['full_payment'] max_m=None
+  series:
+    rent               monthly  step= 30 n= 6 amt=    25200.00 flex=fixed                  min=None latest=event_7145 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 5 amt=     7694.10 flex=fixed                  min=None latest=event_7139 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=    12500.00 flex=fixed                  min=None latest=event_7140 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    healthcare         monthly  step= 30 n= 5 amt=     8188.50 flex=fixed                  min=None latest=event_7141 next=['2025-11-10', '2025-12-10', '2026-01-10']
+    family_support     monthly  step= 30 n= 5 amt=     6740.00 flex=fixed                  min=None latest=event_7142 next=['2025-11-13', '2025-12-13', '2026-01-13']
+    cloud_storage      monthly  step= 30 n= 5 amt=      705.00 flex=stoppable              min=None latest=event_7143 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    shopping           monthly  step= 30 n= 5 amt=     5685.60 flex=fixed                  min=None latest=event_7144 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    groceries          periodic step=  7 n=26 amt=     4367.20 flex=fixed                  min=None latest=event_7171 next=['2025-11-10', '2025-11-17', '2025-11-24', '2025-12-01']
+    transport          periodic step= 14 n=13 amt=     2513.20 flex=fixed                  min=None latest=event_7184 next=['2025-11-11', '2025-11-25', '2025-12-09', '2025-12-23']
+  safe=59266.9 earliest=2025-11-15 -> wait/affordable_later plan=2025-11-15:60700 changes=none
+    cand wait             deadline=False changes=0 total=60700.00 start=2025-11-15 n=1
+  daily projection (days with flows, no payment applied):
+    2025-11-05      189860.50  
+    2025-11-06      182166.40  utilities: Household utility payment:-7694.10
+    2025-11-10      169610.70  healthcare: Family healthcare expense:-8188.50, groceries: Grocery delivery:-4367.20
+    2025-11-11      154597.50  debt_repayment: Vehicle loan payment:-12500.00, transport: Local taxi:-2513.20
+    2025-11-12      148206.90  cloud_storage: Online backup subscription:-705.00, shopping: Clothing and household items:-5685.60
+    2025-11-13      141466.90  family_support: Childcare contribution:-6740.00
+    2025-11-15      252466.90  salary:+111000.00
+    2025-11-17      248099.70  groceries: Grocery delivery:-4367.20
+    2025-11-24      243732.50  groceries: Grocery delivery:-4367.20
+    2025-11-25      241219.30  transport: Local taxi:-2513.20
+    2025-12-01      236852.10  groceries: Grocery delivery:-4367.20
+    2025-12-02      211652.10  rent: Apartment rent transfer:-25200.00
+    2025-12-06      203958.00  utilities: Household utility payment:-7694.10
+    2025-12-08      199590.80  groceries: Grocery delivery:-4367.20
+    2025-12-09      197077.60  transport: Local taxi:-2513.20
+    2025-12-10      188889.10  healthcare: Family healthcare expense:-8188.50
+    2025-12-11      176389.10  debt_repayment: Vehicle loan payment:-12500.00
+    2025-12-12      169998.50  cloud_storage: Online backup subscription:-705.00, shopping: Clothing and household items:-5685.60
+    2025-12-13      163258.50  family_support: Childcare contribution:-6740.00
+    2025-12-15      269891.30  salary:+111000.00, groceries: Grocery delivery:-4367.20
+    2025-12-22      265524.10  groceries: Grocery delivery:-4367.20
+    2025-12-23      263010.90  transport: Local taxi:-2513.20
+    2025-12-29      258643.70  groceries: Grocery delivery:-4367.20
+    2026-01-02      233443.70  rent: Apartment rent transfer:-25200.00
+    2026-01-05      229076.50  groceries: Grocery delivery:-4367.20
+    2026-01-06      218869.20  utilities: Household utility payment:-7694.10, transport: Local taxi:-2513.20
+    2026-01-10      210680.70  healthcare: Family healthcare expense:-8188.50
+    2026-01-11      198180.70  debt_repayment: Vehicle loan payment:-12500.00
+    2026-01-12      187422.90  cloud_storage: Online backup subscription:-705.00, shopping: Clothing and household items:-5685.60, groceries: Grocery delivery:-4367.20
+    2026-01-13      180682.90  family_support: Childcare contribution:-6740.00
+    2026-01-15      291682.90  salary:+111000.00
+    2026-01-19      287315.70  groceries: Grocery delivery:-4367.20
+    2026-01-20      284802.50  transport: Local taxi:-2513.20
+    2026-01-26      280435.30  groceries: Grocery delivery:-4367.20

@@ -1,0 +1,63 @@
+request_214 user_214 scale=1.03 date=2024-12-04 amount=69750.0 by=2025-01-28 partial=True
+  balance=292180.0 min=174900.0 methods=['partial_payment', 'installments'] max_m=5
+  series:
+    rent               monthly  step= 30 n= 6 amt=    69100.00 flex=fixed                  min=None latest=event_19673 next=['2025-01-03', '2025-02-03']
+    utilities          monthly  step= 30 n= 5 amt=    12246.70 flex=fixed                  min=None latest=event_19667 next=['2024-12-07', '2025-01-07', '2025-02-07']
+    insurance          monthly  step= 30 n= 5 amt=     6510.00 flex=fixed                  min=None latest=event_19668 next=['2024-12-08', '2025-01-08', '2025-02-08']
+    cloud_storage      monthly  step= 30 n= 5 amt=      930.00 flex=fixed                  min=None latest=event_19669 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    streaming          monthly  step= 30 n= 5 amt=     5670.00 flex=reducible_or_stoppable min=2835.0 latest=event_19670 next=['2024-12-10', '2025-01-10', '2025-02-10']
+    shopping           monthly  step= 30 n= 5 amt=    10866.50 flex=reducible              min=4220.0 latest=event_19671 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    entertainment      monthly  step= 30 n= 5 amt=     7179.10 flex=fixed                  min=None latest=event_19672 next=['2024-12-15', '2025-01-15', '2025-02-15']
+    groceries          periodic step= 10 n=18 amt=     9568.70 flex=fixed                  min=None latest=event_19691 next=['2024-12-08', '2024-12-18', '2024-12-28', '2025-01-07']
+    transport          periodic step=  5 n=35 amt=     5180.90 flex=fixed                  min=None latest=event_19726 next=['2024-12-09', '2024-12-14', '2024-12-19', '2024-12-24']
+    dining             periodic step=  7 n=25 amt=     9053.70 flex=reducible              min=4395.0 latest=event_19751 next=['2024-12-05', '2024-12-12', '2024-12-19', '2024-12-26']
+  safe=43018.9 earliest=2024-12-15 -> partial_payment/affordable_with_plan plan=2024-12-04:43018.90|2024-12-15:26731.10 changes=none
+    cand partial_payment  deadline=True changes=0 total=69750.00 start=2024-12-04 n=2
+    cand installments     deadline=True changes=0 total=72540.00 start=2024-12-04 n=2
+    cand installments     deadline=False changes=0 total=73935.00 start=2024-12-05 n=3
+  daily projection (days with flows, no payment applied):
+    2024-12-04      292180.00  
+    2024-12-05      283126.30  dining: Lunch with colleagues:-9053.70
+    2024-12-07      270879.60  utilities: Electricity and water bill:-12246.70
+    2024-12-08      254800.90  insurance: Vehicle insurance premium:-6510.00, groceries: Weekly produce market:-9568.70
+    2024-12-09      249620.00  transport: Parking and tolls:-5180.90
+    2024-12-10      243950.00  streaming: Streaming subscription:-5670.00
+    2024-12-12      234896.30  dining: Lunch with colleagues:-9053.70
+    2024-12-13      223099.80  cloud_storage: Online backup subscription:-930.00, shopping: Online retail purchases:-10866.50
+    2024-12-14      217918.90  transport: Parking and tolls:-5180.90
+    2024-12-15      452730.12  salary:+241990.32, entertainment: Cinema and events:-7179.10
+    2024-12-18      443161.42  groceries: Weekly produce market:-9568.70
+    2024-12-19      428926.82  transport: Parking and tolls:-5180.90, dining: Lunch with colleagues:-9053.70
+    2024-12-24      423745.92  transport: Parking and tolls:-5180.90
+    2024-12-26      414692.22  dining: Lunch with colleagues:-9053.70
+    2024-12-28      405123.52  groceries: Weekly produce market:-9568.70
+    2024-12-29      399942.62  transport: Parking and tolls:-5180.90
+    2025-01-02      390888.92  dining: Lunch with colleagues:-9053.70
+    2025-01-03      316608.02  rent: Apartment rent transfer:-69100.00, transport: Parking and tolls:-5180.90
+    2025-01-07      294792.62  utilities: Electricity and water bill:-12246.70, groceries: Weekly produce market:-9568.70
+    2025-01-08      283101.72  insurance: Vehicle insurance premium:-6510.00, transport: Parking and tolls:-5180.90
+    2025-01-09      274048.02  dining: Lunch with colleagues:-9053.70
+    2025-01-10      268378.02  streaming: Streaming subscription:-5670.00
+    2025-01-13      251400.62  cloud_storage: Online backup subscription:-930.00, shopping: Online retail purchases:-10866.50, transport: Parking and tolls:-5180.90
+    2025-01-15      486211.84  salary:+241990.32, entertainment: Cinema and events:-7179.10
+    2025-01-16      477158.14  dining: Lunch with colleagues:-9053.70
+    2025-01-17      467589.44  groceries: Weekly produce market:-9568.70
+    2025-01-18      462408.54  transport: Parking and tolls:-5180.90
+    2025-01-23      448173.94  transport: Parking and tolls:-5180.90, dining: Lunch with colleagues:-9053.70
+    2025-01-27      438605.24  groceries: Weekly produce market:-9568.70
+    2025-01-28      433424.34  transport: Parking and tolls:-5180.90
+    2025-01-30      424370.64  dining: Lunch with colleagues:-9053.70
+    2025-02-02      419189.74  transport: Parking and tolls:-5180.90
+    2025-02-03      350089.74  rent: Apartment rent transfer:-69100.00
+    2025-02-06      331467.34  groceries: Weekly produce market:-9568.70, dining: Lunch with colleagues:-9053.70
+    2025-02-07      314039.74  utilities: Electricity and water bill:-12246.70, transport: Parking and tolls:-5180.90
+    2025-02-08      307529.74  insurance: Vehicle insurance premium:-6510.00
+    2025-02-10      301859.74  streaming: Streaming subscription:-5670.00
+    2025-02-12      296678.84  transport: Parking and tolls:-5180.90
+    2025-02-13      275828.64  cloud_storage: Online backup subscription:-930.00, shopping: Online retail purchases:-10866.50, dining: Lunch with colleagues:-9053.70
+    2025-02-15      510639.86  salary:+241990.32, entertainment: Cinema and events:-7179.10
+    2025-02-16      501071.16  groceries: Weekly produce market:-9568.70
+    2025-02-17      495890.26  transport: Parking and tolls:-5180.90
+    2025-02-20      486836.56  dining: Lunch with colleagues:-9053.70
+    2025-02-22      481655.66  transport: Parking and tolls:-5180.90
+    2025-02-26      472086.96  groceries: Weekly produce market:-9568.70

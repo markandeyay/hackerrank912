@@ -1,0 +1,59 @@
+request_49 user_49 scale=1.0 date=2024-03-04 amount=34333000.0 by=2024-05-22 partial=False
+  balance=40504493.34 min=20275700.0 methods=['partial_payment', 'installments'] max_m=6
+  series:
+    rent               monthly  step= 30 n= 6 amt=  9747000.00 flex=fixed                  min=None latest=event_4571 next=['2024-04-02', '2024-05-02']
+    utilities          monthly  step= 30 n= 5 amt=  2038200.00 flex=fixed                  min=None latest=event_4566 next=['2024-03-06', '2024-04-06', '2024-05-06']
+    music_subscription monthly  step= 30 n= 5 amt=   206150.00 flex=fixed                  min=None latest=event_4567 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    delivery_membership monthly  step= 30 n= 5 amt=   479750.00 flex=fixed                  min=None latest=event_4568 next=['2024-03-13', '2024-04-13', '2024-05-13']
+    gym                monthly  step= 30 n= 5 amt=   737200.00 flex=reducible              min=368600.0 latest=event_4569 next=['2024-03-10', '2024-04-10', '2024-05-10']
+    entertainment      monthly  step= 30 n= 5 amt=   677900.00 flex=fixed                  min=None latest=event_4570 next=['2024-03-14', '2024-04-14', '2024-05-14']
+    groceries          periodic step=  7 n=26 amt=  1452100.00 flex=fixed                  min=None latest=event_4597 next=['2024-03-09', '2024-03-16', '2024-03-23', '2024-03-30']
+    transport          periodic step=  7 n=26 amt=   692100.00 flex=fixed                  min=None latest=event_4623 next=['2024-03-10', '2024-03-17', '2024-03-24', '2024-03-31']
+    dining             periodic step= 14 n=13 amt=  1392700.00 flex=reducible              min=696350.0 latest=event_4636 next=['2024-03-11', '2024-03-25', '2024-04-08', '2024-04-22']
+  safe=12552693.34 earliest=2024-04-15 -> installments/affordable_with_plan plan=2024-03-18:11902106.67|2024-04-18:11902106.67|2024-05-19:11902106.67 changes=none
+    cand installments     deadline=True changes=0 total=35706320.01 start=2024-03-18 n=3
+  daily projection (days with flows, no payment applied):
+    2024-03-04    40504493.34  
+    2024-03-06    38466293.34  utilities: Water and power payment:-2038200.00
+    2024-03-09    37014193.34  groceries: Weekly produce market:-1452100.00
+    2024-03-10    35584893.34  gym: Community fitness plan:-737200.00, transport: Local taxi:-692100.00
+    2024-03-11    33986043.34  music_subscription: Music service subscription:-206150.00, dining: Coffee shop:-1392700.00
+    2024-03-13    33506293.34  delivery_membership: Grocery delivery membership:-479750.00
+    2024-03-14    32828393.34  entertainment: Games and recreation:-677900.00
+    2024-03-15    64292393.34  salary:+31464000.00
+    2024-03-16    62840293.34  groceries: Weekly produce market:-1452100.00
+    2024-03-17    62148193.34  transport: Local taxi:-692100.00
+    2024-03-23    60696093.34  groceries: Weekly produce market:-1452100.00
+    2024-03-24    60003993.34  transport: Local taxi:-692100.00
+    2024-03-25    58611293.34  dining: Coffee shop:-1392700.00
+    2024-03-30    57159193.34  groceries: Weekly produce market:-1452100.00
+    2024-03-31    56467093.34  transport: Local taxi:-692100.00
+    2024-04-02    46720093.34  rent: Shared housing rent:-9747000.00
+    2024-04-06    43229793.34  utilities: Water and power payment:-2038200.00, groceries: Weekly produce market:-1452100.00
+    2024-04-07    42537693.34  transport: Local taxi:-692100.00
+    2024-04-08    41144993.34  dining: Coffee shop:-1392700.00
+    2024-04-10    40407793.34  gym: Community fitness plan:-737200.00
+    2024-04-11    40201643.34  music_subscription: Music service subscription:-206150.00
+    2024-04-13    38269793.34  delivery_membership: Grocery delivery membership:-479750.00, groceries: Weekly produce market:-1452100.00
+    2024-04-14    36899793.34  entertainment: Games and recreation:-677900.00, transport: Local taxi:-692100.00
+    2024-04-15    80599793.34  salary:+43700000.00
+    2024-04-20    79147693.34  groceries: Weekly produce market:-1452100.00
+    2024-04-21    78455593.34  transport: Local taxi:-692100.00
+    2024-04-22    77062893.34  dining: Coffee shop:-1392700.00
+    2024-04-27    75610793.34  groceries: Weekly produce market:-1452100.00
+    2024-04-28    74918693.34  transport: Local taxi:-692100.00
+    2024-05-02    65171693.34  rent: Shared housing rent:-9747000.00
+    2024-05-04    63719593.34  groceries: Weekly produce market:-1452100.00
+    2024-05-05    63027493.34  transport: Local taxi:-692100.00
+    2024-05-06    59596593.34  utilities: Water and power payment:-2038200.00, dining: Coffee shop:-1392700.00
+    2024-05-10    58859393.34  gym: Community fitness plan:-737200.00
+    2024-05-11    57201143.34  music_subscription: Music service subscription:-206150.00, groceries: Weekly produce market:-1452100.00
+    2024-05-12    56509043.34  transport: Local taxi:-692100.00
+    2024-05-13    56029293.34  delivery_membership: Grocery delivery membership:-479750.00
+    2024-05-14    55351393.34  entertainment: Games and recreation:-677900.00
+    2024-05-15    99051393.34  salary:+43700000.00
+    2024-05-18    97599293.34  groceries: Weekly produce market:-1452100.00
+    2024-05-19    96907193.34  transport: Local taxi:-692100.00
+    2024-05-20    95514493.34  dining: Coffee shop:-1392700.00
+    2024-05-25    94062393.34  groceries: Weekly produce market:-1452100.00
+    2024-05-26    93370293.34  transport: Local taxi:-692100.00

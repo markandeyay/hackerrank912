@@ -1,0 +1,57 @@
+request_59 user_59 scale=1.0 date=2025-05-04 amount=140600.0 by=2025-07-02 partial=False
+  balance=723245.99 min=132600.0 methods=['partial_payment', 'installments'] max_m=7
+  series:
+    rent               monthly  step= 30 n= 5 amt=    53800.00 flex=fixed                  min=None latest=event_5469 next=['2025-05-04', '2025-06-04', '2025-07-04']
+    utilities          monthly  step= 30 n= 5 amt=    10560.00 flex=fixed                  min=None latest=event_5470 next=['2025-05-08', '2025-06-08', '2025-07-08']
+    music_subscription monthly  step= 30 n= 5 amt=     2780.00 flex=stoppable              min=None latest=event_5471 next=['2025-05-13', '2025-06-13', '2025-07-13']
+    delivery_membership monthly  step= 30 n= 5 amt=     2660.00 flex=fixed                  min=None latest=event_5472 next=['2025-05-15', '2025-06-15', '2025-07-15']
+    gym                monthly  step= 30 n= 5 amt=     4940.00 flex=stoppable              min=None latest=event_5473 next=['2025-05-12', '2025-06-12', '2025-07-12']
+    entertainment      monthly  step= 30 n= 5 amt=     4960.00 flex=fixed                  min=None latest=event_5474 next=['2025-05-16', '2025-06-16', '2025-07-16']
+    groceries          periodic step=  7 n=25 amt=     8310.00 flex=fixed                  min=None latest=event_5499 next=['2025-05-11', '2025-05-18', '2025-05-25', '2025-06-01']
+    transport          periodic step=  7 n=25 amt=     4580.00 flex=fixed                  min=None latest=event_5524 next=['2025-05-05', '2025-05-12', '2025-05-19', '2025-05-26']
+    dining             periodic step= 14 n=13 amt=     7860.00 flex=reducible              min=3930.0 latest=event_5537 next=['2025-05-08', '2025-05-22', '2025-06-05', '2025-06-19']
+  safe=140600.0 earliest=2025-05-04 -> installments/affordable_with_plan plan=2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33 changes=none
+    cand installments     deadline=True changes=0 total=146223.99 start=2025-05-07 n=3
+  daily projection (days with flows, no payment applied):
+    2025-05-04      669445.99  rent: Monthly rent:-53800.00
+    2025-05-05      664865.99  transport: Ride-hailing trip:-4580.00
+    2025-05-08      646445.99  utilities: Electricity and water bill:-10560.00, dining: Neighbourhood restaurant:-7860.00
+    2025-05-11      638135.99  groceries: Grocery delivery:-8310.00
+    2025-05-12      628615.99  gym: Fitness club membership:-4940.00, transport: Ride-hailing trip:-4580.00
+    2025-05-13      625835.99  music_subscription: Music subscription:-2780.00
+    2025-05-15      623175.99  delivery_membership: Delivery service plan:-2660.00
+    2025-05-16      618215.99  entertainment: Monthly entertainment spend:-4960.00
+    2025-05-18      609905.99  groceries: Grocery delivery:-8310.00
+    2025-05-19      605325.99  transport: Ride-hailing trip:-4580.00
+    2025-05-22      597465.99  dining: Neighbourhood restaurant:-7860.00
+    2025-05-25      589155.99  groceries: Grocery delivery:-8310.00
+    2025-05-26      584575.99  transport: Ride-hailing trip:-4580.00
+    2025-06-01      576265.99  groceries: Grocery delivery:-8310.00
+    2025-06-02      571685.99  transport: Ride-hailing trip:-4580.00
+    2025-06-04      517885.99  rent: Monthly rent:-53800.00
+    2025-06-05      510025.99  dining: Neighbourhood restaurant:-7860.00
+    2025-06-08      491155.99  utilities: Electricity and water bill:-10560.00, groceries: Grocery delivery:-8310.00
+    2025-06-09      486575.99  transport: Ride-hailing trip:-4580.00
+    2025-06-12      481635.99  gym: Fitness club membership:-4940.00
+    2025-06-13      478855.99  music_subscription: Music subscription:-2780.00
+    2025-06-15      467885.99  delivery_membership: Delivery service plan:-2660.00, groceries: Grocery delivery:-8310.00
+    2025-06-16      458345.99  entertainment: Monthly entertainment spend:-4960.00, transport: Ride-hailing trip:-4580.00
+    2025-06-19      450485.99  dining: Neighbourhood restaurant:-7860.00
+    2025-06-22      442175.99  groceries: Grocery delivery:-8310.00
+    2025-06-23      437595.99  transport: Ride-hailing trip:-4580.00
+    2025-06-29      429285.99  groceries: Grocery delivery:-8310.00
+    2025-06-30      424705.99  transport: Ride-hailing trip:-4580.00
+    2025-07-03      416845.99  dining: Neighbourhood restaurant:-7860.00
+    2025-07-04      363045.99  rent: Monthly rent:-53800.00
+    2025-07-06      354735.99  groceries: Grocery delivery:-8310.00
+    2025-07-07      350155.99  transport: Ride-hailing trip:-4580.00
+    2025-07-08      339595.99  utilities: Electricity and water bill:-10560.00
+    2025-07-12      334655.99  gym: Fitness club membership:-4940.00
+    2025-07-13      323565.99  music_subscription: Music subscription:-2780.00, groceries: Grocery delivery:-8310.00
+    2025-07-14      318985.99  transport: Ride-hailing trip:-4580.00
+    2025-07-15      316325.99  delivery_membership: Delivery service plan:-2660.00
+    2025-07-16      311365.99  entertainment: Monthly entertainment spend:-4960.00
+    2025-07-17      303505.99  dining: Neighbourhood restaurant:-7860.00
+    2025-07-20      295195.99  groceries: Grocery delivery:-8310.00
+    2025-07-21      290615.99  transport: Ride-hailing trip:-4580.00
+    2025-07-27      282305.99  groceries: Grocery delivery:-8310.00

@@ -1,0 +1,50 @@
+request_172 user_172 scale=0.97 date=2024-06-05 amount=10200.0 by=2024-07-15 partial=True
+  balance=50942.4 min=27200.0 methods=['partial_payment', 'installments'] max_m=2
+  series:
+    rent               monthly  step= 30 n= 6 amt=    10340.00 flex=fixed                  min=None latest=event_15786 next=['2024-07-01', '2024-08-01']
+    utilities          monthly  step= 30 n= 5 amt=     1702.35 flex=fixed                  min=None latest=event_15780 next=['2024-06-05', '2024-07-05', '2024-08-05']
+    debt_repayment     monthly  step= 30 n= 5 amt=     5148.00 flex=fixed                  min=None latest=event_15781 next=['2024-06-10', '2024-07-10', '2024-08-10']
+    healthcare         monthly  step= 30 n= 5 amt=     1390.59 flex=fixed                  min=None latest=event_15782 next=['2024-06-09', '2024-07-09', '2024-08-09']
+    family_support     monthly  step= 30 n= 5 amt=     3058.00 flex=fixed                  min=None latest=event_15783 next=['2024-06-12', '2024-07-12', '2024-08-12']
+    cloud_storage      monthly  step= 30 n= 5 amt=      290.40 flex=stoppable              min=None latest=event_15784 next=['2024-06-11', '2024-07-11', '2024-08-11']
+    shopping           monthly  step= 30 n= 5 amt=      781.04 flex=reducible              min=322.08 latest=event_15785 next=['2024-06-11', '2024-07-11', '2024-08-11']
+    groceries          periodic step=  7 n=26 amt=     1450.15 flex=fixed                  min=None latest=event_15812 next=['2024-06-09', '2024-06-16', '2024-06-23', '2024-06-30']
+    transport          periodic step= 14 n=13 amt=      693.36 flex=fixed                  min=None latest=event_15825 next=['2024-06-10', '2024-06-24', '2024-07-08', '2024-07-22']
+  safe=9228.5 earliest=2024-06-15 -> partial_payment/affordable_with_plan plan=2024-06-05:9228.50|2024-06-15:971.50 changes=none
+    cand partial_payment  deadline=True changes=0 total=10200.00 start=2024-06-05 n=2
+    cand installments     deadline=True changes=0 total=10608.00 start=2024-06-05 n=2
+  daily projection (days with flows, no payment applied):
+    2024-06-05       49240.05  utilities: Household utility payment:-1702.35
+    2024-06-09       46399.31  healthcare: Diagnostic test:-1390.59, groceries: Neighbourhood grocer:-1450.15
+    2024-06-10       40557.95  debt_repayment: Loan repayment:-5148.00, transport: Commuter pass:-693.36
+    2024-06-11       39486.51  cloud_storage: Online backup subscription:-290.40, shopping: Monthly shopping spend:-781.04
+    2024-06-12       36428.51  family_support: Dependent care payment:-3058.00
+    2024-06-15       70968.51  salary:+34540.00
+    2024-06-16       69518.36  groceries: Neighbourhood grocer:-1450.15
+    2024-06-23       68068.21  groceries: Neighbourhood grocer:-1450.15
+    2024-06-24       67374.85  transport: Commuter pass:-693.36
+    2024-06-30       65924.70  groceries: Neighbourhood grocer:-1450.15
+    2024-07-01       55584.70  rent: Landlord standing order:-10340.00
+    2024-07-05       53882.35  utilities: Household utility payment:-1702.35
+    2024-07-07       52432.20  groceries: Neighbourhood grocer:-1450.15
+    2024-07-08       51738.85  transport: Commuter pass:-693.36
+    2024-07-09       50348.25  healthcare: Diagnostic test:-1390.59
+    2024-07-10       45200.25  debt_repayment: Loan repayment:-5148.00
+    2024-07-11       44128.81  cloud_storage: Online backup subscription:-290.40, shopping: Monthly shopping spend:-781.04
+    2024-07-12       41070.81  family_support: Dependent care payment:-3058.00
+    2024-07-14       39620.66  groceries: Neighbourhood grocer:-1450.15
+    2024-07-15       74160.66  salary:+34540.00
+    2024-07-21       72710.51  groceries: Neighbourhood grocer:-1450.15
+    2024-07-22       72017.15  transport: Commuter pass:-693.36
+    2024-07-28       70567.00  groceries: Neighbourhood grocer:-1450.15
+    2024-08-01       60227.00  rent: Landlord standing order:-10340.00
+    2024-08-04       58776.85  groceries: Neighbourhood grocer:-1450.15
+    2024-08-05       56381.15  utilities: Household utility payment:-1702.35, transport: Commuter pass:-693.36
+    2024-08-09       54990.56  healthcare: Diagnostic test:-1390.59
+    2024-08-10       49842.56  debt_repayment: Loan repayment:-5148.00
+    2024-08-11       47320.96  cloud_storage: Online backup subscription:-290.40, shopping: Monthly shopping spend:-781.04, groceries: Neighbourhood grocer:-1450.15
+    2024-08-12       44262.96  family_support: Dependent care payment:-3058.00
+    2024-08-15       78802.96  salary:+34540.00
+    2024-08-18       77352.81  groceries: Neighbourhood grocer:-1450.15
+    2024-08-19       76659.46  transport: Commuter pass:-693.36
+    2024-08-25       75209.31  groceries: Neighbourhood grocer:-1450.15

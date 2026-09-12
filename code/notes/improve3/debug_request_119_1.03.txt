@@ -1,0 +1,52 @@
+request_119 user_119 scale=1.03 date=2025-05-04 amount=203500.0 by=2025-07-17 partial=False
+  balance=282101.01 min=151200.0 methods=['partial_payment', 'installments'] max_m=3
+  series:
+    housing            monthly  step= 30 n= 5 amt=    17050.00 flex=fixed                  min=None latest=event_11011 next=['2025-05-05', '2025-06-05', '2025-07-05']
+    utilities          monthly  step= 30 n= 5 amt=    12349.70 flex=fixed                  min=None latest=event_11012 next=['2025-05-08', '2025-06-08', '2025-07-08']
+    insurance          monthly  step= 30 n= 5 amt=     7590.00 flex=fixed                  min=None latest=event_11013 next=['2025-05-09', '2025-06-09', '2025-07-09']
+    education          monthly  step= 30 n= 5 amt=    14850.00 flex=fixed                  min=None latest=event_11014 next=['2025-05-10', '2025-06-10', '2025-07-10']
+    healthcare         monthly  step= 30 n= 5 amt=     7900.10 flex=fixed                  min=None latest=event_11015 next=['2025-05-12', '2025-06-12', '2025-07-12']
+    entertainment      monthly  step= 30 n= 5 amt=     5469.30 flex=reducible              min=2655.0 latest=event_11016 next=['2025-05-16', '2025-06-16', '2025-07-16']
+    cloud_storage      monthly  step= 30 n= 5 amt=     1280.00 flex=fixed                  min=None latest=event_11017 next=['2025-05-14', '2025-06-14', '2025-07-14']
+    groceries          periodic step= 10 n=18 amt=     7766.20 flex=fixed                  min=None latest=event_11035 next=['2025-05-09', '2025-05-19', '2025-05-29', '2025-06-08']
+    transport          periodic step= 14 n=13 amt=     3625.60 flex=fixed                  min=None latest=event_11048 next=['2025-05-12', '2025-05-26', '2025-06-09', '2025-06-23']
+    dining             periodic step= 21 n= 9 amt=     4882.20 flex=reducible              min=2370.0 latest=event_11057 next=['2025-05-14', '2025-06-05', '2025-06-26', '2025-07-17']
+  safe=53607.21 earliest=2025-07-15 -> installments/affordable_with_plan plan=2025-05-18:70546.67|2025-06-15:70546.67|2025-07-13:70546.67 changes=reduce_to:event_11057:2370|reduce_to:event_11016:2655
+    cand installments     deadline=True changes=2 total=211640.01 start=2025-05-18 n=3
+  daily projection (days with flows, no payment applied):
+    2025-05-04      282101.01  
+    2025-05-05      265051.01  housing: Property maintenance contribution:-17050.00
+    2025-05-08      252701.31  utilities: Electricity and water bill:-12349.70
+    2025-05-09      237345.11  insurance: Vehicle insurance premium:-7590.00, groceries: Bulk pantry shop:-7766.20
+    2025-05-10      222495.11  education: Course tuition:-14850.00
+    2025-05-12      210969.41  healthcare: Therapy appointment:-7900.10, transport: Metro and bus fares:-3625.60
+    2025-05-14      204807.21  cloud_storage: Cloud storage plan:-1280.00, dining: Family dinner:-4882.20
+    2025-05-15      380807.21  salary:+176000.00
+    2025-05-16      375337.91  entertainment: Weekend entertainment:-5469.30
+    2025-05-19      367571.71  groceries: Bulk pantry shop:-7766.20
+    2025-05-26      363946.11  transport: Metro and bus fares:-3625.60
+    2025-05-29      356179.91  groceries: Bulk pantry shop:-7766.20
+    2025-06-05      334247.71  housing: Property maintenance contribution:-17050.00, dining: Family dinner:-4882.20
+    2025-06-08      314131.81  utilities: Electricity and water bill:-12349.70, groceries: Bulk pantry shop:-7766.20
+    2025-06-09      302916.21  insurance: Vehicle insurance premium:-7590.00, transport: Metro and bus fares:-3625.60
+    2025-06-10      288066.21  education: Course tuition:-14850.00
+    2025-06-12      280166.11  healthcare: Therapy appointment:-7900.10
+    2025-06-14      278886.11  cloud_storage: Cloud storage plan:-1280.00
+    2025-06-15      454886.11  salary:+176000.00
+    2025-06-16      449416.81  entertainment: Weekend entertainment:-5469.30
+    2025-06-18      441650.61  groceries: Bulk pantry shop:-7766.20
+    2025-06-23      438025.01  transport: Metro and bus fares:-3625.60
+    2025-06-26      433142.81  dining: Family dinner:-4882.20
+    2025-06-28      425376.61  groceries: Bulk pantry shop:-7766.20
+    2025-07-05      408326.61  housing: Property maintenance contribution:-17050.00
+    2025-07-07      404701.01  transport: Metro and bus fares:-3625.60
+    2025-07-08      384585.11  utilities: Electricity and water bill:-12349.70, groceries: Bulk pantry shop:-7766.20
+    2025-07-09      376995.11  insurance: Vehicle insurance premium:-7590.00
+    2025-07-10      362145.11  education: Course tuition:-14850.00
+    2025-07-12      354245.01  healthcare: Therapy appointment:-7900.10
+    2025-07-14      352965.01  cloud_storage: Cloud storage plan:-1280.00
+    2025-07-15      528965.01  salary:+176000.00
+    2025-07-16      523495.71  entertainment: Weekend entertainment:-5469.30
+    2025-07-17      518613.51  dining: Family dinner:-4882.20
+    2025-07-18      510847.31  groceries: Bulk pantry shop:-7766.20
+    2025-07-21      507221.71  transport: Metro and bus fares:-3625.60

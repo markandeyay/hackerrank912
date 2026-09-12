@@ -1,0 +1,52 @@
+request_149 user_149 scale=1.0 date=2025-11-04 amount=36652.0 by=2026-01-19 partial=False
+  balance=84358.38 min=42100.0 methods=['partial_payment', 'installments'] max_m=8
+  series:
+    rent               monthly  step= 30 n= 6 amt=    16654.00 flex=fixed                  min=None latest=event_13704 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 5 amt=     2935.20 flex=fixed                  min=None latest=event_13698 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=     5324.00 flex=fixed                  min=None latest=event_13699 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    healthcare         monthly  step= 30 n= 5 amt=     1926.40 flex=fixed                  min=None latest=event_13700 next=['2025-11-10', '2025-12-10', '2026-01-10']
+    family_support     monthly  step= 30 n= 5 amt=     3671.80 flex=fixed                  min=None latest=event_13701 next=['2025-11-13', '2025-12-13', '2026-01-13']
+    cloud_storage      monthly  step= 30 n= 5 amt=      366.30 flex=stoppable              min=None latest=event_13702 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    shopping           monthly  step= 30 n= 5 amt=     2534.40 flex=reducible              min=1013.76 latest=event_13703 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    groceries          periodic step=  7 n=26 amt=     1826.00 flex=fixed                  min=None latest=event_13730 next=['2025-11-09', '2025-11-16', '2025-11-23', '2025-11-30']
+    transport          periodic step= 14 n=13 amt=     1394.40 flex=fixed                  min=None latest=event_13743 next=['2025-11-10', '2025-11-24', '2025-12-08', '2025-12-22']
+  safe=22279.88 earliest=2025-12-15 -> installments/affordable_with_plan plan=2025-11-18:12706.03|2025-12-16:12706.03|2026-01-13:12706.03 changes=none
+    cand installments     deadline=True changes=0 total=38118.09 start=2025-11-18 n=3
+  daily projection (days with flows, no payment applied):
+    2025-11-04       84358.38  
+    2025-11-06       81423.18  utilities: Energy provider bill:-2935.20
+    2025-11-09       79597.18  groceries: Weekly produce market:-1826.00
+    2025-11-10       76276.38  healthcare: Clinic payment:-1926.40, transport: Vehicle charging:-1394.40
+    2025-11-11       70952.38  debt_repayment: Education loan instalment:-5324.00
+    2025-11-12       68051.68  cloud_storage: Cloud storage plan:-366.30, shopping: Monthly shopping spend:-2534.40
+    2025-11-13       64379.88  family_support: Childcare contribution:-3671.80
+    2025-11-15      116739.88  salary:+52360.00
+    2025-11-16      114913.88  groceries: Weekly produce market:-1826.00
+    2025-11-23      113087.88  groceries: Weekly produce market:-1826.00
+    2025-11-24      111693.48  transport: Vehicle charging:-1394.40
+    2025-11-30      109867.48  groceries: Weekly produce market:-1826.00
+    2025-12-02       93213.48  rent: Monthly rent:-16654.00
+    2025-12-06       90278.28  utilities: Energy provider bill:-2935.20
+    2025-12-07       88452.28  groceries: Weekly produce market:-1826.00
+    2025-12-08       87057.88  transport: Vehicle charging:-1394.40
+    2025-12-10       85131.48  healthcare: Clinic payment:-1926.40
+    2025-12-11       79807.48  debt_repayment: Education loan instalment:-5324.00
+    2025-12-12       76906.78  cloud_storage: Cloud storage plan:-366.30, shopping: Monthly shopping spend:-2534.40
+    2025-12-13       73234.98  family_support: Childcare contribution:-3671.80
+    2025-12-14       71408.98  groceries: Weekly produce market:-1826.00
+    2025-12-15      123768.98  salary:+52360.00
+    2025-12-21      121942.98  groceries: Weekly produce market:-1826.00
+    2025-12-22      120548.58  transport: Vehicle charging:-1394.40
+    2025-12-28      118722.58  groceries: Weekly produce market:-1826.00
+    2026-01-02      102068.58  rent: Monthly rent:-16654.00
+    2026-01-04      100242.58  groceries: Weekly produce market:-1826.00
+    2026-01-05       98848.18  transport: Vehicle charging:-1394.40
+    2026-01-06       95912.98  utilities: Energy provider bill:-2935.20
+    2026-01-10       93986.58  healthcare: Clinic payment:-1926.40
+    2026-01-11       86836.58  debt_repayment: Education loan instalment:-5324.00, groceries: Weekly produce market:-1826.00
+    2026-01-12       83935.88  cloud_storage: Cloud storage plan:-366.30, shopping: Monthly shopping spend:-2534.40
+    2026-01-13       80264.08  family_support: Childcare contribution:-3671.80
+    2026-01-15      132624.08  salary:+52360.00
+    2026-01-18      130798.08  groceries: Weekly produce market:-1826.00
+    2026-01-19      129403.68  transport: Vehicle charging:-1394.40
+    2026-01-25      127577.68  groceries: Weekly produce market:-1826.00

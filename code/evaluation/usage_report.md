@@ -1,6 +1,6 @@
 # Token usage and cost report
 
-Generated 2026-09-12 22:22:51 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
+Generated 2026-09-12 22:46:47 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
 
 ## Architecture recap
 
@@ -14,7 +14,7 @@ All calls go through `code/llm.py`, which caches results under `code/cache/` (so
 
 ## Final run
 
-The final `python code/main.py` invocation (2026-09-12T22:22:48Z) processed 250 requests and made **0 new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. Explanation polishing (`--polish`) was **off** (the default) and made 0 `explanation_polish` calls in this run: it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used.
+The final `python code/main.py` invocation (2026-09-12T22:46:45Z) processed 250 requests and made **0 new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. Explanation polishing (`--polish`) was **off** (the default) and made 0 `explanation_polish` calls in this run: it was evaluated on the full dataset and disabled because the template explanations scored better on the samples - the 156 rows kept on the template had zero defects, while the model rewrites introduced 18 defects (leaked meta-commentary, renamed events, style drift) and no improvement (see `code/notes/improve/5_explanations.md`); the template explanations are used.
 
 Cached evidence that feeds the final output: image_extraction (16 calls, 48,576 tokens), message_adjustment (215 calls, 451,358 tokens).
 

@@ -1,0 +1,39 @@
+request_124 user_124 scale=1.03 date=2024-06-04 amount=3104.2 by=2024-08-20 partial=False
+  balance=3709.56 min=1600.0 methods=['installments'] max_m=12
+  series:
+    rent               monthly  step= 30 n= 6 amt=      779.90 flex=fixed                  min=None latest=event_11449 next=['2024-07-01', '2024-08-01']
+    utilities          monthly  step= 30 n= 5 amt=      160.68 flex=fixed                  min=None latest=event_11446 next=['2024-06-05', '2024-07-05', '2024-08-05']
+    debt_repayment     monthly  step= 30 n= 5 amt=      367.00 flex=fixed                  min=None latest=event_11447 next=['2024-06-10', '2024-07-10', '2024-08-10']
+    music_subscription monthly  step= 30 n= 5 amt=       34.00 flex=stoppable              min=None latest=event_11448 next=['2024-06-10', '2024-07-10', '2024-08-10']
+    groceries          periodic step= 14 n=13 amt=      104.03 flex=fixed                  min=None latest=event_11462 next=['2024-06-08', '2024-06-22', '2024-07-06', '2024-07-20']
+    transport          periodic step= 21 n= 9 amt=       73.13 flex=fixed                  min=None latest=event_11471 next=['2024-06-14', '2024-07-07', '2024-07-28', '2024-08-18']
+    dining             periodic step= 21 n= 9 amt=       78.28 flex=reducible              min=38.0 latest=event_11480 next=['2024-06-14', '2024-07-08', '2024-07-29', '2024-08-19']
+  safe=1232.44 earliest=2024-08-15 -> installments/affordable_with_plan plan=2024-06-11:1076.12|2024-07-12:1076.12|2024-08-12:1076.12 changes=stop:event_11448|reduce_to:event_11480:38
+    cand installments     deadline=True changes=2 total=3228.36 start=2024-06-11 n=3
+  daily projection (days with flows, no payment applied):
+    2024-06-04        3709.56  
+    2024-06-05        3548.88  utilities: Electricity and water bill:-160.68
+    2024-06-08        3444.85  groceries: Household groceries:-104.03
+    2024-06-10        3043.85  debt_repayment: Education loan instalment:-367.00, music_subscription: Music service subscription:-34.00
+    2024-06-11        2983.85  Scheduled school fee:-60.00
+    2024-06-14        2832.44  transport: Parking and tolls:-73.13, dining: Family dinner:-78.28
+    2024-06-15        5461.44  salary:+2629.00
+    2024-06-22        5357.41  groceries: Household groceries:-104.03
+    2024-07-01        4577.51  rent: Apartment rent transfer:-779.90
+    2024-07-05        4416.83  utilities: Electricity and water bill:-160.68
+    2024-07-06        4312.80  groceries: Household groceries:-104.03
+    2024-07-07        4239.67  transport: Parking and tolls:-73.13
+    2024-07-08        4161.39  dining: Family dinner:-78.28
+    2024-07-10        3760.39  debt_repayment: Education loan instalment:-367.00, music_subscription: Music service subscription:-34.00
+    2024-07-15        6389.39  salary:+2629.00
+    2024-07-20        6285.36  groceries: Household groceries:-104.03
+    2024-07-28        6212.23  transport: Parking and tolls:-73.13
+    2024-07-29        6133.95  dining: Family dinner:-78.28
+    2024-08-01        5354.05  rent: Apartment rent transfer:-779.90
+    2024-08-03        5250.02  groceries: Household groceries:-104.03
+    2024-08-05        5089.34  utilities: Electricity and water bill:-160.68
+    2024-08-10        4688.34  debt_repayment: Education loan instalment:-367.00, music_subscription: Music service subscription:-34.00
+    2024-08-15        7317.34  salary:+2629.00
+    2024-08-17        7213.31  groceries: Household groceries:-104.03
+    2024-08-18        7140.18  transport: Parking and tolls:-73.13
+    2024-08-19        7061.90  dining: Family dinner:-78.28

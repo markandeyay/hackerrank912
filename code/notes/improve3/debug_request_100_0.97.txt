@@ -1,0 +1,56 @@
+request_100 user_100 scale=0.97 date=2024-06-06 amount=37114.0 by=2024-08-16 partial=False
+  balance=68363.53 min=32500.0 methods=['installments'] max_m=9
+  series:
+    rent               monthly  step= 30 n= 6 amt=    12716.00 flex=fixed                  min=None latest=event_9270 next=['2024-07-01', '2024-08-01']
+    utilities          monthly  step= 30 n= 6 amt=     2594.75 flex=fixed                  min=None latest=event_9271 next=['2024-07-05', '2024-08-05']
+    debt_repayment     monthly  step= 30 n= 5 amt=     2222.00 flex=fixed                  min=None latest=event_9266 next=['2024-06-10', '2024-07-10', '2024-08-10']
+    streaming          monthly  step= 30 n= 5 amt=     1016.40 flex=reducible_or_stoppable min=508.2 latest=event_9267 next=['2024-06-08', '2024-07-08', '2024-08-08']
+    cloud_storage      monthly  step= 30 n= 5 amt=      238.70 flex=stoppable              min=None latest=event_9268 next=['2024-06-11', '2024-07-11', '2024-08-11']
+    shopping           monthly  step= 30 n= 5 amt=     1729.70 flex=fixed                  min=None latest=event_9269 next=['2024-06-11', '2024-07-11', '2024-08-11']
+    groceries          periodic step=  7 n=26 amt=     1932.24 flex=fixed                  min=None latest=event_9297 next=['2024-06-10', '2024-06-17', '2024-06-24', '2024-07-01']
+    transport          periodic step=  7 n=26 amt=      792.30 flex=fixed                  min=None latest=event_9323 next=['2024-06-11', '2024-06-18', '2024-06-25', '2024-07-02']
+    dining             periodic step= 14 n=13 amt=     1558.40 flex=fixed                  min=None latest=event_9336 next=['2024-06-12', '2024-06-26', '2024-07-10', '2024-07-24']
+  safe=25346.38 earliest=2024-07-15 -> installments/affordable_with_plan plan=2024-06-13:12866.19|2024-07-14:12866.19|2024-08-14:12866.19 changes=none
+    cand installments     deadline=True changes=0 total=38598.57 start=2024-06-13 n=3
+  daily projection (days with flows, no payment applied):
+    2024-06-06       68363.53  
+    2024-06-07       67336.13  Pending online order charge:-1027.40
+    2024-06-08       66319.73  streaming: Streaming subscription:-1016.40
+    2024-06-10       62165.49  debt_repayment: Personal loan payment:-2222.00, groceries: Bulk pantry shop:-1932.24
+    2024-06-11       59404.79  cloud_storage: Shared storage plan:-238.70, shopping: Household shopping:-1729.70, transport: Local taxi:-792.30
+    2024-06-12       57846.39  dining: Weekend food delivery:-1558.40
+    2024-06-15      100526.39  salary:+42680.00
+    2024-06-17       98594.15  groceries: Bulk pantry shop:-1932.24
+    2024-06-18       97801.85  transport: Local taxi:-792.30
+    2024-06-24       95869.61  groceries: Bulk pantry shop:-1932.24
+    2024-06-25       95077.32  transport: Local taxi:-792.30
+    2024-06-26       93518.91  dining: Weekend food delivery:-1558.40
+    2024-07-01       78870.67  rent: Apartment rent transfer:-12716.00, groceries: Bulk pantry shop:-1932.24
+    2024-07-02       78078.38  transport: Local taxi:-792.30
+    2024-07-05       75483.63  utilities: Municipal utilities:-2594.75
+    2024-07-08       72534.99  streaming: Streaming subscription:-1016.40, groceries: Bulk pantry shop:-1932.24
+    2024-07-09       71742.69  transport: Local taxi:-792.30
+    2024-07-10       67962.29  debt_repayment: Personal loan payment:-2222.00, dining: Weekend food delivery:-1558.40
+    2024-07-11       65993.89  cloud_storage: Shared storage plan:-238.70, shopping: Household shopping:-1729.70
+    2024-07-15      106741.65  salary:+42680.00, groceries: Bulk pantry shop:-1932.24
+    2024-07-16      105949.35  transport: Local taxi:-792.30
+    2024-07-22      104017.11  groceries: Bulk pantry shop:-1932.24
+    2024-07-23      103224.81  transport: Local taxi:-792.30
+    2024-07-24      101666.41  dining: Weekend food delivery:-1558.40
+    2024-07-29       99734.17  groceries: Bulk pantry shop:-1932.24
+    2024-07-30       98941.88  transport: Local taxi:-792.30
+    2024-08-01       86225.88  rent: Apartment rent transfer:-12716.00
+    2024-08-05       81698.89  utilities: Municipal utilities:-2594.75, groceries: Bulk pantry shop:-1932.24
+    2024-08-06       80906.59  transport: Local taxi:-792.30
+    2024-08-07       79348.19  dining: Weekend food delivery:-1558.40
+    2024-08-08       78331.79  streaming: Streaming subscription:-1016.40
+    2024-08-10       76109.79  debt_repayment: Personal loan payment:-2222.00
+    2024-08-11       74141.38  cloud_storage: Shared storage plan:-238.70, shopping: Household shopping:-1729.70
+    2024-08-12       72209.14  groceries: Bulk pantry shop:-1932.24
+    2024-08-13       71416.85  transport: Local taxi:-792.30
+    2024-08-15      114096.85  salary:+42680.00
+    2024-08-19      112164.61  groceries: Bulk pantry shop:-1932.24
+    2024-08-20      111372.31  transport: Local taxi:-792.30
+    2024-08-21      109813.91  dining: Weekend food delivery:-1558.40
+    2024-08-26      107881.67  groceries: Bulk pantry shop:-1932.24
+    2024-08-27      107089.37  transport: Local taxi:-792.30

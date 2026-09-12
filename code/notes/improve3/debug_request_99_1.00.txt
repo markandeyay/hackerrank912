@@ -1,0 +1,48 @@
+request_99 user_99 scale=1.0 date=2026-07-04 amount=18062.0 by=2026-07-14 partial=False
+  balance=86706.58 min=49100.0 methods=['full_payment'] max_m=None
+  series:
+    housing            monthly  step= 30 n= 5 amt=     5115.00 flex=fixed                  min=None latest=event_9184 next=['2026-07-05', '2026-08-05', '2026-09-05']
+    utilities          monthly  step= 30 n= 5 amt=     4067.20 flex=fixed                  min=None latest=event_9185 next=['2026-07-08', '2026-08-08', '2026-09-08']
+    insurance          monthly  step= 30 n= 5 amt=     1522.40 flex=fixed                  min=None latest=event_9186 next=['2026-07-09', '2026-08-09', '2026-09-09']
+    healthcare         monthly  step= 30 n= 5 amt=     2613.00 flex=fixed                  min=None latest=event_9187 next=['2026-07-12', '2026-08-12', '2026-09-12']
+    streaming          monthly  step= 30 n= 5 amt=     1051.60 flex=reducible_or_stoppable min=525.8 latest=event_9188 next=['2026-07-11', '2026-08-11', '2026-09-11']
+    groceries          periodic step= 10 n=18 amt=     2604.60 flex=fixed                  min=None latest=event_9206 next=['2026-07-09', '2026-07-19', '2026-07-29', '2026-08-08']
+    transport          periodic step= 14 n=13 amt=     1047.40 flex=fixed                  min=None latest=event_9219 next=['2026-07-12', '2026-07-26', '2026-08-09', '2026-08-23']
+    dining             periodic step= 14 n=13 amt=     2131.80 flex=reducible              min=1065.9 latest=event_9232 next=['2026-07-08', '2026-07-22', '2026-08-05', '2026-08-19']
+  safe=17453.58 earliest=2026-07-15 -> full_payment/affordable_with_plan plan=2026-07-04:18062 changes=reduce_to:event_9188:525.80|reduce_to:event_9232:1065.90
+    cand full_payment     deadline=True changes=2 total=18062.00 start=2026-07-04 n=1
+    cand wait             deadline=False changes=0 total=18062.00 start=2026-07-15 n=1
+  daily projection (days with flows, no payment applied):
+    2026-07-04       86706.58  
+    2026-07-05       81591.58  housing: Building maintenance payment:-5115.00
+    2026-07-08       75392.58  utilities: Water and power payment:-4067.20, dining: Family dinner:-2131.80
+    2026-07-09       71265.58  insurance: Vehicle insurance premium:-1522.40, groceries: Grocery delivery:-2604.60
+    2026-07-11       70213.98  streaming: Family streaming plan:-1051.60
+    2026-07-12       66553.58  healthcare: Therapy appointment:-2613.00, transport: Fuel refill:-1047.40
+    2026-07-15      123533.58  salary:+56980.00
+    2026-07-19      120928.98  groceries: Grocery delivery:-2604.60
+    2026-07-22      118797.18  dining: Family dinner:-2131.80
+    2026-07-26      117749.78  transport: Fuel refill:-1047.40
+    2026-07-29      115145.18  groceries: Grocery delivery:-2604.60
+    2026-08-05      107898.38  housing: Building maintenance payment:-5115.00, dining: Family dinner:-2131.80
+    2026-08-08      101226.58  utilities: Water and power payment:-4067.20, groceries: Grocery delivery:-2604.60
+    2026-08-09       98656.78  insurance: Vehicle insurance premium:-1522.40, transport: Fuel refill:-1047.40
+    2026-08-11       97605.18  streaming: Family streaming plan:-1051.60
+    2026-08-12       94992.18  healthcare: Therapy appointment:-2613.00
+    2026-08-15      151972.18  salary:+56980.00
+    2026-08-18      149367.58  groceries: Grocery delivery:-2604.60
+    2026-08-19      147235.78  dining: Family dinner:-2131.80
+    2026-08-23      146188.38  transport: Fuel refill:-1047.40
+    2026-08-28      143583.78  groceries: Grocery delivery:-2604.60
+    2026-09-02      141451.98  dining: Family dinner:-2131.80
+    2026-09-05      136336.98  housing: Building maintenance payment:-5115.00
+    2026-09-06      135289.58  transport: Fuel refill:-1047.40
+    2026-09-07      132684.98  groceries: Grocery delivery:-2604.60
+    2026-09-08      128617.78  utilities: Water and power payment:-4067.20
+    2026-09-09      127095.38  insurance: Vehicle insurance premium:-1522.40
+    2026-09-11      126043.78  streaming: Family streaming plan:-1051.60
+    2026-09-12      123430.78  healthcare: Therapy appointment:-2613.00
+    2026-09-15      180410.78  salary:+56980.00
+    2026-09-16      178278.98  dining: Family dinner:-2131.80
+    2026-09-17      175674.38  groceries: Grocery delivery:-2604.60
+    2026-09-20      174626.98  transport: Fuel refill:-1047.40

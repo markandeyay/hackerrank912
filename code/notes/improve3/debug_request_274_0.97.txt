@@ -1,0 +1,61 @@
+request_274 user_274 scale=0.97 date=2024-12-04 amount=2713.7 by=2025-02-11 partial=False
+  balance=4847.31 min=1800.0 methods=['partial_payment', 'installments'] max_m=4
+  series:
+    rent               monthly  step= 30 n= 6 amt=      576.40 flex=fixed                  min=None latest=event_25183 next=['2025-01-03', '2025-02-03']
+    utilities          monthly  step= 30 n= 5 amt=      167.81 flex=fixed                  min=None latest=event_25177 next=['2024-12-07', '2025-01-07', '2025-02-07']
+    insurance          monthly  step= 30 n= 5 amt=       96.00 flex=fixed                  min=None latest=event_25178 next=['2024-12-08', '2025-01-08', '2025-02-08']
+    cloud_storage      monthly  step= 30 n= 5 amt=       16.00 flex=stoppable              min=None latest=event_25179 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    streaming          monthly  step= 30 n= 5 amt=       50.00 flex=reducible_or_stoppable min=25.0 latest=event_25180 next=['2024-12-10', '2025-01-10', '2025-02-10']
+    shopping           monthly  step= 30 n= 5 amt=      125.13 flex=reducible              min=51.6 latest=event_25181 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    entertainment      monthly  step= 30 n= 5 amt=       71.78 flex=fixed                  min=None latest=event_25182 next=['2024-12-15', '2025-01-15', '2025-02-15']
+    groceries          periodic step= 10 n=18 amt=      113.49 flex=fixed                  min=None latest=event_25201 next=['2024-12-08', '2024-12-18', '2024-12-28', '2025-01-07']
+    transport          periodic step=  5 n=35 amt=       53.35 flex=fixed                  min=None latest=event_25236 next=['2024-12-09', '2024-12-14', '2024-12-19', '2024-12-24']
+    dining             periodic step=  7 n=25 amt=       81.48 flex=fixed                  min=None latest=event_25261 next=['2024-12-05', '2024-12-12', '2024-12-19', '2024-12-26']
+  safe=2209.22 earliest=2025-01-15 -> installments/affordable_with_plan plan=2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75 changes=none
+    cand installments     deadline=True changes=0 total=2822.25 start=2024-12-04 n=3
+  daily projection (days with flows, no payment applied):
+    2024-12-04        4847.31  
+    2024-12-05        4765.83  dining: Quick-service meal:-81.48
+    2024-12-07        4598.02  utilities: Water and power payment:-167.81
+    2024-12-08        4388.53  insurance: Health insurance premium:-96.00, groceries: Household groceries:-113.49
+    2024-12-09        4335.18  transport: Parking and tolls:-53.35
+    2024-12-10        4285.18  streaming: Video streaming plan:-50.00
+    2024-12-12        4203.70  dining: Quick-service meal:-81.48
+    2024-12-13        4062.57  cloud_storage: Online backup subscription:-16.00, shopping: Clothing and household items:-125.13
+    2024-12-14        4009.22  transport: Parking and tolls:-53.35
+    2024-12-15        6421.44  salary:+2484.00, entertainment: Games and recreation:-71.78
+    2024-12-18        6307.95  groceries: Household groceries:-113.49
+    2024-12-19        6173.12  transport: Parking and tolls:-53.35, dining: Quick-service meal:-81.48
+    2024-12-24        6119.77  transport: Parking and tolls:-53.35
+    2024-12-26        6038.29  dining: Quick-service meal:-81.48
+    2024-12-28        5924.80  groceries: Household groceries:-113.49
+    2024-12-29        5871.45  transport: Parking and tolls:-53.35
+    2025-01-02        5789.97  dining: Quick-service meal:-81.48
+    2025-01-03        5160.22  rent: Apartment rent transfer:-576.40, transport: Parking and tolls:-53.35
+    2025-01-07        4878.92  utilities: Water and power payment:-167.81, groceries: Household groceries:-113.49
+    2025-01-08        4729.57  insurance: Health insurance premium:-96.00, transport: Parking and tolls:-53.35
+    2025-01-09        4648.09  dining: Quick-service meal:-81.48
+    2025-01-10        4598.09  streaming: Video streaming plan:-50.00
+    2025-01-13        4403.61  cloud_storage: Online backup subscription:-16.00, shopping: Clothing and household items:-125.13, transport: Parking and tolls:-53.35
+    2025-01-15        6815.83  salary:+2484.00, entertainment: Games and recreation:-71.78
+    2025-01-16        6734.35  dining: Quick-service meal:-81.48
+    2025-01-17        6620.86  groceries: Household groceries:-113.49
+    2025-01-18        6567.51  transport: Parking and tolls:-53.35
+    2025-01-23        6432.68  transport: Parking and tolls:-53.35, dining: Quick-service meal:-81.48
+    2025-01-27        6319.19  groceries: Household groceries:-113.49
+    2025-01-28        6265.84  transport: Parking and tolls:-53.35
+    2025-01-30        6184.36  dining: Quick-service meal:-81.48
+    2025-02-02        6131.01  transport: Parking and tolls:-53.35
+    2025-02-03        5554.61  rent: Apartment rent transfer:-576.40
+    2025-02-06        5359.64  groceries: Household groceries:-113.49, dining: Quick-service meal:-81.48
+    2025-02-07        5138.48  utilities: Water and power payment:-167.81, transport: Parking and tolls:-53.35
+    2025-02-08        5042.48  insurance: Health insurance premium:-96.00
+    2025-02-10        4992.48  streaming: Video streaming plan:-50.00
+    2025-02-12        4939.13  transport: Parking and tolls:-53.35
+    2025-02-13        4716.52  cloud_storage: Online backup subscription:-16.00, shopping: Clothing and household items:-125.13, dining: Quick-service meal:-81.48
+    2025-02-15        7128.74  salary:+2484.00, entertainment: Games and recreation:-71.78
+    2025-02-16        7015.25  groceries: Household groceries:-113.49
+    2025-02-17        6961.90  transport: Parking and tolls:-53.35
+    2025-02-20        6880.42  dining: Quick-service meal:-81.48
+    2025-02-22        6827.07  transport: Parking and tolls:-53.35
+    2025-02-26        6713.58  groceries: Household groceries:-113.49

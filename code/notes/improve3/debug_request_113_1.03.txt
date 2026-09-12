@@ -1,0 +1,63 @@
+request_113 user_113 scale=1.03 date=2026-09-04 amount=36500.0 by=2026-10-19 partial=True
+  balance=141890.0 min=82300.0 methods=['full_payment', 'installments'] max_m=9
+  series:
+    rent               monthly  step= 30 n= 6 amt=    27300.00 flex=fixed                  min=None latest=event_10441 next=['2026-10-02', '2026-11-02']
+    utilities          monthly  step= 30 n= 5 amt=     5150.00 flex=fixed                  min=None latest=event_10435 next=['2026-09-06', '2026-10-06', '2026-11-06']
+    insurance          monthly  step= 30 n= 5 amt=     5270.00 flex=fixed                  min=None latest=event_10436 next=['2026-09-07', '2026-10-07', '2026-11-07']
+    cloud_storage      monthly  step= 30 n= 5 amt=      550.00 flex=fixed                  min=None latest=event_10437 next=['2026-09-12', '2026-10-12', '2026-11-12']
+    streaming          monthly  step= 30 n= 5 amt=     3130.00 flex=reducible              min=1565.0 latest=event_10438 next=['2026-09-09', '2026-10-09', '2026-11-09']
+    shopping           monthly  step= 30 n= 5 amt=     5314.80 flex=fixed                  min=None latest=event_10439 next=['2026-09-12', '2026-10-12', '2026-11-12']
+    entertainment      monthly  step= 30 n= 5 amt=     3069.40 flex=reducible              min=1490.0 latest=event_10440 next=['2026-09-14', '2026-10-14', '2026-11-14']
+    groceries          periodic step= 10 n=18 amt=     4882.20 flex=fixed                  min=None latest=event_10459 next=['2026-09-07', '2026-09-17', '2026-09-27', '2026-10-07']
+    transport          periodic step=  5 n=36 amt=     2276.30 flex=fixed                  min=None latest=event_10495 next=['2026-09-08', '2026-09-13', '2026-09-18', '2026-09-23']
+    dining             periodic step=  7 n=25 amt=     4624.70 flex=fixed                  min=None latest=event_10520 next=['2026-09-11', '2026-09-18', '2026-09-25', '2026-10-02']
+  safe=23046.3 earliest=2026-10-15 -> wait/affordable_later plan=2026-10-15:36500 changes=none
+    cand wait             deadline=True changes=0 total=36500.00 start=2026-10-15 n=1
+  daily projection (days with flows, no payment applied):
+    2026-09-04      141890.00  
+    2026-09-06      136740.00  utilities: Electricity and water bill:-5150.00
+    2026-09-07      126587.80  insurance: Health insurance premium:-5270.00, groceries: Household groceries:-4882.20
+    2026-09-08      124311.50  transport: Rail pass:-2276.30
+    2026-09-09      121181.50  streaming: Streaming subscription:-3130.00
+    2026-09-11      116556.80  dining: Coffee shop:-4624.70
+    2026-09-12      110692.00  cloud_storage: Shared storage plan:-550.00, shopping: Online retail purchases:-5314.80
+    2026-09-13      108415.70  transport: Rail pass:-2276.30
+    2026-09-14      105346.30  entertainment: Weekend entertainment:-3069.40
+    2026-09-15      213341.98  salary:+107995.68
+    2026-09-17      208459.78  groceries: Household groceries:-4882.20
+    2026-09-18      201558.78  transport: Rail pass:-2276.30, dining: Coffee shop:-4624.70
+    2026-09-23      199282.48  transport: Rail pass:-2276.30
+    2026-09-25      194657.78  dining: Coffee shop:-4624.70
+    2026-09-27      189775.58  groceries: Household groceries:-4882.20
+    2026-09-28      187499.28  transport: Rail pass:-2276.30
+    2026-10-02      155574.58  rent: Landlord standing order:-27300.00, dining: Coffee shop:-4624.70
+    2026-10-03      153298.28  transport: Rail pass:-2276.30
+    2026-10-06      148148.28  utilities: Electricity and water bill:-5150.00
+    2026-10-07      137996.08  insurance: Health insurance premium:-5270.00, groceries: Household groceries:-4882.20
+    2026-10-08      135719.78  transport: Rail pass:-2276.30
+    2026-10-09      127965.08  streaming: Streaming subscription:-3130.00, dining: Coffee shop:-4624.70
+    2026-10-12      122100.28  cloud_storage: Shared storage plan:-550.00, shopping: Online retail purchases:-5314.80
+    2026-10-13      119823.98  transport: Rail pass:-2276.30
+    2026-10-14      116754.58  entertainment: Weekend entertainment:-3069.40
+    2026-10-15      224750.26  salary:+107995.68
+    2026-10-16      220125.56  dining: Coffee shop:-4624.70
+    2026-10-17      215243.36  groceries: Household groceries:-4882.20
+    2026-10-18      212967.06  transport: Rail pass:-2276.30
+    2026-10-23      206066.06  transport: Rail pass:-2276.30, dining: Coffee shop:-4624.70
+    2026-10-27      201183.86  groceries: Household groceries:-4882.20
+    2026-10-28      198907.56  transport: Rail pass:-2276.30
+    2026-10-30      194282.86  dining: Coffee shop:-4624.70
+    2026-11-02      164706.56  rent: Landlord standing order:-27300.00, transport: Rail pass:-2276.30
+    2026-11-06      150049.66  utilities: Electricity and water bill:-5150.00, groceries: Household groceries:-4882.20, dining: Coffee shop:-4624.70
+    2026-11-07      142503.36  insurance: Health insurance premium:-5270.00, transport: Rail pass:-2276.30
+    2026-11-09      139373.36  streaming: Streaming subscription:-3130.00
+    2026-11-12      131232.26  cloud_storage: Shared storage plan:-550.00, shopping: Online retail purchases:-5314.80, transport: Rail pass:-2276.30
+    2026-11-13      126607.56  dining: Coffee shop:-4624.70
+    2026-11-14      123538.16  entertainment: Weekend entertainment:-3069.40
+    2026-11-15      231533.84  salary:+107995.68
+    2026-11-16      226651.64  groceries: Household groceries:-4882.20
+    2026-11-17      224375.34  transport: Rail pass:-2276.30
+    2026-11-20      219750.64  dining: Coffee shop:-4624.70
+    2026-11-22      217474.34  transport: Rail pass:-2276.30
+    2026-11-26      212592.14  groceries: Household groceries:-4882.20
+    2026-11-27      205691.14  transport: Rail pass:-2276.30, dining: Coffee shop:-4624.70

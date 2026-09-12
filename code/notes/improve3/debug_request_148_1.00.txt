@@ -1,0 +1,60 @@
+request_148 user_148 scale=1.0 date=2024-06-07 amount=22242.0 by=2024-08-18 partial=True
+  balance=33181.08 min=20000.0 methods=['installments'] max_m=12
+  series:
+    rent               monthly  step= 30 n= 6 amt=    11066.00 flex=fixed                  min=None latest=event_13595 next=['2024-07-01', '2024-08-01']
+    utilities          monthly  step= 30 n= 6 amt=     2018.80 flex=fixed                  min=None latest=event_13596 next=['2024-07-05', '2024-08-05']
+    music_subscription monthly  step= 30 n= 5 amt=      328.90 flex=stoppable              min=None latest=event_13591 next=['2024-06-10', '2024-07-10', '2024-08-10']
+    delivery_membership monthly  step= 30 n= 5 amt=      575.30 flex=stoppable              min=None latest=event_13592 next=['2024-06-12', '2024-07-12', '2024-08-12']
+    gym                monthly  step= 30 n= 5 amt=      651.20 flex=stoppable              min=None latest=event_13593 next=['2024-06-09', '2024-07-09', '2024-08-09']
+    entertainment      monthly  step= 30 n= 5 amt=     1152.80 flex=reducible              min=576.4 latest=event_13594 next=['2024-06-13', '2024-07-13', '2024-08-13']
+    groceries          periodic step=  7 n=26 amt=     1378.40 flex=fixed                  min=None latest=event_13622 next=['2024-06-11', '2024-06-18', '2024-06-25', '2024-07-02']
+    transport          periodic step=  7 n=26 amt=      897.80 flex=fixed                  min=None latest=event_13648 next=['2024-06-12', '2024-06-19', '2024-06-26', '2024-07-03']
+    dining             periodic step= 14 n=13 amt=     1062.60 flex=reducible              min=531.3 latest=event_13661 next=['2024-06-13', '2024-06-27', '2024-07-11', '2024-07-25']
+  safe=7134.08 earliest=2024-08-15 -> installments/affordable_with_plan plan=2024-06-14:7710.56|2024-07-15:7710.56|2024-08-15:7710.56 changes=stop:event_13591|stop:event_13592
+    cand installments     deadline=True changes=2 total=23131.68 start=2024-06-14 n=3
+  daily projection (days with flows, no payment applied):
+    2024-06-07       33181.08  
+    2024-06-09       32529.88  gym: Community fitness plan:-651.20
+    2024-06-10       32200.98  music_subscription: Audio streaming plan:-328.90
+    2024-06-11       30822.58  groceries: Local market purchase:-1378.40
+    2024-06-12       29349.48  delivery_membership: Food delivery membership:-575.30, transport: Rail pass:-897.80
+    2024-06-13       27134.08  entertainment: Games and recreation:-1152.80, dining: Family dinner:-1062.60
+    2024-06-15       62774.08  salary:+35640.00
+    2024-06-18       61395.68  groceries: Local market purchase:-1378.40
+    2024-06-19       60497.88  transport: Rail pass:-897.80
+    2024-06-25       59119.48  groceries: Local market purchase:-1378.40
+    2024-06-26       58221.68  transport: Rail pass:-897.80
+    2024-06-27       57159.08  dining: Family dinner:-1062.60
+    2024-07-01       46093.08  rent: Shared housing rent:-11066.00
+    2024-07-02       44714.68  groceries: Local market purchase:-1378.40
+    2024-07-03       43816.88  transport: Rail pass:-897.80
+    2024-07-05       41798.08  utilities: Electricity and water bill:-2018.80
+    2024-07-09       39768.48  gym: Community fitness plan:-651.20, groceries: Local market purchase:-1378.40
+    2024-07-10       38541.78  music_subscription: Audio streaming plan:-328.90, transport: Rail pass:-897.80
+    2024-07-11       37479.18  dining: Family dinner:-1062.60
+    2024-07-12       36903.88  delivery_membership: Food delivery membership:-575.30
+    2024-07-13       35751.08  entertainment: Games and recreation:-1152.80
+    2024-07-15       71391.08  salary:+35640.00
+    2024-07-16       70012.68  groceries: Local market purchase:-1378.40
+    2024-07-17       69114.88  transport: Rail pass:-897.80
+    2024-07-23       67736.48  groceries: Local market purchase:-1378.40
+    2024-07-24       66838.68  transport: Rail pass:-897.80
+    2024-07-25       65776.08  dining: Family dinner:-1062.60
+    2024-07-30       64397.68  groceries: Local market purchase:-1378.40
+    2024-07-31       63499.88  transport: Rail pass:-897.80
+    2024-08-01       52433.88  rent: Shared housing rent:-11066.00
+    2024-08-05       50415.08  utilities: Electricity and water bill:-2018.80
+    2024-08-06       49036.68  groceries: Local market purchase:-1378.40
+    2024-08-07       48138.88  transport: Rail pass:-897.80
+    2024-08-08       47076.28  dining: Family dinner:-1062.60
+    2024-08-09       46425.08  gym: Community fitness plan:-651.20
+    2024-08-10       46096.18  music_subscription: Audio streaming plan:-328.90
+    2024-08-12       45520.88  delivery_membership: Food delivery membership:-575.30
+    2024-08-13       42989.68  entertainment: Games and recreation:-1152.80, groceries: Local market purchase:-1378.40
+    2024-08-14       42091.88  transport: Rail pass:-897.80
+    2024-08-15       77731.88  salary:+35640.00
+    2024-08-20       76353.48  groceries: Local market purchase:-1378.40
+    2024-08-21       75455.68  transport: Rail pass:-897.80
+    2024-08-22       74393.08  dining: Family dinner:-1062.60
+    2024-08-27       73014.68  groceries: Local market purchase:-1378.40
+    2024-08-28       72116.88  transport: Rail pass:-897.80

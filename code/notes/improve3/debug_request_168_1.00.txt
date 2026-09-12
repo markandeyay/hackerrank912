@@ -1,0 +1,64 @@
+request_168 user_168 scale=1.0 date=2026-01-07 amount=49380.0 by=2026-03-16 partial=True
+  balance=173843.0 min=114400.0 methods=['partial_payment'] max_m=None
+  series:
+    rent               monthly  step= 30 n= 6 amt=    38100.00 flex=fixed                  min=None latest=event_15368 next=['2026-02-01', '2026-03-01', '2026-04-01']
+    utilities          monthly  step= 30 n= 6 amt=     9520.00 flex=fixed                  min=None latest=event_15369 next=['2026-02-05', '2026-03-05']
+    insurance          monthly  step= 30 n= 6 amt=     3810.00 flex=fixed                  min=None latest=event_15370 next=['2026-02-06', '2026-03-06']
+    cloud_storage      monthly  step= 30 n= 5 amt=      540.00 flex=stoppable              min=None latest=event_15364 next=['2026-01-11', '2026-02-11', '2026-03-11']
+    streaming          monthly  step= 30 n= 5 amt=     3630.00 flex=fixed                  min=None latest=event_15365 next=['2026-01-08', '2026-02-08', '2026-03-08']
+    shopping           monthly  step= 30 n= 5 amt=     6820.00 flex=reducible              min=2728.0 latest=event_15366 next=['2026-01-11', '2026-02-11', '2026-03-11']
+    entertainment      monthly  step= 30 n= 5 amt=     4950.00 flex=reducible              min=2475.0 latest=event_15367 next=['2026-01-13', '2026-02-13', '2026-03-13']
+    groceries          periodic step= 10 n=18 amt=     5590.00 flex=fixed                  min=None latest=event_15388 next=['2026-01-09', '2026-01-19', '2026-01-29', '2026-02-08']
+    transport          periodic step=  5 n=36 amt=     3260.00 flex=fixed                  min=None latest=event_15424 next=['2026-01-10', '2026-01-15', '2026-01-20', '2026-01-25']
+    dining             periodic step=  7 n=26 amt=     4440.00 flex=fixed                  min=None latest=event_15450 next=['2026-01-13', '2026-01-20', '2026-01-27', '2026-02-03']
+  safe=30213.0 earliest=2026-02-15 -> partial_payment/affordable_with_plan plan=2026-01-07:30213|2026-02-15:19167 changes=none
+    cand partial_payment  deadline=True changes=0 total=49380.00 start=2026-01-07 n=2
+  daily projection (days with flows, no payment applied):
+    2026-01-07      173843.00  
+    2026-01-08      170213.00  streaming: Video streaming plan:-3630.00
+    2026-01-09      164623.00  groceries: Household groceries:-5590.00
+    2026-01-10      161363.00  transport: Parking and tolls:-3260.00
+    2026-01-11      154003.00  cloud_storage: Online backup subscription:-540.00, shopping: Household shopping:-6820.00
+    2026-01-13      144613.00  entertainment: Monthly entertainment spend:-4950.00, dining: Family dinner:-4440.00
+    2026-01-15      278503.00  salary:+137150.00, transport: Parking and tolls:-3260.00
+    2026-01-19      272913.00  groceries: Household groceries:-5590.00
+    2026-01-20      265213.00  transport: Parking and tolls:-3260.00, dining: Family dinner:-4440.00
+    2026-01-25      261953.00  transport: Parking and tolls:-3260.00
+    2026-01-27      257513.00  dining: Family dinner:-4440.00
+    2026-01-29      251923.00  groceries: Household groceries:-5590.00
+    2026-01-30      248663.00  transport: Parking and tolls:-3260.00
+    2026-02-01      210563.00  rent: Landlord standing order:-38100.00
+    2026-02-03      206123.00  dining: Family dinner:-4440.00
+    2026-02-04      202863.00  transport: Parking and tolls:-3260.00
+    2026-02-05      193343.00  utilities: Municipal utilities:-9520.00
+    2026-02-06      189533.00  insurance: Vehicle insurance premium:-3810.00
+    2026-02-08      180313.00  streaming: Video streaming plan:-3630.00, groceries: Household groceries:-5590.00
+    2026-02-09      177053.00  transport: Parking and tolls:-3260.00
+    2026-02-10      172613.00  dining: Family dinner:-4440.00
+    2026-02-11      165253.00  cloud_storage: Online backup subscription:-540.00, shopping: Household shopping:-6820.00
+    2026-02-13      160303.00  entertainment: Monthly entertainment spend:-4950.00
+    2026-02-14      157043.00  transport: Parking and tolls:-3260.00
+    2026-02-15      294193.00  salary:+137150.00
+    2026-02-17      289753.00  dining: Family dinner:-4440.00
+    2026-02-18      284163.00  groceries: Household groceries:-5590.00
+    2026-02-19      280903.00  transport: Parking and tolls:-3260.00
+    2026-02-24      273203.00  transport: Parking and tolls:-3260.00, dining: Family dinner:-4440.00
+    2026-02-28      267613.00  groceries: Household groceries:-5590.00
+    2026-03-01      226253.00  rent: Landlord standing order:-38100.00, transport: Parking and tolls:-3260.00
+    2026-03-03      221813.00  dining: Family dinner:-4440.00
+    2026-03-05      212293.00  utilities: Municipal utilities:-9520.00
+    2026-03-06      205223.00  insurance: Vehicle insurance premium:-3810.00, transport: Parking and tolls:-3260.00
+    2026-03-08      201593.00  streaming: Video streaming plan:-3630.00
+    2026-03-10      191563.00  groceries: Household groceries:-5590.00, dining: Family dinner:-4440.00
+    2026-03-11      180943.00  cloud_storage: Online backup subscription:-540.00, shopping: Household shopping:-6820.00, transport: Parking and tolls:-3260.00
+    2026-03-13      175993.00  entertainment: Monthly entertainment spend:-4950.00
+    2026-03-15      313143.00  salary:+137150.00
+    2026-03-16      309883.00  transport: Parking and tolls:-3260.00
+    2026-03-17      305443.00  dining: Family dinner:-4440.00
+    2026-03-20      299853.00  groceries: Household groceries:-5590.00
+    2026-03-21      296593.00  transport: Parking and tolls:-3260.00
+    2026-03-24      292153.00  dining: Family dinner:-4440.00
+    2026-03-26      288893.00  transport: Parking and tolls:-3260.00
+    2026-03-30      283303.00  groceries: Household groceries:-5590.00
+    2026-03-31      275603.00  transport: Parking and tolls:-3260.00, dining: Family dinner:-4440.00
+    2026-04-01      237503.00  rent: Landlord standing order:-38100.00

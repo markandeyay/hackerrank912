@@ -1,0 +1,43 @@
+request_138 user_138 scale=1.0 date=2026-04-07 amount=1256.94 by=2026-06-05 partial=True
+  balance=3644.65 min=2300.0 methods=['partial_payment', 'installments'] max_m=11
+  series:
+    rent               monthly  step= 30 n= 6 amt=      711.70 flex=fixed                  min=None latest=event_12671 next=['2026-05-03', '2026-06-03']
+    utilities          monthly  step= 30 n= 5 amt=      149.00 flex=fixed                  min=None latest=event_12667 next=['2026-04-07', '2026-05-07', '2026-06-07']
+    cloud_storage      monthly  step= 30 n= 5 amt=       23.00 flex=stoppable              min=None latest=event_12668 next=['2026-04-13', '2026-05-13', '2026-06-13']
+    streaming          monthly  step= 30 n= 5 amt=       69.00 flex=reducible_or_stoppable min=34.5 latest=event_12669 next=['2026-04-10', '2026-05-10', '2026-06-10']
+    shopping           monthly  step= 30 n= 5 amt=      113.00 flex=reducible              min=45.2 latest=event_12670 next=['2026-04-13', '2026-05-13', '2026-06-13']
+    groceries          periodic step= 10 n=18 amt=      108.00 flex=fixed                  min=None latest=event_12689 next=['2026-04-11', '2026-04-21', '2026-05-01', '2026-05-11']
+    transport          periodic step= 21 n= 9 amt=       53.00 flex=fixed                  min=None latest=event_12698 next=['2026-04-14', '2026-05-12', '2026-06-02', '2026-06-23']
+    dining             periodic step= 21 n= 9 amt=      100.00 flex=fixed                  min=None latest=event_12707 next=['2026-04-14', '2026-05-13', '2026-06-03', '2026-06-24']
+  safe=729.65 earliest=2026-04-15 -> partial_payment/affordable_with_plan plan=2026-04-07:729.65|2026-04-15:527.29 changes=none
+    cand partial_payment  deadline=True changes=0 total=1256.94 start=2026-04-07 n=2
+    cand installments     deadline=True changes=0 total=1307.22 start=2026-04-07 n=3
+    cand installments     deadline=False changes=0 total=1332.36 start=2026-04-12 n=4
+  daily projection (days with flows, no payment applied):
+    2026-04-07        3495.65  utilities: Electricity and water bill:-149.00
+    2026-04-10        3426.65  streaming: Streaming subscription:-69.00
+    2026-04-11        3318.65  groceries: Neighbourhood grocer:-108.00
+    2026-04-13        3182.65  cloud_storage: Shared storage plan:-23.00, shopping: Clothing and household items:-113.00
+    2026-04-14        3029.65  transport: Local taxi:-53.00, dining: Takeaway order:-100.00
+    2026-04-15        5724.65  salary:+2695.00
+    2026-04-21        5616.65  groceries: Neighbourhood grocer:-108.00
+    2026-05-01        5508.65  groceries: Neighbourhood grocer:-108.00
+    2026-05-03        4796.95  rent: Landlord standing order:-711.70
+    2026-05-07        4647.95  utilities: Electricity and water bill:-149.00
+    2026-05-10        4578.95  streaming: Streaming subscription:-69.00
+    2026-05-11        4470.95  groceries: Neighbourhood grocer:-108.00
+    2026-05-12        4417.95  transport: Local taxi:-53.00
+    2026-05-13        4181.95  cloud_storage: Shared storage plan:-23.00, shopping: Clothing and household items:-113.00, dining: Takeaway order:-100.00
+    2026-05-15        6876.95  salary:+2695.00
+    2026-05-21        6768.95  groceries: Neighbourhood grocer:-108.00
+    2026-05-31        6660.95  groceries: Neighbourhood grocer:-108.00
+    2026-06-02        6607.95  transport: Local taxi:-53.00
+    2026-06-03        5796.25  rent: Landlord standing order:-711.70, dining: Takeaway order:-100.00
+    2026-06-07        5647.25  utilities: Electricity and water bill:-149.00
+    2026-06-10        5470.25  streaming: Streaming subscription:-69.00, groceries: Neighbourhood grocer:-108.00
+    2026-06-13        5334.25  cloud_storage: Shared storage plan:-23.00, shopping: Clothing and household items:-113.00
+    2026-06-15        8029.25  salary:+2695.00
+    2026-06-20        7921.25  groceries: Neighbourhood grocer:-108.00
+    2026-06-23        7868.25  transport: Local taxi:-53.00
+    2026-06-24        7768.25  dining: Takeaway order:-100.00
+    2026-06-30        7660.25  groceries: Neighbourhood grocer:-108.00

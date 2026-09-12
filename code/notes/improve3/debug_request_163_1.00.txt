@@ -1,0 +1,58 @@
+request_163 user_163 scale=1.0 date=2024-09-07 amount=19304000.0 by=2024-11-15 partial=False
+  balance=49519524.26 min=26728700.0 methods=['partial_payment', 'installments'] max_m=10
+  series:
+    rent               monthly  step= 30 n= 6 amt=  6802000.00 flex=fixed                  min=None latest=event_14955 next=['2024-10-04', '2024-11-04']
+    utilities          monthly  step= 30 n= 5 amt=  1458600.00 flex=fixed                  min=None latest=event_14950 next=['2024-09-08', '2024-10-08', '2024-11-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=  4636000.00 flex=fixed                  min=None latest=event_14951 next=['2024-09-13', '2024-10-13', '2024-11-13']
+    streaming          monthly  step= 30 n= 5 amt=   720100.00 flex=fixed                  min=None latest=event_14952 next=['2024-09-11', '2024-10-11', '2024-11-11']
+    cloud_storage      monthly  step= 30 n= 5 amt=   209000.00 flex=stoppable              min=None latest=event_14953 next=['2024-09-14', '2024-10-14', '2024-11-14']
+    shopping           monthly  step= 30 n= 5 amt=   762400.00 flex=fixed                  min=None latest=event_14954 next=['2024-09-14', '2024-10-14', '2024-11-14']
+    groceries          periodic step=  7 n=25 amt=  1155900.00 flex=fixed                  min=None latest=event_14980 next=['2024-09-14', '2024-09-21', '2024-09-28', '2024-10-05']
+    transport          periodic step=  7 n=25 amt=   734100.00 flex=fixed                  min=None latest=event_15005 next=['2024-09-08', '2024-09-15', '2024-09-22', '2024-09-29']
+    dining             periodic step= 14 n=13 amt=  1328100.00 flex=reducible              min=664050.0 latest=event_15018 next=['2024-09-11', '2024-09-25', '2024-10-09', '2024-10-23']
+  safe=10074724.26 earliest=2024-10-15 -> installments/affordable_with_plan plan=2024-09-10:6692053.33|2024-10-11:6692053.33|2024-11-11:6692053.33 changes=none
+    cand installments     deadline=True changes=0 total=20076159.99 start=2024-09-10 n=3
+  daily projection (days with flows, no payment applied):
+    2024-09-07    49519524.26  
+    2024-09-08    47326824.26  utilities: Electricity and water bill:-1458600.00, transport: Parking and tolls:-734100.00
+    2024-09-11    43566724.26  Pending pharmacy card charge:-1711900.00, streaming: Family streaming plan:-720100.00, dining: Neighbourhood restaurant:-1328100.00
+    2024-09-13    38930724.26  debt_repayment: Credit card repayment:-4636000.00
+    2024-09-14    36803424.26  cloud_storage: Online backup subscription:-209000.00, shopping: Clothing and household items:-762400.00, groceries: Supermarket basket:-1155900.00
+    2024-09-15    66469324.26  salary:+30400000.00, transport: Parking and tolls:-734100.00
+    2024-09-21    65313424.26  groceries: Supermarket basket:-1155900.00
+    2024-09-22    64579324.26  transport: Parking and tolls:-734100.00
+    2024-09-25    63251224.26  dining: Neighbourhood restaurant:-1328100.00
+    2024-09-28    62095324.26  groceries: Supermarket basket:-1155900.00
+    2024-09-29    61361224.26  transport: Parking and tolls:-734100.00
+    2024-10-04    54559224.26  rent: Residential rent payment:-6802000.00
+    2024-10-05    53403324.26  groceries: Supermarket basket:-1155900.00
+    2024-10-06    52669224.26  transport: Parking and tolls:-734100.00
+    2024-10-08    51210624.26  utilities: Electricity and water bill:-1458600.00
+    2024-10-09    49882524.26  dining: Neighbourhood restaurant:-1328100.00
+    2024-10-11    49162424.26  streaming: Family streaming plan:-720100.00
+    2024-10-12    48006524.26  groceries: Supermarket basket:-1155900.00
+    2024-10-13    42636424.26  debt_repayment: Credit card repayment:-4636000.00, transport: Parking and tolls:-734100.00
+    2024-10-14    41665024.26  cloud_storage: Online backup subscription:-209000.00, shopping: Clothing and household items:-762400.00
+    2024-10-15    72065024.26  salary:+30400000.00
+    2024-10-19    70909124.26  groceries: Supermarket basket:-1155900.00
+    2024-10-20    70175024.26  transport: Parking and tolls:-734100.00
+    2024-10-23    68846924.26  dining: Neighbourhood restaurant:-1328100.00
+    2024-10-26    67691024.26  groceries: Supermarket basket:-1155900.00
+    2024-10-27    66956924.26  transport: Parking and tolls:-734100.00
+    2024-11-02    65801024.26  groceries: Supermarket basket:-1155900.00
+    2024-11-03    65066924.26  transport: Parking and tolls:-734100.00
+    2024-11-04    58264924.26  rent: Residential rent payment:-6802000.00
+    2024-11-06    56936824.26  dining: Neighbourhood restaurant:-1328100.00
+    2024-11-08    55478224.26  utilities: Electricity and water bill:-1458600.00
+    2024-11-09    54322324.26  groceries: Supermarket basket:-1155900.00
+    2024-11-10    53588224.26  transport: Parking and tolls:-734100.00
+    2024-11-11    52868124.26  streaming: Family streaming plan:-720100.00
+    2024-11-13    48232124.26  debt_repayment: Credit card repayment:-4636000.00
+    2024-11-14    47260724.26  cloud_storage: Online backup subscription:-209000.00, shopping: Clothing and household items:-762400.00
+    2024-11-15    77660724.26  salary:+30400000.00
+    2024-11-16    76504824.26  groceries: Supermarket basket:-1155900.00
+    2024-11-17    75770724.26  transport: Parking and tolls:-734100.00
+    2024-11-20    74442624.26  dining: Neighbourhood restaurant:-1328100.00
+    2024-11-23    73286724.26  groceries: Supermarket basket:-1155900.00
+    2024-11-24    72552624.26  transport: Parking and tolls:-734100.00
+    2024-11-30    71396724.26  groceries: Supermarket basket:-1155900.00

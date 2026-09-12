@@ -1,0 +1,51 @@
+request_266 user_266 scale=1.0 date=2025-08-03 amount=935.0 by=2025-10-03 partial=False
+  balance=2354.92 min=900.0 methods=['partial_payment', 'installments'] max_m=10
+  series:
+    rent               monthly  step= 30 n= 5 amt=      266.20 flex=fixed                  min=None latest=event_24487 next=['2025-08-03', '2025-09-03', '2025-10-03']
+    utilities          monthly  step= 30 n= 5 amt=       68.00 flex=fixed                  min=None latest=event_24488 next=['2025-08-07', '2025-09-07', '2025-10-07']
+    debt_repayment     monthly  step= 30 n= 5 amt=      147.00 flex=fixed                  min=None latest=event_24489 next=['2025-08-12', '2025-09-12', '2025-10-12']
+    healthcare         monthly  step= 30 n= 5 amt=       44.00 flex=fixed                  min=None latest=event_24490 next=['2025-08-11', '2025-09-11', '2025-10-11']
+    family_support     monthly  step= 30 n= 5 amt=       62.00 flex=fixed                  min=None latest=event_24491 next=['2025-08-14', '2025-09-14', '2025-10-14']
+    cloud_storage      monthly  step= 30 n= 5 amt=        7.00 flex=fixed                  min=None latest=event_24492 next=['2025-08-13', '2025-09-13', '2025-10-13']
+    shopping           monthly  step= 30 n= 5 amt=       27.00 flex=fixed                  min=None latest=event_24493 next=['2025-08-13', '2025-09-13', '2025-10-13']
+    groceries          periodic step=  7 n=26 amt=       42.00 flex=fixed                  min=None latest=event_24519 next=['2025-08-09', '2025-08-16', '2025-08-23', '2025-08-30']
+    transport          periodic step= 14 n=13 amt=       22.00 flex=fixed                  min=None latest=event_24532 next=['2025-08-10', '2025-08-24', '2025-09-07', '2025-09-21']
+  safe=769.72 earliest=2025-09-15 -> installments/affordable_with_plan plan=2025-08-03:324.13|2025-08-31:324.13|2025-09-28:324.13 changes=none
+    cand installments     deadline=True changes=0 total=972.39 start=2025-08-03 n=3
+  daily projection (days with flows, no payment applied):
+    2025-08-03        2088.72  rent: Apartment rent transfer:-266.20
+    2025-08-07        2020.72  utilities: Electricity bill:-68.00
+    2025-08-09        1978.72  groceries: Fresh food shop:-42.00
+    2025-08-10        1956.72  transport: Metro and bus fares:-22.00
+    2025-08-11        1912.72  healthcare: Family healthcare expense:-44.00
+    2025-08-12        1765.72  debt_repayment: Personal loan payment:-147.00
+    2025-08-13        1731.72  cloud_storage: Online backup subscription:-7.00, shopping: Monthly shopping spend:-27.00
+    2025-08-14        1669.72  family_support: Dependent care payment:-62.00
+    2025-08-15        2637.72  salary:+968.00
+    2025-08-16        2595.72  groceries: Fresh food shop:-42.00
+    2025-08-23        2553.72  groceries: Fresh food shop:-42.00
+    2025-08-24        2531.72  transport: Metro and bus fares:-22.00
+    2025-08-30        2489.72  groceries: Fresh food shop:-42.00
+    2025-09-03        2223.52  rent: Apartment rent transfer:-266.20
+    2025-09-06        2181.52  groceries: Fresh food shop:-42.00
+    2025-09-07        2091.52  utilities: Electricity bill:-68.00, transport: Metro and bus fares:-22.00
+    2025-09-11        2047.52  healthcare: Family healthcare expense:-44.00
+    2025-09-12        1900.52  debt_repayment: Personal loan payment:-147.00
+    2025-09-13        1824.52  cloud_storage: Online backup subscription:-7.00, shopping: Monthly shopping spend:-27.00, groceries: Fresh food shop:-42.00
+    2025-09-14        1762.52  family_support: Dependent care payment:-62.00
+    2025-09-15        2730.52  salary:+968.00
+    2025-09-20        2688.52  groceries: Fresh food shop:-42.00
+    2025-09-21        2666.52  transport: Metro and bus fares:-22.00
+    2025-09-27        2624.52  groceries: Fresh food shop:-42.00
+    2025-10-03        2358.32  rent: Apartment rent transfer:-266.20
+    2025-10-04        2316.32  groceries: Fresh food shop:-42.00
+    2025-10-05        2294.32  transport: Metro and bus fares:-22.00
+    2025-10-07        2226.32  utilities: Electricity bill:-68.00
+    2025-10-11        2140.32  healthcare: Family healthcare expense:-44.00, groceries: Fresh food shop:-42.00
+    2025-10-12        1993.32  debt_repayment: Personal loan payment:-147.00
+    2025-10-13        1959.32  cloud_storage: Online backup subscription:-7.00, shopping: Monthly shopping spend:-27.00
+    2025-10-14        1897.32  family_support: Dependent care payment:-62.00
+    2025-10-15        2865.32  salary:+968.00
+    2025-10-18        2823.32  groceries: Fresh food shop:-42.00
+    2025-10-19        2801.32  transport: Metro and bus fares:-22.00
+    2025-10-25        2759.32  groceries: Fresh food shop:-42.00

@@ -1,0 +1,272 @@
+request_49 thr=1.0225 IDR req=34333000.0 min=20275700.0 block=42234900.00 bind=earliest_pass margin=742693.34 (1.76% of block) driver=groceries 1452100.00 x6 (first 2024-03-09, step 7d, fixed) d3%=261378.00
+   base: affordable_with_plan/installments; earliest=2024-04-15; changes=none; safe=12552693.34
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2024-05-15; changes=none; safe=12365103.34
+   m0={'full_today': -21780306.66, 'earliest_pass': 742693.34, 'closest_earlier_miss': -17708906.66, 'plan': 4721986.67, 'plan_trough': '2024-04-14'}
+   m103={'full_today': -21967896.66, 'earliest_pass': 37494546.34, 'closest_earlier_miss': -353920.66, 'plan': 4047721.67, 'plan_trough': '2024-04-14'}
+request_53 thr=0.9775 USD req=1699.2 min=2100.0 block=2860.00 bind=plan_no_changes margin=-51.70 (-1.81% of block) driver=groceries 109.00 x10 (first 2025-11-12, step 7d, fixed) d3%=32.70
+   base: affordable_with_plan/installments; earliest=2026-01-15; changes=stop:event_4925; safe=459.42
+   0.97: affordable_with_plan/installments; earliest=2026-01-15; changes=none; safe=467.07
+   1.03: affordable_with_plan/installments; earliest=2026-01-15; changes=stop:event_4925|reduce_to:event_4992:44.50; safe=451.77
+   m0={'full_today': -1239.78, 'earliest_pass': 1829.22, 'closest_earlier_miss': -572.78, 'plan': 71.3, 'plan_trough': '2026-01-14', 'plan_no_changes': -51.7}
+   m97={'full_today': -1232.13, 'earliest_pass': 1915.02, 'closest_earlier_miss': -501.32, 'plan': 19.76, 'plan_trough': '2026-01-14'}
+   m103={'full_today': -1247.43, 'earliest_pass': 1743.42, 'closest_earlier_miss': -644.24, 'plan': 235.69, 'plan_trough': '2026-01-14', 'plan_no_changes': -123.16}
+request_55 thr=1.02 INR req=218600.0 min=124300.0 block=264660.00 bind=plan margin=4267.20 (1.61% of block) driver=groceries 9480.00 x9 (first 2026-06-14, step 7d, fixed) d3%=2559.60
+   base: affordable_with_plan/installments; earliest=2026-08-15; changes=stop:event_5102|stop:event_5101; safe=114626.19
+   0.97: affordable_with_plan/installments; earliest=2026-07-15; changes=stop:event_5102|stop:event_5101; safe=115825.29
+   1.03: affordable_with_plan/installments; earliest=2026-08-15; changes=stop:event_5102|stop:event_5101|reduce_to:event_5167:2750; safe=113427.09
+   m0={'full_today': -103973.81, 'earliest_pass': 167246.19, 'closest_earlier_miss': -5273.81, 'plan': 4267.2, 'plan_trough': '2026-08-14', 'plan_no_changes': -14017.8}
+   m97={'full_today': -102774.71, 'earliest_pass': 1361.59, 'closest_earlier_miss': -53020.01, 'plan': 10902.6, 'plan_trough': '2026-08-14', 'plan_no_changes': -7382.4}
+   m103={'full_today': -105172.91, 'earliest_pass': 159306.39, 'closest_earlier_miss': -11909.21, 'plan': 12206.8, 'plan_trough': '2026-08-14', 'plan_no_changes': -20653.2}
+request_59 thr=1.015 INR req=140600.0 min=132600.0 block=248400.00 bind=plan margin=3482.00 (1.40% of block) driver=groceries 8310.00 x12 (first 2025-05-11, step 7d, fixed) d3%=2991.60
+   base: affordable_with_plan/installments; earliest=2025-05-04; changes=none; safe=140600
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2025-05-04; changes=stop:event_5471; safe=140600
+   m0={'full_today': 9105.99, 'earliest_pass': 9105.99, 'plan': 3482.0, 'plan_trough': '2025-07-27'}
+   m103={'full_today': 1653.99, 'earliest_pass': 1653.99, 'plan': 4370.0, 'plan_trough': '2025-07-27', 'plan_no_changes': -3970.0}
+request_60 thr=0.9975 USD req=199.89 min=400.0 block=831.00 bind=closest_earlier_miss margin=-0.20 (-0.02% of block) driver=transport 14.00 x13 (first 2026-01-09, step 5d, fixed) d3%=5.46
+   base: affordable_later/wait; earliest=2026-02-15; changes=none; safe=116.69
+   0.97: affordable_later/wait; earliest=2026-01-15; changes=none; safe=119.72
+   1.03: (same)
+   m0={'full_today': -83.2, 'earliest_pass': 96.8, 'closest_earlier_miss': -0.2, 'plan': 96.8, 'plan_trough': '2026-03-13'}
+   m97={'full_today': -80.17, 'earliest_pass': 11.65, 'closest_earlier_miss': -80.17, 'plan': 11.65, 'plan_trough': '2026-02-13'}
+request_68 thr=1.005 USD req=2091.6 min=1500.0 block=2592.00 bind=plan margin=8.56 (0.33% of block) driver=groceries 111.00 x11 (first 2025-02-11, step 7d, fixed) d3%=36.63
+   base: affordable_with_plan/installments; earliest=2025-03-23; changes=stop:event_6330; safe=1332.83
+   0.97: affordable_with_plan/installments; earliest=2025-03-23; changes=none; safe=1346.75
+   1.03: affordable_with_plan/installments; earliest=2025-04-23; changes=stop:event_6330|reduce_to:event_6331:24.80; safe=1318.91
+   m0={'full_today': -758.77, 'earliest_pass': 62.23, 'closest_earlier_miss': -292.77, 'plan': 8.56, 'plan_trough': '2025-04-22', 'plan_no_changes': -21.44}
+   m97={'full_today': -744.85, 'earliest_pass': 134.62, 'closest_earlier_miss': -251.28, 'plan': 50.95, 'plan_trough': '2025-04-22'}
+   m103={'full_today': -772.69, 'earliest_pass': 1551.47, 'closest_earlier_miss': -10.16, 'plan': 53.35, 'plan_trough': '2025-04-22', 'plan_no_changes': -93.83}
+request_77 thr=1.005 INR req=60700.0 min=82200.0 block=128340.00 bind=plan margin=100.50 (0.08% of block) driver=healthcare 7950.00 x1 (first 2025-11-10, step 30d, fixed) d3%=238.50
+   base: affordable_with_plan/full_payment; earliest=2025-11-15; changes=stop:event_7143; safe=60095.5
+   0.97: affordable_now/full_payment; earliest=2025-11-05; changes=none; safe=60700
+   1.03: affordable_later/wait; earliest=2025-11-15; changes=none; safe=59266.9
+   m0={'full_today': -604.5, 'earliest_pass': 22470.5, 'closest_earlier_miss': -604.5, 'plan': 100.5, 'plan_trough': '2025-11-13', 'plan_no_changes': -604.5}
+   m97={'full_today': 224.1, 'earliest_pass': 224.1, 'plan': 224.1, 'plan_trough': '2025-11-13'}
+   m103={'full_today': -1433.1, 'earliest_pass': 20358.5, 'closest_earlier_miss': -1433.1, 'plan': 20358.5, 'plan_trough': '2025-12-13'}
+request_89 thr=0.985 IDR req=13756000.0 min=12534700.0 block=20160300.00 bind=plan margin=786622.00 (3.90% of block) driver=groceries 694700.00 x10 (first 2025-11-09, step 7d, fixed) d3%=208410.00
+   base: affordable_with_plan/installments; earliest=2026-01-15; changes=stop:event_8336|stop:event_8335|reduce_to:event_8403:203300; safe=9434562.01
+   0.97: affordable_with_plan/installments; earliest=2026-01-15; changes=stop:event_8336|stop:event_8335; safe=9523734.01
+   1.03: (same)
+   m0={'full_today': -4321437.99, 'earliest_pass': 11672262.01, 'closest_earlier_miss': -893737.99, 'plan': 786622.0, 'plan_trough': '2026-01-13', 'plan_no_changes': -1443978.0}
+   m97={'full_today': -4232265.99, 'earliest_pass': 12277071.01, 'closest_earlier_miss': -367948.99, 'plan': 295911.0, 'plan_trough': '2026-01-13', 'plan_no_changes': -918189.0}
+request_92 thr=0.995 ZAR req=34034.0 min=28100.0 block=53764.20 bind=closest_earlier_miss margin=-204.83 (-0.38% of block) driver=healthcare 3212.40 x1 (first 2025-02-09, step 30d, fixed) d3%=96.37
+   base: affordable_with_plan/full_payment; earliest=2025-02-15; changes=stop:event_8621|reduce_to:event_8620:558.80; safe=33829.17
+   0.97: affordable_now/full_payment; earliest=2025-02-05; changes=none; safe=34034
+   1.03: (same)
+   m0={'full_today': -204.83, 'earliest_pass': 3591.07, 'closest_earlier_miss': -204.83, 'plan': 504.67, 'plan_trough': '2025-02-14', 'plan_no_changes': -204.83}
+   m97={'full_today': 156.35, 'earliest_pass': 156.35, 'plan': 156.35, 'plan_trough': '2025-02-14'}
+request_96 thr=1.0025 INR req=90200.0 min=56500.0 block=100050.00 bind=plan margin=142.50 (0.14% of block) driver=groceries 3680.00 x10 (first 2026-01-07, step 7d, fixed) d3%=1104.00
+   base: affordable_with_plan/installments; earliest=2026-02-15; changes=stop:event_8914; safe=72795.49
+   0.97: affordable_with_plan/installments; earliest=2026-02-15; changes=none; safe=73317.49
+   1.03: affordable_with_plan/installments; earliest=2026-03-15; changes=stop:event_8914|reduce_to:event_8980:1610; safe=72273.49
+   m0={'full_today': -17404.51, 'earliest_pass': 1425.49, 'closest_earlier_miss': -8884.51, 'plan': 142.5, 'plan_trough': '2026-03-12', 'plan_no_changes': -2182.5}
+   m97={'full_today': -16882.51, 'earliest_pass': 4002.19, 'closest_earlier_miss': -7308.31, 'plan': 394.2, 'plan_trough': '2026-03-12'}
+   m103={'full_today': -17926.51, 'earliest_pass': 64263.99, 'closest_earlier_miss': -1151.21, 'plan': 6098.8, 'plan_trough': '2026-03-12', 'plan_no_changes': -4759.2}
+request_97 thr=0.985 ZAR req=23496.0 min=29700.0 block=22501.60 bind=plan_no_changes margin=-291.61 (-1.30% of block) driver=utilities 2004.40 x1 (first 2024-03-06, step 30d, fixed) d3%=60.13
+   base: affordable_with_plan/installments; earliest=2024-04-15; changes=stop:event_9006|reduce_to:event_9038:577.50; safe=0
+   0.97: affordable_with_plan/installments; earliest=2024-04-15; changes=stop:event_9006; safe=0
+   1.03: (same)
+   m0={'full_today': -23787.61, 'earliest_pass': 2277.79, 'closest_earlier_miss': -10754.91, 'plan': 504.79, 'plan_trough': '2024-03-14', 'plan_no_changes': -291.61}
+   m97={'full_today': -23625.38, 'earliest_pass': 2850.74, 'closest_earlier_miss': -10387.32, 'plan': 89.52, 'plan_trough': '2024-03-14', 'plan_no_changes': -129.38}
+request_99 thr=0.9925 ZAR req=18062.0 min=49100.0 block=59952.60 bind=full_today margin=-608.42 (-1.01% of block) driver=utilities 4067.20 x1 (first 2026-07-08, step 30d, fixed) d3%=122.02
+   base: affordable_with_plan/full_payment; earliest=2026-07-15; changes=reduce_to:event_9188:525.80|reduce_to:event_9232:1065.90; safe=17453.58
+   0.97: affordable_with_plan/full_payment; earliest=2026-07-15; changes=reduce_to:event_9188:525.80; safe=17827.5
+   1.03: (same)
+   m0={'full_today': -608.42, 'earliest_pass': 27830.18, 'closest_earlier_miss': -608.42, 'plan': 983.28, 'plan_trough': '2026-07-12', 'plan_no_changes': -608.42}
+   m97={'full_today': -234.5, 'earliest_pass': 28829.67, 'closest_earlier_miss': -234.5, 'plan': 291.3, 'plan_trough': '2026-07-12', 'plan_no_changes': -234.5}
+request_100 thr=0.99 ZAR req=37114.0 min=32500.0 block=54044.80 bind=earliest_pass margin=398.23 (0.74% of block) driver=groceries 1992.00 x10 (first 2024-06-10, step 7d, fixed) d3%=597.60
+   base: affordable_with_plan/installments; earliest=2024-07-15; changes=stop:event_9268|reduce_to:event_9267:508.20; safe=25160.43
+   0.97: affordable_with_plan/installments; earliest=2024-07-15; changes=none; safe=25346.38
+   1.03: not_affordable/not_recommended; earliest=2024-08-15; changes=none; safe=24974.47
+   m0={'full_today': -11953.57, 'earliest_pass': 398.23, 'closest_earlier_miss': -4373.27, 'plan': 1154.36, 'plan_trough': '2024-08-14', 'plan_no_changes': -1086.34}
+   m97={'full_today': -11767.61, 'earliest_pass': 1802.85, 'closest_earlier_miss': -3620.11, 'plan': 318.28, 'plan_trough': '2024-08-14'}
+   m103={'full_today': -12139.53, 'earliest_pass': 34232.69, 'closest_earlier_miss': -1006.39}
+request_101 thr=1.0125 INR req=143500.0 min=187400.0 block=246020.00 bind=plan margin=668.50 (0.27% of block) driver=utilities 14780.00 x1 (first 2025-11-06, step 30d, fixed) d3%=443.40
+   base: affordable_with_plan/full_payment; earliest=2025-11-15; changes=stop:event_9378; safe=142183.5
+   0.97: affordable_now/full_payment; earliest=2025-11-03; changes=none; safe=143500
+   1.03: affordable_with_plan/full_payment; earliest=2025-11-15; changes=stop:event_9378|reduce_to:event_9377:2660; safe=140560.5
+   m0={'full_today': -1316.5, 'earliest_pass': 106958.5, 'closest_earlier_miss': -1316.5, 'plan': 668.5, 'plan_trough': '2025-11-14', 'plan_no_changes': -1316.5, 'inst286': 116353.5}
+   m97={'full_today': 306.5, 'earliest_pass': 306.5, 'plan': 306.5, 'plan_trough': '2025-11-14', 'inst286': 117976.5}
+   m103={'full_today': -2939.5, 'earliest_pass': 102959.5, 'closest_earlier_miss': -2939.5, 'plan': 1865.1, 'plan_trough': '2025-11-14', 'plan_no_changes': -2939.5, 'inst286': 114730.5}
+request_105 thr=0.9775 INR req=53500.0 min=73900.0 block=165050.00 bind=full_today margin=-2063.20 (-1.25% of block) driver=groceries 4980.00 x1 (first 2026-06-11, step 10d, fixed) d3%=149.40
+   base: affordable_with_plan/full_payment; earliest=2026-06-15; changes=reduce_to:event_9721:1720|reduce_to:event_9720:1632; safe=51436.8
+   0.97: affordable_with_plan/full_payment; earliest=2026-06-15; changes=reduce_to:event_9721:1720; safe=51998.7
+   1.03: (same)
+   m0={'full_today': -2063.2, 'earliest_pass': 18431.8, 'closest_earlier_miss': -2063.2, 'plan': 2104.8, 'plan_trough': '2026-06-14', 'plan_no_changes': -2063.2, 'inst297': 41806.8}
+   m97={'full_today': -1501.3, 'earliest_pass': 20727.1, 'closest_earlier_miss': -1501.3, 'plan': 115.5, 'plan_trough': '2026-06-14', 'plan_no_changes': -1501.3, 'inst297': 42368.7}
+request_109 thr=0.985 EUR req=1863.4 min=1700.0 block=3425.00 bind=plan_no_changes margin=-97.74 (-2.85% of block) driver=dining 73.00 x10 (first 2024-03-11, step 7d, fixed) d3%=21.90
+   base: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_10080|stop:event_10081; safe=546.46
+   0.97: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_10080; safe=563.59
+   1.03: (same)
+   m0={'full_today': -1316.94, 'earliest_pass': 1261.5, 'closest_earlier_miss': -669.18, 'plan': 121.26, 'plan_trough': '2024-05-14', 'plan_no_changes': -97.74}
+   m97={'full_today': -1299.81, 'earliest_pass': 1364.25, 'closest_earlier_miss': -580.38, 'plan': 51.06, 'plan_trough': '2024-05-14', 'plan_no_changes': -8.94}
+request_113 thr=1.0075 INR req=36500.0 min=82300.0 block=173530.00 bind=earliest_pass margin=515.68 (0.30% of block) driver=dining 4490.00 x5 (first 2026-09-11, step 7d, fixed) d3%=673.50
+   base: affordable_later/wait; earliest=2026-09-15; changes=none; safe=23850
+   0.97: (same)
+   1.03: affordable_later/wait; earliest=2026-10-15; changes=none; safe=23046.3
+   m0={'full_today': -12650.0, 'earliest_pass': 515.68, 'closest_earlier_miss': -12650.0, 'plan': 515.68, 'plan_trough': '2026-10-14'}
+   m103={'full_today': -13453.7, 'earliest_pass': 4738.16, 'closest_earlier_miss': -2045.42, 'plan': 4738.16, 'plan_trough': '2026-11-14'}
+request_118 thr=0.9875 EUR req=738.1 min=600.0 block=963.00 bind=plan_no_changes margin=-9.70 (-1.01% of block) driver=groceries 30.00 x10 (first 2024-12-13, step 7d, fixed) d3%=9.00
+   base: affordable_with_plan/installments; earliest=2025-01-15; changes=reduce_to:event_10912:11; safe=650.51
+   0.97: affordable_with_plan/installments; earliest=2025-01-15; changes=none; safe=655.1
+   1.03: affordable_with_plan/installments; earliest=2025-02-15; changes=reduce_to:event_10912:11|reduce_to:event_10914:14; safe=645.92
+   m0={'full_today': -87.59, 'earliest_pass': 19.81, 'closest_earlier_miss': -18.89, 'plan': 23.3, 'plan_trough': '2025-02-14', 'plan_no_changes': -9.7}
+   m97={'full_today': -83.0, 'earliest_pass': 44.56, 'closest_earlier_miss': -4.67, 'plan': 15.05, 'plan_trough': '2025-02-14'}
+   m103={'full_today': -92.18, 'earliest_pass': 611.92, 'closest_earlier_miss': -4.94, 'plan': 64.7, 'plan_trough': '2025-02-14', 'plan_no_changes': -34.45}
+request_119 thr=1.015 INR req=203500.0 min=151200.0 block=175310.00 bind=plan margin=1861.00 (1.06% of block) driver=groceries 7540.00 x7 (first 2025-05-09, step 10d, fixed) d3%=1583.40
+   base: affordable_with_plan/installments; earliest=2025-06-15; changes=reduce_to:event_11057:2370; safe=54671.01
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2025-07-15; changes=reduce_to:event_11057:2370|reduce_to:event_11016:2655; safe=53607.21
+   m0={'full_today': -148828.99, 'earliest_pass': 2891.01, 'closest_earlier_miss': -72968.99, 'plan': 1861.0, 'plan_trough': '2025-07-14', 'plan_no_changes': -5249.0}
+   m103={'full_today': -149892.79, 'earliest_pass': 152521.71, 'closest_earlier_miss': -1734.99, 'plan': 3290.2, 'plan_trough': '2025-07-14', 'plan_no_changes': -9875.0}
+request_124 thr=1.005 EUR req=3104.2 min=1600.0 block=1662.00 bind=plan margin=4.40 (0.26% of block) driver=groceries 101.00 x5 (first 2024-06-08, step 14d, fixed) d3%=15.15
+   base: affordable_with_plan/installments; earliest=2024-07-15; changes=stop:event_11448; safe=1244.56
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2024-08-15; changes=stop:event_11448|reduce_to:event_11480:38; safe=1232.44
+   m0={'full_today': -1859.64, 'earliest_pass': 26.56, 'closest_earlier_miss': -916.54, 'plan': 4.4, 'plan_trough': '2024-08-12', 'plan_no_changes': -97.6}
+   m103={'full_today': -1871.76, 'earliest_pass': 2357.7, 'closest_earlier_miss': -15.86, 'plan': 82.82, 'plan_trough': '2024-08-12', 'plan_no_changes': -140.02}
+request_125 thr=0.995 ZAR req=6468.0 min=11300.0 block=22375.80 bind=full_today margin=-133.33 (-0.60% of block) driver=utilities 1038.20 x1 (first 2025-11-06, step 30d, fixed) d3%=31.15
+   base: affordable_with_plan/full_payment; earliest=2025-11-15; changes=stop:event_11519|reduce_to:event_11602:223.30; safe=6334.67
+   0.97: affordable_with_plan/full_payment; earliest=2025-11-15; changes=stop:event_11519; safe=6434.29
+   1.03: (same)
+   m0={'full_today': -133.33, 'earliest_pass': 2655.57, 'closest_earlier_miss': -133.33, 'plan': 207.67, 'plan_trough': '2025-11-14', 'plan_no_changes': -133.33}
+   m97={'full_today': -33.71, 'earliest_pass': 2982.55, 'closest_earlier_miss': -33.71, 'plan': 83.99, 'plan_trough': '2025-11-14', 'plan_no_changes': -33.71}
+request_131 thr=1.0025 USD req=1855.2 min=1100.0 block=1488.00 bind=plan margin=0.54 (0.04% of block) driver=groceries 58.00 x11 (first 2025-05-10, step 7d, fixed) d3%=19.14
+   base: affordable_with_plan/installments; earliest=2025-07-23; changes=reduce_to:event_12065:21.20; safe=1178.96
+   0.97: affordable_with_plan/installments; earliest=2025-06-23; changes=reduce_to:event_12065:21.20; safe=1189.34
+   1.03: not_affordable/not_recommended; earliest=2025-07-23; changes=none; safe=1168.58
+   m0={'full_today': -676.24, 'earliest_pass': 1553.36, 'closest_earlier_miss': -20.64, 'plan': 0.54, 'plan_trough': '2025-07-20', 'plan_no_changes': -94.86}
+   m97={'full_today': -665.86, 'earliest_pass': 22.26, 'closest_earlier_miss': -366.42, 'plan': 38.67, 'plan_trough': '2025-07-20', 'plan_no_changes': -51.96}
+   m103={'full_today': -686.62, 'earliest_pass': 1508.72, 'closest_earlier_miss': -63.54}
+request_132 thr=1.005 USD req=379.86 min=1100.0 block=1992.00 bind=earliest_pass margin=2.49 (0.12% of block) driver=dining 52.00 x5 (first 2026-01-11, step 7d, fixed) d3%=7.80
+   base: affordable_later/wait; earliest=2026-01-15; changes=none; safe=257.55
+   0.97: (same)
+   1.03: affordable_later/wait; earliest=2026-02-15; changes=none; safe=248.16
+   m0={'full_today': -122.31, 'earliest_pass': 2.49, 'closest_earlier_miss': -122.31, 'plan': 2.49, 'plan_trough': '2026-02-13'}
+   m103={'full_today': -131.7, 'earliest_pass': 77.52, 'closest_earlier_miss': -27.09, 'plan': 77.52, 'plan_trough': '2026-03-14'}
+request_136 thr=1.0275 USD req=560.4 min=1100.0 block=1683.00 bind=plan margin=9.08 (0.54% of block) driver=groceries 63.00 x2 (first 2024-06-07, step 7d, fixed) d3%=3.78
+   base: affordable_with_plan/full_payment; earliest=2024-06-15; changes=reduce_to:event_12498:27.20; safe=528.68
+   0.97: (same)
+   1.03: affordable_later/wait; earliest=2024-06-15; changes=none; safe=516.65
+   m0={'full_today': -31.72, 'earliest_pass': 335.68, 'closest_earlier_miss': -31.72, 'plan': 9.08, 'plan_trough': '2024-06-14', 'plan_no_changes': -31.72}
+   m103={'full_today': -43.75, 'earliest_pass': 306.82, 'closest_earlier_miss': -43.75, 'plan': 306.82, 'plan_trough': '2024-07-12'}
+request_139 thr=0.975 USD req=2316.0 min=1500.0 block=2196.00 bind=closest_earlier_miss margin=-46.16 (-2.10% of block) driver=groceries 70.00 x12 (first 2024-09-11, step 7d, fixed) d3%=25.20
+   base: not_affordable/not_recommended; earliest=2024-11-15; changes=none; safe=1323.84
+   0.97: not_affordable/not_recommended; earliest=2024-10-15; changes=none; safe=1333.5
+   1.03: (same)
+   m0={'full_today': -992.16, 'earliest_pass': 1462.84, 'closest_earlier_miss': -46.16}
+   m97={'full_today': -982.5, 'earliest_pass': 10.9, 'closest_earlier_miss': -429.54}
+request_145 thr=0.98 INR req=217400.0 min=155400.0 block=322530.00 bind=plan margin=11558.00 (3.58% of block) driver=groceries 9650.00 x10 (first 2024-03-11, step 7d, fixed) d3%=2895.00
+   base: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_13342|reduce_to:event_13341:2920|reduce_to:event_13409:3335; safe=27478.66
+   0.97: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_13342|reduce_to:event_13341:2920; safe=29067.46
+   1.03: (same)
+   m0={'full_today': -189921.34, 'earliest_pass': 136358.66, 'closest_earlier_miss': -83051.34, 'plan': 11558.0, 'plan_trough': '2024-05-14', 'plan_no_changes': -16382.0}
+   m97={'full_today': -188332.54, 'earliest_pass': 146034.56, 'closest_earlier_miss': -74533.14, 'plan': 3401.2, 'plan_trough': '2024-05-14', 'plan_no_changes': -7863.8}
+request_147 thr=1.0125 EUR req=1129.7 min=900.0 block=1383.00 bind=plan margin=3.90 (0.28% of block) driver=utilities 84.00 x1 (first 2026-04-08, step 30d, fixed) d3%=2.52
+   base: affordable_with_plan/installments; earliest=2026-05-15; changes=stop:event_13520; safe=386.53
+   0.97: affordable_with_plan/installments; earliest=2026-05-15; changes=none; safe=396.01
+   1.03: affordable_with_plan/installments; earliest=2026-05-15; changes=stop:event_13520|stop:event_13521; safe=377.05
+   m0={'full_today': -743.17, 'earliest_pass': 400.43, 'closest_earlier_miss': -171.37, 'plan': 3.9, 'plan_trough': '2026-04-14', 'plan_no_changes': -5.1}
+   m97={'full_today': -733.69, 'earliest_pass': 437.15, 'closest_earlier_miss': -148.27, 'plan': 4.38, 'plan_trough': '2026-04-14'}
+   m103={'full_today': -752.65, 'earliest_pass': 363.71, 'closest_earlier_miss': -194.47, 'plan': 24.42, 'plan_trough': '2026-04-14', 'plan_no_changes': -14.58}
+request_148 thr=0.995 ZAR req=22242.0 min=20000.0 block=41186.00 bind=closest_earlier_miss margin=-150.12 (-0.36% of block) driver=groceries 1378.40 x1 (first 2024-06-11, step 7d, fixed) d3%=41.35
+   base: affordable_with_plan/installments; earliest=2024-08-15; changes=stop:event_13591|stop:event_13592; safe=7134.08
+   0.97: affordable_with_plan/installments; earliest=2024-07-15; changes=stop:event_13591|stop:event_13592; safe=7268.82
+   1.03: (same)
+   m0={'full_today': -15107.92, 'earliest_pass': 29874.88, 'closest_earlier_miss': -150.12, 'plan': 327.72, 'plan_trough': '2024-06-14', 'plan_no_changes': -576.48}
+   m97={'full_today': -14973.17, 'earliest_pass': 917.01, 'closest_earlier_miss': -5924.12, 'plan': 462.47, 'plan_trough': '2024-06-14', 'plan_no_changes': -441.73}
+request_149 thr=1.0025 ZAR req=36652.0 min=42100.0 block=52466.40 bind=plan margin=45.99 (0.09% of block) driver=groceries 1826.00 x10 (first 2025-11-09, step 7d, fixed) d3%=547.80
+   base: affordable_with_plan/installments; earliest=2025-12-15; changes=none; safe=22279.88
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2025-12-15; changes=stop:event_13702|reduce_to:event_13703:1013.76; safe=21961.38
+   m0={'full_today': -14372.12, 'earliest_pass': 1512.08, 'closest_earlier_miss': -7343.02, 'plan': 45.99, 'plan_trough': '2026-01-13'}
+   m103={'full_today': -14690.61, 'earliest_pass': 89.48, 'closest_earlier_miss': -8240.96, 'plan': 4512.31, 'plan_trough': '2026-01-13', 'plan_no_changes': -1376.61}
+request_150 thr=1.0225 EUR req=496.1 min=700.0 block=1462.00 bind=plan margin=23.70 (1.62% of block) driver=dining 36.00 x10 (first 2026-01-07, step 7d, fixed) d3%=10.80
+   base: affordable_with_plan/installments; earliest=2026-03-15; changes=stop:event_13785|reduce_to:event_13786:12.50|reduce_to:event_13787:16; safe=273.44
+   0.97: (same)
+   1.03: not_affordable/not_recommended; earliest=2026-03-15; changes=none; safe=266.6
+   m0={'full_today': -222.66, 'earliest_pass': 575.79, 'closest_earlier_miss': -83.96, 'plan': 23.7, 'plan_trough': '2026-03-13', 'plan_no_changes': -103.8}
+   m103={'full_today': -229.5, 'earliest_pass': 531.93, 'closest_earlier_miss': -120.8}
+request_163 thr=1.015 IDR req=19304000.0 min=26728700.0 block=37311600.00 bind=plan margin=455864.27 (1.22% of block) driver=groceries 1155900.00 x9 (first 2024-09-14, step 7d, fixed) d3%=312093.00
+   base: affordable_with_plan/installments; earliest=2024-10-15; changes=none; safe=10074724.26
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2024-10-15; changes=stop:event_14953; safe=9911551.26
+   m0={'full_today': -9229275.74, 'earliest_pass': 1228024.26, 'closest_earlier_miss': -4367675.74, 'plan': 455864.27, 'plan_trough': '2024-11-14'}
+   m103={'full_today': -9392448.74, 'earliest_pass': 296596.26, 'closest_earlier_miss': -4925987.74, 'plan': 151436.27, 'plan_trough': '2024-11-14', 'plan_no_changes': -475563.73}
+request_176 thr=1.03 EUR req=1239.7 min=600.0 block=942.00 bind=best_suffix margin=-808.15 (-85.79% of block) driver=groceries 39.00 x12 (first 2025-02-07, step 7d, fixed) d3%=14.04
+   base: not_affordable/not_recommended; earliest=-; changes=none; safe=24.35
+   0.97: (same)
+   1.03: not_affordable/not_recommended; earliest=-; changes=none; safe=0
+   m0={'full_today': -1215.35, 'best_suffix': -808.15}
+   m103={'full_today': -1240.58, 'best_suffix': -836.41}
+request_183 thr=1.005 IDR req=26866000.0 min=11878300.0 block=31523000.00 bind=plan margin=134474.93 (0.43% of block) driver=transport 513100.00 x14 (first 2026-04-08, step 5d, fixed) d3%=215502.00
+   base: affordable_with_plan/installments; earliest=2026-05-15; changes=none; safe=23041523.74
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2026-05-15; changes=stop:event_16813|stop:event_16814; safe=22903775.74
+   m0={'full_today': -3824476.26, 'earliest_pass': 1209114.94, 'closest_earlier_miss': -1025480.66, 'plan': 134474.93, 'plan_trough': '2026-06-14'}
+   m103={'full_today': -3962224.26, 'earliest_pass': 393822.94, 'closest_earlier_miss': -1493534.66, 'plan': 1325582.93, 'plan_trough': '2026-06-14', 'plan_no_changes': -680817.07}
+request_195 thr=1.0075 EUR req=1170.4 min=700.0 block=1697.00 bind=plan margin=10.46 (0.62% of block) driver=dining 36.00 x10 (first 2026-01-10, step 7d, fixed) d3%=10.80
+   base: affordable_with_plan/installments; earliest=2026-02-15; changes=none; safe=967.18
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2026-02-15; changes=reduce_to:event_17955:12; safe=959.38
+   m0={'full_today': -203.22, 'earliest_pass': 57.28, 'closest_earlier_miss': -90.97, 'plan': 10.46, 'plan_trough': '2026-03-14'}
+   m103={'full_today': -211.02, 'earliest_pass': 13.0, 'closest_earlier_miss': -117.55, 'plan': 2.18, 'plan_trough': '2026-03-14', 'plan_no_changes': -33.82}
+request_217 thr=1.02 ZAR req=37180.0 min=26800.0 block=47283.60 bind=plan margin=777.53 (1.64% of block) driver=groceries 1567.60 x10 (first 2024-03-10, step 7d, fixed) d3%=470.28
+   base: affordable_with_plan/installments; earliest=2024-05-15; changes=none; safe=19601.47
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_19978; safe=19377.84
+   m0={'full_today': -17578.53, 'earliest_pass': 18815.47, 'closest_earlier_miss': -10624.33, 'plan': 777.53, 'plan_trough': '2024-05-13'}
+   m103={'full_today': -17802.16, 'earliest_pass': 17396.96, 'closest_earlier_miss': -11863.43, 'plan': 115.93, 'plan_trough': '2024-05-13', 'plan_no_changes': -461.57}
+request_225 thr=1.0125 IDR req=22059000.0 min=17670700.0 block=33496500.00 bind=plan margin=318329.60 (0.95% of block) driver=groceries 972000.00 x10 (first 2026-07-11, step 7d, fixed) d3%=291600.00
+   base: affordable_with_plan/installments; earliest=2026-09-15; changes=stop:event_20650|reduce_to:event_20649:314450; safe=9560209.6
+   0.97: affordable_with_plan/installments; earliest=2026-09-15; changes=stop:event_20650; safe=9715585.6
+   1.03: not_affordable/not_recommended; earliest=2026-09-15; changes=none; safe=9404833.6
+   m0={'full_today': -12498790.4, 'earliest_pass': 12876769.6, 'closest_earlier_miss': -7694730.4, 'plan': 318329.6, 'plan_trough': '2026-09-13', 'plan_no_changes': -929970.4}
+   m97={'full_today': -12343414.4, 'earliest_pass': 13881664.6, 'closest_earlier_miss': -6819390.4, 'plan': 250319.6, 'plan_trough': '2026-09-13', 'plan_no_changes': -54630.4}
+   m103={'full_today': -12654166.4, 'earliest_pass': 11871874.6, 'closest_earlier_miss': -8570070.4}
+request_229 thr=1.0275 EUR req=1526.8 min=1000.0 block=1530.00 bind=plan margin=35.34 (2.31% of block) driver=groceries 46.00 x10 (first 2024-03-09, step 7d, fixed) d3%=13.80
+   base: affordable_with_plan/installments; earliest=2024-05-15; changes=none; safe=433.52
+   0.97: (same)
+   1.03: affordable_with_plan/installments; earliest=2024-05-15; changes=stop:event_21031; safe=426.35
+   m0={'full_today': -1093.28, 'earliest_pass': 667.12, 'closest_earlier_miss': -432.88, 'plan': 35.34, 'plan_trough': '2024-05-14'}
+   m103={'full_today': -1100.45, 'earliest_pass': 621.22, 'closest_earlier_miss': -472.84, 'plan': 25.38, 'plan_trough': '2024-05-14', 'plan_no_changes': -4.62}
+request_231 thr=1.005 ZAR req=35706.0 min=24300.0 block=71501.40 bind=plan margin=201.15 (0.28% of block) driver=dining 1691.80 x10 (first 2026-01-07, step 7d, reducible) d3%=507.54
+   base: affordable_with_plan/installments; earliest=2026-02-15; changes=stop:event_21223; safe=30665.49
+   0.97: affordable_with_plan/installments; earliest=2026-02-15; changes=none; safe=31051.95
+   1.03: affordable_with_plan/installments; earliest=2026-03-15; changes=stop:event_21223|stop:event_21224; safe=30279.03
+   m0={'full_today': -5040.51, 'earliest_pass': 966.09, 'closest_earlier_miss': -2640.41, 'plan': 201.15, 'plan_trough': '2026-03-14', 'plan_no_changes': -462.15}
+   m97={'full_today': -4654.05, 'earliest_pass': 2807.77, 'closest_earlier_miss': -1508.25, 'plan': 1379.53, 'plan_trough': '2026-03-14'}
+   m103={'full_today': -5426.97, 'earliest_pass': 32708.85, 'closest_earlier_miss': -875.59, 'plan': 1072.07, 'plan_trough': '2026-03-14', 'plan_no_changes': -2303.83}
+request_233 thr=1.015 IDR req=6241000.0 min=10365700.0 block=19590600.00 bind=plan margin=0.00 (0.00% of block) driver=groceries 752400.00 x1 (first 2025-11-12, step 7d, fixed) d3%=22572.00
+   base: affordable_with_plan/partial_payment; earliest=2025-11-15; changes=none; safe=3736100
+   0.97: affordable_with_plan/partial_payment; earliest=2025-11-15; changes=none; safe=3788063
+   1.03: affordable_with_plan/partial_payment; earliest=2025-12-15; changes=none; safe=3684137
+   m0={'full_today': -2504900.0, 'earliest_pass': 111800.0, 'closest_earlier_miss': -2504900.0, 'plan': 0.0, 'plan_trough': '2025-11-14', 'inst673': 490780.0}
+   m97={'full_today': -2452937.0, 'earliest_pass': 370490.0, 'closest_earlier_miss': -2452937.0, 'plan': 0.0, 'plan_trough': '2025-11-14', 'inst673': 542743.0}
+   m103={'full_today': -2556863.0, 'earliest_pass': 1488111.0, 'closest_earlier_miss': -146890.0, 'plan': 0.0, 'plan_trough': '2025-11-14', 'inst673': 438817.0}
+request_266 thr=1.0275 EUR req=935.0 min=900.0 block=1053.00 bind=plan margin=24.93 (2.37% of block) driver=groceries 42.00 x10 (first 2025-08-09, step 7d, fixed) d3%=12.60
+   base: affordable_with_plan/installments; earliest=2025-09-15; changes=none; safe=769.72
+   0.97: (same)
+   1.03: not_affordable/not_recommended; earliest=2025-09-15; changes=none; safe=763.63
+   m0={'full_today': -165.28, 'earliest_pass': 62.32, 'closest_earlier_miss': -72.48, 'plan': 24.93, 'plan_trough': '2025-10-14'}
+   m103={'full_today': -171.37, 'earliest_pass': 33.91, 'closest_earlier_miss': -90.36}
+request_267 thr=0.995 EUR req=1925.0 min=1500.0 block=2597.00 bind=plan_no_changes margin=-6.41 (-0.25% of block) driver=transport 45.00 x14 (first 2026-01-06, step 5d, fixed) d3%=18.90
+   base: affordable_with_plan/installments; earliest=2026-02-15; changes=stop:event_24573; safe=1642.98
+   0.97: affordable_with_plan/installments; earliest=2026-02-15; changes=none; safe=1653.93
+   1.03: (same)
+   m0={'full_today': -282.02, 'earliest_pass': 70.58, 'closest_earlier_miss': -129.72, 'plan': 149.59, 'plan_trough': '2026-03-14', 'plan_no_changes': -6.41}
+   m97={'full_today': -271.07, 'earliest_pass': 137.27, 'closest_earlier_miss': -90.18, 'plan': 60.28, 'plan_trough': '2026-03-14'}
+request_269 thr=0.9725 ZAR req=15490.0 min=23100.0 block=39571.20 bind=closest_earlier_miss margin=-511.30 (-1.29% of block) driver=groceries 1365.40 x10 (first 2025-11-09, step 7d, fixed) d3%=409.62
+   base: affordable_later/wait; earliest=2025-12-15; changes=none; safe=9891.8
+   0.97: affordable_later/wait; earliest=2025-11-15; changes=none; safe=10046.68
+   1.03: (same)
+   m0={'full_today': -5598.2, 'earliest_pass': 4988.4, 'closest_earlier_miss': -511.3, 'plan': 4988.4, 'plan_trough': '2026-01-13'}
+   m97={'full_today': -5443.32, 'earliest_pass': 80.26, 'closest_earlier_miss': -5443.32, 'plan': 80.26, 'plan_trough': '2025-12-14'}
+request_274 thr=0.995 EUR req=2713.7 min=1800.0 block=4069.00 bind=plan_no_changes margin=-12.74 (-0.31% of block) driver=dining 84.00 x11 (first 2024-12-05, step 7d, fixed) d3%=27.72
+   base: affordable_with_plan/installments; earliest=2025-01-15; changes=stop:event_25179; safe=2188.31
+   0.97: affordable_with_plan/installments; earliest=2025-01-15; changes=none; safe=2209.22
+   1.03: affordable_with_plan/installments; earliest=2025-02-15; changes=stop:event_25179|reduce_to:event_25180:25; safe=2167.4
+   m0={'full_today': -525.39, 'earliest_pass': 95.81, 'closest_earlier_miss': -172.79, 'plan': 35.26, 'plan_trough': '2025-02-13', 'plan_no_changes': -12.74}
+   m97={'full_today': -504.48, 'earliest_pass': 202.82, 'closest_earlier_miss': -110.09, 'plan': 94.27, 'plan_trough': '2025-02-13'}
+   m103={'full_today': -546.3, 'earliest_pass': 1955.74, 'closest_earlier_miss': -11.2, 'plan': 3.25, 'plan_trough': '2025-02-13', 'plan_no_changes': -119.75}

@@ -1,0 +1,58 @@
+request_53 user_53 scale=1.0 date=2025-11-07 amount=1699.2 by=2026-01-20 partial=False
+  balance=3523.42 min=2100.0 methods=['installments'] max_m=12
+  series:
+    rent               monthly  step= 30 n= 6 amt=      774.00 flex=fixed                  min=None latest=event_4926 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 6 amt=      167.00 flex=fixed                  min=None latest=event_4927 next=['2025-12-06', '2026-01-06']
+    education          monthly  step= 30 n= 5 amt=      169.00 flex=fixed                  min=None latest=event_4922 next=['2025-11-08', '2025-12-08', '2026-01-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=      463.00 flex=fixed                  min=None latest=event_4923 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    music_subscription monthly  step= 30 n= 5 amt=       36.00 flex=fixed                  min=None latest=event_4924 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    delivery_membership monthly  step= 30 n= 5 amt=       41.00 flex=stoppable              min=None latest=event_4925 next=['2025-11-13', '2025-12-13', '2026-01-13']
+    groceries          periodic step=  7 n=26 amt=      109.00 flex=fixed                  min=None latest=event_4953 next=['2025-11-12', '2025-11-19', '2025-11-26', '2025-12-03']
+    transport          periodic step=  7 n=26 amt=       57.00 flex=fixed                  min=None latest=event_4979 next=['2025-11-13', '2025-11-20', '2025-11-27', '2025-12-04']
+    dining             periodic step= 14 n=13 amt=       89.00 flex=reducible              min=44.5 latest=event_4992 next=['2025-11-14', '2025-11-28', '2025-12-12', '2025-12-26']
+  safe=459.42 earliest=2026-01-15 -> installments/affordable_with_plan plan=2025-11-21:589.06|2025-12-19:589.06|2026-01-16:589.06 changes=stop:event_4925
+    cand installments     deadline=True changes=1 total=1767.18 start=2025-11-21 n=3
+  daily projection (days with flows, no payment applied):
+    2025-11-07        3523.42  
+    2025-11-08        3354.42  education: School fee payment:-169.00
+    2025-11-11        2855.42  debt_repayment: Vehicle loan payment:-463.00, music_subscription: Music subscription:-36.00
+    2025-11-12        2746.42  groceries: Weekly produce market:-109.00
+    2025-11-13        2648.42  delivery_membership: Delivery service plan:-41.00, transport: Local taxi:-57.00
+    2025-11-14        2559.42  dining: Bakery and snacks:-89.00
+    2025-11-15        5439.42  salary:+2880.00
+    2025-11-19        5330.42  groceries: Weekly produce market:-109.00
+    2025-11-20        5273.42  transport: Local taxi:-57.00
+    2025-11-26        5164.42  groceries: Weekly produce market:-109.00
+    2025-11-27        5107.42  transport: Local taxi:-57.00
+    2025-11-28        5018.42  dining: Bakery and snacks:-89.00
+    2025-12-02        4244.42  rent: Residential rent payment:-774.00
+    2025-12-03        4135.42  groceries: Weekly produce market:-109.00
+    2025-12-04        4078.42  transport: Local taxi:-57.00
+    2025-12-06        3911.42  utilities: Water and power payment:-167.00
+    2025-12-08        3742.42  education: School fee payment:-169.00
+    2025-12-10        3633.42  groceries: Weekly produce market:-109.00
+    2025-12-11        3077.42  debt_repayment: Vehicle loan payment:-463.00, music_subscription: Music subscription:-36.00, transport: Local taxi:-57.00
+    2025-12-12        2988.42  dining: Bakery and snacks:-89.00
+    2025-12-13        2947.42  delivery_membership: Delivery service plan:-41.00
+    2025-12-15        5827.42  salary:+2880.00
+    2025-12-17        5718.42  groceries: Weekly produce market:-109.00
+    2025-12-18        5661.42  transport: Local taxi:-57.00
+    2025-12-24        5552.42  groceries: Weekly produce market:-109.00
+    2025-12-25        5495.42  transport: Local taxi:-57.00
+    2025-12-26        5406.42  dining: Bakery and snacks:-89.00
+    2025-12-31        5297.42  groceries: Weekly produce market:-109.00
+    2026-01-01        5240.42  transport: Local taxi:-57.00
+    2026-01-02        4466.42  rent: Residential rent payment:-774.00
+    2026-01-06        4299.42  utilities: Water and power payment:-167.00
+    2026-01-07        4190.42  groceries: Weekly produce market:-109.00
+    2026-01-08        3964.42  education: School fee payment:-169.00, transport: Local taxi:-57.00
+    2026-01-09        3875.42  dining: Bakery and snacks:-89.00
+    2026-01-11        3376.42  debt_repayment: Vehicle loan payment:-463.00, music_subscription: Music subscription:-36.00
+    2026-01-13        3335.42  delivery_membership: Delivery service plan:-41.00
+    2026-01-14        3226.42  groceries: Weekly produce market:-109.00
+    2026-01-15        6049.42  salary:+2880.00, transport: Local taxi:-57.00
+    2026-01-21        5940.42  groceries: Weekly produce market:-109.00
+    2026-01-22        5883.42  transport: Local taxi:-57.00
+    2026-01-23        5794.42  dining: Bakery and snacks:-89.00
+    2026-01-28        5685.42  groceries: Weekly produce market:-109.00
+    2026-01-29        5628.42  transport: Local taxi:-57.00

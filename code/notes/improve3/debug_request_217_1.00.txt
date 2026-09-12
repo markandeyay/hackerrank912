@@ -1,0 +1,57 @@
+request_217 user_217 scale=1.0 date=2024-03-05 amount=37180.0 by=2024-05-21 partial=True
+  balance=58401.97 min=26800.0 methods=['installments'] max_m=11
+  series:
+    rent               monthly  step= 30 n= 6 amt=    10472.00 flex=fixed                  min=None latest=event_19980 next=['2024-04-02', '2024-05-02']
+    utilities          monthly  step= 30 n= 5 amt=     2397.20 flex=fixed                  min=None latest=event_19975 next=['2024-03-06', '2024-04-06', '2024-05-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=     3619.00 flex=fixed                  min=None latest=event_19976 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    streaming          monthly  step= 30 n= 5 amt=      734.80 flex=reducible_or_stoppable min=367.4 latest=event_19977 next=['2024-03-09', '2024-04-09', '2024-05-09']
+    cloud_storage      monthly  step= 30 n= 5 amt=      192.50 flex=stoppable              min=None latest=event_19978 next=['2024-03-12', '2024-04-12', '2024-05-12']
+    shopping           monthly  step= 30 n= 5 amt=     1403.60 flex=reducible              min=561.44 latest=event_19979 next=['2024-03-12', '2024-04-12', '2024-05-12']
+    groceries          periodic step=  7 n=26 amt=     1567.60 flex=fixed                  min=None latest=event_20006 next=['2024-03-10', '2024-03-17', '2024-03-24', '2024-03-31']
+    transport          periodic step=  7 n=26 amt=      759.20 flex=fixed                  min=None latest=event_20032 next=['2024-03-11', '2024-03-18', '2024-03-25', '2024-04-01']
+    dining             periodic step= 14 n=13 amt=     1326.60 flex=reducible              min=663.3 latest=event_20045 next=['2024-03-12', '2024-03-26', '2024-04-09', '2024-04-23']
+  safe=19601.47 earliest=2024-05-15 -> installments/affordable_with_plan plan=2024-03-19:12889.07|2024-04-19:12889.07|2024-05-20:12889.07 changes=none
+    cand installments     deadline=True changes=0 total=38667.21 start=2024-03-19 n=3
+  daily projection (days with flows, no payment applied):
+    2024-03-05       58401.97  
+    2024-03-06       56004.77  utilities: Household utility payment:-2397.20
+    2024-03-09       55269.97  streaming: Video streaming plan:-734.80
+    2024-03-10       53702.37  groceries: Weekly produce market:-1567.60
+    2024-03-11       49324.17  debt_repayment: Education loan instalment:-3619.00, transport: Commuter pass:-759.20
+    2024-03-12       46401.47  cloud_storage: Shared storage plan:-192.50, shopping: Online retail purchases:-1403.60, dining: Neighbourhood restaurant:-1326.60
+    2024-03-15       81821.47  salary:+35420.00
+    2024-03-17       80253.87  groceries: Weekly produce market:-1567.60
+    2024-03-18       79494.67  transport: Commuter pass:-759.20
+    2024-03-24       77927.07  groceries: Weekly produce market:-1567.60
+    2024-03-25       77167.87  transport: Commuter pass:-759.20
+    2024-03-26       75841.27  dining: Neighbourhood restaurant:-1326.60
+    2024-03-31       74273.67  groceries: Weekly produce market:-1567.60
+    2024-04-01       73514.47  transport: Commuter pass:-759.20
+    2024-04-02       63042.47  rent: Landlord standing order:-10472.00
+    2024-04-06       60645.27  utilities: Household utility payment:-2397.20
+    2024-04-07       59077.67  groceries: Weekly produce market:-1567.60
+    2024-04-08       58318.47  transport: Commuter pass:-759.20
+    2024-04-09       56257.07  streaming: Video streaming plan:-734.80, dining: Neighbourhood restaurant:-1326.60
+    2024-04-11       52638.07  debt_repayment: Education loan instalment:-3619.00
+    2024-04-12       51041.97  cloud_storage: Shared storage plan:-192.50, shopping: Online retail purchases:-1403.60
+    2024-04-14       49474.37  groceries: Weekly produce market:-1567.60
+    2024-04-15       84135.17  salary:+35420.00, transport: Commuter pass:-759.20
+    2024-04-21       82567.57  groceries: Weekly produce market:-1567.60
+    2024-04-22       81808.37  transport: Commuter pass:-759.20
+    2024-04-23       80481.77  dining: Neighbourhood restaurant:-1326.60
+    2024-04-28       78914.17  groceries: Weekly produce market:-1567.60
+    2024-04-29       78154.97  transport: Commuter pass:-759.20
+    2024-05-02       67682.97  rent: Landlord standing order:-10472.00
+    2024-05-05       66115.37  groceries: Weekly produce market:-1567.60
+    2024-05-06       62958.97  utilities: Household utility payment:-2397.20, transport: Commuter pass:-759.20
+    2024-05-07       61632.37  dining: Neighbourhood restaurant:-1326.60
+    2024-05-09       60897.57  streaming: Video streaming plan:-734.80
+    2024-05-11       57278.57  debt_repayment: Education loan instalment:-3619.00
+    2024-05-12       54114.87  cloud_storage: Shared storage plan:-192.50, shopping: Online retail purchases:-1403.60, groceries: Weekly produce market:-1567.60
+    2024-05-13       53355.67  transport: Commuter pass:-759.20
+    2024-05-15       88775.67  salary:+35420.00
+    2024-05-19       87208.07  groceries: Weekly produce market:-1567.60
+    2024-05-20       86448.87  transport: Commuter pass:-759.20
+    2024-05-21       85122.27  dining: Neighbourhood restaurant:-1326.60
+    2024-05-26       83554.67  groceries: Weekly produce market:-1567.60
+    2024-05-27       82795.47  transport: Commuter pass:-759.20

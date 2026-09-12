@@ -1,0 +1,57 @@
+request_96 user_96 scale=1.03 date=2026-01-03 amount=90200.0 by=2026-03-12 partial=False
+  balance=161635.49 min=56500.0 methods=['installments'] max_m=3
+  series:
+    rent               monthly  step= 30 n= 6 amt=    21400.00 flex=fixed                  min=None latest=event_8915 next=['2026-02-01', '2026-03-01']
+    utilities          monthly  step= 30 n= 5 amt=     5180.90 flex=fixed                  min=None latest=event_8910 next=['2026-01-05', '2026-02-05', '2026-03-05']
+    education          monthly  step= 30 n= 5 amt=     5260.00 flex=fixed                  min=None latest=event_8911 next=['2026-01-07', '2026-02-07', '2026-03-07']
+    debt_repayment     monthly  step= 30 n= 5 amt=     7900.00 flex=fixed                  min=None latest=event_8912 next=['2026-01-10', '2026-02-10', '2026-03-10']
+    music_subscription monthly  step= 30 n= 5 amt=     1005.00 flex=fixed                  min=None latest=event_8913 next=['2026-01-10', '2026-02-10', '2026-03-10']
+    delivery_membership monthly  step= 30 n= 5 amt=      775.00 flex=stoppable              min=None latest=event_8914 next=['2026-01-12', '2026-02-12', '2026-03-12']
+    groceries          periodic step=  7 n=26 amt=     3790.40 flex=fixed                  min=None latest=event_8941 next=['2026-01-07', '2026-01-14', '2026-01-21', '2026-01-28']
+    transport          periodic step=  7 n=26 amt=     1843.70 flex=fixed                  min=None latest=event_8967 next=['2026-01-08', '2026-01-15', '2026-01-22', '2026-01-29']
+    dining             periodic step= 14 n=13 amt=     3316.60 flex=reducible              min=1610.0 latest=event_8980 next=['2026-01-09', '2026-01-23', '2026-02-06', '2026-02-20']
+  safe=72273.49 earliest=2026-03-15 -> installments/affordable_with_plan plan=2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33 changes=stop:event_8914|reduce_to:event_8980:1610
+    cand installments     deadline=True changes=2 total=93807.99 start=2026-01-10 n=3
+  daily projection (days with flows, no payment applied):
+    2026-01-03      161635.49  
+    2026-01-05      156454.59  utilities: Municipal utilities:-5180.90
+    2026-01-07      147404.19  education: Child education fee:-5260.00, groceries: Bulk pantry shop:-3790.40
+    2026-01-08      145560.49  transport: Local taxi:-1843.70
+    2026-01-09      142243.89  dining: Quick-service meal:-3316.60
+    2026-01-10      133338.89  debt_repayment: Loan repayment:-7900.00, music_subscription: Music service subscription:-1005.00
+    2026-01-12      132563.89  delivery_membership: Food delivery membership:-775.00
+    2026-01-14      128773.49  groceries: Bulk pantry shop:-3790.40
+    2026-01-15      206929.79  salary:+80000.00, transport: Local taxi:-1843.70
+    2026-01-21      203139.39  groceries: Bulk pantry shop:-3790.40
+    2026-01-22      201295.69  transport: Local taxi:-1843.70
+    2026-01-23      197979.09  dining: Quick-service meal:-3316.60
+    2026-01-28      194188.69  groceries: Bulk pantry shop:-3790.40
+    2026-01-29      192344.99  transport: Local taxi:-1843.70
+    2026-02-01      170944.99  rent: Apartment rent transfer:-21400.00
+    2026-02-04      167154.59  groceries: Bulk pantry shop:-3790.40
+    2026-02-05      160129.99  utilities: Municipal utilities:-5180.90, transport: Local taxi:-1843.70
+    2026-02-06      156813.39  dining: Quick-service meal:-3316.60
+    2026-02-07      151553.39  education: Child education fee:-5260.00
+    2026-02-10      142648.39  debt_repayment: Loan repayment:-7900.00, music_subscription: Music service subscription:-1005.00
+    2026-02-11      138857.99  groceries: Bulk pantry shop:-3790.40
+    2026-02-12      136239.29  delivery_membership: Food delivery membership:-775.00, transport: Local taxi:-1843.70
+    2026-02-15      216239.29  salary:+80000.00
+    2026-02-18      212448.89  groceries: Bulk pantry shop:-3790.40
+    2026-02-19      210605.19  transport: Local taxi:-1843.70
+    2026-02-20      207288.59  dining: Quick-service meal:-3316.60
+    2026-02-25      203498.19  groceries: Bulk pantry shop:-3790.40
+    2026-02-26      201654.49  transport: Local taxi:-1843.70
+    2026-03-01      180254.49  rent: Apartment rent transfer:-21400.00
+    2026-03-04      176464.09  groceries: Bulk pantry shop:-3790.40
+    2026-03-05      169439.49  utilities: Municipal utilities:-5180.90, transport: Local taxi:-1843.70
+    2026-03-06      166122.89  dining: Quick-service meal:-3316.60
+    2026-03-07      160862.89  education: Child education fee:-5260.00
+    2026-03-10      151957.89  debt_repayment: Loan repayment:-7900.00, music_subscription: Music service subscription:-1005.00
+    2026-03-11      148167.49  groceries: Bulk pantry shop:-3790.40
+    2026-03-12      145548.79  delivery_membership: Food delivery membership:-775.00, transport: Local taxi:-1843.70
+    2026-03-15      225548.79  salary:+80000.00
+    2026-03-18      221758.39  groceries: Bulk pantry shop:-3790.40
+    2026-03-19      219914.69  transport: Local taxi:-1843.70
+    2026-03-20      216598.09  dining: Quick-service meal:-3316.60
+    2026-03-25      212807.69  groceries: Bulk pantry shop:-3790.40
+    2026-03-26      210963.99  transport: Local taxi:-1843.70

@@ -1,0 +1,47 @@
+request_68 user_68 scale=1.0 date=2025-02-07 amount=2091.6 by=2025-04-16 partial=False
+  balance=3657.83 min=1500.0 methods=['partial_payment', 'installments'] max_m=12
+  series:
+    rent               monthly  step= 30 n= 6 amt=      750.00 flex=fixed                  min=None latest=event_6332 next=['2025-03-01', '2025-04-01', '2025-05-01']
+    utilities          monthly  step= 30 n= 6 amt=      165.00 flex=fixed                  min=None latest=event_6333 next=['2025-03-05', '2025-04-05']
+    debt_repayment     monthly  step= 30 n= 5 amt=      178.00 flex=fixed                  min=None latest=event_6327 next=['2025-02-10', '2025-03-10', '2025-04-10']
+    healthcare         monthly  step= 30 n= 5 amt=      112.00 flex=fixed                  min=None latest=event_6328 next=['2025-02-09', '2025-03-09', '2025-04-09']
+    family_support     monthly  step= 30 n= 5 amt=      173.00 flex=fixed                  min=None latest=event_6329 next=['2025-02-12', '2025-03-12', '2025-04-12']
+    cloud_storage      monthly  step= 30 n= 5 amt=       10.00 flex=stoppable              min=None latest=event_6330 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    shopping           monthly  step= 30 n= 5 amt=       62.00 flex=reducible              min=24.8 latest=event_6331 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    groceries          periodic step=  7 n=26 amt=      111.00 flex=fixed                  min=None latest=event_6359 next=['2025-02-11', '2025-02-18', '2025-02-25', '2025-03-04']
+    transport          periodic step= 14 n=13 amt=       68.00 flex=fixed                  min=None latest=event_6372 next=['2025-02-12', '2025-02-26', '2025-03-12', '2025-03-26']
+  safe=1332.83 earliest=2025-03-23 -> installments/affordable_with_plan plan=2025-02-14:725.09|2025-03-14:725.09|2025-04-11:725.09 changes=stop:event_6330
+    cand installments     deadline=True changes=1 total=2175.27 start=2025-02-14 n=3
+  daily projection (days with flows, no payment applied):
+    2025-02-07        3657.83  
+    2025-02-09        3545.83  healthcare: Clinic payment:-112.00
+    2025-02-10        3367.83  debt_repayment: Vehicle loan payment:-178.00
+    2025-02-11        3184.83  cloud_storage: Online backup subscription:-10.00, shopping: Household shopping:-62.00, groceries: Bulk pantry shop:-111.00
+    2025-02-12        2943.83  family_support: Childcare contribution:-173.00, transport: Commuter pass:-68.00
+    2025-02-18        2832.83  groceries: Bulk pantry shop:-111.00
+    2025-02-23        5328.83  salary:+2496.00
+    2025-02-25        5217.83  groceries: Bulk pantry shop:-111.00
+    2025-02-26        5149.83  transport: Commuter pass:-68.00
+    2025-03-01        4399.83  rent: Apartment rent transfer:-750.00
+    2025-03-04        4288.83  groceries: Bulk pantry shop:-111.00
+    2025-03-05        4123.83  utilities: Municipal utilities:-165.00
+    2025-03-09        4011.83  healthcare: Clinic payment:-112.00
+    2025-03-10        3833.83  debt_repayment: Vehicle loan payment:-178.00
+    2025-03-11        3650.83  cloud_storage: Online backup subscription:-10.00, shopping: Household shopping:-62.00, groceries: Bulk pantry shop:-111.00
+    2025-03-12        3409.83  family_support: Childcare contribution:-173.00, transport: Commuter pass:-68.00
+    2025-03-18        3298.83  groceries: Bulk pantry shop:-111.00
+    2025-03-23        5794.83  salary:+2496.00
+    2025-03-25        5683.83  groceries: Bulk pantry shop:-111.00
+    2025-03-26        5615.83  transport: Commuter pass:-68.00
+    2025-04-01        4754.83  rent: Apartment rent transfer:-750.00, groceries: Bulk pantry shop:-111.00
+    2025-04-05        4589.83  utilities: Municipal utilities:-165.00
+    2025-04-08        4478.83  groceries: Bulk pantry shop:-111.00
+    2025-04-09        4298.83  healthcare: Clinic payment:-112.00, transport: Commuter pass:-68.00
+    2025-04-10        4120.83  debt_repayment: Vehicle loan payment:-178.00
+    2025-04-11        4048.83  cloud_storage: Online backup subscription:-10.00, shopping: Household shopping:-62.00
+    2025-04-12        3875.83  family_support: Childcare contribution:-173.00
+    2025-04-15        3764.83  groceries: Bulk pantry shop:-111.00
+    2025-04-22        3653.83  groceries: Bulk pantry shop:-111.00
+    2025-04-23        6081.83  salary:+2496.00, transport: Commuter pass:-68.00
+    2025-04-29        5970.83  groceries: Bulk pantry shop:-111.00
+    2025-05-01        5220.83  rent: Apartment rent transfer:-750.00

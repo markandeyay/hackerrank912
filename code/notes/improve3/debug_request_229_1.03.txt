@@ -1,0 +1,60 @@
+request_229 user_229 scale=1.03 date=2024-03-04 amount=1526.8 by=2024-05-23 partial=False
+  balance=1800.52 min=1000.0 methods=['installments'] max_m=4
+  series:
+    rent               monthly  step= 30 n= 6 amt=      366.30 flex=fixed                  min=None latest=event_21035 next=['2024-04-02', '2024-05-02']
+    utilities          monthly  step= 30 n= 5 amt=       74.16 flex=fixed                  min=None latest=event_21030 next=['2024-03-06', '2024-04-06', '2024-05-06']
+    music_subscription monthly  step= 30 n= 5 amt=       10.00 flex=stoppable              min=None latest=event_21031 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    delivery_membership monthly  step= 30 n= 5 amt=       16.00 flex=stoppable              min=None latest=event_21032 next=['2024-03-13', '2024-04-13', '2024-05-13']
+    gym                monthly  step= 30 n= 5 amt=       29.00 flex=fixed                  min=None latest=event_21033 next=['2024-03-10', '2024-04-10', '2024-05-10']
+    entertainment      monthly  step= 30 n= 5 amt=       43.26 flex=fixed                  min=None latest=event_21034 next=['2024-03-14', '2024-04-14', '2024-05-14']
+    groceries          periodic step=  7 n=26 amt=       47.38 flex=fixed                  min=None latest=event_21061 next=['2024-03-09', '2024-03-16', '2024-03-23', '2024-03-30']
+    transport          periodic step=  7 n=26 amt=       27.81 flex=fixed                  min=None latest=event_21087 next=['2024-03-10', '2024-03-17', '2024-03-24', '2024-03-31']
+    dining             periodic step= 14 n=13 amt=       53.56 flex=fixed                  min=None latest=event_21100 next=['2024-03-11', '2024-03-25', '2024-04-08', '2024-04-22']
+  safe=426.35 earliest=2024-05-15 -> installments/affordable_with_plan plan=2024-03-18:529.29|2024-04-18:529.29|2024-05-19:529.29 changes=stop:event_21031
+    cand installments     deadline=True changes=1 total=1587.87 start=2024-03-18 n=3
+  daily projection (days with flows, no payment applied):
+    2024-03-04        1800.52  
+    2024-03-06        1726.36  utilities: Household utility payment:-74.16
+    2024-03-08        1653.36  Scheduled bill payment retry:-73.00
+    2024-03-09        1605.98  groceries: Household groceries:-47.38
+    2024-03-10        1549.17  gym: Fitness club membership:-29.00, transport: Metro and bus fares:-27.81
+    2024-03-11        1485.61  music_subscription: Music subscription:-10.00, dining: Lunch with colleagues:-53.56
+    2024-03-13        1469.61  delivery_membership: Food delivery membership:-16.00
+    2024-03-14        1426.35  entertainment: Monthly entertainment spend:-43.26
+    2024-03-15        2724.35  salary:+1298.00
+    2024-03-16        2676.97  groceries: Household groceries:-47.38
+    2024-03-17        2649.16  transport: Metro and bus fares:-27.81
+    2024-03-23        2601.78  groceries: Household groceries:-47.38
+    2024-03-24        2573.97  transport: Metro and bus fares:-27.81
+    2024-03-25        2520.41  dining: Lunch with colleagues:-53.56
+    2024-03-30        2473.03  groceries: Household groceries:-47.38
+    2024-03-31        2445.22  transport: Metro and bus fares:-27.81
+    2024-04-02        2078.92  rent: Apartment rent transfer:-366.30
+    2024-04-06        1957.38  utilities: Household utility payment:-74.16, groceries: Household groceries:-47.38
+    2024-04-07        1929.57  transport: Metro and bus fares:-27.81
+    2024-04-08        1876.01  dining: Lunch with colleagues:-53.56
+    2024-04-10        1847.01  gym: Fitness club membership:-29.00
+    2024-04-11        1837.01  music_subscription: Music subscription:-10.00
+    2024-04-13        1773.63  delivery_membership: Food delivery membership:-16.00, groceries: Household groceries:-47.38
+    2024-04-14        1702.56  entertainment: Monthly entertainment spend:-43.26, transport: Metro and bus fares:-27.81
+    2024-04-15        3000.56  salary:+1298.00
+    2024-04-20        2953.18  groceries: Household groceries:-47.38
+    2024-04-21        2925.37  transport: Metro and bus fares:-27.81
+    2024-04-22        2871.81  dining: Lunch with colleagues:-53.56
+    2024-04-27        2824.43  groceries: Household groceries:-47.38
+    2024-04-28        2796.62  transport: Metro and bus fares:-27.81
+    2024-05-02        2430.32  rent: Apartment rent transfer:-366.30
+    2024-05-04        2382.94  groceries: Household groceries:-47.38
+    2024-05-05        2355.13  transport: Metro and bus fares:-27.81
+    2024-05-06        2227.41  utilities: Household utility payment:-74.16, dining: Lunch with colleagues:-53.56
+    2024-05-10        2198.41  gym: Fitness club membership:-29.00
+    2024-05-11        2141.03  music_subscription: Music subscription:-10.00, groceries: Household groceries:-47.38
+    2024-05-12        2113.22  transport: Metro and bus fares:-27.81
+    2024-05-13        2097.22  delivery_membership: Food delivery membership:-16.00
+    2024-05-14        2053.96  entertainment: Monthly entertainment spend:-43.26
+    2024-05-15        3351.96  salary:+1298.00
+    2024-05-18        3304.58  groceries: Household groceries:-47.38
+    2024-05-19        3276.77  transport: Metro and bus fares:-27.81
+    2024-05-20        3223.21  dining: Lunch with colleagues:-53.56
+    2024-05-25        3175.83  groceries: Household groceries:-47.38
+    2024-05-26        3148.02  transport: Metro and bus fares:-27.81

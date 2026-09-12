@@ -1,0 +1,57 @@
+request_55 user_55 scale=1.03 date=2026-06-08 amount=218600.0 by=2026-08-22 partial=False
+  balance=314341.19 min=124300.0 methods=['partial_payment', 'installments'] max_m=11
+  series:
+    rent               monthly  step= 30 n= 6 amt=    54400.00 flex=fixed                  min=None latest=event_5104 next=['2026-07-04', '2026-08-04']
+    utilities          monthly  step= 30 n= 5 amt=    14296.40 flex=fixed                  min=None latest=event_5099 next=['2026-06-08', '2026-07-08', '2026-08-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=    15550.00 flex=fixed                  min=None latest=event_5100 next=['2026-06-13', '2026-07-13', '2026-08-13']
+    streaming          monthly  step= 30 n= 5 amt=     5240.00 flex=stoppable              min=None latest=event_5101 next=['2026-06-11', '2026-07-11', '2026-08-11']
+    cloud_storage      monthly  step= 30 n= 5 amt=      855.00 flex=stoppable              min=None latest=event_5102 next=['2026-06-14', '2026-07-14', '2026-08-14']
+    shopping           monthly  step= 30 n= 5 amt=     6530.20 flex=reducible              min=2536.0 latest=event_5103 next=['2026-06-14', '2026-07-14', '2026-08-14']
+    groceries          periodic step=  7 n=25 amt=     9764.40 flex=fixed                  min=None latest=event_5129 next=['2026-06-14', '2026-06-22', '2026-06-29', '2026-07-06']
+    transport          periodic step=  7 n=25 amt=     4913.10 flex=fixed                  min=None latest=event_5154 next=['2026-06-09', '2026-06-16', '2026-06-23', '2026-06-30']
+    dining             periodic step= 14 n=13 amt=     5665.00 flex=reducible              min=2750.0 latest=event_5167 next=['2026-06-12', '2026-06-26', '2026-07-10', '2026-07-24']
+  safe=113427.09 earliest=2026-08-15 -> installments/affordable_with_plan plan=2026-06-11:75781.33|2026-07-12:75781.33|2026-08-12:75781.33 changes=stop:event_5102|stop:event_5101|reduce_to:event_5167:2750
+    cand installments     deadline=True changes=3 total=227343.99 start=2026-06-11 n=3
+  daily projection (days with flows, no payment applied):
+    2026-06-08      300044.79  utilities: Water and power payment:-14296.40
+    2026-06-09      295131.69  transport: Ride-hailing trip:-4913.10
+    2026-06-11      289891.69  streaming: Family streaming plan:-5240.00
+    2026-06-12      270426.69  Scheduled bill payment retry:-13800.00, dining: Family dinner:-5665.00
+    2026-06-13      254876.69  debt_repayment: Personal loan payment:-15550.00
+    2026-06-14      237727.09  cloud_storage: Online backup subscription:-855.00, shopping: Online retail purchases:-6530.20, groceries: Fresh food shop:-9764.40
+    2026-06-15      453727.09  salary:+216000.00
+    2026-06-16      448813.99  transport: Ride-hailing trip:-4913.10
+    2026-06-22      439049.59  groceries: Fresh food shop:-9764.40
+    2026-06-23      434136.49  transport: Ride-hailing trip:-4913.10
+    2026-06-26      428471.49  dining: Family dinner:-5665.00
+    2026-06-29      418707.09  groceries: Fresh food shop:-9764.40
+    2026-06-30      413793.99  transport: Ride-hailing trip:-4913.10
+    2026-07-04      359393.99  rent: Apartment rent transfer:-54400.00
+    2026-07-06      349629.59  groceries: Fresh food shop:-9764.40
+    2026-07-07      344716.49  transport: Ride-hailing trip:-4913.10
+    2026-07-08      330420.09  utilities: Water and power payment:-14296.40
+    2026-07-10      324755.09  dining: Family dinner:-5665.00
+    2026-07-11      319515.09  streaming: Family streaming plan:-5240.00
+    2026-07-13      294200.69  debt_repayment: Personal loan payment:-15550.00, groceries: Fresh food shop:-9764.40
+    2026-07-14      281902.39  cloud_storage: Online backup subscription:-855.00, shopping: Online retail purchases:-6530.20, transport: Ride-hailing trip:-4913.10
+    2026-07-15      497902.39  salary:+216000.00
+    2026-07-20      488137.99  groceries: Fresh food shop:-9764.40
+    2026-07-21      483224.89  transport: Ride-hailing trip:-4913.10
+    2026-07-24      477559.89  dining: Family dinner:-5665.00
+    2026-07-27      467795.49  groceries: Fresh food shop:-9764.40
+    2026-07-28      462882.39  transport: Ride-hailing trip:-4913.10
+    2026-08-03      453117.99  groceries: Fresh food shop:-9764.40
+    2026-08-04      393804.89  rent: Apartment rent transfer:-54400.00, transport: Ride-hailing trip:-4913.10
+    2026-08-07      388139.89  dining: Family dinner:-5665.00
+    2026-08-08      373843.49  utilities: Water and power payment:-14296.40
+    2026-08-10      364079.09  groceries: Fresh food shop:-9764.40
+    2026-08-11      353925.99  streaming: Family streaming plan:-5240.00, transport: Ride-hailing trip:-4913.10
+    2026-08-13      338375.99  debt_repayment: Personal loan payment:-15550.00
+    2026-08-14      330990.79  cloud_storage: Online backup subscription:-855.00, shopping: Online retail purchases:-6530.20
+    2026-08-15      546990.79  salary:+216000.00
+    2026-08-17      537226.39  groceries: Fresh food shop:-9764.40
+    2026-08-18      532313.29  transport: Ride-hailing trip:-4913.10
+    2026-08-21      526648.29  dining: Family dinner:-5665.00
+    2026-08-24      516883.89  groceries: Fresh food shop:-9764.40
+    2026-08-25      511970.79  transport: Ride-hailing trip:-4913.10
+    2026-08-31      502206.39  groceries: Fresh food shop:-9764.40

@@ -1,0 +1,42 @@
+request_147 user_147 scale=0.97 date=2026-04-05 amount=1129.7 by=2026-06-07 partial=True
+  balance=1641.53 min=900.0 methods=['installments'] max_m=11
+  series:
+    rent               monthly  step= 30 n= 6 amt=      464.20 flex=fixed                  min=None latest=event_13523 next=['2026-05-04', '2026-06-04']
+    utilities          monthly  step= 30 n= 5 amt=       81.48 flex=fixed                  min=None latest=event_13519 next=['2026-04-08', '2026-05-08', '2026-06-08']
+    cloud_storage      monthly  step= 30 n= 5 amt=        9.00 flex=stoppable              min=None latest=event_13520 next=['2026-04-14', '2026-05-14', '2026-06-14']
+    streaming          monthly  step= 30 n= 5 amt=       30.00 flex=stoppable              min=None latest=event_13521 next=['2026-04-11', '2026-05-11', '2026-06-11']
+    shopping           monthly  step= 30 n= 5 amt=       70.81 flex=reducible              min=29.2 latest=event_13522 next=['2026-04-14', '2026-05-14', '2026-06-14']
+    groceries          periodic step= 10 n=18 amt=       66.93 flex=fixed                  min=None latest=event_13541 next=['2026-04-10', '2026-04-20', '2026-04-30', '2026-05-10']
+    transport          periodic step= 21 n= 9 amt=       29.10 flex=fixed                  min=None latest=event_13550 next=['2026-04-14', '2026-05-11', '2026-06-01', '2026-06-22']
+    dining             periodic step= 21 n= 9 amt=       58.20 flex=reducible              min=30.0 latest=event_13559 next=['2026-04-14', '2026-05-07', '2026-05-28', '2026-06-18']
+  safe=396.01 earliest=2026-05-15 -> installments/affordable_with_plan plan=2026-04-08:391.63|2026-05-08:391.63|2026-06-07:391.63 changes=none
+    cand installments     deadline=True changes=0 total=1174.89 start=2026-04-08 n=3
+  daily projection (days with flows, no payment applied):
+    2026-04-05        1641.53  
+    2026-04-08        1560.05  utilities: Electricity bill:-81.48
+    2026-04-10        1493.12  groceries: Supermarket basket:-66.93
+    2026-04-11        1463.12  streaming: Video streaming plan:-30.00
+    2026-04-14        1296.01  cloud_storage: Online backup subscription:-9.00, shopping: Clothing and household items:-70.81, transport: Fuel refill:-29.10, dining: Neighbourhood restaurant:-58.20
+    2026-04-15        2825.01  salary:+1529.00
+    2026-04-20        2758.08  groceries: Supermarket basket:-66.93
+    2026-04-30        2691.15  groceries: Supermarket basket:-66.93
+    2026-05-04        2226.95  rent: Apartment rent transfer:-464.20
+    2026-05-07        2168.75  dining: Neighbourhood restaurant:-58.20
+    2026-05-08        2087.27  utilities: Electricity bill:-81.48
+    2026-05-10        2020.34  groceries: Supermarket basket:-66.93
+    2026-05-11        1961.24  streaming: Video streaming plan:-30.00, transport: Fuel refill:-29.10
+    2026-05-14        1881.43  cloud_storage: Online backup subscription:-9.00, shopping: Clothing and household items:-70.81
+    2026-05-15        3410.43  salary:+1529.00
+    2026-05-20        3343.50  groceries: Supermarket basket:-66.93
+    2026-05-28        3285.30  dining: Neighbourhood restaurant:-58.20
+    2026-05-30        3218.37  groceries: Supermarket basket:-66.93
+    2026-06-01        3189.27  transport: Fuel refill:-29.10
+    2026-06-04        2725.07  rent: Apartment rent transfer:-464.20
+    2026-06-08        2643.59  utilities: Electricity bill:-81.48
+    2026-06-09        2576.66  groceries: Supermarket basket:-66.93
+    2026-06-11        2546.66  streaming: Video streaming plan:-30.00
+    2026-06-14        2466.85  cloud_storage: Online backup subscription:-9.00, shopping: Clothing and household items:-70.81
+    2026-06-15        3995.85  salary:+1529.00
+    2026-06-18        3937.65  dining: Neighbourhood restaurant:-58.20
+    2026-06-19        3870.72  groceries: Supermarket basket:-66.93
+    2026-06-22        3841.62  transport: Fuel refill:-29.10

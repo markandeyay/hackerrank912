@@ -1,0 +1,64 @@
+request_125 user_125 scale=1.0 date=2025-11-06 amount=6468.0 by=2025-11-14 partial=False
+  balance=22027.97 min=11300.0 methods=['full_payment'] max_m=None
+  series:
+    rent               monthly  step= 30 n= 6 amt=     3520.00 flex=fixed                  min=None latest=event_11523 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 5 amt=     1038.20 flex=fixed                  min=None latest=event_11517 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    insurance          monthly  step= 30 n= 5 amt=      613.80 flex=fixed                  min=None latest=event_11518 next=['2025-11-07', '2025-12-07', '2026-01-07']
+    cloud_storage      monthly  step= 30 n= 5 amt=      117.70 flex=stoppable              min=None latest=event_11519 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    streaming          monthly  step= 30 n= 5 amt=      341.00 flex=fixed                  min=None latest=event_11520 next=['2025-11-09', '2025-12-09', '2026-01-09']
+    shopping           monthly  step= 30 n= 5 amt=      444.60 flex=fixed                  min=None latest=event_11521 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    entertainment      monthly  step= 30 n= 5 amt=      472.40 flex=fixed                  min=None latest=event_11522 next=['2025-11-14', '2025-12-14', '2026-01-14']
+    groceries          periodic step= 10 n=18 amt=      559.00 flex=fixed                  min=None latest=event_11541 next=['2025-11-09', '2025-11-19', '2025-11-29', '2025-12-09']
+    transport          periodic step=  5 n=36 amt=      360.00 flex=fixed                  min=None latest=event_11577 next=['2025-11-10', '2025-11-15', '2025-11-20', '2025-11-25']
+    dining             periodic step=  7 n=25 amt=      446.60 flex=reducible              min=223.3 latest=event_11602 next=['2025-11-13', '2025-11-20', '2025-11-27', '2025-12-04']
+  safe=6334.67 earliest=2025-11-15 -> full_payment/affordable_with_plan plan=2025-11-06:6468 changes=stop:event_11519|reduce_to:event_11602:223.30
+    cand full_payment     deadline=True changes=2 total=6468.00 start=2025-11-06 n=1
+    cand wait             deadline=False changes=0 total=6468.00 start=2025-11-15 n=1
+  daily projection (days with flows, no payment applied):
+    2025-11-06       20989.77  utilities: Electricity and water bill:-1038.20
+    2025-11-07       20375.97  insurance: Insurance policy payment:-613.80
+    2025-11-09       19475.97  streaming: Video streaming plan:-341.00, groceries: Local market purchase:-559.00
+    2025-11-10       19115.97  transport: Commuter pass:-360.00
+    2025-11-12       18553.67  cloud_storage: Cloud storage plan:-117.70, shopping: Online retail purchases:-444.60
+    2025-11-13       18107.07  dining: Family dinner:-446.60
+    2025-11-14       17634.67  entertainment: Monthly entertainment spend:-472.40
+    2025-11-15       32234.67  salary:+14960.00, transport: Commuter pass:-360.00
+    2025-11-19       31675.67  groceries: Local market purchase:-559.00
+    2025-11-20       30869.07  transport: Commuter pass:-360.00, dining: Family dinner:-446.60
+    2025-11-25       30509.07  transport: Commuter pass:-360.00
+    2025-11-27       30062.47  dining: Family dinner:-446.60
+    2025-11-29       29503.47  groceries: Local market purchase:-559.00
+    2025-11-30       29143.47  transport: Commuter pass:-360.00
+    2025-12-02       25623.47  rent: Landlord standing order:-3520.00
+    2025-12-04       25176.87  dining: Family dinner:-446.60
+    2025-12-05       24816.87  transport: Commuter pass:-360.00
+    2025-12-06       23778.67  utilities: Electricity and water bill:-1038.20
+    2025-12-07       23164.87  insurance: Insurance policy payment:-613.80
+    2025-12-09       22264.87  streaming: Video streaming plan:-341.00, groceries: Local market purchase:-559.00
+    2025-12-10       21904.87  transport: Commuter pass:-360.00
+    2025-12-11       21458.27  dining: Family dinner:-446.60
+    2025-12-12       20895.97  cloud_storage: Cloud storage plan:-117.70, shopping: Online retail purchases:-444.60
+    2025-12-14       20423.57  entertainment: Monthly entertainment spend:-472.40
+    2025-12-15       35023.57  salary:+14960.00, transport: Commuter pass:-360.00
+    2025-12-18       34576.97  dining: Family dinner:-446.60
+    2025-12-19       34017.97  groceries: Local market purchase:-559.00
+    2025-12-20       33657.97  transport: Commuter pass:-360.00
+    2025-12-25       32851.37  transport: Commuter pass:-360.00, dining: Family dinner:-446.60
+    2025-12-29       32292.37  groceries: Local market purchase:-559.00
+    2025-12-30       31932.37  transport: Commuter pass:-360.00
+    2026-01-01       31485.77  dining: Family dinner:-446.60
+    2026-01-02       27965.77  rent: Landlord standing order:-3520.00
+    2026-01-04       27605.77  transport: Commuter pass:-360.00
+    2026-01-06       26567.57  utilities: Electricity and water bill:-1038.20
+    2026-01-07       25953.77  insurance: Insurance policy payment:-613.80
+    2026-01-08       24948.17  groceries: Local market purchase:-559.00, dining: Family dinner:-446.60
+    2026-01-09       24247.17  streaming: Video streaming plan:-341.00, transport: Commuter pass:-360.00
+    2026-01-12       23684.87  cloud_storage: Cloud storage plan:-117.70, shopping: Online retail purchases:-444.60
+    2026-01-14       22852.47  entertainment: Monthly entertainment spend:-472.40, transport: Commuter pass:-360.00
+    2026-01-15       37365.87  salary:+14960.00, dining: Family dinner:-446.60
+    2026-01-18       36806.87  groceries: Local market purchase:-559.00
+    2026-01-19       36446.87  transport: Commuter pass:-360.00
+    2026-01-22       36000.27  dining: Family dinner:-446.60
+    2026-01-24       35640.27  transport: Commuter pass:-360.00
+    2026-01-28       35081.27  groceries: Local market purchase:-559.00
+    2026-01-29       34274.67  transport: Commuter pass:-360.00, dining: Family dinner:-446.60

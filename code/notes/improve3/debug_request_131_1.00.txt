@@ -1,0 +1,52 @@
+request_131 user_131 scale=1.0 date=2025-05-03 amount=1855.2 by=2025-07-08 partial=True
+  balance=3387.16 min=1100.0 methods=['installments'] max_m=7
+  series:
+    rent               monthly  step= 30 n= 5 amt=      373.20 flex=fixed                  min=None latest=event_12059 next=['2025-05-04', '2025-06-04', '2025-07-04']
+    utilities          monthly  step= 30 n= 5 amt=       92.00 flex=fixed                  min=None latest=event_12060 next=['2025-05-08', '2025-06-08', '2025-07-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=      213.00 flex=fixed                  min=None latest=event_12061 next=['2025-05-13', '2025-06-13', '2025-07-13']
+    healthcare         monthly  step= 30 n= 5 amt=       51.00 flex=fixed                  min=None latest=event_12062 next=['2025-05-12', '2025-06-12', '2025-07-12']
+    family_support     monthly  step= 30 n= 5 amt=      166.00 flex=fixed                  min=None latest=event_12063 next=['2025-05-15', '2025-06-15', '2025-07-15']
+    cloud_storage      monthly  step= 30 n= 5 amt=       10.00 flex=fixed                  min=None latest=event_12064 next=['2025-05-14', '2025-06-14', '2025-07-14']
+    shopping           monthly  step= 30 n= 5 amt=       53.00 flex=reducible              min=21.2 latest=event_12065 next=['2025-05-14', '2025-06-14', '2025-07-14']
+    groceries          periodic step=  7 n=25 amt=       58.00 flex=fixed                  min=None latest=event_12090 next=['2025-05-10', '2025-05-17', '2025-05-24', '2025-05-31']
+    transport          periodic step= 14 n=13 amt=       34.00 flex=fixed                  min=None latest=event_12103 next=['2025-05-11', '2025-05-25', '2025-06-08', '2025-06-22']
+  safe=1178.96 earliest=2025-07-23 -> installments/affordable_with_plan plan=2025-05-06:643.14|2025-06-03:643.14|2025-07-01:643.14 changes=reduce_to:event_12065:21.20
+    cand installments     deadline=True changes=1 total=1929.42 start=2025-05-06 n=3
+  daily projection (days with flows, no payment applied):
+    2025-05-03        3387.16  
+    2025-05-04        3013.96  rent: Residential rent payment:-373.20
+    2025-05-08        2921.96  utilities: Energy provider bill:-92.00
+    2025-05-10        2863.96  groceries: Fresh food shop:-58.00
+    2025-05-11        2829.96  transport: Ride-hailing trip:-34.00
+    2025-05-12        2778.96  healthcare: Regular medicine purchase:-51.00
+    2025-05-13        2565.96  debt_repayment: Loan repayment:-213.00
+    2025-05-14        2502.96  cloud_storage: Shared storage plan:-10.00, shopping: Clothing and household items:-53.00
+    2025-05-15        2336.96  family_support: Dependent care payment:-166.00
+    2025-05-17        2278.96  groceries: Fresh food shop:-58.00
+    2025-05-23        3910.96  salary:+1632.00
+    2025-05-24        3852.96  groceries: Fresh food shop:-58.00
+    2025-05-25        3818.96  transport: Ride-hailing trip:-34.00
+    2025-05-31        3760.96  groceries: Fresh food shop:-58.00
+    2025-06-04        3387.76  rent: Residential rent payment:-373.20
+    2025-06-07        3329.76  groceries: Fresh food shop:-58.00
+    2025-06-08        3203.76  utilities: Energy provider bill:-92.00, transport: Ride-hailing trip:-34.00
+    2025-06-12        3152.76  healthcare: Regular medicine purchase:-51.00
+    2025-06-13        2939.76  debt_repayment: Loan repayment:-213.00
+    2025-06-14        2818.76  cloud_storage: Shared storage plan:-10.00, shopping: Clothing and household items:-53.00, groceries: Fresh food shop:-58.00
+    2025-06-15        2652.76  family_support: Dependent care payment:-166.00
+    2025-06-21        2594.76  groceries: Fresh food shop:-58.00
+    2025-06-22        2560.76  transport: Ride-hailing trip:-34.00
+    2025-06-23        4192.76  salary:+1632.00
+    2025-06-28        4134.76  groceries: Fresh food shop:-58.00
+    2025-07-04        3761.56  rent: Residential rent payment:-373.20
+    2025-07-05        3703.56  groceries: Fresh food shop:-58.00
+    2025-07-06        3669.56  transport: Ride-hailing trip:-34.00
+    2025-07-08        3577.56  utilities: Energy provider bill:-92.00
+    2025-07-12        3468.56  healthcare: Regular medicine purchase:-51.00, groceries: Fresh food shop:-58.00
+    2025-07-13        3255.56  debt_repayment: Loan repayment:-213.00
+    2025-07-14        3192.56  cloud_storage: Shared storage plan:-10.00, shopping: Clothing and household items:-53.00
+    2025-07-15        3026.56  family_support: Dependent care payment:-166.00
+    2025-07-19        2968.56  groceries: Fresh food shop:-58.00
+    2025-07-20        2934.56  transport: Ride-hailing trip:-34.00
+    2025-07-23        4566.56  salary:+1632.00
+    2025-07-26        4508.56  groceries: Fresh food shop:-58.00

@@ -1,0 +1,59 @@
+request_233 user_233 scale=1.0 date=2025-11-07 amount=6241000.0 by=2025-12-17 partial=True
+  balance=19341300.0 min=10365700.0 methods=['partial_payment', 'installments'] max_m=9
+  series:
+    rent               monthly  step= 30 n= 6 amt=  3895000.00 flex=fixed                  min=None latest=event_21440 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 6 amt=  1082100.00 flex=fixed                  min=None latest=event_21441 next=['2025-12-06', '2026-01-06']
+    education          monthly  step= 30 n= 5 amt=  1027900.00 flex=fixed                  min=None latest=event_21436 next=['2025-11-08', '2025-12-08', '2026-01-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=  2099500.00 flex=fixed                  min=None latest=event_21437 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    music_subscription monthly  step= 30 n= 5 amt=   102600.00 flex=stoppable              min=None latest=event_21438 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    delivery_membership monthly  step= 30 n= 5 amt=   277400.00 flex=stoppable              min=None latest=event_21439 next=['2025-11-13', '2025-12-13', '2026-01-13']
+    groceries          periodic step=  7 n=26 amt=   752400.00 flex=fixed                  min=None latest=event_21467 next=['2025-11-12', '2025-11-19', '2025-11-26', '2025-12-03']
+    transport          periodic step=  7 n=26 amt=   419900.00 flex=fixed                  min=None latest=event_21493 next=['2025-11-13', '2025-11-20', '2025-11-27', '2025-12-04']
+    dining             periodic step= 14 n=13 amt=   559800.00 flex=fixed                  min=None latest=event_21506 next=['2025-11-14', '2025-11-28', '2025-12-12', '2025-12-26']
+  safe=3736100.0 earliest=2025-11-15 -> partial_payment/affordable_with_plan plan=2025-11-07:3736100|2025-11-15:2504900 changes=none
+    cand partial_payment  deadline=True changes=0 total=6241000.00 start=2025-11-07 n=2
+    cand installments     deadline=True changes=0 total=6490640.00 start=2025-11-14 n=2
+  daily projection (days with flows, no payment applied):
+    2025-11-07    19341300.00  
+    2025-11-08    18313400.00  education: School fee payment:-1027900.00
+    2025-11-11    16111300.00  debt_repayment: Loan repayment:-2099500.00, music_subscription: Music subscription:-102600.00
+    2025-11-12    15358900.00  groceries: Supermarket basket:-752400.00
+    2025-11-13    14661600.00  delivery_membership: Delivery service plan:-277400.00, transport: Commuter pass:-419900.00
+    2025-11-14    14101800.00  dining: Bakery and snacks:-559800.00
+    2025-11-15    31011800.00  salary:+16910000.00
+    2025-11-19    30259400.00  groceries: Supermarket basket:-752400.00
+    2025-11-20    29839500.00  transport: Commuter pass:-419900.00
+    2025-11-26    29087100.00  groceries: Supermarket basket:-752400.00
+    2025-11-27    28667200.00  transport: Commuter pass:-419900.00
+    2025-11-28    28107400.00  dining: Bakery and snacks:-559800.00
+    2025-12-02    24212400.00  rent: Shared housing rent:-3895000.00
+    2025-12-03    23460000.00  groceries: Supermarket basket:-752400.00
+    2025-12-04    23040100.00  transport: Commuter pass:-419900.00
+    2025-12-06    21958000.00  utilities: Electricity and water bill:-1082100.00
+    2025-12-08    20930100.00  education: School fee payment:-1027900.00
+    2025-12-10    20177700.00  groceries: Supermarket basket:-752400.00
+    2025-12-11    17555700.00  debt_repayment: Loan repayment:-2099500.00, music_subscription: Music subscription:-102600.00, transport: Commuter pass:-419900.00
+    2025-12-12    16995900.00  dining: Bakery and snacks:-559800.00
+    2025-12-13    16718500.00  delivery_membership: Delivery service plan:-277400.00
+    2025-12-15    33628500.00  salary:+16910000.00
+    2025-12-17    32876100.00  groceries: Supermarket basket:-752400.00
+    2025-12-18    32456200.00  transport: Commuter pass:-419900.00
+    2025-12-24    31703800.00  groceries: Supermarket basket:-752400.00
+    2025-12-25    31283900.00  transport: Commuter pass:-419900.00
+    2025-12-26    30724100.00  dining: Bakery and snacks:-559800.00
+    2025-12-31    29971700.00  groceries: Supermarket basket:-752400.00
+    2026-01-01    29551800.00  transport: Commuter pass:-419900.00
+    2026-01-02    25656800.00  rent: Shared housing rent:-3895000.00
+    2026-01-06    24574700.00  utilities: Electricity and water bill:-1082100.00
+    2026-01-07    23822300.00  groceries: Supermarket basket:-752400.00
+    2026-01-08    22374500.00  education: School fee payment:-1027900.00, transport: Commuter pass:-419900.00
+    2026-01-09    21814700.00  dining: Bakery and snacks:-559800.00
+    2026-01-11    19612600.00  debt_repayment: Loan repayment:-2099500.00, music_subscription: Music subscription:-102600.00
+    2026-01-13    19335200.00  delivery_membership: Delivery service plan:-277400.00
+    2026-01-14    18582800.00  groceries: Supermarket basket:-752400.00
+    2026-01-15    35072900.00  salary:+16910000.00, transport: Commuter pass:-419900.00
+    2026-01-21    34320500.00  groceries: Supermarket basket:-752400.00
+    2026-01-22    33900600.00  transport: Commuter pass:-419900.00
+    2026-01-23    33340800.00  dining: Bakery and snacks:-559800.00
+    2026-01-28    32588400.00  groceries: Supermarket basket:-752400.00
+    2026-01-29    32168500.00  transport: Commuter pass:-419900.00

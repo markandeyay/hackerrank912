@@ -43,11 +43,23 @@ def trough(st: State, extra: list[Flow] | None = None) -> float:
 
 
 def is_safe(st: State, payments: list[tuple[date, float]], extra: list[Flow] | None = None) -> bool:
-    """True when the balance never falls below the minimum with `payments` applied."""
+    """True when the balance never falls below the minimum with `payments` applied.
+
+    From the first future-dated payment onwards the balance must also clear the
+    minimum by `st.plan_margin` (one currency grid unit): a tie-break that resolves
+    numerical coin tosses in the financially safer direction."""
     flows = list(extra or [])
     for d, a in payments:
         flows.append(Flow(d, -a, "payment", "payment"))
-    return trough(st, flows) + EPS >= st.min_balance
+    series = daily_balances(st, flows)
+    if min(b for _, b in series) + EPS < st.min_balance:
+        return False
+    margin = getattr(st, "plan_margin", 0.0)
+    future = [d for d, _ in payments if d > st.request_date]
+    if margin and future:
+        first = min(future)
+        return all(b + EPS >= st.min_balance + margin for d, b in series if d >= first)
+    return True
 
 
 def amount_safe_to_pay(st: State, requested: float, extra: list[Flow] | None = None) -> float:
@@ -73,7 +85,9 @@ def earliest_full_payment_date(st: State, requested: float, extra: list[Flow] | 
     for i in range(len(series) - 1, -1, -1):
         m = min(m, series[i][1])
         suffix_min[i] = m
+    margin = getattr(st, "plan_margin", 0.0)
     for i, (d, _) in enumerate(series):
-        if suffix_min[i] - requested + EPS >= st.min_balance:
+        need = st.min_balance + (margin if d > st.request_date else 0.0)
+        if suffix_min[i] - requested + EPS >= need:
             return d
     return None

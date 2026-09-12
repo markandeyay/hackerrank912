@@ -1,0 +1,55 @@
+request_92 user_92 scale=1.0 date=2025-02-05 amount=34034.0 by=2025-02-14 partial=False
+  balance=78664.47 min=28100.0 methods=['full_payment'] max_m=None
+  series:
+    housing            monthly  step= 30 n= 6 amt=     3762.00 flex=fixed                  min=None latest=event_8622 next=['2025-03-02', '2025-04-02']
+    utilities          monthly  step= 30 n= 5 amt=     2614.40 flex=fixed                  min=None latest=event_8616 next=['2025-02-05', '2025-03-05', '2025-04-05']
+    insurance          monthly  step= 30 n= 5 amt=     1606.00 flex=fixed                  min=None latest=event_8617 next=['2025-02-06', '2025-03-06', '2025-04-06']
+    education          monthly  step= 30 n= 5 amt=     2939.20 flex=fixed                  min=None latest=event_8618 next=['2025-02-07', '2025-03-07', '2025-04-07']
+    healthcare         monthly  step= 30 n= 5 amt=     3212.40 flex=fixed                  min=None latest=event_8619 next=['2025-02-09', '2025-03-09', '2025-04-09']
+    entertainment      monthly  step= 30 n= 5 amt=     1117.60 flex=reducible              min=558.8 latest=event_8620 next=['2025-02-13', '2025-03-13', '2025-04-13']
+    cloud_storage      monthly  step= 30 n= 5 amt=      150.70 flex=stoppable              min=None latest=event_8621 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    groceries          periodic step= 10 n=18 amt=     2001.40 flex=fixed                  min=None latest=event_8640 next=['2025-02-07', '2025-02-17', '2025-02-27', '2025-03-09']
+    transport          periodic step= 14 n=13 amt=     1272.00 flex=fixed                  min=None latest=event_8653 next=['2025-02-10', '2025-02-24', '2025-03-10', '2025-03-24']
+    dining             periodic step= 21 n= 9 amt=     1821.60 flex=reducible              min=910.8 latest=event_8662 next=['2025-02-14', '2025-03-11', '2025-04-01', '2025-04-22']
+  safe=33829.17 earliest=2025-02-15 -> full_payment/affordable_with_plan plan=2025-02-05:34034 changes=stop:event_8621|reduce_to:event_8620:558.80
+    cand full_payment     deadline=True changes=2 total=34034.00 start=2025-02-05 n=1
+    cand wait             deadline=False changes=0 total=34034.00 start=2025-02-15 n=1
+  daily projection (days with flows, no payment applied):
+    2025-02-05       76050.07  utilities: Energy provider bill:-2614.40
+    2025-02-06       74444.07  insurance: Health insurance premium:-1606.00
+    2025-02-07       69503.47  education: Child education fee:-2939.20, groceries: Neighbourhood grocer:-2001.40
+    2025-02-09       66291.07  healthcare: Clinic payment:-3212.40
+    2025-02-10       65019.07  transport: Rail pass:-1272.00
+    2025-02-11       64868.37  cloud_storage: Shared storage plan:-150.70
+    2025-02-13       63750.77  entertainment: Local event tickets:-1117.60
+    2025-02-14       61929.17  dining: Quick-service meal:-1821.60
+    2025-02-15       91497.17  salary:+29568.00
+    2025-02-17       89495.77  groceries: Neighbourhood grocer:-2001.40
+    2025-02-24       88223.77  transport: Rail pass:-1272.00
+    2025-02-27       86222.37  groceries: Neighbourhood grocer:-2001.40
+    2025-03-02       82460.37  housing: Home association fee:-3762.00
+    2025-03-05       79845.97  utilities: Energy provider bill:-2614.40
+    2025-03-06       78239.97  insurance: Health insurance premium:-1606.00
+    2025-03-07       75300.77  education: Child education fee:-2939.20
+    2025-03-09       70086.97  healthcare: Clinic payment:-3212.40, groceries: Neighbourhood grocer:-2001.40
+    2025-03-10       68814.97  transport: Rail pass:-1272.00
+    2025-03-11       66842.67  cloud_storage: Shared storage plan:-150.70, dining: Quick-service meal:-1821.60
+    2025-03-13       65725.07  entertainment: Local event tickets:-1117.60
+    2025-03-15       95293.07  salary:+29568.00
+    2025-03-19       93291.67  groceries: Neighbourhood grocer:-2001.40
+    2025-03-24       92019.67  transport: Rail pass:-1272.00
+    2025-03-29       90018.27  groceries: Neighbourhood grocer:-2001.40
+    2025-04-01       88196.67  dining: Quick-service meal:-1821.60
+    2025-04-02       84434.67  housing: Home association fee:-3762.00
+    2025-04-05       81820.27  utilities: Energy provider bill:-2614.40
+    2025-04-06       80214.27  insurance: Health insurance premium:-1606.00
+    2025-04-07       76003.07  education: Child education fee:-2939.20, transport: Rail pass:-1272.00
+    2025-04-08       74001.67  groceries: Neighbourhood grocer:-2001.40
+    2025-04-09       70789.27  healthcare: Clinic payment:-3212.40
+    2025-04-11       70638.57  cloud_storage: Shared storage plan:-150.70
+    2025-04-13       69520.97  entertainment: Local event tickets:-1117.60
+    2025-04-15       99088.97  salary:+29568.00
+    2025-04-18       97087.57  groceries: Neighbourhood grocer:-2001.40
+    2025-04-21       95815.57  transport: Rail pass:-1272.00
+    2025-04-22       93993.97  dining: Quick-service meal:-1821.60
+    2025-04-28       91992.57  groceries: Neighbourhood grocer:-2001.40

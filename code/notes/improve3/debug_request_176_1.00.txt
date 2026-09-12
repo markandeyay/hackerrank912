@@ -1,0 +1,51 @@
+request_176 user_176 scale=1.0 date=2025-02-03 amount=1239.7 by=2025-02-27 partial=False
+  balance=1286.95 min=600.0 methods=['full_payment', 'partial_payment', 'installments'] max_m=12
+  series:
+    rent               monthly  step= 30 n= 6 amt=      258.50 flex=fixed                  min=None latest=event_16158 next=['2025-03-01', '2025-04-01']
+    utilities          monthly  step= 30 n= 5 amt=       58.00 flex=fixed                  min=None latest=event_16152 next=['2025-02-05', '2025-03-05', '2025-04-05']
+    debt_repayment     monthly  step= 30 n= 5 amt=       45.00 flex=fixed                  min=None latest=event_16153 next=['2025-02-10', '2025-03-10', '2025-04-10']
+    healthcare         monthly  step= 30 n= 5 amt=       25.00 flex=fixed                  min=None latest=event_16154 next=['2025-02-09', '2025-03-09', '2025-04-09']
+    family_support     monthly  step= 30 n= 5 amt=       57.00 flex=fixed                  min=None latest=event_16155 next=['2025-02-12', '2025-03-12', '2025-04-12']
+    cloud_storage      monthly  step= 30 n= 5 amt=        5.00 flex=fixed                  min=None latest=event_16156 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    shopping           monthly  step= 30 n= 5 amt=       29.00 flex=reducible              min=11.6 latest=event_16157 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    groceries          periodic step=  7 n=26 amt=       39.00 flex=fixed                  min=None latest=event_16184 next=['2025-02-07', '2025-02-14', '2025-02-21', '2025-02-28']
+    transport          periodic step= 14 n=13 amt=       23.00 flex=fixed                  min=None latest=event_16197 next=['2025-02-08', '2025-02-22', '2025-03-08', '2025-03-22']
+  safe=24.35 earliest=None -> not_recommended/not_affordable plan=none changes=none
+  daily projection (days with flows, no payment applied):
+    2025-02-03        1286.95  
+    2025-02-05        1228.95  utilities: Municipal utilities:-58.00
+    2025-02-07        1189.95  groceries: Household groceries:-39.00
+    2025-02-08        1166.95  transport: Ride-hailing trip:-23.00
+    2025-02-09        1141.95  healthcare: Clinic payment:-25.00
+    2025-02-10        1096.95  debt_repayment: Loan repayment:-45.00
+    2025-02-11        1062.95  cloud_storage: Shared storage plan:-5.00, shopping: Personal shopping:-29.00
+    2025-02-12        1005.95  family_support: Parent support transfer:-57.00
+    2025-02-14         966.95  groceries: Household groceries:-39.00
+    2025-02-15        1475.15  salary:+508.20
+    2025-02-21        1436.15  groceries: Household groceries:-39.00
+    2025-02-22        1413.15  transport: Ride-hailing trip:-23.00
+    2025-02-28        1374.15  groceries: Household groceries:-39.00
+    2025-03-01        1115.65  rent: Residential rent payment:-258.50
+    2025-03-05        1057.65  utilities: Municipal utilities:-58.00
+    2025-03-07        1018.65  groceries: Household groceries:-39.00
+    2025-03-08         995.65  transport: Ride-hailing trip:-23.00
+    2025-03-09         970.65  healthcare: Clinic payment:-25.00
+    2025-03-10         925.65  debt_repayment: Loan repayment:-45.00
+    2025-03-11         891.65  cloud_storage: Shared storage plan:-5.00, shopping: Personal shopping:-29.00
+    2025-03-12         834.65  family_support: Parent support transfer:-57.00
+    2025-03-14         795.65  groceries: Household groceries:-39.00
+    2025-03-15        1303.85  salary:+508.20
+    2025-03-21        1264.85  groceries: Household groceries:-39.00
+    2025-03-22        1241.85  transport: Ride-hailing trip:-23.00
+    2025-03-28        1202.85  groceries: Household groceries:-39.00
+    2025-04-01         944.35  rent: Residential rent payment:-258.50
+    2025-04-04         905.35  groceries: Household groceries:-39.00
+    2025-04-05         824.35  utilities: Municipal utilities:-58.00, transport: Ride-hailing trip:-23.00
+    2025-04-09         799.35  healthcare: Clinic payment:-25.00
+    2025-04-10         754.35  debt_repayment: Loan repayment:-45.00
+    2025-04-11         681.35  cloud_storage: Shared storage plan:-5.00, shopping: Personal shopping:-29.00, groceries: Household groceries:-39.00
+    2025-04-12         624.35  family_support: Parent support transfer:-57.00
+    2025-04-15        1132.55  salary:+508.20
+    2025-04-18        1093.55  groceries: Household groceries:-39.00
+    2025-04-19        1070.55  transport: Ride-hailing trip:-23.00
+    2025-04-25        1031.55  groceries: Household groceries:-39.00

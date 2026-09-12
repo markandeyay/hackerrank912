@@ -1,0 +1,64 @@
+request_195 user_195 scale=1.03 date=2026-01-06 amount=1170.4 by=2026-03-11 partial=True
+  balance=2011.18 min=700.0 methods=['installments'] max_m=5
+  series:
+    rent               monthly  step= 30 n= 6 amt=      400.40 flex=fixed                  min=None latest=event_17958 next=['2026-02-04', '2026-03-04']
+    utilities          monthly  step= 30 n= 5 amt=       58.71 flex=fixed                  min=None latest=event_17952 next=['2026-01-08', '2026-02-08', '2026-03-08']
+    insurance          monthly  step= 30 n= 5 amt=       50.00 flex=fixed                  min=None latest=event_17953 next=['2026-01-09', '2026-02-09', '2026-03-09']
+    cloud_storage      monthly  step= 30 n= 5 amt=       10.00 flex=fixed                  min=None latest=event_17954 next=['2026-01-14', '2026-02-14', '2026-03-14']
+    streaming          monthly  step= 30 n= 5 amt=       24.00 flex=reducible              min=12.0 latest=event_17955 next=['2026-01-11', '2026-02-11', '2026-03-11']
+    shopping           monthly  step= 30 n= 5 amt=       71.07 flex=fixed                  min=None latest=event_17956 next=['2026-01-14', '2026-02-14', '2026-03-14']
+    entertainment      monthly  step= 30 n= 5 amt=       26.78 flex=reducible              min=13.0 latest=event_17957 next=['2026-01-16', '2026-02-16', '2026-03-16']
+    groceries          periodic step= 10 n=18 amt=       49.44 flex=fixed                  min=None latest=event_17976 next=['2026-01-11', '2026-01-21', '2026-01-31', '2026-02-10']
+    transport          periodic step=  5 n=35 amt=       25.75 flex=fixed                  min=None latest=event_18011 next=['2026-01-07', '2026-01-12', '2026-01-17', '2026-01-22']
+    dining             periodic step=  7 n=26 amt=       37.08 flex=fixed                  min=None latest=event_18037 next=['2026-01-10', '2026-01-17', '2026-01-24', '2026-01-31']
+  safe=959.38 earliest=2026-02-15 -> installments/affordable_with_plan plan=2026-01-09:405.74|2026-02-08:405.74|2026-03-10:405.74 changes=reduce_to:event_17955:12
+    cand installments     deadline=True changes=1 total=1217.22 start=2026-01-09 n=3
+  daily projection (days with flows, no payment applied):
+    2026-01-06        2011.18  
+    2026-01-07        1985.43  transport: Metro and bus fares:-25.75
+    2026-01-08        1926.72  utilities: Electricity bill:-58.71
+    2026-01-09        1876.72  insurance: Vehicle insurance premium:-50.00
+    2026-01-10        1839.64  dining: Takeaway order:-37.08
+    2026-01-11        1766.20  streaming: Streaming subscription:-24.00, groceries: Neighbourhood grocer:-49.44
+    2026-01-12        1740.45  transport: Metro and bus fares:-25.75
+    2026-01-14        1659.38  cloud_storage: Cloud storage plan:-10.00, shopping: Online retail purchases:-71.07
+    2026-01-15        2882.03  salary:+1222.65
+    2026-01-16        2855.25  entertainment: Games and recreation:-26.78
+    2026-01-17        2792.42  transport: Metro and bus fares:-25.75, dining: Takeaway order:-37.08
+    2026-01-21        2742.98  groceries: Neighbourhood grocer:-49.44
+    2026-01-22        2717.23  transport: Metro and bus fares:-25.75
+    2026-01-24        2680.15  dining: Takeaway order:-37.08
+    2026-01-27        2654.40  transport: Metro and bus fares:-25.75
+    2026-01-31        2567.88  groceries: Neighbourhood grocer:-49.44, dining: Takeaway order:-37.08
+    2026-02-01        2542.13  transport: Metro and bus fares:-25.75
+    2026-02-04        2141.73  rent: Residential rent payment:-400.40
+    2026-02-06        2115.98  transport: Metro and bus fares:-25.75
+    2026-02-07        2078.90  dining: Takeaway order:-37.08
+    2026-02-08        2020.19  utilities: Electricity bill:-58.71
+    2026-02-09        1970.19  insurance: Vehicle insurance premium:-50.00
+    2026-02-10        1920.75  groceries: Neighbourhood grocer:-49.44
+    2026-02-11        1871.00  streaming: Streaming subscription:-24.00, transport: Metro and bus fares:-25.75
+    2026-02-14        1752.85  cloud_storage: Cloud storage plan:-10.00, shopping: Online retail purchases:-71.07, dining: Takeaway order:-37.08
+    2026-02-15        2975.50  salary:+1222.65
+    2026-02-16        2922.97  entertainment: Games and recreation:-26.78, transport: Metro and bus fares:-25.75
+    2026-02-20        2873.53  groceries: Neighbourhood grocer:-49.44
+    2026-02-21        2810.70  transport: Metro and bus fares:-25.75, dining: Takeaway order:-37.08
+    2026-02-26        2784.95  transport: Metro and bus fares:-25.75
+    2026-02-28        2747.87  dining: Takeaway order:-37.08
+    2026-03-02        2698.43  groceries: Neighbourhood grocer:-49.44
+    2026-03-03        2672.68  transport: Metro and bus fares:-25.75
+    2026-03-04        2272.28  rent: Residential rent payment:-400.40
+    2026-03-07        2235.20  dining: Takeaway order:-37.08
+    2026-03-08        2150.74  utilities: Electricity bill:-58.71, transport: Metro and bus fares:-25.75
+    2026-03-09        2100.74  insurance: Vehicle insurance premium:-50.00
+    2026-03-11        2076.74  streaming: Streaming subscription:-24.00
+    2026-03-12        2027.30  groceries: Neighbourhood grocer:-49.44
+    2026-03-13        2001.55  transport: Metro and bus fares:-25.75
+    2026-03-14        1883.40  cloud_storage: Cloud storage plan:-10.00, shopping: Online retail purchases:-71.07, dining: Takeaway order:-37.08
+    2026-03-15        3106.05  salary:+1222.65
+    2026-03-16        3079.27  entertainment: Games and recreation:-26.78
+    2026-03-18        3053.52  transport: Metro and bus fares:-25.75
+    2026-03-21        3016.44  dining: Takeaway order:-37.08
+    2026-03-22        2967.00  groceries: Neighbourhood grocer:-49.44
+    2026-03-23        2941.25  transport: Metro and bus fares:-25.75
+    2026-03-28        2878.42  transport: Metro and bus fares:-25.75, dining: Takeaway order:-37.08

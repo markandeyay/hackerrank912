@@ -1,0 +1,42 @@
+request_273 user_273 scale=1.0 date=2026-04-07 amount=15861000.0 by=2026-06-15 partial=True
+  balance=32146800.0 min=18774600.0 methods=['partial_payment', 'installments'] max_m=7
+  series:
+    rent               monthly  step= 30 n= 6 amt= 10374000.00 flex=fixed                  min=None latest=event_25105 next=['2026-05-02', '2026-06-02']
+    utilities          monthly  step= 30 n= 6 amt=  1526200.00 flex=fixed                  min=None latest=event_25106 next=['2026-05-06', '2026-06-06']
+    cloud_storage      monthly  step= 30 n= 5 amt=   199500.00 flex=stoppable              min=None latest=event_25102 next=['2026-04-12', '2026-05-12', '2026-06-12']
+    streaming          monthly  step= 30 n= 5 amt=   944300.00 flex=reducible_or_stoppable min=472150.0 latest=event_25103 next=['2026-04-09', '2026-05-09', '2026-06-09']
+    shopping           monthly  step= 30 n= 5 amt=  1390000.00 flex=fixed                  min=None latest=event_25104 next=['2026-04-12', '2026-05-12', '2026-06-12']
+    groceries          periodic step= 10 n=18 amt=  1222100.00 flex=fixed                  min=None latest=event_25124 next=['2026-04-10', '2026-04-20', '2026-04-30', '2026-05-10']
+    transport          periodic step= 21 n= 9 amt=   915000.00 flex=fixed                  min=None latest=event_25133 next=['2026-04-14', '2026-05-11', '2026-06-01', '2026-06-22']
+    dining             periodic step= 21 n= 9 amt=  1244500.00 flex=reducible              min=622250.0 latest=event_25142 next=['2026-04-14', '2026-05-12', '2026-06-02', '2026-06-23']
+  safe=7456800.0 earliest=2026-04-15 -> partial_payment/affordable_with_plan plan=2026-04-07:7456800|2026-04-15:8404200 changes=none
+    cand partial_payment  deadline=True changes=0 total=15861000.00 start=2026-04-07 n=2
+    cand installments     deadline=True changes=0 total=16495440.00 start=2026-04-07 n=3
+  daily projection (days with flows, no payment applied):
+    2026-04-07    32146800.00  
+    2026-04-09    31202500.00  streaming: Streaming subscription:-944300.00
+    2026-04-10    29980400.00  groceries: Local market purchase:-1222100.00
+    2026-04-12    28390900.00  cloud_storage: Cloud storage plan:-199500.00, shopping: Household shopping:-1390000.00
+    2026-04-14    26231400.00  transport: Vehicle charging:-915000.00, dining: Takeaway order:-1244500.00
+    2026-04-15    60241400.00  salary:+34010000.00
+    2026-04-20    59019300.00  groceries: Local market purchase:-1222100.00
+    2026-04-30    57797200.00  groceries: Local market purchase:-1222100.00
+    2026-05-02    47423200.00  rent: Apartment rent transfer:-10374000.00
+    2026-05-06    45897000.00  utilities: Water and power payment:-1526200.00
+    2026-05-09    44952700.00  streaming: Streaming subscription:-944300.00
+    2026-05-10    43730600.00  groceries: Local market purchase:-1222100.00
+    2026-05-11    42815600.00  transport: Vehicle charging:-915000.00
+    2026-05-12    39981600.00  cloud_storage: Cloud storage plan:-199500.00, shopping: Household shopping:-1390000.00, dining: Takeaway order:-1244500.00
+    2026-05-15    73991600.00  salary:+34010000.00
+    2026-05-20    72769500.00  groceries: Local market purchase:-1222100.00
+    2026-05-30    71547400.00  groceries: Local market purchase:-1222100.00
+    2026-06-01    70632400.00  transport: Vehicle charging:-915000.00
+    2026-06-02    59013900.00  rent: Apartment rent transfer:-10374000.00, dining: Takeaway order:-1244500.00
+    2026-06-06    57487700.00  utilities: Water and power payment:-1526200.00
+    2026-06-09    55321300.00  streaming: Streaming subscription:-944300.00, groceries: Local market purchase:-1222100.00
+    2026-06-12    53731800.00  cloud_storage: Cloud storage plan:-199500.00, shopping: Household shopping:-1390000.00
+    2026-06-15    87741800.00  salary:+34010000.00
+    2026-06-19    86519700.00  groceries: Local market purchase:-1222100.00
+    2026-06-22    85604700.00  transport: Vehicle charging:-915000.00
+    2026-06-23    84360200.00  dining: Takeaway order:-1244500.00
+    2026-06-29    83138100.00  groceries: Local market purchase:-1222100.00

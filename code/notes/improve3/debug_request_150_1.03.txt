@@ -1,0 +1,62 @@
+request_150 user_150 scale=1.03 date=2026-01-06 amount=496.1 by=2026-03-16 partial=False
+  balance=1257.44 min=700.0 methods=['partial_payment', 'installments'] max_m=6
+  series:
+    rent               monthly  step= 30 n= 6 amt=      268.40 flex=fixed                  min=None latest=event_13789 next=['2026-02-03', '2026-03-03']
+    utilities          monthly  step= 30 n= 5 amt=       59.74 flex=fixed                  min=None latest=event_13783 next=['2026-01-07', '2026-02-07', '2026-03-07']
+    insurance          monthly  step= 30 n= 5 amt=       25.00 flex=fixed                  min=None latest=event_13784 next=['2026-01-08', '2026-02-08', '2026-03-08']
+    cloud_storage      monthly  step= 30 n= 5 amt=        6.00 flex=stoppable              min=None latest=event_13785 next=['2026-01-13', '2026-02-13', '2026-03-13']
+    streaming          monthly  step= 30 n= 5 amt=       25.00 flex=reducible_or_stoppable min=12.5 latest=event_13786 next=['2026-01-10', '2026-02-10', '2026-03-10']
+    shopping           monthly  step= 30 n= 5 amt=       41.20 flex=reducible              min=16.0 latest=event_13787 next=['2026-01-13', '2026-02-13', '2026-03-13']
+    entertainment      monthly  step= 30 n= 5 amt=       27.81 flex=fixed                  min=None latest=event_13788 next=['2026-01-15', '2026-02-15', '2026-03-15']
+    groceries          periodic step= 10 n=18 amt=       40.17 flex=fixed                  min=None latest=event_13807 next=['2026-01-10', '2026-01-20', '2026-01-30', '2026-02-09']
+    transport          periodic step=  5 n=35 amt=       19.57 flex=fixed                  min=None latest=event_13842 next=['2026-01-11', '2026-01-16', '2026-01-21', '2026-01-26']
+    dining             periodic step=  7 n=25 amt=       37.08 flex=fixed                  min=None latest=event_13867 next=['2026-01-07', '2026-01-14', '2026-01-21', '2026-01-28']
+  safe=266.6 earliest=2026-03-15 -> not_recommended/not_affordable plan=none changes=none
+  daily projection (days with flows, no payment applied):
+    2026-01-06        1257.44  
+    2026-01-07        1160.62  utilities: Household utility payment:-59.74, dining: Bakery and snacks:-37.08
+    2026-01-08        1135.62  insurance: Health insurance premium:-25.00
+    2026-01-10        1070.45  streaming: Family streaming plan:-25.00, groceries: Local market purchase:-40.17
+    2026-01-11        1050.88  transport: Ride-hailing trip:-19.57
+    2026-01-13        1003.68  cloud_storage: Online backup subscription:-6.00, shopping: Online retail purchases:-41.20
+    2026-01-14         966.60  dining: Bakery and snacks:-37.08
+    2026-01-15        1832.54  salary:+893.75, entertainment: Local event tickets:-27.81
+    2026-01-16        1812.97  transport: Ride-hailing trip:-19.57
+    2026-01-20        1772.80  groceries: Local market purchase:-40.17
+    2026-01-21        1716.15  transport: Ride-hailing trip:-19.57, dining: Bakery and snacks:-37.08
+    2026-01-26        1696.58  transport: Ride-hailing trip:-19.57
+    2026-01-28        1659.50  dining: Bakery and snacks:-37.08
+    2026-01-30        1619.33  groceries: Local market purchase:-40.17
+    2026-01-31        1599.76  transport: Ride-hailing trip:-19.57
+    2026-02-03        1331.36  rent: Residential rent payment:-268.40
+    2026-02-04        1294.28  dining: Bakery and snacks:-37.08
+    2026-02-05        1274.71  transport: Ride-hailing trip:-19.57
+    2026-02-07        1214.97  utilities: Household utility payment:-59.74
+    2026-02-08        1189.97  insurance: Health insurance premium:-25.00
+    2026-02-09        1149.80  groceries: Local market purchase:-40.17
+    2026-02-10        1105.23  streaming: Family streaming plan:-25.00, transport: Ride-hailing trip:-19.57
+    2026-02-11        1068.15  dining: Bakery and snacks:-37.08
+    2026-02-13        1020.95  cloud_storage: Online backup subscription:-6.00, shopping: Online retail purchases:-41.20
+    2026-02-15        1867.32  salary:+893.75, entertainment: Local event tickets:-27.81, transport: Ride-hailing trip:-19.57
+    2026-02-18        1830.24  dining: Bakery and snacks:-37.08
+    2026-02-19        1790.07  groceries: Local market purchase:-40.17
+    2026-02-20        1770.50  transport: Ride-hailing trip:-19.57
+    2026-02-25        1713.85  transport: Ride-hailing trip:-19.57, dining: Bakery and snacks:-37.08
+    2026-03-01        1673.68  groceries: Local market purchase:-40.17
+    2026-03-02        1654.11  transport: Ride-hailing trip:-19.57
+    2026-03-03        1385.71  rent: Residential rent payment:-268.40
+    2026-03-04        1348.63  dining: Bakery and snacks:-37.08
+    2026-03-07        1269.32  utilities: Household utility payment:-59.74, transport: Ride-hailing trip:-19.57
+    2026-03-08        1244.32  insurance: Health insurance premium:-25.00
+    2026-03-10        1219.32  streaming: Family streaming plan:-25.00
+    2026-03-11        1142.07  groceries: Local market purchase:-40.17, dining: Bakery and snacks:-37.08
+    2026-03-12        1122.50  transport: Ride-hailing trip:-19.57
+    2026-03-13        1075.30  cloud_storage: Online backup subscription:-6.00, shopping: Online retail purchases:-41.20
+    2026-03-15        1941.24  salary:+893.75, entertainment: Local event tickets:-27.81
+    2026-03-17        1921.67  transport: Ride-hailing trip:-19.57
+    2026-03-18        1884.59  dining: Bakery and snacks:-37.08
+    2026-03-21        1844.42  groceries: Local market purchase:-40.17
+    2026-03-22        1824.85  transport: Ride-hailing trip:-19.57
+    2026-03-25        1787.77  dining: Bakery and snacks:-37.08
+    2026-03-27        1768.20  transport: Ride-hailing trip:-19.57
+    2026-03-31        1728.03  groceries: Local market purchase:-40.17

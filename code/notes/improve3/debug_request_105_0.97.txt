@@ -1,0 +1,64 @@
+request_105 user_105 scale=0.97 date=2026-06-08 amount=53500.0 by=2026-06-14 partial=False
+  balance=147831.8 min=73900.0 methods=['full_payment', 'partial_payment', 'installments'] max_m=9
+  series:
+    rent               monthly  step= 30 n= 6 amt=    31200.00 flex=fixed                  min=None latest=event_9722 next=['2026-07-02', '2026-08-02']
+    utilities          monthly  step= 30 n= 6 amt=     5994.60 flex=fixed                  min=None latest=event_9723 next=['2026-07-06', '2026-08-06']
+    insurance          monthly  step= 30 n= 6 amt=     3760.00 flex=fixed                  min=None latest=event_9724 next=['2026-07-07', '2026-08-07']
+    cloud_storage      monthly  step= 30 n= 5 amt=      405.00 flex=fixed                  min=None latest=event_9718 next=['2026-06-12', '2026-07-12', '2026-08-12']
+    streaming          monthly  step= 30 n= 5 amt=     3360.00 flex=fixed                  min=None latest=event_9719 next=['2026-06-09', '2026-07-09', '2026-08-09']
+    shopping           monthly  step= 30 n= 5 amt=     3957.60 flex=reducible              min=1632.0 latest=event_9720 next=['2026-06-12', '2026-07-12', '2026-08-12']
+    entertainment      monthly  step= 30 n= 5 amt=     3336.80 flex=reducible              min=1720.0 latest=event_9721 next=['2026-06-14', '2026-07-14', '2026-08-14']
+    groceries          periodic step= 10 n=18 amt=     4830.60 flex=fixed                  min=None latest=event_9742 next=['2026-06-11', '2026-06-21', '2026-07-01', '2026-07-11']
+    transport          periodic step=  5 n=36 amt=     2046.70 flex=fixed                  min=None latest=event_9778 next=['2026-06-12', '2026-06-17', '2026-06-22', '2026-06-27']
+    dining             periodic step=  7 n=25 amt=     3996.40 flex=fixed                  min=None latest=event_9803 next=['2026-06-14', '2026-06-22', '2026-06-29', '2026-07-06']
+  safe=51998.7 earliest=2026-06-15 -> full_payment/affordable_with_plan plan=2026-06-08:53500 changes=reduce_to:event_9721:1720
+    cand full_payment     deadline=True changes=1 total=53500.00 start=2026-06-08 n=1
+    cand wait             deadline=False changes=0 total=53500.00 start=2026-06-15 n=1
+    cand installments     deadline=False changes=0 total=57780.00 start=2026-06-11 n=6
+  daily projection (days with flows, no payment applied):
+    2026-06-08      147831.80  
+    2026-06-09      144471.80  streaming: Streaming subscription:-3360.00
+    2026-06-11      139641.20  groceries: Supermarket basket:-4830.60
+    2026-06-12      133231.90  cloud_storage: Online backup subscription:-405.00, shopping: Household shopping:-3957.60, transport: Vehicle charging:-2046.70
+    2026-06-14      125898.70  entertainment: Monthly entertainment spend:-3336.80, dining: Neighbourhood restaurant:-3996.40
+    2026-06-15      242898.70  salary:+117000.00
+    2026-06-17      240852.00  transport: Vehicle charging:-2046.70
+    2026-06-21      236021.40  groceries: Supermarket basket:-4830.60
+    2026-06-22      229978.30  transport: Vehicle charging:-2046.70, dining: Neighbourhood restaurant:-3996.40
+    2026-06-27      227931.60  transport: Vehicle charging:-2046.70
+    2026-06-29      223935.20  dining: Neighbourhood restaurant:-3996.40
+    2026-07-01      219104.60  groceries: Supermarket basket:-4830.60
+    2026-07-02      185857.90  rent: Apartment rent transfer:-31200.00, transport: Vehicle charging:-2046.70
+    2026-07-06      175866.90  utilities: Water and power payment:-5994.60, dining: Neighbourhood restaurant:-3996.40
+    2026-07-07      170060.20  insurance: Household insurance:-3760.00, transport: Vehicle charging:-2046.70
+    2026-07-09      166700.20  streaming: Streaming subscription:-3360.00
+    2026-07-11      161869.60  groceries: Supermarket basket:-4830.60
+    2026-07-12      155460.30  cloud_storage: Online backup subscription:-405.00, shopping: Household shopping:-3957.60, transport: Vehicle charging:-2046.70
+    2026-07-13      151463.90  dining: Neighbourhood restaurant:-3996.40
+    2026-07-14      148127.10  entertainment: Monthly entertainment spend:-3336.80
+    2026-07-15      265127.10  salary:+117000.00
+    2026-07-17      263080.40  transport: Vehicle charging:-2046.70
+    2026-07-20      259084.00  dining: Neighbourhood restaurant:-3996.40
+    2026-07-21      254253.40  groceries: Supermarket basket:-4830.60
+    2026-07-22      252206.70  transport: Vehicle charging:-2046.70
+    2026-07-27      246163.60  transport: Vehicle charging:-2046.70, dining: Neighbourhood restaurant:-3996.40
+    2026-07-31      241333.00  groceries: Supermarket basket:-4830.60
+    2026-08-01      239286.30  transport: Vehicle charging:-2046.70
+    2026-08-02      208086.30  rent: Apartment rent transfer:-31200.00
+    2026-08-03      204089.90  dining: Neighbourhood restaurant:-3996.40
+    2026-08-06      196048.60  utilities: Water and power payment:-5994.60, transport: Vehicle charging:-2046.70
+    2026-08-07      192288.60  insurance: Household insurance:-3760.00
+    2026-08-09      188928.60  streaming: Streaming subscription:-3360.00
+    2026-08-10      180101.60  groceries: Supermarket basket:-4830.60, dining: Neighbourhood restaurant:-3996.40
+    2026-08-11      178054.90  transport: Vehicle charging:-2046.70
+    2026-08-12      173692.30  cloud_storage: Online backup subscription:-405.00, shopping: Household shopping:-3957.60
+    2026-08-14      170355.50  entertainment: Monthly entertainment spend:-3336.80
+    2026-08-15      287355.50  salary:+117000.00
+    2026-08-16      285308.80  transport: Vehicle charging:-2046.70
+    2026-08-17      281312.40  dining: Neighbourhood restaurant:-3996.40
+    2026-08-20      276481.80  groceries: Supermarket basket:-4830.60
+    2026-08-21      274435.10  transport: Vehicle charging:-2046.70
+    2026-08-24      270438.70  dining: Neighbourhood restaurant:-3996.40
+    2026-08-26      268392.00  transport: Vehicle charging:-2046.70
+    2026-08-30      263561.40  groceries: Supermarket basket:-4830.60
+    2026-08-31      257518.30  transport: Vehicle charging:-2046.70, dining: Neighbourhood restaurant:-3996.40

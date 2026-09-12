@@ -1,0 +1,57 @@
+request_224 user_224 scale=1.0 date=2025-02-04 amount=10327000.0 by=2025-03-16 partial=True
+  balance=49969400.0 min=22187600.0 methods=['partial_payment', 'installments'] max_m=2
+  series:
+    rent               monthly  step= 30 n= 6 amt=  9310000.00 flex=fixed                  min=None latest=event_20548 next=['2025-03-01', '2025-04-01']
+    utilities          monthly  step= 30 n= 5 amt=  2498200.00 flex=fixed                  min=None latest=event_20543 next=['2025-02-05', '2025-03-05', '2025-04-05']
+    education          monthly  step= 30 n= 5 amt=  3959600.00 flex=fixed                  min=None latest=event_20544 next=['2025-02-07', '2025-03-07', '2025-04-07']
+    debt_repayment     monthly  step= 30 n= 5 amt=  5548000.00 flex=fixed                  min=None latest=event_20545 next=['2025-02-10', '2025-03-10', '2025-04-10']
+    music_subscription monthly  step= 30 n= 5 amt=   412300.00 flex=stoppable              min=None latest=event_20546 next=['2025-02-10', '2025-03-10', '2025-04-10']
+    delivery_membership monthly  step= 30 n= 5 amt=   530100.00 flex=stoppable              min=None latest=event_20547 next=['2025-02-12', '2025-03-12', '2025-04-12']
+    groceries          periodic step=  7 n=26 amt=  1317100.00 flex=fixed                  min=None latest=event_20574 next=['2025-02-08', '2025-02-15', '2025-02-22', '2025-03-01']
+    transport          periodic step=  7 n=26 amt=   695800.00 flex=fixed                  min=None latest=event_20600 next=['2025-02-09', '2025-02-16', '2025-02-23', '2025-03-02']
+    dining             periodic step= 14 n=13 amt=  1003200.00 flex=reducible              min=501600.0 latest=event_20613 next=['2025-02-10', '2025-02-24', '2025-03-10', '2025-03-24']
+  safe=10010600.0 earliest=2025-02-15 -> partial_payment/affordable_with_plan plan=2025-02-04:10010600|2025-02-15:316400 changes=none
+    cand partial_payment  deadline=True changes=0 total=10327000.00 start=2025-02-04 n=2
+    cand installments     deadline=True changes=0 total=10740080.00 start=2025-02-04 n=2
+  daily projection (days with flows, no payment applied):
+    2025-02-04    49969400.00  
+    2025-02-05    47471200.00  utilities: Water and power payment:-2498200.00
+    2025-02-07    43511600.00  education: Child education fee:-3959600.00
+    2025-02-08    42194500.00  groceries: Fresh food shop:-1317100.00
+    2025-02-09    41498700.00  transport: Ride-hailing trip:-695800.00
+    2025-02-10    34535200.00  debt_repayment: Loan repayment:-5548000.00, music_subscription: Music subscription:-412300.00, dining: Coffee shop:-1003200.00
+    2025-02-11    32728300.00  Scheduled utility debit:-1806900.00
+    2025-02-12    32198200.00  delivery_membership: Grocery delivery membership:-530100.00
+    2025-02-15    66981100.00  salary:+36100000.00, groceries: Fresh food shop:-1317100.00
+    2025-02-16    66285300.00  transport: Ride-hailing trip:-695800.00
+    2025-02-22    64968200.00  groceries: Fresh food shop:-1317100.00
+    2025-02-23    64272400.00  transport: Ride-hailing trip:-695800.00
+    2025-02-24    63269200.00  dining: Coffee shop:-1003200.00
+    2025-03-01    52642100.00  rent: Landlord standing order:-9310000.00, groceries: Fresh food shop:-1317100.00
+    2025-03-02    51946300.00  transport: Ride-hailing trip:-695800.00
+    2025-03-05    49448100.00  utilities: Water and power payment:-2498200.00
+    2025-03-07    45488500.00  education: Child education fee:-3959600.00
+    2025-03-08    44171400.00  groceries: Fresh food shop:-1317100.00
+    2025-03-09    43475600.00  transport: Ride-hailing trip:-695800.00
+    2025-03-10    36512100.00  debt_repayment: Loan repayment:-5548000.00, music_subscription: Music subscription:-412300.00, dining: Coffee shop:-1003200.00
+    2025-03-12    35982000.00  delivery_membership: Grocery delivery membership:-530100.00
+    2025-03-15    70764900.00  salary:+36100000.00, groceries: Fresh food shop:-1317100.00
+    2025-03-16    70069100.00  transport: Ride-hailing trip:-695800.00
+    2025-03-22    68752000.00  groceries: Fresh food shop:-1317100.00
+    2025-03-23    68056200.00  transport: Ride-hailing trip:-695800.00
+    2025-03-24    67053000.00  dining: Coffee shop:-1003200.00
+    2025-03-29    65735900.00  groceries: Fresh food shop:-1317100.00
+    2025-03-30    65040100.00  transport: Ride-hailing trip:-695800.00
+    2025-04-01    55730100.00  rent: Landlord standing order:-9310000.00
+    2025-04-05    51914800.00  utilities: Water and power payment:-2498200.00, groceries: Fresh food shop:-1317100.00
+    2025-04-06    51219000.00  transport: Ride-hailing trip:-695800.00
+    2025-04-07    46256200.00  education: Child education fee:-3959600.00, dining: Coffee shop:-1003200.00
+    2025-04-10    40295900.00  debt_repayment: Loan repayment:-5548000.00, music_subscription: Music subscription:-412300.00
+    2025-04-12    38448700.00  delivery_membership: Grocery delivery membership:-530100.00, groceries: Fresh food shop:-1317100.00
+    2025-04-13    37752900.00  transport: Ride-hailing trip:-695800.00
+    2025-04-15    73852900.00  salary:+36100000.00
+    2025-04-19    72535800.00  groceries: Fresh food shop:-1317100.00
+    2025-04-20    71840000.00  transport: Ride-hailing trip:-695800.00
+    2025-04-21    70836800.00  dining: Coffee shop:-1003200.00
+    2025-04-26    69519700.00  groceries: Fresh food shop:-1317100.00
+    2025-04-27    68823900.00  transport: Ride-hailing trip:-695800.00

@@ -1,0 +1,56 @@
+request_145 user_145 scale=0.97 date=2024-03-06 amount=217400.0 by=2024-05-26 partial=True
+  balance=261013.66 min=155400.0 methods=['installments'] max_m=3
+  series:
+    rent               monthly  step= 30 n= 6 amt=    63900.00 flex=fixed                  min=None latest=event_13344 next=['2024-04-02', '2024-05-02']
+    utilities          monthly  step= 30 n= 5 amt=    16490.00 flex=fixed                  min=None latest=event_13339 next=['2024-03-06', '2024-04-06', '2024-05-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=    18500.00 flex=fixed                  min=None latest=event_13340 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    streaming          monthly  step= 30 n= 5 amt=     5840.00 flex=reducible              min=2920.0 latest=event_13341 next=['2024-03-09', '2024-04-09', '2024-05-09']
+    cloud_storage      monthly  step= 30 n= 5 amt=      835.00 flex=stoppable              min=None latest=event_13342 next=['2024-03-12', '2024-04-12', '2024-05-12']
+    shopping           monthly  step= 30 n= 5 amt=    12930.10 flex=fixed                  min=None latest=event_13343 next=['2024-03-12', '2024-04-12', '2024-05-12']
+    groceries          periodic step=  7 n=26 amt=     9360.50 flex=fixed                  min=None latest=event_13370 next=['2024-03-11', '2024-03-18', '2024-03-25', '2024-04-01']
+    transport          periodic step=  7 n=26 amt=     6120.70 flex=fixed                  min=None latest=event_13396 next=['2024-03-12', '2024-03-19', '2024-03-26', '2024-04-02']
+    dining             periodic step= 14 n=13 amt=     6469.90 flex=reducible              min=3335.0 latest=event_13409 next=['2024-03-13', '2024-03-27', '2024-04-10', '2024-04-24']
+  safe=29067.46 earliest=2024-05-15 -> installments/affordable_with_plan plan=2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33 changes=stop:event_13342|reduce_to:event_13341:2920
+    cand installments     deadline=True changes=2 total=226095.99 start=2024-03-20 n=3
+  daily projection (days with flows, no payment applied):
+    2024-03-06      244523.66  utilities: Water and power payment:-16490.00
+    2024-03-09      238683.66  streaming: Video streaming plan:-5840.00
+    2024-03-11      210823.16  debt_repayment: Vehicle loan payment:-18500.00, groceries: Weekly produce market:-9360.50
+    2024-03-12      190937.36  cloud_storage: Cloud storage plan:-835.00, shopping: Clothing and household items:-12930.10, transport: Rail pass:-6120.70
+    2024-03-13      184467.46  dining: Takeaway order:-6469.90
+    2024-03-15      442467.46  salary:+258000.00
+    2024-03-18      433106.96  groceries: Weekly produce market:-9360.50
+    2024-03-19      426986.26  transport: Rail pass:-6120.70
+    2024-03-25      417625.76  groceries: Weekly produce market:-9360.50
+    2024-03-26      411505.06  transport: Rail pass:-6120.70
+    2024-03-27      405035.16  dining: Takeaway order:-6469.90
+    2024-04-01      395674.66  groceries: Weekly produce market:-9360.50
+    2024-04-02      325653.96  rent: Landlord standing order:-63900.00, transport: Rail pass:-6120.70
+    2024-04-06      309163.96  utilities: Water and power payment:-16490.00
+    2024-04-08      299803.46  groceries: Weekly produce market:-9360.50
+    2024-04-09      287842.76  streaming: Video streaming plan:-5840.00, transport: Rail pass:-6120.70
+    2024-04-10      281372.86  dining: Takeaway order:-6469.90
+    2024-04-11      262872.86  debt_repayment: Vehicle loan payment:-18500.00
+    2024-04-12      249107.76  cloud_storage: Cloud storage plan:-835.00, shopping: Clothing and household items:-12930.10
+    2024-04-15      497747.26  salary:+258000.00, groceries: Weekly produce market:-9360.50
+    2024-04-16      491626.56  transport: Rail pass:-6120.70
+    2024-04-22      482266.06  groceries: Weekly produce market:-9360.50
+    2024-04-23      476145.36  transport: Rail pass:-6120.70
+    2024-04-24      469675.46  dining: Takeaway order:-6469.90
+    2024-04-29      460314.96  groceries: Weekly produce market:-9360.50
+    2024-04-30      454194.26  transport: Rail pass:-6120.70
+    2024-05-02      390294.26  rent: Landlord standing order:-63900.00
+    2024-05-06      364443.76  utilities: Water and power payment:-16490.00, groceries: Weekly produce market:-9360.50
+    2024-05-07      358323.06  transport: Rail pass:-6120.70
+    2024-05-08      351853.16  dining: Takeaway order:-6469.90
+    2024-05-09      346013.16  streaming: Video streaming plan:-5840.00
+    2024-05-11      327513.16  debt_repayment: Vehicle loan payment:-18500.00
+    2024-05-12      313748.06  cloud_storage: Cloud storage plan:-835.00, shopping: Clothing and household items:-12930.10
+    2024-05-13      304387.56  groceries: Weekly produce market:-9360.50
+    2024-05-14      298266.86  transport: Rail pass:-6120.70
+    2024-05-15      556266.86  salary:+258000.00
+    2024-05-20      546906.36  groceries: Weekly produce market:-9360.50
+    2024-05-21      540785.66  transport: Rail pass:-6120.70
+    2024-05-22      534315.76  dining: Takeaway order:-6469.90
+    2024-05-27      524955.26  groceries: Weekly produce market:-9360.50
+    2024-05-28      518834.56  transport: Rail pass:-6120.70

@@ -1,0 +1,38 @@
+request_97 user_97 scale=1.0 date=2024-03-05 amount=23496.0 by=2024-05-24 partial=False
+  balance=38565.89 min=29700.0 methods=['installments'] max_m=5
+  series:
+    rent               monthly  step= 30 n= 6 amt=    11792.00 flex=fixed                  min=None latest=event_9007 next=['2024-04-02', '2024-05-02']
+    utilities          monthly  step= 30 n= 5 amt=     2004.40 flex=fixed                  min=None latest=event_9004 next=['2024-03-06', '2024-04-06', '2024-05-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=     3531.00 flex=fixed                  min=None latest=event_9005 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    music_subscription monthly  step= 30 n= 5 amt=      218.90 flex=stoppable              min=None latest=event_9006 next=['2024-03-11', '2024-04-11', '2024-05-11']
+    groceries          periodic step= 14 n=13 amt=     1437.80 flex=fixed                  min=None latest=event_9020 next=['2024-03-10', '2024-03-24', '2024-04-07', '2024-04-21']
+    transport          periodic step= 21 n= 9 amt=      810.40 flex=fixed                  min=None latest=event_9029 next=['2024-03-14', '2024-04-08', '2024-04-29', '2024-05-20']
+    dining             periodic step= 21 n= 9 amt=     1155.00 flex=reducible              min=577.5 latest=event_9038 next=['2024-03-14', '2024-04-09', '2024-04-30', '2024-05-21']
+  safe=0.0 earliest=2024-04-15 -> installments/affordable_with_plan plan=2024-03-19:8145.28|2024-04-19:8145.28|2024-05-20:8145.28 changes=stop:event_9006|reduce_to:event_9038:577.50
+    cand installments     deadline=True changes=2 total=24435.84 start=2024-03-19 n=3
+  daily projection (days with flows, no payment applied):
+    2024-03-05       38565.89  
+    2024-03-06       36561.49  utilities: Water and power payment:-2004.40
+    2024-03-10       35123.69  groceries: Household groceries:-1437.80
+    2024-03-11       31373.79  debt_repayment: Loan repayment:-3531.00, music_subscription: Audio streaming plan:-218.90
+    2024-03-14       29408.39  transport: Fuel refill:-810.40, dining: Neighbourhood restaurant:-1155.00
+    2024-03-15       64828.39  salary:+35420.00
+    2024-03-24       63390.59  groceries: Household groceries:-1437.80
+    2024-04-02       51598.59  rent: Landlord standing order:-11792.00
+    2024-04-06       49594.19  utilities: Water and power payment:-2004.40
+    2024-04-07       48156.39  groceries: Household groceries:-1437.80
+    2024-04-08       47345.99  transport: Fuel refill:-810.40
+    2024-04-09       46190.99  dining: Neighbourhood restaurant:-1155.00
+    2024-04-11       42441.09  debt_repayment: Loan repayment:-3531.00, music_subscription: Audio streaming plan:-218.90
+    2024-04-15       77861.09  salary:+35420.00
+    2024-04-21       76423.29  groceries: Household groceries:-1437.80
+    2024-04-29       75612.89  transport: Fuel refill:-810.40
+    2024-04-30       74457.89  dining: Neighbourhood restaurant:-1155.00
+    2024-05-02       62665.89  rent: Landlord standing order:-11792.00
+    2024-05-05       61228.09  groceries: Household groceries:-1437.80
+    2024-05-06       59223.69  utilities: Water and power payment:-2004.40
+    2024-05-11       55473.79  debt_repayment: Loan repayment:-3531.00, music_subscription: Audio streaming plan:-218.90
+    2024-05-15       90893.79  salary:+35420.00
+    2024-05-19       89455.99  groceries: Household groceries:-1437.80
+    2024-05-20       88645.59  transport: Fuel refill:-810.40
+    2024-05-21       87490.59  dining: Neighbourhood restaurant:-1155.00

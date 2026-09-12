@@ -1,0 +1,65 @@
+request_60 user_60 scale=1.0 date=2026-01-06 amount=199.89 by=2026-03-04 partial=True
+  balance=683.69 min=400.0 methods=['full_payment'] max_m=None
+  series:
+    rent               monthly  step= 30 n= 6 amt=      122.40 flex=fixed                  min=None latest=event_5578 next=['2026-02-01', '2026-03-01']
+    utilities          monthly  step= 30 n= 6 amt=       37.00 flex=fixed                  min=None latest=event_5579 next=['2026-02-05', '2026-03-05']
+    insurance          monthly  step= 30 n= 5 amt=       18.00 flex=fixed                  min=None latest=event_5573 next=['2026-01-06', '2026-02-06', '2026-03-06']
+    cloud_storage      monthly  step= 30 n= 5 amt=        3.00 flex=stoppable              min=None latest=event_5574 next=['2026-01-11', '2026-02-11', '2026-03-11']
+    streaming          monthly  step= 30 n= 5 amt=       10.00 flex=stoppable              min=None latest=event_5575 next=['2026-01-08', '2026-02-08', '2026-03-08']
+    shopping           monthly  step= 30 n= 5 amt=       19.00 flex=fixed                  min=None latest=event_5576 next=['2026-01-11', '2026-02-11', '2026-03-11']
+    entertainment      monthly  step= 30 n= 5 amt=       14.00 flex=fixed                  min=None latest=event_5577 next=['2026-01-13', '2026-02-13', '2026-03-13']
+    groceries          periodic step= 10 n=18 amt=       20.00 flex=fixed                  min=None latest=event_5597 next=['2026-01-08', '2026-01-18', '2026-01-28', '2026-02-07']
+    transport          periodic step=  5 n=36 amt=       14.00 flex=fixed                  min=None latest=event_5633 next=['2026-01-09', '2026-01-14', '2026-01-19', '2026-01-24']
+    dining             periodic step=  7 n=26 amt=       20.00 flex=fixed                  min=None latest=event_5659 next=['2026-01-12', '2026-01-19', '2026-01-26', '2026-02-02']
+  safe=116.69 earliest=2026-02-15 -> wait/affordable_later plan=2026-02-15:199.89 changes=none
+    cand wait             deadline=True changes=0 total=199.89 start=2026-02-15 n=1
+  daily projection (days with flows, no payment applied):
+    2026-01-06         665.69  insurance: Household insurance:-18.00
+    2026-01-07         630.69  Pending online order charge:-35.00
+    2026-01-08         600.69  streaming: Video streaming plan:-10.00, groceries: Bulk pantry shop:-20.00
+    2026-01-09         586.69  transport: Local taxi:-14.00
+    2026-01-11         564.69  cloud_storage: Online backup subscription:-3.00, shopping: Clothing and household items:-19.00
+    2026-01-12         544.69  dining: Coffee shop:-20.00
+    2026-01-13         530.69  entertainment: Local event tickets:-14.00
+    2026-01-14         516.69  transport: Local taxi:-14.00
+    2026-01-15        1047.09  salary:+530.40
+    2026-01-18        1027.09  groceries: Bulk pantry shop:-20.00
+    2026-01-19         993.09  transport: Local taxi:-14.00, dining: Coffee shop:-20.00
+    2026-01-24         979.09  transport: Local taxi:-14.00
+    2026-01-26         959.09  dining: Coffee shop:-20.00
+    2026-01-28         939.09  groceries: Bulk pantry shop:-20.00
+    2026-01-29         925.09  transport: Local taxi:-14.00
+    2026-02-01         802.69  rent: Apartment rent transfer:-122.40
+    2026-02-02         782.69  dining: Coffee shop:-20.00
+    2026-02-03         768.69  transport: Local taxi:-14.00
+    2026-02-05         731.69  utilities: Electricity and water bill:-37.00
+    2026-02-06         713.69  insurance: Household insurance:-18.00
+    2026-02-07         693.69  groceries: Bulk pantry shop:-20.00
+    2026-02-08         669.69  streaming: Video streaming plan:-10.00, transport: Local taxi:-14.00
+    2026-02-09         649.69  dining: Coffee shop:-20.00
+    2026-02-11         627.69  cloud_storage: Online backup subscription:-3.00, shopping: Clothing and household items:-19.00
+    2026-02-13         599.69  entertainment: Local event tickets:-14.00, transport: Local taxi:-14.00
+    2026-02-15        1130.09  salary:+530.40
+    2026-02-16        1110.09  dining: Coffee shop:-20.00
+    2026-02-17        1090.09  groceries: Bulk pantry shop:-20.00
+    2026-02-18        1076.09  transport: Local taxi:-14.00
+    2026-02-23        1042.09  transport: Local taxi:-14.00, dining: Coffee shop:-20.00
+    2026-02-27        1022.09  groceries: Bulk pantry shop:-20.00
+    2026-02-28        1008.09  transport: Local taxi:-14.00
+    2026-03-01         885.69  rent: Apartment rent transfer:-122.40
+    2026-03-02         865.69  dining: Coffee shop:-20.00
+    2026-03-05         814.69  utilities: Electricity and water bill:-37.00, transport: Local taxi:-14.00
+    2026-03-06         796.69  insurance: Household insurance:-18.00
+    2026-03-08         786.69  streaming: Video streaming plan:-10.00
+    2026-03-09         746.69  groceries: Bulk pantry shop:-20.00, dining: Coffee shop:-20.00
+    2026-03-10         732.69  transport: Local taxi:-14.00
+    2026-03-11         710.69  cloud_storage: Online backup subscription:-3.00, shopping: Clothing and household items:-19.00
+    2026-03-13         696.69  entertainment: Local event tickets:-14.00
+    2026-03-15        1213.09  salary:+530.40, transport: Local taxi:-14.00
+    2026-03-16        1193.09  dining: Coffee shop:-20.00
+    2026-03-19        1173.09  groceries: Bulk pantry shop:-20.00
+    2026-03-20        1159.09  transport: Local taxi:-14.00
+    2026-03-23        1139.09  dining: Coffee shop:-20.00
+    2026-03-25        1125.09  transport: Local taxi:-14.00
+    2026-03-29        1105.09  groceries: Bulk pantry shop:-20.00
+    2026-03-30        1071.09  transport: Local taxi:-14.00, dining: Coffee shop:-20.00

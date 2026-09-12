@@ -1,0 +1,56 @@
+request_101 user_101 scale=1.03 date=2025-11-03 amount=143500.0 by=2025-11-14 partial=False
+  balance=465868.5 min=187400.0 methods=['full_payment', 'installments'] max_m=10
+  series:
+    housing            monthly  step= 30 n= 5 amt=    30050.00 flex=fixed                  min=None latest=event_9372 next=['2025-11-03', '2025-12-03', '2026-01-03']
+    utilities          monthly  step= 30 n= 5 amt=    15223.40 flex=fixed                  min=None latest=event_9373 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    insurance          monthly  step= 30 n= 5 amt=     9470.00 flex=fixed                  min=None latest=event_9374 next=['2025-11-07', '2025-12-07', '2026-01-07']
+    education          monthly  step= 30 n= 5 amt=    25020.00 flex=fixed                  min=None latest=event_9375 next=['2025-11-08', '2025-12-08', '2026-01-08']
+    healthcare         monthly  step= 30 n= 5 amt=    10124.90 flex=fixed                  min=None latest=event_9376 next=['2025-11-10', '2025-12-10', '2026-01-10']
+    entertainment      monthly  step= 30 n= 5 amt=     5479.60 flex=reducible              min=2660.0 latest=event_9377 next=['2025-11-14', '2025-12-14', '2026-01-14']
+    cloud_storage      monthly  step= 30 n= 5 amt=     1985.00 flex=stoppable              min=None latest=event_9378 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    groceries          periodic step= 10 n=18 amt=     9630.50 flex=fixed                  min=None latest=event_9396 next=['2025-11-06', '2025-11-16', '2025-11-26', '2025-12-06']
+    transport          periodic step= 14 n=13 amt=     6592.00 flex=fixed                  min=None latest=event_9409 next=['2025-11-09', '2025-11-23', '2025-12-07', '2025-12-21']
+    dining             periodic step= 21 n= 9 amt=     8672.60 flex=reducible              min=4210.0 latest=event_9418 next=['2025-11-14', '2025-12-08', '2025-12-29', '2026-01-19']
+  safe=140560.5 earliest=2025-11-15 -> full_payment/affordable_with_plan plan=2025-11-03:143500 changes=stop:event_9378|reduce_to:event_9377:2660
+    cand full_payment     deadline=True changes=2 total=143500.00 start=2025-11-03 n=1
+    cand wait             deadline=False changes=0 total=143500.00 start=2025-11-15 n=1
+    cand installments     deadline=False changes=0 total=154980.00 start=2025-11-06 n=6
+  daily projection (days with flows, no payment applied):
+    2025-11-03      435818.50  housing: Property maintenance contribution:-30050.00
+    2025-11-05      420158.50  Pending fuel authorization:-15660.00
+    2025-11-06      395304.60  utilities: Household utility payment:-15223.40, groceries: Bulk pantry shop:-9630.50
+    2025-11-07      385834.60  insurance: Health insurance premium:-9470.00
+    2025-11-08      360814.60  education: Child education fee:-25020.00
+    2025-11-09      354222.60  transport: Ride-hailing trip:-6592.00
+    2025-11-10      344097.70  healthcare: Diagnostic test:-10124.90
+    2025-11-12      342112.70  cloud_storage: Online backup subscription:-1985.00
+    2025-11-14      327960.50  entertainment: Monthly entertainment spend:-5479.60, dining: Quick-service meal:-8672.60
+    2025-11-15      581960.50  salary:+254000.00
+    2025-11-16      572330.00  groceries: Bulk pantry shop:-9630.50
+    2025-11-23      565738.00  transport: Ride-hailing trip:-6592.00
+    2025-11-26      556107.50  groceries: Bulk pantry shop:-9630.50
+    2025-12-03      526057.50  housing: Property maintenance contribution:-30050.00
+    2025-12-06      501203.60  utilities: Household utility payment:-15223.40, groceries: Bulk pantry shop:-9630.50
+    2025-12-07      485141.60  insurance: Health insurance premium:-9470.00, transport: Ride-hailing trip:-6592.00
+    2025-12-08      451449.00  education: Child education fee:-25020.00, dining: Quick-service meal:-8672.60
+    2025-12-10      441324.10  healthcare: Diagnostic test:-10124.90
+    2025-12-12      439339.10  cloud_storage: Online backup subscription:-1985.00
+    2025-12-14      433859.50  entertainment: Monthly entertainment spend:-5479.60
+    2025-12-15      687859.50  salary:+254000.00
+    2025-12-16      678229.00  groceries: Bulk pantry shop:-9630.50
+    2025-12-21      671637.00  transport: Ride-hailing trip:-6592.00
+    2025-12-26      662006.50  groceries: Bulk pantry shop:-9630.50
+    2025-12-29      653333.90  dining: Quick-service meal:-8672.60
+    2026-01-03      623283.90  housing: Property maintenance contribution:-30050.00
+    2026-01-04      616691.90  transport: Ride-hailing trip:-6592.00
+    2026-01-05      607061.40  groceries: Bulk pantry shop:-9630.50
+    2026-01-06      591838.00  utilities: Household utility payment:-15223.40
+    2026-01-07      582368.00  insurance: Health insurance premium:-9470.00
+    2026-01-08      557348.00  education: Child education fee:-25020.00
+    2026-01-10      547223.10  healthcare: Diagnostic test:-10124.90
+    2026-01-12      545238.10  cloud_storage: Online backup subscription:-1985.00
+    2026-01-14      539758.50  entertainment: Monthly entertainment spend:-5479.60
+    2026-01-15      784128.00  salary:+254000.00, groceries: Bulk pantry shop:-9630.50
+    2026-01-18      777536.00  transport: Ride-hailing trip:-6592.00
+    2026-01-19      768863.40  dining: Quick-service meal:-8672.60
+    2026-01-25      759232.90  groceries: Bulk pantry shop:-9630.50

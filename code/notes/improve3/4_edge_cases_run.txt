@@ -1,0 +1,897 @@
+built 250
+output.csv vs in-process mismatches: []
+
+===== CASE 1: income ended / final payroll =====
+request_29 user_29 msgs=[('message_21', 'T08')] final_payroll=False last_regular=2025-08-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=3610 status=not_affordable method=not_recommended plan=none earliest='' changes=none | requested 51524.0 headroom 85240.1
+request_61 user_61 msgs=[('message_45', 'T08')] final_payroll=False last_regular=2023-12-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=29062 status=affordable_with_plan method=installments plan=2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83 earliest='2024-03-03' changes=none | requested 29062.0 headroom 110770.23
+request_75 user_75 msgs=[('message_57', 'T16')] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=28270 status=affordable_with_plan method=installments plan=2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27 earliest='2026-04-06' changes=none | requested 28270.0 headroom 106867.87
+request_111 user_111 msgs=[('message_84', 'T16')] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=16625000 status=affordable_now method=full_payment plan=2026-04-03:16625000 earliest='2026-04-03' changes=none | requested 16625000.0 headroom 62182060.0
+request_133 user_133 msgs=[('message_103', 'T08')] final_payroll=False last_regular=2023-12-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=2236800 status=not_affordable method=not_recommended plan=none earliest='' changes=none | requested 15770000.0 headroom 26838450.0
+request_165 user_165 msgs=[('message_129', 'T16')] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=80600 status=affordable_now method=full_payment plan=2026-04-06:80600 earliest='2026-04-06' changes=none | requested 80600.0 headroom 271705.0
+request_174 user_174 msgs=[] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['last payroll is final; no salary projected']
+    safe=1146.2 status=affordable_with_plan method=installments plan=2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35 earliest='2026-04-04' changes=none | requested 1146.2 headroom 2566.04
+request_201 user_201 msgs=[('message_160', 'T08')] final_payroll=False last_regular=2026-01-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=23997000 status=affordable_now method=full_payment plan=2026-04-03:23997000 earliest='2026-04-03' changes=none | requested 23997000.0 headroom 60668900.0
+request_213 user_213 msgs=[('message_166', 'T08')] final_payroll=False last_regular=2025-10-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=3362.4 status=affordable_with_plan method=installments plan=2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63 earliest='2026-01-07' changes=none | requested 3362.4 headroom 9951.94
+request_237 user_237 msgs=[('message_186', 'T08')] final_payroll=False last_regular=2026-01-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=23826000 status=affordable_now method=full_payment plan=2026-04-05:23826000 earliest='2026-04-05' changes=none | requested 23826000.0 headroom 78393050.0
+request_241 user_241 msgs=[('message_189', 'T08')] final_payroll=False last_regular=2023-12-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=21052000 status=affordable_with_plan method=installments plan=2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67 earliest='2024-03-03' changes=none | requested 21052000.0 headroom 70920322.14
+request_246 user_246 msgs=[('message_192', 'T16')] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=64086 status=affordable_with_plan method=installments plan=2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48 earliest='2026-04-03' changes=none | requested 64086.0 headroom 162392.06
+request_255 user_255 msgs=[] final_payroll=True last_regular=2026-03-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['last payroll is final; no salary projected']
+    safe=3345000 status=affordable_now method=full_payment plan=2026-04-06:3345000 earliest='2026-04-06' changes=none | requested 3345000.0 headroom 28704250.0
+request_265 user_265 msgs=[('message_206', 'T08')] final_payroll=False last_regular=2023-12-15 freelance/gig_hist=0 scheduled_salary=[]
+   projected income flows=[]  notes=['income ended per message; no salary projected']
+    safe=45970 status=affordable_now method=full_payment plan=2024-03-06:45970 earliest='2024-03-06' changes=none | requested 45970.0 headroom 596405.0
+
+===== CASE 2: first-salary messages T10/T11/T12 =====
+request_32 user_32 rq=2025-02-05 msg=[('message_22', 'T10', 'salary_amount_change', '2025-02-15', 54120.0, 'ZAR')] sched=[] settled_salary_hist=2 first_proj=2025-02-15 amounts=[54120.0, 54120.0, 54120.0] dates=['2025-02-15', '2025-03-15', '2025-04-15'] first==msg_date:True
+    safe=13395.4 status=affordable_later method=wait plan=2025-04-15:40018 earliest='2025-04-15' changes=none
+request_40 user_40 rq=2024-06-06 msg=[('message_29', 'T10', 'salary_amount_change', '2024-06-15', 1760.0, 'EUR')] sched=[] settled_salary_hist=2 first_proj=2024-06-15 amounts=[1760.0, 1760.0, 1760.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=355 status=affordable_later method=wait plan=2024-08-15:1290.30 earliest='2024-08-15' changes=none
+request_43 user_43 rq=2024-09-07 msg=[('message_31', 'T11', 'salary_amount_change', '2024-09-15', 32870000.0, 'IDR')] sched=[] settled_salary_hist=5 first_proj=2024-09-15 amounts=[32870000.0, 32870000.0, 32870000.0] dates=['2024-09-15', '2024-10-15', '2024-11-15'] first==msg_date:True
+    safe=6608200 status=affordable_later method=wait plan=2024-11-15:43339000 earliest='2024-11-15' changes=none
+request_44 user_44 rq=2025-02-04 msg=[('message_32', 'T10', 'salary_amount_change', '2025-02-15', 115000.0, 'INR')] sched=[] settled_salary_hist=2 first_proj=2025-02-15 amounts=[115000.0, 115000.0, 115000.0] dates=['2025-02-15', '2025-03-15', '2025-04-15'] first==msg_date:True
+    safe=30610 status=affordable_later method=wait plan=2025-04-15:95800 earliest='2025-04-15' changes=none
+request_52 user_52 rq=2024-06-05 msg=[('message_38', 'T11', 'salary_amount_change', '2024-06-15', 69000.0, 'INR')] sched=[] settled_salary_hist=5 first_proj=2024-06-15 amounts=[69000.0, 69000.0, 69000.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=15220 status=affordable_later method=wait plan=2024-06-15:28870 earliest='2024-06-15' changes=none
+request_72 user_72 rq=2026-07-05 msg=[('message_54', 'T10', 'salary_amount_change', '2026-07-15', 18700.0, 'ZAR')] sched=[] settled_salary_hist=2 first_proj=2026-07-15 amounts=[18700.0, 18700.0, 18700.0] dates=['2026-07-15', '2026-08-15', '2026-09-15'] first==msg_date:True
+    safe=11330 status=affordable_now method=full_payment plan=2026-07-05:11330 earliest='2026-07-05' changes=none
+request_106 user_106 rq=2024-12-03 msg=[('message_80', 'T11', 'salary_amount_change', '2024-12-15', 1815.0, 'EUR')] sched=[] settled_salary_hist=5 first_proj=2024-12-15 amounts=[1815.0, 1815.0, 1815.0] dates=['2024-12-15', '2025-01-15', '2025-02-15'] first==msg_date:True
+    safe=363 status=affordable_later method=wait plan=2025-02-15:2207.70 earliest='2025-02-15' changes=none
+request_107 user_107 rq=2025-05-05 msg=[('message_81', 'T12', 'salary_amount_change', '2025-05-15', 2123.0, 'EUR')] sched=[] settled_salary_hist=1 first_proj=2025-05-15 amounts=[2123.0, 2123.0, 2123.0] dates=['2025-05-15', '2025-06-15', '2025-07-15'] first==msg_date:True
+    safe=2458.52 status=affordable_with_plan method=installments plan=2025-05-08:878.59|2025-06-05:878.59|2025-07-03:878.59 earliest='2025-07-15' changes=stop:event_9894|stop:event_9895|reduce_to:event_9959:42.50
+request_112 user_112 rq=2024-06-05 msg=[('message_85', 'T10', 'salary_amount_change', '2024-06-15', 627.0, 'EUR')] sched=[] settled_salary_hist=2 first_proj=2024-06-15 amounts=[627.0, 627.0, 627.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=271.7 status=affordable_now method=full_payment plan=2024-06-05:271.70 earliest='2024-06-05' changes=none
+request_140 user_140 rq=2025-02-06 msg=[('message_107', 'T10', 'salary_amount_change', '2025-02-15', 31900.0, 'ZAR')] sched=[] settled_salary_hist=2 first_proj=2025-02-15 amounts=[31900.0, 31900.0, 31900.0] dates=['2025-02-15', '2025-03-15', '2025-04-15'] first==msg_date:True
+    safe=1571.2 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_144 user_144 rq=2026-07-04 msg=[('message_111', 'T10', 'salary_amount_change', '2026-07-15', 864.0, 'USD')] sched=[] settled_salary_hist=2 first_proj=2026-07-15 amounts=[864.0, 864.0, 864.0] dates=['2026-07-15', '2026-08-15', '2026-09-15'] first==msg_date:True
+    safe=233.34 status=affordable_now method=full_payment plan=2026-07-04:233.34 earliest='2026-07-04' changes=none
+request_151 user_151 rq=2024-09-03 msg=[('message_116', 'T11', 'salary_amount_change', '2024-09-15', 46170000.0, 'IDR')] sched=[] settled_salary_hist=5 first_proj=2024-09-15 amounts=[46170000.0, 46170000.0, 46170000.0] dates=['2024-09-15', '2024-10-15', '2024-11-15'] first==msg_date:True
+    safe=26602315 status=affordable_with_plan method=full_payment plan=2024-09-03:26999000 earliest='2024-09-15' changes=reduce_to:event_13923:633650
+request_160 user_160 rq=2024-06-06 msg=[('message_124', 'T11', 'salary_amount_change', '2024-06-15', 1672.0, 'EUR')] sched=[] settled_salary_hist=5 first_proj=2024-06-15 amounts=[1672.0, 1672.0, 1672.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=468.61 status=affordable_with_plan method=installments plan=2024-06-13:432.05|2024-07-14:432.05|2024-08-14:432.05 earliest='2024-07-15' changes=none
+request_161 user_161 rq=2025-11-03 msg=[('message_125', 'T12', 'salary_amount_change', '2025-11-15', 26790000.0, 'IDR')] sched=[] settled_salary_hist=1 first_proj=2025-11-15 amounts=[26790000.0, 26790000.0, 26790000.0] dates=['2025-11-15', '2025-12-15', '2026-01-15'] first==msg_date:True
+    safe=6984100 status=affordable_later method=wait plan=2026-01-15:21204000 earliest='2026-01-15' changes=none
+request_180 user_180 rq=2026-07-06 msg=[('message_143', 'T10', 'salary_amount_change', '2026-07-15', 59000.0, 'INR')] sched=[] settled_salary_hist=2 first_proj=2026-07-15 amounts=[59000.0, 59000.0, 59000.0] dates=['2026-07-15', '2026-08-15', '2026-09-15'] first==msg_date:True
+    safe=66500 status=affordable_now method=full_payment plan=2026-07-06:66500 earliest='2026-07-06' changes=none
+request_187 user_187 rq=2024-09-05 msg=[('message_149', 'T11', 'salary_amount_change', '2024-09-15', 145000.0, 'INR')] sched=[] settled_salary_hist=5 first_proj=2024-09-15 amounts=[145000.0, 145000.0, 145000.0] dates=['2024-09-15', '2024-10-15', '2024-11-15'] first==msg_date:True
+    safe=29300 status=affordable_later method=wait plan=2024-11-15:187500 earliest='2024-11-15' changes=none
+request_197 user_197 rq=2025-11-05 msg=[('message_156', 'T12', 'salary_amount_change', '2025-11-15', 38190000.0, 'IDR')] sched=[] settled_salary_hist=1 first_proj=2025-11-15 amounts=[38190000.0, 38190000.0, 38190000.0] dates=['2025-11-15', '2025-12-15', '2026-01-15'] first==msg_date:True
+    safe=50939000 status=affordable_with_plan method=installments plan=2025-11-19:17658853.33|2025-12-17:17658853.33|2026-01-14:17658853.33 earliest='2025-11-05' changes=none
+request_204 user_204 rq=2026-01-04 msg=[('message_162', 'T10', 'salary_amount_change', '2026-01-15', 2024.0, 'EUR')] sched=[] settled_salary_hist=2 first_proj=2026-01-15 amounts=[2024.0, 2024.0, 2024.0] dates=['2026-01-15', '2026-02-15', '2026-03-15'] first==msg_date:True
+    safe=573.28 status=affordable_later method=wait plan=2026-01-15:588.74 earliest='2026-01-15' changes=none
+request_228 user_228 rq=2026-04-07 msg=[('message_178', 'T10', 'salary_amount_change', '2026-04-15', 30400000.0, 'IDR')] sched=[] settled_salary_hist=2 first_proj=2026-04-15 amounts=[30400000.0, 30400000.0, 30400000.0] dates=['2026-04-15', '2026-05-15', '2026-06-15'] first==msg_date:True
+    safe=1509900 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_232 user_232 rq=2024-06-05 msg=[('message_181', 'T10', 'salary_amount_change', '2024-06-15', 2772.0, 'EUR')] sched=[] settled_salary_hist=2 first_proj=2024-06-15 amounts=[2772.0, 2772.0, 2772.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=627 status=affordable_later method=wait plan=2024-08-15:1970.10 earliest='2024-08-15' changes=none
+request_233 user_233 rq=2025-11-07 msg=[('message_182', 'T12', 'salary_amount_change', '2025-11-15', 16910000.0, 'IDR')] sched=[] settled_salary_hist=1 first_proj=2025-11-15 amounts=[16910000.0, 16910000.0, 16910000.0] dates=['2025-11-15', '2025-12-15', '2026-01-15'] first==msg_date:True
+    safe=3736100 status=affordable_with_plan method=partial_payment plan=2025-11-07:3736100|2025-11-15:2504900 earliest='2025-11-15' changes=none
+request_240 user_240 rq=2026-01-06 msg=[('message_188', 'T10', 'salary_amount_change', '2026-01-15', 62000.0, 'INR')] sched=[] settled_salary_hist=2 first_proj=2026-01-15 amounts=[62000.0, 62000.0, 62000.0] dates=['2026-01-15', '2026-02-15', '2026-03-15'] first==msg_date:True
+    safe=13680 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_242 user_242 rq=2025-08-05 msg=[('message_190', 'T12', 'salary_amount_change', '2025-08-15', 968.0, 'EUR')] sched=[] settled_salary_hist=1 first_proj=2025-08-15 amounts=[968.0, 968.0, 968.0] dates=['2025-08-15', '2025-09-15', '2025-10-15'] first==msg_date:True
+    safe=45.4 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_250 user_250 rq=2024-12-06 msg=[('message_196', 'T11', 'salary_amount_change', '2024-12-15', 53680.0, 'ZAR')] sched=[] settled_salary_hist=5 first_proj=2024-12-15 amounts=[53680.0, 53680.0, 53680.0] dates=['2024-12-15', '2025-01-15', '2025-02-15'] first==msg_date:True
+    safe=11901.8 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_256 user_256 rq=2024-06-03 msg=[('message_200', 'T10', 'salary_amount_change', '2024-06-15', 214000.0, 'INR')] sched=[] settled_salary_hist=2 first_proj=2024-06-15 amounts=[214000.0, 214000.0, 214000.0] dates=['2024-06-15', '2024-07-15', '2024-08-15'] first==msg_date:True
+    safe=152623.28 status=affordable_with_plan method=installments plan=2024-06-10:75816|2024-07-11:75816|2024-08-11:75816 earliest='2024-07-15' changes=none
+request_269 user_269 rq=2025-11-04 msg=[('message_210', 'T12', 'salary_amount_change', '2025-11-15', 38280.0, 'ZAR')] sched=[] settled_salary_hist=1 first_proj=2025-11-15 amounts=[38280.0, 38280.0, 38280.0] dates=['2025-11-15', '2025-12-15', '2026-01-15'] first==msg_date:True
+    safe=9891.8 status=affordable_later method=wait plan=2025-12-15:15490 earliest='2025-12-15' changes=none
+
+===== CASE 3: foreign-currency salary =====
+request_39 user_39 home=INR fx_rows=[('event_3516', 'Payroll credit', 'settled', 'USD', 3048.0, '2026-02-15'), ('event_3524', 'Payroll credit', 'settled', 'USD', 3048.0, '2026-03-15'), ('event_3611', 'Next confirmed salary', 'scheduled', 'USD', 3048.0, '2026-04-15')] msgs=[]
+   proj income=[('2026-04-15', 253989.84, 'salary'), ('2026-05-15', 253989.84, 'salary'), ('2026-06-15', 253989.84, 'salary')] no-exact-rate-dates=[]
+    safe=56750 status=affordable_later method=wait plan=2026-06-15:208600 earliest='2026-06-15' changes=none
+request_41 user_41 home=IDR fx_rows=[('event_3736', 'International employer payroll', 'settled', 'USD', 2688.0, '2025-09-15'), ('event_3744', 'International employer payroll', 'settled', 'USD', 2688.0, '2025-10-15'), ('event_3833', 'Next confirmed salary', 'scheduled', 'USD', 2688.0, '2025-11-15')] msgs=[]
+   proj income=[('2025-11-15', 42559991.04, 'salary'), ('2025-12-15', 42559991.04, 'salary'), ('2026-01-15', 42559991.04, 'salary')] no-exact-rate-dates=[]
+    safe=8551400 status=affordable_later method=wait plan=2026-01-15:38760000 earliest='2026-01-15' changes=none
+request_48 user_48 home=INR fx_rows=[('event_4431', 'Payroll credit', 'settled', 'USD', 984.0, '2026-05-15'), ('event_4439', 'Payroll credit', 'settled', 'USD', 984.0, '2026-06-15'), ('event_4447', 'Payroll credit', 'settled', 'USD', 984.0, '2026-07-15')] msgs=[]
+   proj income=[('2026-08-15', 81996.72, 'salary'), ('2026-09-15', 81996.72, 'salary'), ('2026-10-15', 81996.72, 'salary')] no-exact-rate-dates=[]
+    safe=45700 status=affordable_now method=full_payment plan=2026-07-25:45700 earliest='2026-07-25' changes=none
+request_63 user_63 home=INR fx_rows=[('event_5814', 'Payroll credit', 'settled', 'USD', 2280.0, '2026-05-15'), ('event_5822', 'Payroll credit', 'settled', 'USD', 2280.0, '2026-06-15'), ('event_5911', 'Next confirmed salary', 'scheduled', 'USD', 2280.0, '2026-07-15')] msgs=[]
+   proj income=[('2026-07-15', 189992.4, 'salary'), ('2026-08-15', 189992.4, 'salary'), ('2026-09-15', 189992.4, 'salary')] no-exact-rate-dates=[]
+    safe=37340 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_64 user_64 home=INR fx_rows=[('event_5928', 'Payroll credit', 'settled', 'USD', 660.0, '2024-03-15'), ('event_5936', 'Payroll credit', 'settled', 'USD', 660.0, '2024-04-15'), ('event_5944', 'Payroll credit', 'settled', 'USD', 660.0, '2024-05-15')] msgs=[]
+   proj income=[('2024-06-15', 54997.8, 'salary'), ('2024-07-15', 54997.8, 'salary'), ('2024-08-15', 54997.8, 'salary')] no-exact-rate-dates=[]
+    safe=0 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_71 user_71 home=IDR fx_rows=[('event_6549', 'International employer payroll', 'settled', 'USD', 696.0, '2025-02-15'), ('event_6557', 'International employer payroll', 'settled', 'USD', 696.0, '2025-03-15'), ('event_6565', 'International employer payroll', 'settled', 'USD', 696.0, '2025-04-15')] msgs=[('message_53', 'T13', 'salary_amount_change', '2025-05-15', 696.0, 'USD')]
+   proj income=[('2025-05-15', 11019997.68, 'salary'), ('2025-06-15', 11019997.68, 'salary'), ('2025-07-15', 11019997.68, 'salary')] no-exact-rate-dates=[]
+    safe=266000 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_79 user_79 home=EUR fx_rows=[('event_7332', 'Payroll credit', 'settled', 'USD', 1428.0, '2024-07-15'), ('event_7340', 'Payroll credit', 'settled', 'USD', 1428.0, '2024-08-15'), ('event_7427', 'Next confirmed salary', 'scheduled', 'USD', 1428.0, '2024-09-15')] msgs=[]
+   proj income=[('2024-09-15', 1313.76, 'salary'), ('2024-10-15', 1313.76, 'salary'), ('2024-11-15', 1313.76, 'salary')] no-exact-rate-dates=[]
+    safe=311.98 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_84 user_84 home=INR fx_rows=[('event_7836', 'Payroll credit', 'settled', 'USD', 1296.0, '2026-01-15'), ('event_7844', 'Payroll credit', 'settled', 'USD', 1296.0, '2026-02-15'), ('event_7852', 'Payroll credit', 'settled', 'USD', 1296.0, '2026-03-15')] msgs=[]
+   proj income=[('2026-04-15', 107995.68, 'salary'), ('2026-05-15', 107995.68, 'salary'), ('2026-06-15', 107995.68, 'salary')] no-exact-rate-dates=[]
+    safe=21790 status=affordable_later method=wait plan=2026-06-15:95400 earliest='2026-06-15' changes=none
+request_98 user_98 home=ZAR fx_rows=[('event_9056', 'International employer payroll', 'settled', 'EUR', 1804.0, '2025-05-15'), ('event_9064', 'International employer payroll', 'settled', 'EUR', 1804.0, '2025-06-15'), ('event_9072', 'International employer payroll', 'settled', 'EUR', 1804.0, '2025-07-15')] msgs=[('message_74', 'T13', 'salary_amount_change', '2025-08-15', 1804.0, 'EUR')]
+   proj income=[('2025-08-15', 36080.0, 'salary'), ('2025-09-15', 36080.0, 'salary'), ('2025-10-15', 36080.0, 'salary')] no-exact-rate-dates=[]
+    safe=7406.4 status=affordable_later method=wait plan=2025-10-15:27148 earliest='2025-10-15' changes=none
+request_109 user_109 home=EUR fx_rows=[('event_10068', 'Payroll credit', 'settled', 'USD', 2604.0, '2024-01-15'), ('event_10076', 'Payroll credit', 'settled', 'USD', 2604.0, '2024-02-15'), ('event_10164', 'Next confirmed salary', 'scheduled', 'USD', 2604.0, '2024-03-15')] msgs=[]
+   proj income=[('2024-03-15', 2395.68, 'salary'), ('2024-04-15', 2395.68, 'salary'), ('2024-05-15', 2395.68, 'salary')] no-exact-rate-dates=[]
+    safe=546.46 status=affordable_with_plan method=installments plan=2024-03-18:645.98|2024-04-18:645.98|2024-05-19:645.98 earliest='2024-05-15' changes=stop:event_10080|stop:event_10081
+request_113 user_113 home=INR fx_rows=[('event_10417', 'International employer payroll', 'settled', 'USD', 1296.0, '2026-06-15'), ('event_10425', 'International employer payroll', 'settled', 'USD', 1296.0, '2026-07-15'), ('event_10433', 'International employer payroll', 'settled', 'USD', 1296.0, '2026-08-15')] msgs=[('message_86', 'T22', 'salary_amount_change', '2026-09-15', 1296.0, 'USD')]
+   proj income=[('2026-09-15', 107995.68, 'salary'), ('2026-10-15', 107995.68, 'salary'), ('2026-11-15', 107995.68, 'salary')] no-exact-rate-dates=[]
+    safe=23850 status=affordable_later method=wait plan=2026-09-15:36500 earliest='2026-09-15' changes=none
+request_125 user_125 home=ZAR fx_rows=[('event_11499', 'International employer payroll', 'settled', 'EUR', 748.0, '2025-08-15'), ('event_11507', 'International employer payroll', 'settled', 'EUR', 748.0, '2025-09-15'), ('event_11515', 'International employer payroll', 'settled', 'EUR', 748.0, '2025-10-15')] msgs=[('message_95', 'T13', 'salary_amount_change', '2025-11-15', 748.0, 'EUR')]
+   proj income=[('2025-11-15', 14960.0, 'salary'), ('2025-12-15', 14960.0, 'salary'), ('2026-01-15', 14960.0, 'salary')] no-exact-rate-dates=[]
+    safe=6334.67 status=affordable_with_plan method=full_payment plan=2025-11-06:6468 earliest='2025-11-15' changes=stop:event_11519|reduce_to:event_11602:223.30
+request_153 user_153 home=USD fx_rows=[('event_14043', 'Payroll credit', 'settled', 'EUR', 1496.0, '2026-04-15'), ('event_14051', 'Payroll credit', 'settled', 'EUR', 1496.0, '2026-05-15'), ('event_14059', 'Payroll credit', 'settled', 'EUR', 1496.0, '2026-06-15')] msgs=[]
+   proj income=[('2026-07-15', 1630.64, 'salary'), ('2026-08-15', 1630.64, 'salary'), ('2026-09-15', 1630.64, 'salary')] no-exact-rate-dates=[]
+    safe=83.6 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_169 user_169 home=ZAR fx_rows=[('event_15467', 'Payroll credit', 'settled', 'EUR', 1650.0, '2023-12-15'), ('event_15475', 'Payroll credit', 'settled', 'EUR', 1650.0, '2024-01-15'), ('event_15483', 'Payroll credit', 'settled', 'EUR', 1650.0, '2024-02-15')] msgs=[]
+   proj income=[('2024-03-15', 33000.0, 'salary'), ('2024-04-15', 33000.0, 'salary'), ('2024-05-15', 33000.0, 'salary')] no-exact-rate-dates=[]
+    safe=41976 status=affordable_now method=full_payment plan=2024-03-04:41976 earliest='2024-03-04' changes=none
+request_173 user_173 home=INR fx_rows=[('event_15842', 'International employer payroll', 'settled', 'USD', 1284.0, '2025-08-15'), ('event_15850', 'International employer payroll', 'settled', 'USD', 1284.0, '2025-09-15'), ('event_15858', 'International employer payroll', 'settled', 'USD', 1284.0, '2025-10-15')] msgs=[('message_137', 'T13', 'salary_amount_change', '2025-11-15', 1284.0, 'USD')]
+   proj income=[('2025-11-15', 106995.72, 'salary'), ('2025-12-15', 106995.72, 'salary'), ('2026-01-15', 106995.72, 'salary')] no-exact-rate-dates=[]
+    safe=59520.53 status=affordable_with_plan method=installments plan=2025-11-21:39173.33|2025-12-19:39173.33|2026-01-16:39173.33 earliest='2026-01-15' changes=none
+request_183 user_183 home=IDR fx_rows=[('event_16793', 'Payroll credit', 'settled', 'USD', 1320.0, '2026-01-15'), ('event_16801', 'Payroll credit', 'settled', 'USD', 1320.0, '2026-02-15'), ('event_16809', 'Payroll credit', 'settled', 'USD', 1320.0, '2026-03-15')] msgs=[]
+   proj income=[('2026-04-15', 20899995.6, 'salary'), ('2026-05-15', 20899995.6, 'salary'), ('2026-06-15', 20899995.6, 'salary')] no-exact-rate-dates=[]
+    safe=23041523.74 status=affordable_with_plan method=installments plan=2026-04-10:9313546.67|2026-05-10:9313546.67|2026-06-09:9313546.67 earliest='2026-05-15' changes=none
+request_184 user_184 home=INR fx_rows=[('event_16914', 'Payroll credit', 'settled', 'USD', 1584.0, '2024-03-15'), ('event_16922', 'Payroll credit', 'settled', 'USD', 1584.0, '2024-04-15'), ('event_16930', 'Payroll credit', 'settled', 'USD', 1584.0, '2024-05-15')] msgs=[]
+   proj income=[('2024-06-15', 131994.72, 'salary'), ('2024-07-15', 131994.72, 'salary'), ('2024-08-15', 131994.72, 'salary')] no-exact-rate-dates=[]
+    safe=6940 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_214 user_214 home=INR fx_rows=[('event_19649', 'Payroll credit', 'settled', 'USD', 2904.0, '2024-09-15'), ('event_19657', 'Payroll credit', 'settled', 'USD', 2904.0, '2024-10-15'), ('event_19665', 'Payroll credit', 'settled', 'USD', 2904.0, '2024-11-15')] msgs=[]
+   proj income=[('2024-12-15', 241990.32, 'salary'), ('2025-01-15', 241990.32, 'salary'), ('2025-02-15', 241990.32, 'salary')] no-exact-rate-dates=[]
+    safe=44800 status=affordable_with_plan method=partial_payment plan=2024-12-04:44800|2024-12-15:24950 earliest='2024-12-15' changes=none
+request_235 user_235 home=USD fx_rows=[('event_21599', 'Payroll credit', 'settled', 'EUR', 935.0, '2024-06-15'), ('event_21607', 'Payroll credit', 'settled', 'EUR', 935.0, '2024-07-15'), ('event_21615', 'Payroll credit', 'settled', 'EUR', 935.0, '2024-08-15')] msgs=[]
+   proj income=[('2024-09-15', 1019.15, 'salary'), ('2024-10-15', 1019.15, 'salary'), ('2024-11-15', 1019.15, 'salary')] no-exact-rate-dates=[]
+    safe=967.2 status=affordable_now method=full_payment plan=2024-09-06:967.20 earliest='2024-09-06' changes=none
+request_245 user_245 home=INR fx_rows=[('event_22480', 'International employer payroll', 'settled', 'USD', 1680.0, '2025-08-15'), ('event_22488', 'International employer payroll', 'settled', 'USD', 1680.0, '2025-09-15'), ('event_22496', 'International employer payroll', 'settled', 'USD', 1680.0, '2025-10-15')] msgs=[('message_191', 'T13', 'salary_amount_change', '2025-11-15', 1680.0, 'USD')]
+   proj income=[('2025-11-15', 139994.4, 'salary'), ('2025-12-15', 139994.4, 'salary'), ('2026-01-15', 139994.4, 'salary')] no-exact-rate-dates=[]
+    safe=28090 status=affordable_later method=wait plan=2026-01-15:128500 earliest='2026-01-15' changes=none
+request_257 user_257 home=USD fx_rows=[('event_23578', 'International employer payroll', 'settled', 'EUR', 1793.0, '2025-09-15'), ('event_23586', 'International employer payroll', 'settled', 'EUR', 1793.0, '2025-10-15'), ('event_23674', 'Next confirmed salary', 'scheduled', 'EUR', 1793.0, '2025-11-15')] msgs=[]
+   proj income=[('2025-11-15', 1954.37, 'salary'), ('2025-12-15', 1954.37, 'salary'), ('2026-01-15', 1954.37, 'salary')] no-exact-rate-dates=[]
+    safe=391.2 status=affordable_later method=wait plan=2026-01-15:1352.40 earliest='2026-01-15' changes=none
+request_260 user_260 home=IDR fx_rows=[('event_23881', 'International employer payroll', 'settled', 'USD', 1848.0, '2024-12-15'), ('event_23889', 'International employer payroll', 'settled', 'USD', 1848.0, '2025-01-15'), ('event_23980', 'Next confirmed salary', 'scheduled', 'USD', 1848.0, '2025-02-15')] msgs=[]
+   proj income=[('2025-02-15', 29259993.84, 'salary'), ('2025-03-15', 29259993.84, 'salary'), ('2025-04-15', 29259993.84, 'salary')] no-exact-rate-dates=[]
+    safe=6444400 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_263 user_263 home=ZAR fx_rows=[('event_24179', 'International employer payroll', 'settled', 'EUR', 1485.0, '2025-02-15'), ('event_24187', 'International employer payroll', 'settled', 'EUR', 1485.0, '2025-03-15'), ('event_24195', 'International employer payroll', 'settled', 'EUR', 1485.0, '2025-04-15')] msgs=[('message_204', 'T13', 'salary_amount_change', '2025-05-15', 1485.0, 'EUR')]
+   proj income=[('2025-05-15', 29700.0, 'salary'), ('2025-06-15', 29700.0, 'salary'), ('2025-07-15', 29700.0, 'salary')] no-exact-rate-dates=[]
+    safe=5881.6 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_267 user_267 home=EUR fx_rows=[('event_24552', 'Payroll credit', 'settled', 'USD', 1980.0, '2025-10-15'), ('event_24560', 'Payroll credit', 'settled', 'USD', 1980.0, '2025-11-15'), ('event_24568', 'Payroll credit', 'settled', 'USD', 1980.0, '2025-12-15')] msgs=[]
+   proj income=[('2026-01-15', 1821.6, 'salary'), ('2026-02-15', 1821.6, 'salary'), ('2026-03-15', 1821.6, 'salary')] no-exact-rate-dates=[]
+    safe=1642.98 status=affordable_with_plan method=installments plan=2026-01-08:667.33|2026-02-07:667.33|2026-03-09:667.33 earliest='2026-02-15' changes=stop:event_24573
+request_274 user_274 home=EUR fx_rows=[('event_25159', 'Payroll credit', 'settled', 'USD', 2700.0, '2024-09-15'), ('event_25167', 'Payroll credit', 'settled', 'USD', 2700.0, '2024-10-15'), ('event_25175', 'Payroll credit', 'settled', 'USD', 2700.0, '2024-11-15')] msgs=[]
+   proj income=[('2024-12-15', 2484.0, 'salary'), ('2025-01-15', 2484.0, 'salary'), ('2025-02-15', 2484.0, 'salary')] no-exact-rate-dates=[]
+    safe=2188.31 status=affordable_with_plan method=installments plan=2024-12-04:940.75|2025-01-04:940.75|2025-02-04:940.75 earliest='2025-01-15' changes=stop:event_25179
+
+===== CASE 4: two-option requests =====
+count 58 Counter({3: 165, 2: 58, 4: 27})
+request_27 user_27 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_76', 'full_payment', 1, '2026-07-05', None, 6670.0), ('payment_option_77', 'installments', 18, '2026-07-12', 31, 6903.54)] elig=[]
+   cands=[('full_payment', True, 0, None)] -> safe=6670 status=affordable_now method=full_payment plan=2026-07-05:6670 earliest='2026-07-05' changes=none
+request_29 user_29 methods=['full_payment', 'partial_payment', 'installments'] max_m=5 opts=[('payment_option_81', 'full_payment', 1, '2025-11-04', None, 51524.0), ('payment_option_82', 'installments', 15, '2025-11-04', 30, 56676.45)] elig=[]
+   cands=[] -> safe=3610 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_31 user_31 methods=['full_payment', 'installments'] max_m=6 opts=[('payment_option_86', 'full_payment', 1, '2024-09-03', None, 18164000.0), ('payment_option_87', 'installments', 21, '2024-09-10', 28, 21433520.01)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=3488460 status=affordable_later method=wait plan=2024-11-15:18164000 earliest='2024-11-15' changes=none
+request_33 user_33 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_91', 'full_payment', 1, '2026-01-07', None, 118000.0), ('payment_option_92', 'installments', 18, '2026-01-07', 31, 134519.94)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=30090 status=affordable_later method=wait plan=2026-03-15:118000 earliest='2026-03-15' changes=none
+request_35 user_35 methods=['full_payment'] max_m=None opts=[('payment_option_97', 'full_payment', 1, '2025-10-30', None, 212000.0), ('payment_option_98', 'installments', 15, '2025-11-06', 30, 233200.05)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=28210 status=affordable_later method=wait plan=2026-01-15:212000 earliest='2026-01-15' changes=none
+request_37 user_37 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_102', 'full_payment', 1, '2024-03-05', None, 14649000.0), ('payment_option_103', 'installments', 21, '2024-03-05', 28, 17285820.09)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=4375900 status=affordable_later method=wait plan=2024-05-15:14649000 earliest='2024-05-15' changes=none
+request_39 user_39 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_107', 'full_payment', 1, '2026-04-04', None, 208600.0), ('payment_option_108', 'installments', 18, '2026-04-11', 31, 237803.94)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=56750 status=affordable_later method=wait plan=2026-06-15:208600 earliest='2026-06-15' changes=none
+request_41 user_41 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_112', 'full_payment', 1, '2025-11-03', None, 38760000.0), ('payment_option_113', 'installments', 15, '2025-11-03', 30, 42636000.0)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=8551400 status=affordable_later method=wait plan=2026-01-15:38760000 earliest='2026-01-15' changes=none
+request_43 user_43 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_117', 'full_payment', 1, '2024-09-07', None, 43339000.0), ('payment_option_118', 'installments', 21, '2024-09-14', 28, 51140020.05)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=6608200 status=affordable_later method=wait plan=2024-11-15:43339000 earliest='2024-11-15' changes=none
+request_45 user_45 methods=['full_payment', 'partial_payment', 'installments'] max_m=4 opts=[('payment_option_122', 'full_payment', 1, '2026-07-06', None, 21983000.0), ('payment_option_123', 'installments', 18, '2026-07-06', 31, 25060620.06)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=3387000 status=affordable_later method=wait plan=2026-09-15:21983000 earliest='2026-09-15' changes=none
+request_47 user_47 methods=['full_payment', 'installments'] max_m=10 opts=[('payment_option_127', 'full_payment', 1, '2025-05-05', None, 38114000.0), ('payment_option_128', 'installments', 15, '2025-05-12', 30, 41925400.05)] elig=[]
+   cands=[] -> safe=5521400 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_51 user_51 methods=['full_payment', 'partial_payment', 'installments'] max_m=3 opts=[('payment_option_140', 'full_payment', 1, '2026-01-03', None, 2191000.0), ('payment_option_141', 'installments', 18, '2026-01-10', 31, 2267685.0)] elig=[]
+   cands=[('full_payment', True, 0, None)] -> safe=2191000 status=affordable_now method=full_payment plan=2026-01-03:2191000 earliest='2026-01-03' changes=none
+request_57 user_57 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_157', 'full_payment', 1, '2026-04-05', None, 61446.0), ('payment_option_158', 'installments', 18, '2026-04-05', 31, 70048.44)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=10097.2 status=affordable_later method=wait plan=2026-06-15:61446 earliest='2026-06-15' changes=none
+request_63 user_63 methods=['partial_payment'] max_m=None opts=[('payment_option_175', 'full_payment', 1, '2026-07-07', None, 343900.0), ('payment_option_176', 'installments', 18, '2026-07-14', 31, 392045.94)] elig=[]
+   cands=[] -> safe=37340 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_65 user_65 methods=['partial_payment'] max_m=None opts=[('payment_option_180', 'full_payment', 1, '2025-11-06', None, 54340.0), ('payment_option_181', 'installments', 15, '2025-11-06', 30, 59773.95)] elig=[]
+   cands=[] -> safe=4982 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_67 user_67 methods=['full_payment', 'installments'] max_m=4 opts=[('payment_option_185', 'full_payment', 1, '2024-09-05', None, 2094.0), ('payment_option_186', 'installments', 21, '2024-09-12', 28, 2470.86)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=371.54 status=affordable_later method=wait plan=2024-11-15:2094 earliest='2024-11-15' changes=none
+request_71 user_71 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_196', 'full_payment', 1, '2025-05-03', None, 21451000.0), ('payment_option_197', 'installments', 15, '2025-05-10', 30, 23596099.95)] elig=[]
+   cands=[] -> safe=266000 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_79 user_79 methods=['partial_payment'] max_m=None opts=[('payment_option_221', 'full_payment', 1, '2024-09-04', None, 2151.6), ('payment_option_222', 'installments', 21, '2024-09-11', 28, 2538.9)] elig=[]
+   cands=[] -> safe=311.98 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_83 user_83 methods=['partial_payment', 'installments'] max_m=10 opts=[('payment_option_232', 'full_payment', 1, '2025-05-07', None, 156200.0), ('payment_option_233', 'installments', 15, '2025-05-14', 30, 171820.05)] elig=[]
+   cands=[] -> safe=3080 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_85 user_85 methods=['partial_payment', 'installments'] max_m=2 opts=[('payment_option_237', 'full_payment', 1, '2024-03-06', None, 19304000.0), ('payment_option_238', 'installments', 21, '2024-03-06', 28, 22778719.95)] elig=[]
+   cands=[] -> safe=416120 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_87 user_87 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_243', 'full_payment', 1, '2026-01-05', None, 487900.0), ('payment_option_244', 'installments', 18, '2026-01-12', 31, 556205.94)] elig=[]
+   cands=[] -> safe=16680 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_91 user_91 methods=['full_payment', 'installments'] max_m=6 opts=[('payment_option_254', 'full_payment', 1, '2024-09-03', None, 1927.2), ('payment_option_255', 'installments', 21, '2024-09-10', 28, 2274.09)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=428.4 status=affordable_later method=wait plan=2024-11-15:1927.20 earliest='2024-11-15' changes=none
+request_95 user_95 methods=['partial_payment'] max_m=None opts=[('payment_option_267', 'full_payment', 1, '2025-05-06', None, 553000.0), ('payment_option_268', 'installments', 15, '2025-05-13', 30, 608299.95)] elig=[]
+   cands=[] -> safe=13510 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_103 user_103 methods=['full_payment', 'partial_payment', 'installments'] max_m=6 opts=[('payment_option_290', 'full_payment', 1, '2024-09-07', None, 368300.0), ('payment_option_291', 'installments', 21, '2024-09-14', 28, 434593.95)] elig=[]
+   cands=[] -> safe=8414 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_113 user_113 methods=['full_payment', 'installments'] max_m=9 opts=[('payment_option_320', 'full_payment', 1, '2026-09-04', None, 36500.0), ('payment_option_321', 'installments', 15, '2026-09-04', 30, 37777.5)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=23850 status=affordable_later method=wait plan=2026-09-15:36500 earliest='2026-09-15' changes=none
+request_115 user_115 methods=['full_payment'] max_m=None opts=[('payment_option_326', 'full_payment', 1, '2024-09-06', None, 80500.0), ('payment_option_327', 'installments', 21, '2024-09-13', 28, 94989.93)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=11810 status=affordable_later method=wait plan=2024-11-15:80500 earliest='2024-11-15' changes=none
+request_123 user_123 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_350', 'full_payment', 1, '2026-01-07', None, 4076000.0), ('payment_option_351', 'installments', 18, '2026-01-14', 31, 4218660.0)] elig=[]
+   cands=[('full_payment', True, 0, None)] -> safe=4076000 status=affordable_now method=full_payment plan=2026-01-07:4076000 earliest='2026-01-07' changes=none
+request_127 user_127 methods=['full_payment'] max_m=None opts=[('payment_option_361', 'full_payment', 1, '2024-09-05', None, 23980.0), ('payment_option_362', 'installments', 21, '2024-09-12', 28, 24819.48)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=9343.4 status=affordable_later method=wait plan=2024-10-15:23980 earliest='2024-10-15' changes=none
+request_129 user_129 methods=['installments'] max_m=10 opts=[('payment_option_367', 'full_payment', 1, '2026-04-04', None, 2668.8), ('payment_option_368', 'installments', 18, '2026-04-04', 31, 3042.36)] elig=[]
+   cands=[] -> safe=53 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_133 user_133 methods=['partial_payment'] max_m=None opts=[('payment_option_378', 'full_payment', 1, '2024-03-07', None, 15770000.0), ('payment_option_379', 'installments', 21, '2024-03-07', 28, 18608600.01)] elig=[]
+   cands=[] -> safe=2236800 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_137 user_137 methods=['full_payment', 'partial_payment', 'installments'] max_m=4 opts=[('payment_option_390', 'full_payment', 1, '2025-11-05', None, 80100.0), ('payment_option_391', 'installments', 15, '2025-11-05', 30, 88110.0)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=23033 status=affordable_later method=wait plan=2026-01-15:80100 earliest='2026-01-15' changes=none
+request_141 user_141 methods=['partial_payment'] max_m=None opts=[('payment_option_401', 'full_payment', 1, '2026-01-03', None, 171600.0), ('payment_option_402', 'installments', 18, '2026-01-03', 31, 195624.0)] elig=[]
+   cands=[] -> safe=21660 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_143 user_143 methods=['full_payment', 'installments'] max_m=2 opts=[('payment_option_407', 'full_payment', 1, '2025-05-07', None, 12584.0), ('payment_option_408', 'installments', 15, '2025-05-14', 30, 13842.45)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=3065 status=affordable_later method=wait plan=2025-07-15:12584 earliest='2025-07-15' changes=none
+request_153 user_153 methods=['full_payment', 'installments'] max_m=3 opts=[('payment_option_436', 'full_payment', 1, '2026-07-07', None, 2830.8), ('payment_option_437', 'installments', 18, '2026-07-07', 31, 3227.04)] elig=[]
+   cands=[] -> safe=83.6 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_157 user_157 methods=['full_payment'] max_m=None opts=[('payment_option_447', 'full_payment', 1, '2024-03-05', None, 23503000.0), ('payment_option_448', 'installments', 21, '2024-03-05', 28, 27733539.96)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=4777200 status=affordable_later method=wait plan=2024-04-15:23503000 earliest='2024-04-15' changes=none
+request_159 user_159 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_452', 'full_payment', 1, '2026-01-04', None, 13398.0), ('payment_option_453', 'installments', 18, '2026-01-11', 31, 15273.72)] elig=[]
+   cands=[] -> safe=1790.2 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_161 user_161 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_457', 'full_payment', 1, '2025-11-03', None, 21204000.0), ('payment_option_458', 'installments', 15, '2025-11-03', 30, 23324400.0)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=6984100 status=affordable_later method=wait plan=2026-01-15:21204000 earliest='2026-01-15' changes=none
+request_171 user_171 methods=['partial_payment', 'installments'] max_m=4 opts=[('payment_option_486', 'full_payment', 1, '2026-07-03', None, 1878.8), ('payment_option_487', 'installments', 18, '2026-07-10', 31, 2141.82)] elig=[]
+   cands=[] -> safe=32.65 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_179 user_179 methods=['full_payment', 'installments'] max_m=5 opts=[('payment_option_509', 'full_payment', 1, '2025-05-04', None, 41648000.0), ('payment_option_510', 'installments', 15, '2025-05-11', 30, 45812800.05)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=8426000 status=affordable_later method=wait plan=2025-07-15:41648000 earliest='2025-07-15' changes=none
+request_181 user_181 methods=['full_payment', 'partial_payment', 'installments'] max_m=12 opts=[('payment_option_515', 'full_payment', 1, '2024-03-03', None, 5059.2), ('payment_option_516', 'installments', 21, '2024-03-03', 28, 5969.88)] elig=[]
+   cands=[] -> safe=281 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_185 user_185 methods=['full_payment'] max_m=None opts=[('payment_option_527', 'full_payment', 1, '2025-11-06', None, 1257.3), ('payment_option_528', 'installments', 15, '2025-11-06', 30, 1383.0)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=313.4 status=affordable_later method=wait plan=2026-01-15:1257.30 earliest='2026-01-15' changes=none
+request_187 user_187 methods=['full_payment', 'installments'] max_m=2 opts=[('payment_option_532', 'full_payment', 1, '2024-09-05', None, 187500.0), ('payment_option_533', 'installments', 21, '2024-09-12', 28, 221249.91)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=29300 status=affordable_later method=wait plan=2024-11-15:187500 earliest='2024-11-15' changes=none
+request_207 user_207 methods=['full_payment', 'installments'] max_m=9 opts=[('payment_option_595', 'full_payment', 1, '2026-07-05', None, 11830.0), ('payment_option_596', 'installments', 18, '2026-07-12', 31, 12244.14)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=4575.2 status=affordable_later method=wait plan=2026-07-15:11830 earliest='2026-07-15' changes=none
+request_209 user_209 methods=['partial_payment'] max_m=None opts=[('payment_option_600', 'full_payment', 1, '2025-11-04', None, 56914.0), ('payment_option_601', 'installments', 15, '2025-11-04', 30, 62605.35)] elig=[]
+   cands=[] -> safe=1041.2 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_211 user_211 methods=['full_payment', 'installments'] max_m=8 opts=[('payment_option_605', 'full_payment', 1, '2024-09-03', None, 1788.6), ('payment_option_606', 'installments', 21, '2024-09-10', 28, 2110.5)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=330.99 status=affordable_later method=wait plan=2024-11-15:1788.60 earliest='2024-11-15' changes=none
+request_227 user_227 methods=['partial_payment'] max_m=None opts=[('payment_option_654', 'full_payment', 1, '2025-05-05', None, 259700.0), ('payment_option_655', 'installments', 15, '2025-05-12', 30, 285670.05)] elig=[]
+   cands=[] -> safe=5220 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_233 user_233 methods=['partial_payment', 'installments'] max_m=9 opts=[('payment_option_672', 'full_payment', 1, '2025-11-07', None, 6241000.0), ('payment_option_673', 'installments', 2, '2025-11-14', 31, 6490640.0)] elig=['payment_option_673']
+   cands=[('partial_payment', True, 0, None), ('installments', True, 0, 'payment_option_673')] -> safe=3736100 status=affordable_with_plan method=partial_payment plan=2025-11-07:3736100|2025-11-15:2504900 earliest='2025-11-15' changes=none
+request_245 user_245 methods=['full_payment', 'partial_payment', 'installments'] max_m=7 opts=[('payment_option_708', 'full_payment', 1, '2025-11-06', None, 128500.0), ('payment_option_709', 'installments', 15, '2025-11-06', 30, 141349.95)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=28090 status=affordable_later method=wait plan=2026-01-15:128500 earliest='2026-01-15' changes=none
+request_249 user_249 methods=['full_payment', 'installments'] max_m=6 opts=[('payment_option_719', 'full_payment', 1, '2026-01-04', None, 643.2), ('payment_option_720', 'installments', 18, '2026-01-04', 31, 733.32)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=140.4 status=affordable_later method=wait plan=2026-03-15:643.20 earliest='2026-03-15' changes=none
+request_251 user_251 methods=['partial_payment', 'installments'] max_m=11 opts=[('payment_option_724', 'full_payment', 1, '2025-05-03', None, 1513.6), ('payment_option_725', 'installments', 15, '2025-05-10', 30, 1665.0)] elig=[]
+   cands=[] -> safe=1513.6 status=not_affordable method=not_recommended plan=none earliest='2025-05-03' changes=none
+request_255 user_255 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_735', 'full_payment', 1, '2026-04-06', None, 3345000.0), ('payment_option_736', 'installments', 18, '2026-04-13', 31, 3462075.0)] elig=[]
+   cands=[('full_payment', True, 0, None)] -> safe=3345000 status=affordable_now method=full_payment plan=2026-04-06:3345000 earliest='2026-04-06' changes=none
+request_257 user_257 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_740', 'full_payment', 1, '2025-11-05', None, 1352.4), ('payment_option_741', 'installments', 15, '2025-11-05', 30, 1487.7)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=391.2 status=affordable_later method=wait plan=2026-01-15:1352.40 earliest='2026-01-15' changes=none
+request_259 user_259 methods=['full_payment'] max_m=None opts=[('payment_option_746', 'full_payment', 1, '2024-09-04', None, 935.0), ('payment_option_747', 'installments', 21, '2024-09-11', 28, 1103.34)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=156.4 status=affordable_later method=wait plan=2024-11-15:935 earliest='2024-11-15' changes=none
+request_263 user_263 methods=['partial_payment'] max_m=None opts=[('payment_option_757', 'full_payment', 1, '2025-05-07', None, 51546.0), ('payment_option_758', 'installments', 15, '2025-05-14', 30, 56700.6)] elig=[]
+   cands=[] -> safe=5881.6 status=not_affordable method=not_recommended plan=none earliest='' changes=none
+request_265 user_265 methods=['full_payment', 'partial_payment'] max_m=None opts=[('payment_option_762', 'full_payment', 1, '2024-03-06', None, 45970.0), ('payment_option_763', 'installments', 21, '2024-03-06', 28, 47579.07)] elig=[]
+   cands=[('full_payment', True, 0, None)] -> safe=45970 status=affordable_now method=full_payment plan=2024-03-06:45970 earliest='2024-03-06' changes=none
+request_269 user_269 methods=['full_payment', 'installments'] max_m=10 opts=[('payment_option_773', 'full_payment', 1, '2025-11-04', None, 15490.0), ('payment_option_774', 'installments', 15, '2025-11-04', 30, 16032.15)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=9891.8 status=affordable_later method=wait plan=2025-12-15:15490 earliest='2025-12-15' changes=none
+request_271 user_271 methods=['full_payment'] max_m=None opts=[('payment_option_778', 'full_payment', 1, '2024-09-03', None, 91300.0), ('payment_option_779', 'installments', 21, '2024-09-10', 28, 107733.99)] elig=[]
+   cands=[('wait', True, 0, None)] -> safe=18120 status=affordable_later method=wait plan=2024-11-15:91300 earliest='2024-11-15' changes=none
+request_273 user_273 methods=['partial_payment', 'installments'] max_m=7 opts=[('payment_option_783', 'full_payment', 1, '2026-04-07', None, 15861000.0), ('payment_option_784', 'installments', 3, '2026-04-07', 28, 16495440.0)] elig=['payment_option_784']
+   cands=[('partial_payment', True, 0, None), ('installments', True, 0, 'payment_option_784')] -> safe=7456800 status=affordable_with_plan method=partial_payment plan=2026-04-07:7456800|2026-04-15:8404200 earliest='2026-04-15' changes=none
+
+===== CASE 5: installment cap definition =====
+installment frequencies: Counter({28: 165, 31: 153, 30: 151})
+options with n == max: 17
+   ('request_75', 'user_75', 'payment_option_208', 3, 30, True) safe=28270 status=affordable_with_plan method=installments plan=2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27 earliest='2026-04-06' changes=none
+   ('request_86', 'user_86', 'payment_option_241', 6, 31, True) safe=46300 status=affordable_now method=full_payment plan=2025-08-03:46300 earliest='2025-08-03' changes=none
+   ('request_89', 'user_89', 'payment_option_248', 3, 28, True) safe=9434562.01 status=affordable_with_plan method=installments plan=2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67 earliest='2026-01-15' changes=stop:event_8336|stop:event_8335|reduce_to:event_8403:203300
+   ('request_96', 'user_96', 'payment_option_269', 3, 30, True) safe=72795.49 status=affordable_with_plan method=installments plan=2026-01-10:31269.33|2026-02-09:31269.33|2026-03-11:31269.33 earliest='2026-02-15' changes=stop:event_8914
+   ('request_119', 'user_119', 'payment_option_337', 3, 28, True) safe=54671.01 status=affordable_with_plan method=installments plan=2025-05-18:70546.67|2025-06-15:70546.67|2025-07-13:70546.67 earliest='2025-06-15' changes=reduce_to:event_11057:2370
+   ('request_139', 'user_139', 'payment_option_395', 3, 31, True) safe=1323.84 status=not_affordable method=not_recommended plan=none earliest='2024-11-15' changes=none
+   ('request_145', 'user_145', 'payment_option_412', 3, 31, True) safe=27478.66 status=affordable_with_plan method=installments plan=2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33 earliest='2024-05-15' changes=stop:event_13342|reduce_to:event_13341:2920|reduce_to:event_13409:3335
+   ('request_152', 'user_152', 'payment_option_433', 3, 28, True) safe=11080.07 status=affordable_with_plan method=installments plan=2025-02-12:4812.43|2025-03-12:4812.43|2025-04-09:4812.43 earliest='2025-04-15' changes=stop:event_13957|stop:event_13958|reduce_to:event_14024:234.30
+   ('request_172', 'user_172', 'payment_option_489', 2, 28, True) safe=9042.4 status=affordable_with_plan method=partial_payment plan=2024-06-05:9042.40|2024-06-15:1157.60 earliest='2024-06-15' changes=none
+   ('request_213', 'user_213', 'payment_option_610', 3, 30, True) safe=3362.4 status=affordable_with_plan method=installments plan=2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63 earliest='2026-01-07' changes=none
+   ('request_224', 'user_224', 'payment_option_645', 2, 28, True) safe=10010600 status=affordable_with_plan method=partial_payment plan=2025-02-04:10010600|2025-02-15:316400 earliest='2025-02-15' changes=none
+   ('request_239', 'user_239', 'payment_option_691', 6, 31, True) safe=642 status=affordable_now method=full_payment plan=2025-05-04:642 earliest='2025-05-04' changes=none
+   ('request_241', 'user_241', 'payment_option_695', 3, 31, True) safe=21052000 status=affordable_with_plan method=installments plan=2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67 earliest='2024-03-03' changes=none
+   ('request_244', 'user_244', 'payment_option_706', 6, 30, True) safe=49918 status=affordable_now method=full_payment plan=2024-06-04:49918 earliest='2024-06-04' changes=none
+   ('request_246', 'user_246', 'payment_option_710', 3, 30, True) safe=64086 status=affordable_with_plan method=installments plan=2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48 earliest='2026-04-03' changes=none
+   ('request_256', 'user_256', 'payment_option_737', 3, 31, True) safe=152623.28 status=affordable_with_plan method=installments plan=2024-06-10:75816|2024-07-11:75816|2024-08-11:75816 earliest='2024-07-15' changes=none
+   ('request_267', 'user_267', 'payment_option_767', 3, 30, True) safe=1642.98 status=affordable_with_plan method=installments plan=2026-01-08:667.33|2026-02-07:667.33|2026-03-09:667.33 earliest='2026-02-15' changes=stop:event_24573
+3x31 vs cap 3: [('request_139', 'user_139', 'payment_option_395', True), ('request_145', 'user_145', 'payment_option_412', True), ('request_241', 'user_241', 'payment_option_695', True), ('request_256', 'user_256', 'payment_option_737', True)]
+eligibility set differs under n*freq/30 definition: 6
+   ('request_86', 'user_86', ['payment_option_241'], [], False, 'full_payment', '2025-08-03:46300', 'full_payment', '2025-08-03:46300')
+   ('request_139', 'user_139', ['payment_option_395'], [], False, 'not_recommended', 'none', 'not_recommended', 'none')
+   ('request_145', 'user_145', ['payment_option_412'], [], True, 'installments', '2024-03-20:75365.33|2024-04-20:75365.33|2024-05-21:75365.33', 'not_recommended', 'none')
+   ('request_239', 'user_239', ['payment_option_691'], [], False, 'full_payment', '2025-05-04:642', 'full_payment', '2025-05-04:642')
+   ('request_241', 'user_241', ['payment_option_695'], [], True, 'installments', '2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67', 'not_recommended', 'none')
+   ('request_256', 'user_256', ['payment_option_737'], [], True, 'installments', '2024-06-10:75816|2024-07-11:75816|2024-08-11:75816', 'not_recommended', 'none')
+
+===== CASE 6: partial with earliest == desired =====
+all partials: [('request_46', '2024-12-15', '2025-01-09'), ('request_56', '2025-02-15', '2025-03-13'), ('request_138', '2026-04-15', '2026-06-05'), ('request_168', '2026-02-15', '2026-03-16'), ('request_172', '2024-06-15', '2024-07-15'), ('request_210', '2026-04-15', '2026-06-23'), ('request_214', '2024-12-15', '2025-01-28'), ('request_224', '2025-02-15', '2025-03-16'), ('request_233', '2025-11-15', '2025-12-17'), ('request_273', '2026-04-15', '2026-06-15')]
+
+===== CASE 7: wait past deadline =====
+request_28 user_28 earliest=2024-08-15 desired=2024-08-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_31 user_31 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_32 user_32 earliest=2025-04-15 desired=2025-04-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_33 user_33 earliest=2026-03-15 desired=2026-03-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_35 user_35 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_36 user_36 earliest=2026-09-15 desired=2026-09-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_37 user_37 earliest=2024-05-15 desired=2024-05-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_38 user_38 earliest=2025-10-15 desired=2025-10-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_39 user_39 earliest=2026-06-15 desired=2026-06-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_40 user_40 earliest=2024-08-15 desired=2024-08-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_41 user_41 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_43 user_43 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_44 user_44 earliest=2025-04-15 desired=2025-04-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_45 user_45 earliest=2026-09-15 desired=2026-09-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_52 user_52 earliest=2024-06-15 desired=2024-07-09 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_57 user_57 earliest=2026-06-15 desired=2026-06-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_60 user_60 earliest=2026-02-15 desired=2026-03-04 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_67 user_67 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_70 user_70 earliest=2025-02-15 desired=2025-02-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_78 user_78 earliest=2025-10-15 desired=2025-10-14 late=True cands=[('wait', False, 0)] explanation_names_both=False
+     safe=45731 status=affordable_later method=wait plan=2025-10-15:50200 earliest='2025-10-15' changes=none
+     expl: Wait until 15 October 2025, then pay INR 50,200 in full. This is after the 14 October 2025 target, but paying sooner would put the INR 55,200 minimum at risk.
+request_82 user_82 earliest=2025-02-15 desired=2025-02-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_84 user_84 earliest=2026-06-15 desired=2026-06-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_91 user_91 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_98 user_98 earliest=2025-10-15 desired=2025-10-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_104 user_104 earliest=2025-04-15 desired=2025-04-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_106 user_106 earliest=2025-02-15 desired=2025-02-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_113 user_113 earliest=2026-09-15 desired=2026-10-19 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_114 user_114 earliest=2026-01-15 desired=2026-01-14 late=True cands=[('wait', False, 0)] explanation_names_both=False
+     safe=58790 status=affordable_later method=wait plan=2026-01-15:65300 earliest='2026-01-15' changes=none
+     expl: Wait until 15 January 2026, then pay INR 65,300 in full. This is after the 14 January 2026 target, but paying sooner would put the INR 113,400 minimum at risk.
+request_115 user_115 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_120 user_120 earliest=2026-04-15 desired=2026-04-14 late=True cands=[('wait', False, 0)] explanation_names_both=False
+     safe=7107180 status=affordable_later method=wait plan=2026-04-15:7714000 earliest='2026-04-15' changes=none
+     expl: Wait until 15 April 2026, then pay IDR 7,714,000 in full. This is after the 14 April 2026 target, but paying sooner would put the IDR 20,050,300 minimum at risk.
+request_127 user_127 earliest=2024-10-15 desired=2024-10-18 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_130 user_130 earliest=2025-01-15 desired=2025-02-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_132 user_132 earliest=2026-01-15 desired=2026-02-25 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_134 user_134 earliest=2025-10-15 desired=2025-10-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_137 user_137 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_143 user_143 earliest=2025-07-15 desired=2025-07-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_156 user_156 earliest=2026-06-15 desired=2026-06-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_157 user_157 earliest=2024-04-15 desired=2024-05-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_161 user_161 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_179 user_179 earliest=2025-07-15 desired=2025-07-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_185 user_185 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_186 user_186 earliest=2026-03-15 desired=2026-03-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_187 user_187 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_190 user_190 earliest=2025-02-15 desired=2025-02-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_194 user_194 earliest=2025-10-23 desired=2025-10-23 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_204 user_204 earliest=2026-01-15 desired=2026-01-31 late=False cands=[('wait', True, 0), ('full_payment', True, 1)] explanation_names_both=False
+request_207 user_207 earliest=2026-07-15 desired=2026-07-24 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_208 user_208 earliest=2024-06-15 desired=2024-07-13 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_211 user_211 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_216 user_216 earliest=2026-09-15 desired=2026-09-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_232 user_232 earliest=2024-08-15 desired=2024-08-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_234 user_234 earliest=2026-09-15 desired=2026-09-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_245 user_245 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_249 user_249 earliest=2026-03-15 desired=2026-03-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_252 user_252 earliest=2026-09-15 desired=2026-09-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_254 user_254 earliest=2025-10-15 desired=2025-10-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_257 user_257 earliest=2026-01-15 desired=2026-01-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_259 user_259 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_264 user_264 earliest=2026-06-15 desired=2026-06-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_269 user_269 earliest=2025-12-15 desired=2026-01-02 late=False cands=[('wait', True, 0)] explanation_names_both=False
+request_271 user_271 earliest=2024-11-15 desired=2024-11-15 late=False cands=[('wait', True, 0)] explanation_names_both=False
+
+===== CASE 8: desired before first/last installment date =====
+request_26 user_26 payment_option_73 n=15 first=2025-08-06 last=2026-09-30 desired=2025-10-07 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_26 user_26 payment_option_74 n=6 first=2025-08-10 last=2026-01-12 desired=2025-10-07 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_26 user_26 payment_option_75 n=24 first=2025-08-17 last=2027-05-23 desired=2025-10-07 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_27 user_27 payment_option_77 n=18 first=2026-07-12 last=2027-12-21 desired=2026-08-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_28 user_28 payment_option_79 n=21 first=2024-06-21 last=2026-01-02 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_28 user_28 payment_option_80 n=24 first=2024-06-10 last=2026-05-24 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_29 user_29 payment_option_82 n=15 first=2025-11-04 last=2026-12-29 desired=2025-11-23 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_30 user_30 payment_option_85 n=18 first=2026-04-09 last=2027-09-18 desired=2026-06-06 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_31 user_31 payment_option_87 n=21 first=2024-09-10 last=2026-03-24 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_32 user_32 payment_option_89 n=15 first=2025-02-19 last=2026-04-15 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_32 user_32 payment_option_90 n=24 first=2025-02-08 last=2026-11-14 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_33 user_33 payment_option_92 n=18 first=2026-01-07 last=2027-06-18 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_34 user_34 payment_option_94 n=21 first=2024-12-07 last=2026-06-20 desired=2025-01-28 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_34 user_34 payment_option_95 n=6 first=2024-12-11 last=2025-05-10 desired=2025-01-28 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_34 user_34 payment_option_96 n=24 first=2024-12-18 last=2026-12-01 desired=2025-01-28 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_35 user_35 payment_option_98 n=15 first=2025-11-06 last=2026-12-31 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_36 user_36 payment_option_100 n=18 first=2026-07-17 last=2027-12-26 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_36 user_36 payment_option_101 n=24 first=2026-07-06 last=2028-05-26 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_37 user_37 payment_option_103 n=21 first=2024-03-05 last=2025-09-16 desired=2024-05-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_38 user_38 payment_option_105 n=15 first=2025-08-10 last=2026-10-04 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_38 user_38 payment_option_106 n=24 first=2025-08-21 last=2027-05-27 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_39 user_39 payment_option_108 n=18 first=2026-04-11 last=2027-09-20 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_40 user_40 payment_option_110 n=21 first=2024-06-20 last=2026-01-01 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_40 user_40 payment_option_111 n=24 first=2024-06-09 last=2026-05-23 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_41 user_41 payment_option_113 n=15 first=2025-11-03 last=2026-12-28 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_42 user_42 payment_option_115 n=18 first=2026-01-08 last=2027-06-19 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_42 user_42 payment_option_116 n=24 first=2026-01-19 last=2027-12-10 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_43 user_43 payment_option_118 n=21 first=2024-09-14 last=2026-03-28 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_44 user_44 payment_option_120 n=15 first=2025-02-18 last=2026-04-14 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_44 user_44 payment_option_121 n=24 first=2025-02-07 last=2026-11-13 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_45 user_45 payment_option_123 n=18 first=2026-07-06 last=2027-12-15 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_46 user_46 payment_option_126 n=3 first=2024-12-04 last=2025-02-04 desired=2025-01-09 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> partial_payment
+request_47 user_47 payment_option_128 n=15 first=2025-05-12 last=2026-07-06 desired=2025-06-19 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_48 user_48 payment_option_130 n=18 first=2026-08-08 last=2028-01-17 desired=2026-08-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_48 user_48 payment_option_131 n=6 first=2026-07-25 last=2026-12-12 desired=2026-08-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_48 user_48 payment_option_132 n=24 first=2026-07-28 last=2028-06-17 desired=2026-08-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_49 user_49 payment_option_135 n=21 first=2024-03-04 last=2025-09-15 desired=2024-05-22 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_50 user_50 payment_option_137 n=15 first=2025-08-09 last=2026-10-03 desired=2025-08-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_50 user_50 payment_option_138 n=6 first=2025-08-13 last=2026-01-15 desired=2025-08-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_50 user_50 payment_option_139 n=24 first=2025-08-20 last=2027-05-26 desired=2025-08-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_51 user_51 payment_option_141 n=18 first=2026-01-10 last=2027-06-21 desired=2026-02-28 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_52 user_52 payment_option_143 n=21 first=2024-06-19 last=2025-12-31 desired=2024-07-09 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_52 user_52 payment_option_144 n=24 first=2024-06-08 last=2026-05-22 desired=2024-07-09 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_53 user_53 payment_option_147 n=15 first=2025-11-07 last=2027-01-01 desired=2026-01-20 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_54 user_54 payment_option_149 n=18 first=2026-07-07 last=2027-12-16 desired=2026-08-21 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_54 user_54 payment_option_150 n=24 first=2026-07-18 last=2028-06-07 desired=2026-08-21 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_55 user_55 payment_option_153 n=21 first=2026-06-15 last=2027-12-27 desired=2026-08-22 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_56 user_56 payment_option_156 n=3 first=2025-02-06 last=2025-04-03 desired=2025-03-13 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> partial_payment
+request_57 user_57 payment_option_158 n=18 first=2026-04-05 last=2027-09-14 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_58 user_58 payment_option_160 n=21 first=2024-12-10 last=2026-06-23 desired=2025-01-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_58 user_58 payment_option_161 n=6 first=2024-12-14 last=2025-05-13 desired=2025-01-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_58 user_58 payment_option_162 n=24 first=2024-12-21 last=2026-12-04 desired=2025-01-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_59 user_59 payment_option_165 n=15 first=2025-05-11 last=2026-07-05 desired=2025-07-02 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_60 user_60 payment_option_167 n=18 first=2026-01-20 last=2027-07-01 desired=2026-03-04 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_60 user_60 payment_option_168 n=24 first=2026-01-09 last=2027-11-30 desired=2026-03-04 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_61 user_61 payment_option_171 n=21 first=2024-03-03 last=2025-09-14 desired=2024-05-24 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_62 user_62 payment_option_173 n=15 first=2025-08-08 last=2026-10-02 desired=2025-10-09 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_62 user_62 payment_option_174 n=24 first=2025-08-19 last=2027-05-25 desired=2025-10-09 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_63 user_63 payment_option_176 n=18 first=2026-07-14 last=2027-12-23 desired=2026-09-17 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_64 user_64 payment_option_179 n=21 first=2024-06-18 last=2025-12-30 desired=2024-08-16 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_65 user_65 payment_option_181 n=15 first=2025-11-06 last=2026-12-31 desired=2025-11-25 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_66 user_66 payment_option_183 n=18 first=2026-04-06 last=2027-09-15 desired=2026-04-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_66 user_66 payment_option_184 n=24 first=2026-04-17 last=2028-03-07 desired=2026-04-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_67 user_67 payment_option_186 n=21 first=2024-09-12 last=2026-03-26 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_68 user_68 payment_option_189 n=15 first=2025-02-21 last=2026-04-17 desired=2025-04-16 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_69 user_69 payment_option_191 n=18 first=2026-01-04 last=2027-06-15 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_69 user_69 payment_option_192 n=6 first=2026-01-07 last=2026-05-27 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_70 user_70 payment_option_194 n=21 first=2024-12-09 last=2026-06-22 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_70 user_70 payment_option_195 n=24 first=2024-12-20 last=2026-12-03 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_71 user_71 payment_option_197 n=15 first=2025-05-10 last=2026-07-04 desired=2025-05-28 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_72 user_72 payment_option_199 n=18 first=2026-07-19 last=2027-12-28 desired=2026-07-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_72 user_72 payment_option_200 n=6 first=2026-07-05 last=2026-11-22 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_72 user_72 payment_option_201 n=24 first=2026-07-08 last=2028-05-28 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_73 user_73 payment_option_203 n=21 first=2023-01-20 last=2024-08-02 desired=2023-02-13 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_73 user_73 payment_option_204 n=6 first=2023-01-23 last=2023-06-22 desired=2023-02-13 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_74 user_74 payment_option_206 n=15 first=2025-08-07 last=2026-10-01 desired=2025-10-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_74 user_74 payment_option_207 n=24 first=2025-08-18 last=2027-05-24 desired=2025-10-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_75 user_75 payment_option_210 n=18 first=2026-04-13 last=2027-09-22 desired=2026-06-12 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_76 user_76 payment_option_212 n=21 first=2024-06-17 last=2025-12-29 desired=2024-07-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_76 user_76 payment_option_213 n=24 first=2024-06-06 last=2026-05-20 desired=2024-07-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_77 user_77 payment_option_215 n=15 first=2025-11-05 last=2026-12-30 desired=2025-11-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_77 user_77 payment_option_216 n=6 first=2025-11-08 last=2026-04-12 desired=2025-11-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_78 user_78 payment_option_218 n=18 first=2025-10-05 last=2027-03-16 desired=2025-10-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_78 user_78 payment_option_219 n=6 first=2025-10-09 last=2026-02-26 desired=2025-10-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_78 user_78 payment_option_220 n=24 first=2025-10-16 last=2027-09-06 desired=2025-10-14 before_first=True eligible=False candidate=[] chosen=False -> wait
+request_79 user_79 payment_option_222 n=21 first=2024-09-11 last=2026-03-25 desired=2024-11-01 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_80 user_80 payment_option_224 n=15 first=2025-02-20 last=2026-04-16 desired=2025-02-21 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_80 user_80 payment_option_225 n=24 first=2025-02-09 last=2026-11-15 desired=2025-02-21 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_81 user_81 payment_option_227 n=18 first=2026-07-03 last=2027-12-12 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_81 user_81 payment_option_228 n=6 first=2026-07-06 last=2026-11-23 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_82 user_82 payment_option_230 n=21 first=2024-12-08 last=2026-06-21 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_82 user_82 payment_option_231 n=24 first=2024-12-19 last=2026-12-02 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_83 user_83 payment_option_233 n=15 first=2025-05-14 last=2026-07-08 desired=2025-06-17 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_84 user_84 payment_option_235 n=18 first=2026-04-18 last=2027-09-27 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_84 user_84 payment_option_236 n=24 first=2026-04-07 last=2028-02-26 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_85 user_85 payment_option_238 n=21 first=2024-03-06 last=2025-09-17 desired=2024-04-26 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_86 user_86 payment_option_240 n=15 first=2025-08-06 last=2026-09-30 desired=2025-08-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_86 user_86 payment_option_241 n=6 first=2025-08-10 last=2026-01-12 desired=2025-08-22 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_86 user_86 payment_option_242 n=24 first=2025-08-17 last=2027-05-23 desired=2025-08-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_87 user_87 payment_option_244 n=18 first=2026-01-12 last=2027-06-23 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_88 user_88 payment_option_247 n=21 first=2024-06-21 last=2026-01-02 desired=2024-08-25 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_89 user_89 payment_option_250 n=15 first=2025-11-04 last=2026-12-29 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_90 user_90 payment_option_252 n=18 first=2026-07-09 last=2027-12-18 desired=2026-09-23 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_90 user_90 payment_option_253 n=24 first=2026-07-20 last=2028-06-09 desired=2026-09-23 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_91 user_91 payment_option_255 n=21 first=2024-09-10 last=2026-03-24 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_92 user_92 payment_option_257 n=15 first=2025-02-19 last=2026-04-15 desired=2025-02-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_92 user_92 payment_option_258 n=6 first=2025-02-05 last=2025-07-10 desired=2025-02-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_92 user_92 payment_option_259 n=24 first=2025-02-08 last=2026-11-14 desired=2025-02-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_93 user_93 payment_option_261 n=18 first=2026-04-07 last=2027-09-16 desired=2026-04-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_93 user_93 payment_option_262 n=6 first=2026-04-10 last=2026-08-28 desired=2026-04-14 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_94 user_94 payment_option_264 n=21 first=2024-12-07 last=2026-06-20 desired=2024-12-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_94 user_94 payment_option_265 n=6 first=2024-12-11 last=2025-05-10 desired=2024-12-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_94 user_94 payment_option_266 n=24 first=2024-12-18 last=2026-12-01 desired=2024-12-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_95 user_95 payment_option_268 n=15 first=2025-05-13 last=2026-07-07 desired=2025-07-14 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_96 user_96 payment_option_271 n=18 first=2026-01-17 last=2027-06-28 desired=2026-03-12 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_97 user_97 payment_option_274 n=21 first=2024-03-05 last=2025-09-16 desired=2024-05-24 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_98 user_98 payment_option_276 n=15 first=2025-08-10 last=2026-10-04 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_98 user_98 payment_option_277 n=24 first=2025-08-21 last=2027-05-27 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_99 user_99 payment_option_279 n=18 first=2026-07-11 last=2027-12-20 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_99 user_99 payment_option_280 n=6 first=2026-07-18 last=2026-12-05 desired=2026-07-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_100 user_100 payment_option_283 n=21 first=2024-06-20 last=2026-01-01 desired=2024-08-16 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_101 user_101 payment_option_285 n=15 first=2025-11-03 last=2026-12-28 desired=2025-11-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_101 user_101 payment_option_286 n=6 first=2025-11-06 last=2026-04-10 desired=2025-11-14 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_102 user_102 payment_option_289 n=18 first=2026-04-08 last=2027-09-17 desired=2026-06-12 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_103 user_103 payment_option_291 n=21 first=2024-09-14 last=2026-03-28 desired=2024-10-07 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_104 user_104 payment_option_293 n=15 first=2025-02-18 last=2026-04-14 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_104 user_104 payment_option_294 n=24 first=2025-02-07 last=2026-11-13 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_105 user_105 payment_option_296 n=18 first=2026-06-08 last=2027-11-17 desired=2026-06-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_105 user_105 payment_option_297 n=6 first=2026-06-11 last=2026-10-29 desired=2026-06-14 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_106 user_106 payment_option_299 n=21 first=2024-12-06 last=2026-06-19 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_106 user_106 payment_option_300 n=24 first=2024-12-17 last=2026-11-30 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_107 user_107 payment_option_303 n=15 first=2025-05-12 last=2026-07-06 desired=2025-07-04 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_108 user_108 payment_option_305 n=18 first=2026-07-21 last=2027-12-30 desired=2026-07-26 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_108 user_108 payment_option_306 n=24 first=2026-07-10 last=2028-05-30 desired=2026-07-26 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_109 user_109 payment_option_309 n=21 first=2024-03-04 last=2025-09-15 desired=2024-05-26 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_110 user_110 payment_option_312 n=15 first=2025-08-09 last=2026-10-03 desired=2025-10-11 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_111 user_111 payment_option_314 n=18 first=2026-04-10 last=2027-09-19 desired=2026-05-02 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_111 user_111 payment_option_315 n=6 first=2026-04-17 last=2026-09-04 desired=2026-05-02 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_112 user_112 payment_option_317 n=21 first=2024-06-19 last=2025-12-31 desired=2024-06-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_112 user_112 payment_option_318 n=6 first=2024-06-05 last=2024-11-02 desired=2024-06-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_112 user_112 payment_option_319 n=24 first=2024-06-08 last=2026-05-22 desired=2024-06-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_113 user_113 payment_option_321 n=15 first=2026-09-04 last=2027-10-29 desired=2026-10-19 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_114 user_114 payment_option_323 n=18 first=2026-01-07 last=2027-06-18 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_114 user_114 payment_option_324 n=6 first=2026-01-11 last=2026-05-31 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_114 user_114 payment_option_325 n=24 first=2026-01-18 last=2027-12-09 desired=2026-01-14 before_first=True eligible=False candidate=[] chosen=False -> wait
+request_115 user_115 payment_option_327 n=21 first=2024-09-13 last=2026-03-27 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_116 user_116 payment_option_329 n=15 first=2025-02-17 last=2026-04-13 desired=2025-04-16 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_116 user_116 payment_option_330 n=24 first=2025-02-06 last=2026-11-12 desired=2025-04-16 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_117 user_117 payment_option_332 n=18 first=2026-07-05 last=2027-12-14 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_117 user_117 payment_option_333 n=6 first=2026-07-08 last=2026-11-25 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_118 user_118 payment_option_336 n=21 first=2024-12-10 last=2026-06-23 desired=2025-02-08 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_119 user_119 payment_option_339 n=15 first=2025-05-11 last=2026-07-05 desired=2025-07-17 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_120 user_120 payment_option_341 n=18 first=2026-04-20 last=2027-09-29 desired=2026-04-14 before_first=True eligible=False candidate=[] chosen=False -> wait
+request_120 user_120 payment_option_342 n=6 first=2026-04-06 last=2026-08-24 desired=2026-04-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_120 user_120 payment_option_343 n=24 first=2026-04-09 last=2028-02-28 desired=2026-04-14 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_121 user_121 payment_option_345 n=21 first=2024-03-03 last=2025-09-14 desired=2024-03-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_121 user_121 payment_option_346 n=6 first=2024-03-06 last=2024-08-03 desired=2024-03-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_122 user_122 payment_option_349 n=15 first=2025-08-08 last=2026-10-02 desired=2025-10-02 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_123 user_123 payment_option_351 n=18 first=2026-01-14 last=2027-06-25 desired=2026-03-28 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_124 user_124 payment_option_354 n=21 first=2024-06-18 last=2025-12-30 desired=2024-08-20 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_125 user_125 payment_option_356 n=15 first=2025-11-06 last=2026-12-31 desired=2025-11-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_125 user_125 payment_option_357 n=6 first=2025-11-09 last=2026-04-13 desired=2025-11-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_126 user_126 payment_option_359 n=18 first=2026-07-06 last=2027-12-15 desired=2026-07-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_126 user_126 payment_option_360 n=24 first=2026-07-17 last=2028-06-06 desired=2026-07-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_127 user_127 payment_option_362 n=21 first=2024-09-12 last=2026-03-26 desired=2024-10-18 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_128 user_128 payment_option_364 n=15 first=2025-02-21 last=2026-04-17 desired=2025-02-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_128 user_128 payment_option_365 n=6 first=2025-02-07 last=2025-07-12 desired=2025-02-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_128 user_128 payment_option_366 n=24 first=2025-02-10 last=2026-11-16 desired=2025-02-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_129 user_129 payment_option_368 n=18 first=2026-04-04 last=2027-09-13 desired=2026-06-18 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_130 user_130 payment_option_370 n=21 first=2024-12-09 last=2026-06-22 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_130 user_130 payment_option_371 n=24 first=2024-12-20 last=2026-12-03 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_131 user_131 payment_option_374 n=15 first=2025-05-10 last=2026-07-04 desired=2025-07-08 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_132 user_132 payment_option_376 n=18 first=2026-01-19 last=2027-06-30 desired=2026-02-25 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_132 user_132 payment_option_377 n=24 first=2026-01-08 last=2027-11-29 desired=2026-02-25 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_133 user_133 payment_option_379 n=21 first=2024-03-07 last=2025-09-18 desired=2024-03-29 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_134 user_134 payment_option_381 n=15 first=2025-08-07 last=2026-10-01 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_134 user_134 payment_option_382 n=24 first=2025-08-18 last=2027-05-24 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_135 user_135 payment_option_384 n=18 first=2026-07-13 last=2027-12-22 desired=2026-07-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_135 user_135 payment_option_385 n=6 first=2026-07-20 last=2026-12-07 desired=2026-07-14 before_first=True eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_136 user_136 payment_option_387 n=21 first=2024-06-17 last=2025-12-29 desired=2024-06-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_136 user_136 payment_option_388 n=6 first=2024-06-03 last=2024-10-31 desired=2024-06-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_136 user_136 payment_option_389 n=24 first=2024-06-06 last=2026-05-20 desired=2024-06-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_137 user_137 payment_option_391 n=15 first=2025-11-05 last=2026-12-30 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_138 user_138 payment_option_394 n=4 first=2026-04-12 last=2026-07-11 desired=2026-06-05 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> partial_payment
+request_139 user_139 payment_option_397 n=21 first=2024-09-11 last=2026-03-25 desired=2024-11-17 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_140 user_140 payment_option_399 n=15 first=2025-02-20 last=2026-04-16 desired=2025-03-04 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_140 user_140 payment_option_400 n=24 first=2025-02-09 last=2026-11-15 desired=2025-03-04 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_141 user_141 payment_option_402 n=18 first=2026-01-03 last=2027-06-14 desired=2026-02-12 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_142 user_142 payment_option_404 n=21 first=2024-12-08 last=2026-06-21 desired=2025-02-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_142 user_142 payment_option_405 n=6 first=2024-12-12 last=2025-05-11 desired=2025-02-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_142 user_142 payment_option_406 n=24 first=2024-12-19 last=2026-12-02 desired=2025-02-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_143 user_143 payment_option_408 n=15 first=2025-05-14 last=2026-07-08 desired=2025-07-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_144 user_144 payment_option_410 n=18 first=2026-07-18 last=2027-12-27 desired=2026-07-26 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_144 user_144 payment_option_411 n=24 first=2026-07-07 last=2028-05-27 desired=2026-07-26 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_145 user_145 payment_option_414 n=21 first=2024-03-06 last=2025-09-17 desired=2024-05-26 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_146 user_146 payment_option_416 n=15 first=2025-08-06 last=2026-09-30 desired=2025-10-17 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_146 user_146 payment_option_417 n=24 first=2025-08-17 last=2027-05-23 desired=2025-10-17 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_147 user_147 payment_option_420 n=18 first=2026-04-12 last=2027-09-21 desired=2026-06-07 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_148 user_148 payment_option_423 n=21 first=2024-06-21 last=2026-01-02 desired=2024-08-18 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_149 user_149 payment_option_426 n=15 first=2025-11-04 last=2026-12-29 desired=2026-01-19 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_150 user_150 payment_option_429 n=18 first=2026-01-09 last=2027-06-20 desired=2026-03-16 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_151 user_151 payment_option_431 n=21 first=2024-09-10 last=2026-03-24 desired=2024-09-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_151 user_151 payment_option_432 n=6 first=2024-09-17 last=2025-02-14 desired=2024-09-14 before_first=True eligible=False candidate=[] chosen=False -> full_payment
+request_152 user_152 payment_option_435 n=15 first=2025-02-19 last=2026-04-15 desired=2025-04-13 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_153 user_153 payment_option_437 n=18 first=2026-07-07 last=2027-12-16 desired=2026-09-24 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_154 user_154 payment_option_440 n=21 first=2024-12-07 last=2026-06-20 desired=2025-02-14 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_155 user_155 payment_option_442 n=15 first=2025-05-13 last=2026-07-07 desired=2025-05-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_155 user_155 payment_option_443 n=6 first=2025-05-20 last=2025-10-22 desired=2025-05-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_156 user_156 payment_option_445 n=18 first=2026-04-17 last=2027-09-26 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_156 user_156 payment_option_446 n=24 first=2026-04-06 last=2028-02-25 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_157 user_157 payment_option_448 n=21 first=2024-03-05 last=2025-09-16 desired=2024-05-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_158 user_158 payment_option_451 n=15 first=2025-08-10 last=2026-10-04 desired=2025-10-02 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_159 user_159 payment_option_453 n=18 first=2026-01-11 last=2027-06-22 desired=2026-03-20 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_160 user_160 payment_option_456 n=21 first=2024-06-20 last=2026-01-01 desired=2024-08-20 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_161 user_161 payment_option_458 n=15 first=2025-11-03 last=2026-12-28 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_162 user_162 payment_option_460 n=18 first=2026-07-08 last=2027-12-17 desired=2026-08-26 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_162 user_162 payment_option_461 n=24 first=2026-07-19 last=2028-06-08 desired=2026-08-26 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_163 user_163 payment_option_464 n=21 first=2024-09-14 last=2026-03-28 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_164 user_164 payment_option_467 n=15 first=2025-02-18 last=2026-04-14 desired=2025-04-15 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_165 user_165 payment_option_469 n=18 first=2026-04-06 last=2027-09-15 desired=2026-04-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_165 user_165 payment_option_470 n=6 first=2026-04-09 last=2026-08-27 desired=2026-04-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_166 user_166 payment_option_473 n=21 first=2024-12-06 last=2026-06-19 desired=2025-02-05 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_167 user_167 payment_option_475 n=15 first=2025-05-12 last=2026-07-06 desired=2025-05-31 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_167 user_167 payment_option_476 n=6 first=2025-05-19 last=2025-10-21 desired=2025-05-31 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_168 user_168 payment_option_479 n=4 first=2026-01-10 last=2026-04-10 desired=2026-03-16 before_first=False eligible=False candidate=[] chosen=False -> partial_payment
+request_169 user_169 payment_option_481 n=21 first=2024-03-04 last=2025-09-15 desired=2024-05-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_169 user_169 payment_option_482 n=6 first=2024-03-07 last=2024-08-04 desired=2024-05-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_170 user_170 payment_option_485 n=15 first=2025-08-09 last=2026-10-03 desired=2025-10-04 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_171 user_171 payment_option_487 n=18 first=2026-07-10 last=2027-12-19 desired=2026-09-10 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_172 user_172 payment_option_490 n=3 first=2024-06-12 last=2024-08-13 desired=2024-07-15 before_first=False eligible=False candidate=[] chosen=False -> partial_payment
+request_173 user_173 payment_option_493 n=15 first=2025-11-07 last=2027-01-01 desired=2026-01-17 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_174 user_174 payment_option_496 n=18 first=2026-04-07 last=2027-09-16 desired=2026-06-07 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_175 user_175 payment_option_498 n=21 first=2024-09-13 last=2026-03-27 desired=2024-10-01 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_175 user_175 payment_option_499 n=6 first=2024-09-20 last=2025-02-17 desired=2024-10-01 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_176 user_176 payment_option_501 n=15 first=2025-02-17 last=2026-04-13 desired=2025-02-27 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_176 user_176 payment_option_502 n=24 first=2025-02-06 last=2026-11-12 desired=2025-02-27 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_177 user_177 payment_option_504 n=18 first=2026-01-05 last=2027-06-16 desired=2026-01-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_177 user_177 payment_option_505 n=6 first=2026-01-08 last=2026-05-28 desired=2026-01-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_178 user_178 payment_option_508 n=21 first=2024-12-10 last=2026-06-23 desired=2025-02-12 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_179 user_179 payment_option_510 n=15 first=2025-05-11 last=2026-07-05 desired=2025-07-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_180 user_180 payment_option_512 n=18 first=2026-07-20 last=2027-12-29 desired=2026-09-02 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_180 user_180 payment_option_513 n=6 first=2026-07-06 last=2026-11-23 desired=2026-09-02 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_180 user_180 payment_option_514 n=24 first=2026-07-09 last=2028-05-29 desired=2026-09-02 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_181 user_181 payment_option_516 n=21 first=2024-03-03 last=2025-09-14 desired=2024-04-07 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_182 user_182 payment_option_518 n=15 first=2025-08-08 last=2026-10-02 desired=2025-09-26 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_182 user_182 payment_option_519 n=6 first=2025-08-12 last=2026-01-14 desired=2025-09-26 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_182 user_182 payment_option_520 n=24 first=2025-08-19 last=2027-05-25 desired=2025-09-26 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_183 user_183 payment_option_523 n=18 first=2026-04-14 last=2027-09-23 desired=2026-06-18 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_184 user_184 payment_option_525 n=21 first=2024-06-18 last=2025-12-30 desired=2024-07-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_184 user_184 payment_option_526 n=24 first=2024-06-07 last=2026-05-21 desired=2024-07-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_185 user_185 payment_option_528 n=15 first=2025-11-06 last=2026-12-31 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_186 user_186 payment_option_530 n=18 first=2026-01-06 last=2027-06-17 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_186 user_186 payment_option_531 n=24 first=2026-01-17 last=2027-12-08 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_187 user_187 payment_option_533 n=21 first=2024-09-12 last=2026-03-26 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_188 user_188 payment_option_535 n=15 first=2025-02-21 last=2026-04-17 desired=2025-03-04 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_188 user_188 payment_option_536 n=24 first=2025-02-10 last=2026-11-16 desired=2025-03-04 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_189 user_189 payment_option_538 n=18 first=2026-07-04 last=2027-12-13 desired=2026-08-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_189 user_189 payment_option_539 n=6 first=2026-07-07 last=2026-11-24 desired=2026-08-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_190 user_190 payment_option_541 n=21 first=2024-12-09 last=2026-06-22 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_190 user_190 payment_option_542 n=24 first=2024-12-20 last=2026-12-03 desired=2025-02-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_191 user_191 payment_option_544 n=15 first=2025-05-10 last=2026-07-04 desired=2025-07-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_191 user_191 payment_option_545 n=6 first=2025-05-17 last=2025-10-19 desired=2025-07-17 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_192 user_192 payment_option_547 n=18 first=2026-04-19 last=2027-09-28 desired=2026-05-11 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_192 user_192 payment_option_548 n=24 first=2026-04-08 last=2028-02-27 desired=2026-05-11 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_193 user_193 payment_option_551 n=21 first=2024-03-07 last=2025-09-18 desired=2024-05-28 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_194 user_194 payment_option_553 n=15 first=2025-08-07 last=2026-10-01 desired=2025-10-23 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_194 user_194 payment_option_554 n=24 first=2025-08-18 last=2027-05-24 desired=2025-10-23 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_195 user_195 payment_option_557 n=18 first=2026-01-13 last=2027-06-24 desired=2026-03-11 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_196 user_196 payment_option_559 n=21 first=2024-06-17 last=2025-12-29 desired=2024-07-05 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_196 user_196 payment_option_560 n=6 first=2024-06-03 last=2024-10-31 desired=2024-07-05 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_196 user_196 payment_option_561 n=24 first=2024-06-06 last=2026-05-20 desired=2024-07-05 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_197 user_197 payment_option_564 n=15 first=2025-11-05 last=2026-12-30 desired=2026-01-21 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_198 user_198 payment_option_566 n=18 first=2026-07-10 last=2027-12-19 desired=2026-09-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_198 user_198 payment_option_567 n=6 first=2026-07-14 last=2026-12-01 desired=2026-09-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_198 user_198 payment_option_568 n=24 first=2026-07-21 last=2028-06-10 desired=2026-09-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_199 user_199 payment_option_571 n=21 first=2024-09-11 last=2026-03-25 desired=2024-11-10 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_200 user_200 payment_option_573 n=15 first=2025-02-20 last=2026-04-16 desired=2025-04-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_200 user_200 payment_option_574 n=6 first=2025-02-06 last=2025-07-11 desired=2025-04-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_200 user_200 payment_option_575 n=24 first=2025-02-09 last=2026-11-15 desired=2025-04-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_201 user_201 payment_option_577 n=18 first=2026-04-03 last=2027-09-12 desired=2026-05-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_201 user_201 payment_option_578 n=6 first=2026-04-06 last=2026-08-24 desired=2026-05-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_202 user_202 payment_option_580 n=21 first=2024-12-08 last=2026-06-21 desired=2025-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_202 user_202 payment_option_581 n=6 first=2024-12-12 last=2025-05-11 desired=2025-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_202 user_202 payment_option_582 n=24 first=2024-12-19 last=2026-12-02 desired=2025-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_203 user_203 payment_option_585 n=15 first=2025-05-14 last=2026-07-08 desired=2025-07-08 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_204 user_204 payment_option_587 n=18 first=2026-01-18 last=2027-06-29 desired=2026-01-31 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_204 user_204 payment_option_588 n=24 first=2026-01-07 last=2027-11-28 desired=2026-01-31 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_205 user_205 payment_option_590 n=21 first=2024-03-06 last=2025-09-17 desired=2024-05-19 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_205 user_205 payment_option_591 n=6 first=2024-03-09 last=2024-08-06 desired=2024-05-19 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_206 user_206 payment_option_594 n=15 first=2025-08-06 last=2026-09-30 desired=2025-09-29 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_207 user_207 payment_option_596 n=18 first=2026-07-12 last=2027-12-21 desired=2026-07-24 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_208 user_208 payment_option_598 n=21 first=2024-06-21 last=2026-01-02 desired=2024-07-13 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_208 user_208 payment_option_599 n=24 first=2024-06-10 last=2026-05-24 desired=2024-07-13 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_209 user_209 payment_option_601 n=15 first=2025-11-04 last=2026-12-29 desired=2025-11-25 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_210 user_210 payment_option_604 n=4 first=2026-04-11 last=2026-07-10 desired=2026-06-23 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> partial_payment
+request_211 user_211 payment_option_606 n=21 first=2024-09-10 last=2026-03-24 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_212 user_212 payment_option_608 n=15 first=2025-02-19 last=2026-04-15 desired=2025-02-28 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_212 user_212 payment_option_609 n=24 first=2025-02-08 last=2026-11-14 desired=2025-02-28 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_213 user_213 payment_option_612 n=18 first=2026-01-07 last=2027-06-18 desired=2026-03-22 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_214 user_214 payment_option_615 n=3 first=2024-12-05 last=2025-02-05 desired=2025-01-28 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> partial_payment
+request_215 user_215 payment_option_618 n=15 first=2025-05-13 last=2026-07-07 desired=2025-07-10 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_216 user_216 payment_option_620 n=18 first=2026-07-17 last=2027-12-26 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_216 user_216 payment_option_621 n=24 first=2026-07-06 last=2028-05-26 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_217 user_217 payment_option_624 n=21 first=2024-03-05 last=2025-09-16 desired=2024-05-21 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_218 user_218 payment_option_627 n=15 first=2025-08-10 last=2026-10-04 desired=2025-10-06 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_219 user_219 payment_option_630 n=18 first=2026-04-11 last=2027-09-20 desired=2026-06-13 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_220 user_220 payment_option_632 n=21 first=2024-06-20 last=2026-01-01 desired=2024-07-03 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_220 user_220 payment_option_633 n=24 first=2024-06-09 last=2026-05-23 desired=2024-07-03 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_221 user_221 payment_option_635 n=15 first=2025-11-03 last=2026-12-28 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_221 user_221 payment_option_636 n=6 first=2025-11-06 last=2026-04-10 desired=2026-01-14 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_222 user_222 payment_option_638 n=18 first=2026-01-08 last=2027-06-19 desired=2026-03-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_222 user_222 payment_option_639 n=6 first=2026-01-12 last=2026-06-01 desired=2026-03-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_222 user_222 payment_option_640 n=24 first=2026-01-19 last=2027-12-10 desired=2026-03-10 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_223 user_223 payment_option_642 n=21 first=2024-09-14 last=2026-03-28 desired=2024-10-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_223 user_223 payment_option_643 n=6 first=2024-09-21 last=2025-02-18 desired=2024-10-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_224 user_224 payment_option_646 n=3 first=2025-02-07 last=2025-04-04 desired=2025-03-16 before_first=False eligible=False candidate=[] chosen=False -> partial_payment
+request_225 user_225 payment_option_649 n=18 first=2026-07-06 last=2027-12-15 desired=2026-09-21 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_226 user_226 payment_option_651 n=21 first=2024-12-06 last=2026-06-19 desired=2025-01-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_226 user_226 payment_option_652 n=6 first=2024-12-10 last=2025-05-09 desired=2025-01-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_226 user_226 payment_option_653 n=24 first=2024-12-17 last=2026-11-30 desired=2025-01-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_227 user_227 payment_option_655 n=15 first=2025-05-12 last=2026-07-06 desired=2025-06-20 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_228 user_228 payment_option_657 n=18 first=2026-04-21 last=2027-09-30 desired=2026-04-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_228 user_228 payment_option_658 n=24 first=2026-04-10 last=2028-02-29 desired=2026-04-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_229 user_229 payment_option_661 n=21 first=2024-03-04 last=2025-09-15 desired=2024-05-23 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_230 user_230 payment_option_663 n=15 first=2025-08-09 last=2026-10-03 desired=2025-10-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_230 user_230 payment_option_664 n=6 first=2025-08-13 last=2026-01-15 desired=2025-10-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_230 user_230 payment_option_665 n=24 first=2025-08-20 last=2027-05-26 desired=2025-10-04 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_231 user_231 payment_option_668 n=18 first=2026-01-10 last=2027-06-21 desired=2026-03-17 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_232 user_232 payment_option_670 n=21 first=2024-06-19 last=2025-12-31 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_232 user_232 payment_option_671 n=24 first=2024-06-08 last=2026-05-22 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_234 user_234 payment_option_675 n=18 first=2026-07-07 last=2027-12-16 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_234 user_234 payment_option_676 n=24 first=2026-07-18 last=2028-06-07 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_235 user_235 payment_option_678 n=21 first=2024-09-13 last=2026-03-27 desired=2024-10-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_235 user_235 payment_option_679 n=6 first=2024-09-20 last=2025-02-17 desired=2024-10-25 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_236 user_236 payment_option_681 n=15 first=2025-02-17 last=2026-04-13 desired=2025-02-23 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_236 user_236 payment_option_682 n=24 first=2025-02-06 last=2026-11-12 desired=2025-02-23 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_237 user_237 payment_option_684 n=18 first=2026-04-05 last=2027-09-14 desired=2026-05-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_237 user_237 payment_option_685 n=6 first=2026-04-08 last=2026-08-26 desired=2026-05-20 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_238 user_238 payment_option_688 n=21 first=2024-12-10 last=2026-06-23 desired=2025-02-16 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_239 user_239 payment_option_690 n=15 first=2025-05-11 last=2026-07-05 desired=2025-05-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_239 user_239 payment_option_691 n=6 first=2025-05-18 last=2025-10-20 desired=2025-05-24 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_240 user_240 payment_option_693 n=18 first=2026-01-20 last=2027-07-01 desired=2026-03-20 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_240 user_240 payment_option_694 n=24 first=2026-01-09 last=2027-11-30 desired=2026-03-20 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_241 user_241 payment_option_697 n=21 first=2024-03-03 last=2025-09-14 desired=2024-05-25 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_242 user_242 payment_option_699 n=15 first=2025-08-08 last=2026-10-02 desired=2025-08-25 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_242 user_242 payment_option_700 n=24 first=2025-08-19 last=2027-05-25 desired=2025-08-25 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_243 user_243 payment_option_702 n=18 first=2026-07-14 last=2027-12-23 desired=2026-08-09 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_243 user_243 payment_option_703 n=6 first=2026-07-21 last=2026-12-08 desired=2026-08-09 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_244 user_244 payment_option_705 n=21 first=2024-06-18 last=2025-12-30 desired=2024-07-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_244 user_244 payment_option_706 n=6 first=2024-06-04 last=2024-11-01 desired=2024-07-16 before_first=False eligible=True candidate=[(False, 0)] chosen=False -> full_payment
+request_244 user_244 payment_option_707 n=24 first=2024-06-07 last=2026-05-21 desired=2024-07-16 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_245 user_245 payment_option_709 n=15 first=2025-11-06 last=2026-12-31 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_246 user_246 payment_option_712 n=18 first=2026-04-06 last=2027-09-15 desired=2026-06-02 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_247 user_247 payment_option_714 n=21 first=2024-09-12 last=2026-03-26 desired=2024-11-08 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_247 user_247 payment_option_715 n=6 first=2024-09-19 last=2025-02-16 desired=2024-11-08 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_248 user_248 payment_option_717 n=15 first=2025-02-21 last=2026-04-17 desired=2025-04-28 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_248 user_248 payment_option_718 n=24 first=2025-02-10 last=2026-11-16 desired=2025-04-28 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_249 user_249 payment_option_720 n=18 first=2026-01-04 last=2027-06-15 desired=2026-03-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_250 user_250 payment_option_722 n=21 first=2024-12-09 last=2026-06-22 desired=2025-01-18 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_250 user_250 payment_option_723 n=24 first=2024-12-20 last=2026-12-03 desired=2025-01-18 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_251 user_251 payment_option_725 n=15 first=2025-05-10 last=2026-07-04 desired=2025-06-06 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_252 user_252 payment_option_727 n=18 first=2026-07-19 last=2027-12-28 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_252 user_252 payment_option_728 n=24 first=2026-07-08 last=2028-05-28 desired=2026-09-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_253 user_253 payment_option_731 n=21 first=2024-03-07 last=2025-09-18 desired=2024-06-01 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_254 user_254 payment_option_733 n=15 first=2025-08-07 last=2026-10-01 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_254 user_254 payment_option_734 n=24 first=2025-08-18 last=2027-05-24 desired=2025-10-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_255 user_255 payment_option_736 n=18 first=2026-04-13 last=2027-09-22 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_256 user_256 payment_option_739 n=21 first=2024-06-17 last=2025-12-29 desired=2024-08-19 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_257 user_257 payment_option_741 n=15 first=2025-11-05 last=2026-12-30 desired=2026-01-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_258 user_258 payment_option_743 n=18 first=2026-01-10 last=2027-06-21 desired=2026-01-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_258 user_258 payment_option_744 n=6 first=2026-01-14 last=2026-06-03 desired=2026-01-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_258 user_258 payment_option_745 n=24 first=2026-01-21 last=2027-12-12 desired=2026-01-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_259 user_259 payment_option_747 n=21 first=2024-09-11 last=2026-03-25 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_260 user_260 payment_option_749 n=15 first=2025-02-20 last=2026-04-16 desired=2025-04-18 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_260 user_260 payment_option_750 n=24 first=2025-02-09 last=2026-11-15 desired=2025-04-18 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_261 user_261 payment_option_752 n=18 first=2026-07-03 last=2027-12-12 desired=2026-09-19 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_261 user_261 payment_option_753 n=6 first=2026-07-06 last=2026-11-23 desired=2026-09-19 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_262 user_262 payment_option_755 n=21 first=2024-12-08 last=2026-06-21 desired=2025-01-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_262 user_262 payment_option_756 n=24 first=2024-12-19 last=2026-12-02 desired=2025-01-24 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_263 user_263 payment_option_758 n=15 first=2025-05-14 last=2026-07-08 desired=2025-06-15 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_264 user_264 payment_option_760 n=18 first=2026-04-18 last=2027-09-27 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_264 user_264 payment_option_761 n=24 first=2026-04-07 last=2028-02-26 desired=2026-06-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_265 user_265 payment_option_763 n=21 first=2024-03-06 last=2025-09-17 desired=2024-03-21 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_266 user_266 payment_option_766 n=15 first=2025-08-06 last=2026-09-30 desired=2025-10-03 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_267 user_267 payment_option_769 n=18 first=2026-01-12 last=2027-06-23 desired=2026-03-17 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_268 user_268 payment_option_772 n=21 first=2024-06-21 last=2026-01-02 desired=2024-08-15 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_269 user_269 payment_option_774 n=15 first=2025-11-04 last=2026-12-29 desired=2026-01-02 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_270 user_270 payment_option_776 n=18 first=2026-07-09 last=2027-12-18 desired=2026-08-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_270 user_270 payment_option_777 n=24 first=2026-07-20 last=2028-06-09 desired=2026-08-30 before_first=False eligible=False candidate=[] chosen=False -> not_recommended
+request_271 user_271 payment_option_779 n=21 first=2024-09-10 last=2026-03-24 desired=2024-11-15 before_first=False eligible=False candidate=[] chosen=False -> wait
+request_272 user_272 payment_option_782 n=15 first=2025-02-19 last=2026-04-15 desired=2025-04-10 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_274 user_274 payment_option_787 n=21 first=2024-12-07 last=2026-06-20 desired=2025-02-11 before_first=False eligible=False candidate=[] chosen=False -> installments
+request_275 user_275 payment_option_789 n=15 first=2025-05-13 last=2026-07-07 desired=2025-07-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+request_275 user_275 payment_option_790 n=6 first=2025-05-20 last=2025-10-22 desired=2025-07-22 before_first=False eligible=False candidate=[] chosen=False -> full_payment
+
+===== CASE 9: safe == requested but full_payment not accepted =====
+request_30 user_30 methods=['partial_payment', 'installments'] max_m=4 partial_allowed=False earliest=2026-04-06 cands=[('installments', True, 'payment_option_83')] opts=[('payment_option_83', 3), ('payment_option_85', 18)]
+    safe=775.2 status=affordable_with_plan method=installments plan=2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74 earliest='2026-04-06' changes=none
+request_59 user_59 methods=['partial_payment', 'installments'] max_m=7 partial_allowed=False earliest=2025-05-04 cands=[('installments', True, 'payment_option_163')] opts=[('payment_option_163', 3), ('payment_option_165', 15)]
+    safe=140600 status=affordable_with_plan method=installments plan=2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33 earliest='2025-05-04' changes=none
+request_61 user_61 methods=['installments'] max_m=10 partial_allowed=False earliest=2024-03-03 cands=[('installments', True, 'payment_option_169')] opts=[('payment_option_169', 3), ('payment_option_171', 21)]
+    safe=29062 status=affordable_with_plan method=installments plan=2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83 earliest='2024-03-03' changes=none
+request_75 user_75 methods=['partial_payment', 'installments'] max_m=3 partial_allowed=False earliest=2026-04-06 cands=[('installments', True, 'payment_option_208')] opts=[('payment_option_208', 3), ('payment_option_210', 18)]
+    safe=28270 status=affordable_with_plan method=installments plan=2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27 earliest='2026-04-06' changes=none
+request_102 user_102 methods=['partial_payment', 'installments'] max_m=10 partial_allowed=False earliest=2026-04-05 cands=[('installments', True, 'payment_option_287')] opts=[('payment_option_287', 3), ('payment_option_289', 18)]
+    safe=1716 status=affordable_with_plan method=installments plan=2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88 earliest='2026-04-05' changes=none
+request_110 user_110 methods=['installments'] max_m=4 partial_allowed=False earliest=2025-08-06 cands=[('installments', True, 'payment_option_310')] opts=[('payment_option_310', 3), ('payment_option_312', 15)]
+    safe=22352 status=affordable_with_plan method=installments plan=2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69 earliest='2025-08-06' changes=none
+request_122 user_122 methods=['installments'] max_m=12 partial_allowed=False earliest=2025-08-05 cands=[('installments', True, 'payment_option_347')] opts=[('payment_option_347', 3), ('payment_option_349', 15)]
+    safe=20558000 status=affordable_with_plan method=installments plan=2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33 earliest='2025-08-05' changes=none
+request_154 user_154 methods=['installments'] max_m=10 partial_allowed=False earliest=2024-12-04 cands=[('installments', True, 'payment_option_438')] opts=[('payment_option_438', 3), ('payment_option_440', 21)]
+    safe=1625.8 status=affordable_with_plan method=installments plan=2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61 earliest='2024-12-04' changes=none
+request_158 user_158 methods=['partial_payment', 'installments'] max_m=4 partial_allowed=False earliest=2025-08-07 cands=[('installments', True, 'payment_option_449')] opts=[('payment_option_449', 3), ('payment_option_451', 15)]
+    safe=242600 status=affordable_with_plan method=installments plan=2025-08-07:84101.33|2025-09-04:84101.33|2025-10-02:84101.33 earliest='2025-08-07' changes=none
+request_164 user_164 methods=['partial_payment', 'installments'] max_m=12 partial_allowed=False earliest=2025-02-04 cands=[('installments', True, 'payment_option_465')] opts=[('payment_option_465', 3), ('payment_option_467', 15)]
+    safe=27018000 status=affordable_with_plan method=installments plan=2025-02-11:9366240|2025-03-11:9366240|2025-04-08:9366240 earliest='2025-02-04' changes=none
+request_166 user_166 methods=['installments'] max_m=8 partial_allowed=False earliest=2024-12-03 cands=[('installments', True, 'payment_option_471')] opts=[('payment_option_471', 3), ('payment_option_473', 21)]
+    safe=2907.6 status=affordable_with_plan method=installments plan=2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97 earliest='2024-12-03' changes=none
+request_174 user_174 methods=['partial_payment', 'installments'] max_m=9 partial_allowed=False earliest=2026-04-04 cands=[('installments', True, 'payment_option_494')] opts=[('payment_option_494', 3), ('payment_option_496', 18)]
+    safe=1146.2 status=affordable_with_plan method=installments plan=2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35 earliest='2026-04-04' changes=none
+request_178 user_178 methods=['partial_payment', 'installments'] max_m=12 partial_allowed=False earliest=2024-12-07 cands=[('installments', True, 'payment_option_506')] opts=[('payment_option_506', 3), ('payment_option_508', 21)]
+    safe=2938.1 status=affordable_with_plan method=installments plan=2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54 earliest='2024-12-07' changes=none
+request_197 user_197 methods=['partial_payment', 'installments'] max_m=12 partial_allowed=True earliest=2025-11-05 cands=[('installments', True, 'payment_option_562')] opts=[('payment_option_562', 3), ('payment_option_564', 15)]
+    safe=50939000 status=affordable_with_plan method=installments plan=2025-11-19:17658853.33|2025-12-17:17658853.33|2026-01-14:17658853.33 earliest='2025-11-05' changes=none
+request_199 user_199 methods=['installments'] max_m=7 partial_allowed=False earliest=2024-09-04 cands=[('installments', True, 'payment_option_569')] opts=[('payment_option_569', 3), ('payment_option_571', 21)]
+    safe=23674000 status=affordable_with_plan method=installments plan=2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67 earliest='2024-09-04' changes=none
+request_203 user_203 methods=['installments'] max_m=7 partial_allowed=False earliest=2025-05-07 cands=[('installments', True, 'payment_option_583')] opts=[('payment_option_583', 3), ('payment_option_585', 15)]
+    safe=1442.1 status=affordable_with_plan method=installments plan=2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93 earliest='2025-05-07' changes=none
+request_206 user_206 methods=['partial_payment', 'installments'] max_m=4 partial_allowed=True earliest=2025-08-03 cands=[('installments', True, 'payment_option_592')] opts=[('payment_option_592', 3), ('payment_option_594', 15)]
+    safe=1404.7 status=affordable_with_plan method=installments plan=2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96 earliest='2025-08-03' changes=none
+request_213 user_213 methods=['installments'] max_m=3 partial_allowed=False earliest=2026-01-07 cands=[('installments', True, 'payment_option_610')] opts=[('payment_option_610', 3), ('payment_option_612', 18)]
+    safe=3362.4 status=affordable_with_plan method=installments plan=2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63 earliest='2026-01-07' changes=none
+request_215 user_215 methods=['installments'] max_m=12 partial_allowed=True earliest=2025-05-06 cands=[('installments', True, 'payment_option_616')] opts=[('payment_option_616', 3), ('payment_option_618', 15)]
+    safe=29986 status=affordable_with_plan method=installments plan=2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15 earliest='2025-05-06' changes=none
+request_238 user_238 methods=['partial_payment', 'installments'] max_m=5 partial_allowed=False earliest=2024-12-07 cands=[('installments', True, 'payment_option_686')] opts=[('payment_option_686', 3), ('payment_option_688', 21)]
+    safe=663.6 status=affordable_with_plan method=installments plan=2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05 earliest='2024-12-07' changes=none
+request_241 user_241 methods=['partial_payment', 'installments'] max_m=3 partial_allowed=False earliest=2024-03-03 cands=[('installments', True, 'payment_option_695')] opts=[('payment_option_695', 3), ('payment_option_697', 21)]
+    safe=21052000 status=affordable_with_plan method=installments plan=2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67 earliest='2024-03-03' changes=none
+request_246 user_246 methods=['installments'] max_m=3 partial_allowed=False earliest=2026-04-03 cands=[('installments', True, 'payment_option_710')] opts=[('payment_option_710', 3), ('payment_option_712', 18)]
+    safe=64086 status=affordable_with_plan method=installments plan=2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48 earliest='2026-04-03' changes=none
+request_251 user_251 methods=['partial_payment', 'installments'] max_m=11 partial_allowed=False earliest=2025-05-03 cands=[] opts=[('payment_option_725', 15)]
+    safe=1513.6 status=not_affordable method=not_recommended plan=none earliest='2025-05-03' changes=none
+
+===== CASE 10: safe == requested but status != affordable_now =====
+request_30 user_30 ['partial_payment', 'installments'] safe=775.2 status=affordable_with_plan method=installments plan=2026-04-06:268.74|2026-05-06:268.74|2026-06-05:268.74 earliest='2026-04-06' changes=none
+request_59 user_59 ['partial_payment', 'installments'] safe=140600 status=affordable_with_plan method=installments plan=2025-05-07:48741.33|2025-06-04:48741.33|2025-07-02:48741.33 earliest='2025-05-04' changes=none
+request_61 user_61 ['installments'] safe=29062 status=affordable_with_plan method=installments plan=2024-03-17:10074.83|2024-04-17:10074.83|2024-05-18:10074.83 earliest='2024-03-03' changes=none
+request_75 user_75 ['partial_payment', 'installments'] safe=28270 status=affordable_with_plan method=installments plan=2026-04-09:9800.27|2026-05-09:9800.27|2026-06-08:9800.27 earliest='2026-04-06' changes=none
+request_102 user_102 ['partial_payment', 'installments'] safe=1716 status=affordable_with_plan method=installments plan=2026-04-05:594.88|2026-05-05:594.88|2026-06-04:594.88 earliest='2026-04-05' changes=none
+request_110 user_110 ['installments'] safe=22352 status=affordable_with_plan method=installments plan=2025-08-06:7748.69|2025-09-03:7748.69|2025-10-01:7748.69 earliest='2025-08-06' changes=none
+request_122 user_122 ['installments'] safe=20558000 status=affordable_with_plan method=installments plan=2025-08-05:7126773.33|2025-09-02:7126773.33|2025-09-30:7126773.33 earliest='2025-08-05' changes=none
+request_154 user_154 ['installments'] safe=1625.8 status=affordable_with_plan method=installments plan=2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61 earliest='2024-12-04' changes=none
+request_158 user_158 ['partial_payment', 'installments'] safe=242600 status=affordable_with_plan method=installments plan=2025-08-07:84101.33|2025-09-04:84101.33|2025-10-02:84101.33 earliest='2025-08-07' changes=none
+request_164 user_164 ['partial_payment', 'installments'] safe=27018000 status=affordable_with_plan method=installments plan=2025-02-11:9366240|2025-03-11:9366240|2025-04-08:9366240 earliest='2025-02-04' changes=none
+request_166 user_166 ['installments'] safe=2907.6 status=affordable_with_plan method=installments plan=2024-12-03:1007.97|2025-01-03:1007.97|2025-02-03:1007.97 earliest='2024-12-03' changes=none
+request_174 user_174 ['partial_payment', 'installments'] safe=1146.2 status=affordable_with_plan method=installments plan=2026-04-04:397.35|2026-05-04:397.35|2026-06-03:397.35 earliest='2026-04-04' changes=none
+request_178 user_178 ['partial_payment', 'installments'] safe=2938.1 status=affordable_with_plan method=installments plan=2024-12-07:1018.54|2025-01-07:1018.54|2025-02-07:1018.54 earliest='2024-12-07' changes=none
+request_197 user_197 ['partial_payment', 'installments'] safe=50939000 status=affordable_with_plan method=installments plan=2025-11-19:17658853.33|2025-12-17:17658853.33|2026-01-14:17658853.33 earliest='2025-11-05' changes=none
+request_199 user_199 ['installments'] safe=23674000 status=affordable_with_plan method=installments plan=2024-09-07:8206986.67|2024-10-08:8206986.67|2024-11-08:8206986.67 earliest='2024-09-04' changes=none
+request_203 user_203 ['installments'] safe=1442.1 status=affordable_with_plan method=installments plan=2025-05-10:499.93|2025-06-07:499.93|2025-07-05:499.93 earliest='2025-05-07' changes=none
+request_206 user_206 ['partial_payment', 'installments'] safe=1404.7 status=affordable_with_plan method=installments plan=2025-08-03:486.96|2025-08-31:486.96|2025-09-28:486.96 earliest='2025-08-03' changes=none
+request_213 user_213 ['installments'] safe=3362.4 status=affordable_with_plan method=installments plan=2026-01-21:1165.63|2026-02-20:1165.63|2026-03-22:1165.63 earliest='2026-01-07' changes=none
+request_215 user_215 ['installments'] safe=29986 status=affordable_with_plan method=installments plan=2025-05-09:10395.15|2025-06-06:10395.15|2025-07-04:10395.15 earliest='2025-05-06' changes=none
+request_238 user_238 ['partial_payment', 'installments'] safe=663.6 status=affordable_with_plan method=installments plan=2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05 earliest='2024-12-07' changes=none
+request_241 user_241 ['partial_payment', 'installments'] safe=21052000 status=affordable_with_plan method=installments plan=2024-03-17:7298026.67|2024-04-17:7298026.67|2024-05-18:7298026.67 earliest='2024-03-03' changes=none
+request_246 user_246 ['installments'] safe=64086 status=affordable_with_plan method=installments plan=2026-04-03:22216.48|2026-05-03:22216.48|2026-06-02:22216.48 earliest='2026-04-03' changes=none
+request_251 user_251 ['partial_payment', 'installments'] safe=1513.6 status=not_affordable method=not_recommended plan=none earliest='2025-05-03' changes=none
+
+===== CASE 11: same-day salary / same-day known debit =====
+
+===== CASE 12: two household streams without T15 =====
+request_42 user_42 T15=[('message_30', 'T15', 'salary_amount_change', None, 148000.0, 'INR')] primary=(5 rows, last 2025-12-15 91760.0) second=(4 rows, last 2025-11-20 64982.45) sched=[]
+   proj=[('2026-01-15', 148000.0), ('2026-02-15', 148000.0), ('2026-03-15', 148000.0)] notes=[]
+    safe=52100 status=affordable_now method=full_payment plan=2026-01-05:52100 earliest='2026-01-05' changes=none
+request_50 user_50 T15=[('message_37', 'T15', 'salary_amount_change', None, 126000.0, 'INR')] primary=(5 rows, last 2025-07-15 78120.0) second=(4 rows, last 2025-06-20 45331.36) sched=[]
+   proj=[('2025-08-15', 126000.0), ('2025-09-15', 126000.0), ('2025-10-15', 126000.0)] notes=[]
+    safe=43900 status=affordable_now method=full_payment plan=2025-08-06:43900 earliest='2025-08-06' changes=none
+request_58 user_58 T15=[('message_42', 'T15', 'salary_amount_change', None, 25840000.0, 'IDR')] primary=(5 rows, last 2024-11-15 16020800.0) second=(4 rows, last 2024-10-20 12310253.66) sched=[]
+   proj=[('2024-12-15', 25840000.0), ('2025-01-15', 25840000.0), ('2025-02-15', 25840000.0)] notes=[]
+    safe=16226000 status=affordable_now method=full_payment plan=2024-12-07:16226000 earliest='2024-12-07' changes=none
+request_154 user_154 T15=[('message_119', 'T15', 'salary_amount_change', None, 1628.0, 'EUR')] primary=(5 rows, last 2024-11-15 1009.36) second=(4 rows, last 2024-10-20 597.91) sched=[]
+   proj=[('2024-12-15', 1628.0), ('2025-01-15', 1628.0), ('2025-02-15', 1628.0)] notes=[]
+    safe=1625.8 status=affordable_with_plan method=installments plan=2024-12-04:563.61|2025-01-04:563.61|2025-02-04:563.61 earliest='2024-12-04' changes=none
+request_230 user_230 T15=[('message_180', 'T15', 'salary_amount_change', None, 2827.0, 'EUR')] primary=(5 rows, last 2025-07-15 1752.74) second=(4 rows, last 2025-06-20 1250.57) sched=[]
+   proj=[('2025-08-15', 2827.0), ('2025-09-15', 2827.0), ('2025-10-15', 2827.0)] notes=[]
+    safe=3537.6 status=affordable_now method=full_payment plan=2025-08-06:3537.60 earliest='2025-08-06' changes=none
+request_238 user_238 T15=[('message_187', 'T15', 'salary_amount_change', None, 912.0, 'USD')] primary=(5 rows, last 2024-11-15 565.44) second=(4 rows, last 2024-10-20 431.51) sched=[]
+   proj=[('2024-12-15', 912.0), ('2025-01-15', 912.0), ('2025-02-15', 912.0)] notes=[]
+    safe=663.6 status=affordable_with_plan method=installments plan=2024-12-07:230.05|2025-01-07:230.05|2025-02-07:230.05 earliest='2024-12-07' changes=none
+request_258 user_258 T15=[] primary=(5 rows, last 2025-12-15 572.88) second=(4 rows, last 2025-11-20 367.09) sched=[('event_23798', 'Next confirmed salary', 572.88, '2026-01-15')]
+   proj=[('2026-01-15', 572.88), ('2026-02-15', 572.88), ('2026-03-15', 572.88)] notes=['salary anchored on scheduled event_23798 572.88 USD on 2026-01-15']
+    safe=1113.6 status=affordable_now method=full_payment plan=2026-01-07:1113.60 earliest='2026-01-07' changes=none
+request_262 user_262 T15=[('message_203', 'T15', 'salary_amount_change', None, 48260000.0, 'IDR')] primary=(5 rows, last 2024-11-15 29921200.0) second=(4 rows, last 2024-10-20 20526620.46) sched=[]
+   proj=[('2024-12-15', 48260000.0), ('2025-01-15', 48260000.0), ('2025-02-15', 48260000.0)] notes=[]
+    safe=9236000 status=affordable_now method=full_payment plan=2024-12-05:9236000 earliest='2024-12-05' changes=none
+request_270 user_270 T15=[] primary=(5 rows, last 2026-06-15 1071.36) second=(4 rows, last 2026-05-20 846.63) sched=[('event_24891', 'Next confirmed salary', 1071.36, '2026-07-15')]
+   proj=[('2026-07-15', 1071.36), ('2026-08-15', 1071.36), ('2026-09-15', 1071.36)] notes=['salary anchored on scheduled event_24891 1071.36 USD on 2026-07-15']
+    safe=94.4 status=not_affordable method=not_recommended plan=none earliest='' changes=none

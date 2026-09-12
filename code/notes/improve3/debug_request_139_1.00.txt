@@ -1,0 +1,58 @@
+request_139 user_139 scale=1.0 date=2024-09-04 amount=2316.0 by=2024-11-17 partial=False
+  balance=3767.84 min=1500.0 methods=['partial_payment', 'installments'] max_m=3
+  series:
+    rent               monthly  step= 30 n= 5 amt=      480.00 flex=fixed                  min=None latest=event_12739 next=['2024-09-04', '2024-10-04', '2024-11-04']
+    utilities          monthly  step= 30 n= 5 amt=       83.00 flex=fixed                  min=None latest=event_12740 next=['2024-09-08', '2024-10-08', '2024-11-08']
+    music_subscription monthly  step= 30 n= 5 amt=       24.00 flex=stoppable              min=None latest=event_12741 next=['2024-09-13', '2024-10-13', '2024-11-13']
+    delivery_membership monthly  step= 30 n= 5 amt=       21.00 flex=fixed                  min=None latest=event_12742 next=['2024-09-15', '2024-10-15', '2024-11-15']
+    gym                monthly  step= 30 n= 5 amt=       36.00 flex=fixed                  min=None latest=event_12743 next=['2024-09-12', '2024-10-12', '2024-11-12']
+    entertainment      monthly  step= 30 n= 5 amt=       31.00 flex=fixed                  min=None latest=event_12744 next=['2024-09-16', '2024-10-16', '2024-11-16']
+    groceries          periodic step=  7 n=25 amt=       70.00 flex=fixed                  min=None latest=event_12769 next=['2024-09-11', '2024-09-18', '2024-09-25', '2024-10-02']
+    transport          periodic step=  7 n=25 amt=       46.00 flex=fixed                  min=None latest=event_12794 next=['2024-09-05', '2024-09-12', '2024-09-19', '2024-09-26']
+    dining             periodic step= 14 n=13 amt=       77.00 flex=fixed                  min=None latest=event_12807 next=['2024-09-08', '2024-09-22', '2024-10-06', '2024-10-20']
+  safe=1323.84 earliest=2024-11-15 -> not_recommended/not_affordable plan=none changes=none
+  daily projection (days with flows, no payment applied):
+    2024-09-04        3287.84  rent: Monthly rent:-480.00
+    2024-09-05        3241.84  transport: Vehicle charging:-46.00
+    2024-09-08        2999.84  Scheduled bill payment retry:-82.00, utilities: Electricity bill:-83.00, dining: Lunch with colleagues:-77.00
+    2024-09-11        2929.84  groceries: Local market purchase:-70.00
+    2024-09-12        2847.84  gym: Community fitness plan:-36.00, transport: Vehicle charging:-46.00
+    2024-09-13        2823.84  music_subscription: Music subscription:-24.00
+    2024-09-15        4626.84  salary:+1824.00, delivery_membership: Food delivery membership:-21.00
+    2024-09-16        4595.84  entertainment: Monthly entertainment spend:-31.00
+    2024-09-18        4525.84  groceries: Local market purchase:-70.00
+    2024-09-19        4479.84  transport: Vehicle charging:-46.00
+    2024-09-22        4402.84  dining: Lunch with colleagues:-77.00
+    2024-09-25        4332.84  groceries: Local market purchase:-70.00
+    2024-09-26        4286.84  transport: Vehicle charging:-46.00
+    2024-10-02        4216.84  groceries: Local market purchase:-70.00
+    2024-10-03        4170.84  transport: Vehicle charging:-46.00
+    2024-10-04        3690.84  rent: Monthly rent:-480.00
+    2024-10-06        3613.84  dining: Lunch with colleagues:-77.00
+    2024-10-08        3530.84  utilities: Electricity bill:-83.00
+    2024-10-09        3460.84  groceries: Local market purchase:-70.00
+    2024-10-10        3414.84  transport: Vehicle charging:-46.00
+    2024-10-12        3378.84  gym: Community fitness plan:-36.00
+    2024-10-13        3354.84  music_subscription: Music subscription:-24.00
+    2024-10-15        5157.84  salary:+1824.00, delivery_membership: Food delivery membership:-21.00
+    2024-10-16        5056.84  entertainment: Monthly entertainment spend:-31.00, groceries: Local market purchase:-70.00
+    2024-10-17        5010.84  transport: Vehicle charging:-46.00
+    2024-10-20        4933.84  dining: Lunch with colleagues:-77.00
+    2024-10-23        4863.84  groceries: Local market purchase:-70.00
+    2024-10-24        4817.84  transport: Vehicle charging:-46.00
+    2024-10-30        4747.84  groceries: Local market purchase:-70.00
+    2024-10-31        4701.84  transport: Vehicle charging:-46.00
+    2024-11-03        4624.84  dining: Lunch with colleagues:-77.00
+    2024-11-04        4144.84  rent: Monthly rent:-480.00
+    2024-11-06        4074.84  groceries: Local market purchase:-70.00
+    2024-11-07        4028.84  transport: Vehicle charging:-46.00
+    2024-11-08        3945.84  utilities: Electricity bill:-83.00
+    2024-11-12        3909.84  gym: Community fitness plan:-36.00
+    2024-11-13        3815.84  music_subscription: Music subscription:-24.00, groceries: Local market purchase:-70.00
+    2024-11-14        3769.84  transport: Vehicle charging:-46.00
+    2024-11-15        5572.84  salary:+1824.00, delivery_membership: Food delivery membership:-21.00
+    2024-11-16        5541.84  entertainment: Monthly entertainment spend:-31.00
+    2024-11-17        5464.84  dining: Lunch with colleagues:-77.00
+    2024-11-20        5394.84  groceries: Local market purchase:-70.00
+    2024-11-21        5348.84  transport: Vehicle charging:-46.00
+    2024-11-27        5278.84  groceries: Local market purchase:-70.00

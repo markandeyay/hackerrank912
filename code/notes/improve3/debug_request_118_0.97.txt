@@ -1,0 +1,55 @@
+request_118 user_118 scale=0.97 date=2024-12-07 amount=738.1 by=2025-02-08 partial=False
+  balance=1538.51 min=600.0 methods=['partial_payment', 'installments'] max_m=9
+  series:
+    rent               monthly  step= 30 n= 6 amt=      234.30 flex=fixed                  min=None latest=event_10915 next=['2025-01-03', '2025-02-03']
+    utilities          monthly  step= 30 n= 5 amt=       46.56 flex=fixed                  min=None latest=event_10910 next=['2024-12-07', '2025-01-07', '2025-02-07']
+    debt_repayment     monthly  step= 30 n= 5 amt=      110.00 flex=fixed                  min=None latest=event_10911 next=['2024-12-12', '2025-01-12', '2025-02-12']
+    streaming          monthly  step= 30 n= 5 amt=       22.00 flex=reducible_or_stoppable min=11.0 latest=event_10912 next=['2024-12-10', '2025-01-10', '2025-02-10']
+    cloud_storage      monthly  step= 30 n= 5 amt=        3.00 flex=fixed                  min=None latest=event_10913 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    shopping           monthly  step= 30 n= 5 amt=       33.95 flex=reducible              min=14.0 latest=event_10914 next=['2024-12-13', '2025-01-13', '2025-02-13']
+    groceries          periodic step=  7 n=26 amt=       29.10 flex=fixed                  min=None latest=event_10941 next=['2024-12-13', '2024-12-20', '2024-12-27', '2025-01-03']
+    transport          periodic step=  7 n=25 amt=       18.43 flex=fixed                  min=None latest=event_10966 next=['2024-12-14', '2024-12-21', '2024-12-28', '2025-01-04']
+    dining             periodic step= 14 n=13 amt=       20.37 flex=fixed                  min=None latest=event_10979 next=['2024-12-14', '2024-12-29', '2025-01-12', '2025-01-26']
+  safe=655.1 earliest=2025-01-15 -> installments/affordable_with_plan plan=2024-12-07:255.87|2025-01-07:255.87|2025-02-07:255.87 changes=none
+    cand installments     deadline=True changes=0 total=767.61 start=2024-12-07 n=3
+  daily projection (days with flows, no payment applied):
+    2024-12-07        1491.95  utilities: Electricity bill:-46.56
+    2024-12-10        1469.95  streaming: Streaming subscription:-22.00
+    2024-12-12        1359.95  debt_repayment: Education loan instalment:-110.00
+    2024-12-13        1293.90  cloud_storage: Shared storage plan:-3.00, shopping: Monthly shopping spend:-33.95, groceries: Neighbourhood grocer:-29.10
+    2024-12-14        1255.10  transport: Commuter pass:-18.43, dining: Quick-service meal:-20.37
+    2024-12-15        2014.10  salary:+759.00
+    2024-12-20        1985.00  groceries: Neighbourhood grocer:-29.10
+    2024-12-21        1966.57  transport: Commuter pass:-18.43
+    2024-12-27        1937.47  groceries: Neighbourhood grocer:-29.10
+    2024-12-28        1919.04  transport: Commuter pass:-18.43
+    2024-12-29        1898.67  dining: Quick-service meal:-20.37
+    2025-01-03        1635.27  rent: Monthly rent:-234.30, groceries: Neighbourhood grocer:-29.10
+    2025-01-04        1616.84  transport: Commuter pass:-18.43
+    2025-01-07        1570.28  utilities: Electricity bill:-46.56
+    2025-01-10        1519.18  streaming: Streaming subscription:-22.00, groceries: Neighbourhood grocer:-29.10
+    2025-01-11        1500.75  transport: Commuter pass:-18.43
+    2025-01-12        1370.38  debt_repayment: Education loan instalment:-110.00, dining: Quick-service meal:-20.37
+    2025-01-13        1333.43  cloud_storage: Shared storage plan:-3.00, shopping: Monthly shopping spend:-33.95
+    2025-01-15        2092.43  salary:+759.00
+    2025-01-17        2063.33  groceries: Neighbourhood grocer:-29.10
+    2025-01-18        2044.90  transport: Commuter pass:-18.43
+    2025-01-24        2015.80  groceries: Neighbourhood grocer:-29.10
+    2025-01-25        1997.37  transport: Commuter pass:-18.43
+    2025-01-26        1977.00  dining: Quick-service meal:-20.37
+    2025-01-31        1947.90  groceries: Neighbourhood grocer:-29.10
+    2025-02-01        1929.47  transport: Commuter pass:-18.43
+    2025-02-03        1695.17  rent: Monthly rent:-234.30
+    2025-02-07        1619.51  utilities: Electricity bill:-46.56, groceries: Neighbourhood grocer:-29.10
+    2025-02-08        1601.08  transport: Commuter pass:-18.43
+    2025-02-09        1580.71  dining: Quick-service meal:-20.37
+    2025-02-10        1558.71  streaming: Streaming subscription:-22.00
+    2025-02-12        1448.71  debt_repayment: Education loan instalment:-110.00
+    2025-02-13        1411.76  cloud_storage: Shared storage plan:-3.00, shopping: Monthly shopping spend:-33.95
+    2025-02-14        1382.66  groceries: Neighbourhood grocer:-29.10
+    2025-02-15        2123.23  salary:+759.00, transport: Commuter pass:-18.43
+    2025-02-21        2094.13  groceries: Neighbourhood grocer:-29.10
+    2025-02-22        2075.70  transport: Commuter pass:-18.43
+    2025-02-23        2055.33  dining: Quick-service meal:-20.37
+    2025-02-28        2026.23  groceries: Neighbourhood grocer:-29.10
+    2025-03-01        2007.80  transport: Commuter pass:-18.43

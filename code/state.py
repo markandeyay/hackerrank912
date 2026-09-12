@@ -30,6 +30,7 @@ OPTIONS = {
     "estimator": "mean",  # mean | median | last
     "debit_first": False,  # on a payday, apply debits before the salary credit
     "periodic_skip_request_date": True,  # short-cycle series: skip an occurrence that lands on request_date
+    "periodic_skip_days_after_request": 1,  # ... or within this many days after it (samples 06 and 15; none against)
     "periodic_max_per_cycle": 0,  # 0 = unlimited; N = at most N occurrences of a short-cycle series before the next salary
     "exclude_image_rows_from_mean": True,
     # Short-cycle variable series (groceries/transport/dining) whose occurrence lands on a
@@ -49,6 +50,12 @@ OPTIONS = {
     # [max/(1+a), min/(1-a)]. The mean is clamped into that interval and snapped to the nearest
     # currency grid point inside it (grid derived from the leaked nominals).
     "clamp_to_band": True,
+    # Sensitivity analysis only: multiply every variable (non-constant) series amount by this factor.
+    "variable_scale": 1.0,
+    # Tie-break for future-dated plan checks (installments, wait, the second partial payment,
+    # earliest date): the balance must clear the minimum by this many currency grid units.
+    # It only resolves numerical ties in the financially safer direction.
+    "future_plan_margin_units": 1,
 }
 
 # --- salary description classes ------------------------------------------------
@@ -268,6 +275,7 @@ class StateBuilder:
         end = rq + timedelta(days=self.horizon_days)
         st = State(req, prof, rq, end, prof.current_available_balance, prof.minimum_balance_to_keep)
         st.debit_first = bool(self.opt.get("debit_first"))
+        st.plan_margin = float(self.opt.get("future_plan_margin_units") or 0) * self.grid.get(home, 0.0)
         adjs = self.adjustments.get(req.user_id, [])
         events = ds.events_by_user.get(req.user_id, [])
         linked_targets = {e.linked_event_id for e in events if e.linked_event_id}
@@ -402,6 +410,9 @@ class StateBuilder:
                             k = min(max(round(clamped / unit), k_lo), k_hi)
                             clamped = k * unit
                     amount = clamped
+            scale = float(self.opt.get("variable_scale") or 1.0)
+            if scale != 1.0 and max(amts) > min(amts):
+                amount *= scale
             if cat == "rent" and rent_pct:
                 amount *= 1 + rent_pct / 100.0
                 st.notes.append(f"rent increased by {rent_pct}% per message")
@@ -419,7 +430,8 @@ class StateBuilder:
                 cadence, step = "periodic", max(1, int(round(per)))
                 t = dates[-1] + timedelta(days=step)
                 if self.opt.get("periodic_skip_request_date", True):
-                    while t <= rq:
+                    cutoff = rq + timedelta(days=int(self.opt.get("periodic_skip_days_after_request") or 0))
+                    while t <= cutoff:
                         t += timedelta(days=step)
                 else:
                     while t < rq:

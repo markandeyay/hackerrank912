@@ -1,0 +1,58 @@
+request_269 user_269 scale=0.97 date=2025-11-04 amount=15490.0 by=2026-01-02 partial=True
+  balance=45307.9 min=23100.0 methods=['full_payment', 'installments'] max_m=10
+  series:
+    rent               monthly  step= 30 n= 6 amt=    11484.00 flex=fixed                  min=None latest=event_24746 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 5 amt=     1718.06 flex=fixed                  min=None latest=event_24741 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    education          monthly  step= 30 n= 5 amt=     1960.20 flex=fixed                  min=None latest=event_24742 next=['2025-11-08', '2025-12-08', '2026-01-08']
+    debt_repayment     monthly  step= 30 n= 5 amt=     4499.00 flex=fixed                  min=None latest=event_24743 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    music_subscription monthly  step= 30 n= 5 amt=      376.20 flex=stoppable              min=None latest=event_24744 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    delivery_membership monthly  step= 30 n= 5 amt=      317.90 flex=fixed                  min=None latest=event_24745 next=['2025-11-13', '2025-12-13', '2026-01-13']
+    groceries          periodic step=  7 n=26 amt=     1324.44 flex=fixed                  min=None latest=event_24772 next=['2025-11-09', '2025-11-16', '2025-11-23', '2025-11-30']
+    transport          periodic step=  7 n=26 amt=      924.02 flex=fixed                  min=None latest=event_24798 next=['2025-11-10', '2025-11-17', '2025-11-24', '2025-12-01']
+    dining             periodic step= 14 n=13 amt=     1041.39 flex=reducible              min=536.8 latest=event_24811 next=['2025-11-11', '2025-11-25', '2025-12-09', '2025-12-23']
+  safe=10046.68 earliest=2025-11-15 -> wait/affordable_later plan=2025-11-15:15490 changes=none
+    cand wait             deadline=True changes=0 total=15490.00 start=2025-11-15 n=1
+  daily projection (days with flows, no payment applied):
+    2025-11-04       45307.90  
+    2025-11-06       43589.84  utilities: Municipal utilities:-1718.06
+    2025-11-08       41629.64  education: Course tuition:-1960.20
+    2025-11-09       40305.20  groceries: Neighbourhood grocer:-1324.44
+    2025-11-10       39381.18  transport: Parking and tolls:-924.02
+    2025-11-11       33464.58  debt_repayment: Education loan instalment:-4499.00, music_subscription: Music service subscription:-376.20, dining: Weekend food delivery:-1041.39
+    2025-11-13       33146.68  delivery_membership: Delivery service plan:-317.90
+    2025-11-15       71426.68  salary:+38280.00
+    2025-11-16       70102.25  groceries: Neighbourhood grocer:-1324.44
+    2025-11-17       69178.22  transport: Parking and tolls:-924.02
+    2025-11-23       67853.79  groceries: Neighbourhood grocer:-1324.44
+    2025-11-24       66929.76  transport: Parking and tolls:-924.02
+    2025-11-25       65888.37  dining: Weekend food delivery:-1041.39
+    2025-11-30       64563.93  groceries: Neighbourhood grocer:-1324.44
+    2025-12-01       63639.91  transport: Parking and tolls:-924.02
+    2025-12-02       52155.91  rent: Shared housing rent:-11484.00
+    2025-12-06       50437.85  utilities: Municipal utilities:-1718.06
+    2025-12-07       49113.41  groceries: Neighbourhood grocer:-1324.44
+    2025-12-08       46229.19  education: Course tuition:-1960.20, transport: Parking and tolls:-924.02
+    2025-12-09       45187.80  dining: Weekend food delivery:-1041.39
+    2025-12-11       40312.60  debt_repayment: Education loan instalment:-4499.00, music_subscription: Music service subscription:-376.20
+    2025-12-13       39994.70  delivery_membership: Delivery service plan:-317.90
+    2025-12-14       38670.26  groceries: Neighbourhood grocer:-1324.44
+    2025-12-15       76026.24  salary:+38280.00, transport: Parking and tolls:-924.02
+    2025-12-21       74701.80  groceries: Neighbourhood grocer:-1324.44
+    2025-12-22       73777.78  transport: Parking and tolls:-924.02
+    2025-12-23       72736.38  dining: Weekend food delivery:-1041.39
+    2025-12-28       71411.95  groceries: Neighbourhood grocer:-1324.44
+    2025-12-29       70487.92  transport: Parking and tolls:-924.02
+    2026-01-02       59003.92  rent: Shared housing rent:-11484.00
+    2026-01-04       57679.49  groceries: Neighbourhood grocer:-1324.44
+    2026-01-05       56755.46  transport: Parking and tolls:-924.02
+    2026-01-06       53996.01  utilities: Municipal utilities:-1718.06, dining: Weekend food delivery:-1041.39
+    2026-01-08       52035.81  education: Course tuition:-1960.20
+    2026-01-11       45836.17  debt_repayment: Education loan instalment:-4499.00, music_subscription: Music service subscription:-376.20, groceries: Neighbourhood grocer:-1324.44
+    2026-01-12       44912.15  transport: Parking and tolls:-924.02
+    2026-01-13       44594.25  delivery_membership: Delivery service plan:-317.90
+    2026-01-15       82874.25  salary:+38280.00
+    2026-01-18       81549.81  groceries: Neighbourhood grocer:-1324.44
+    2026-01-19       80625.79  transport: Parking and tolls:-924.02
+    2026-01-20       79584.40  dining: Weekend food delivery:-1041.39
+    2026-01-25       78259.96  groceries: Neighbourhood grocer:-1324.44
+    2026-01-26       77335.94  transport: Parking and tolls:-924.02

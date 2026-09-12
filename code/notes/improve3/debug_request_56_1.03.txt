@@ -1,0 +1,55 @@
+request_56 user_56 scale=1.03 date=2025-02-03 amount=881.56 by=2025-03-13 partial=True
+  balance=3432.36 min=2100.0 methods=['partial_payment', 'installments'] max_m=11
+  series:
+    housing            monthly  step= 30 n= 6 amt=      212.00 flex=fixed                  min=None latest=event_5212 next=['2025-03-02', '2025-04-02']
+    utilities          monthly  step= 30 n= 5 amt=      117.42 flex=fixed                  min=None latest=event_5206 next=['2025-02-05', '2025-03-05', '2025-04-05']
+    insurance          monthly  step= 30 n= 5 amt=       63.00 flex=fixed                  min=None latest=event_5207 next=['2025-02-06', '2025-03-06', '2025-04-06']
+    education          monthly  step= 30 n= 5 amt=      207.00 flex=fixed                  min=None latest=event_5208 next=['2025-02-07', '2025-03-07', '2025-04-07']
+    healthcare         monthly  step= 30 n= 5 amt=      118.45 flex=fixed                  min=None latest=event_5209 next=['2025-02-09', '2025-03-09', '2025-04-09']
+    entertainment      monthly  step= 30 n= 5 amt=       49.44 flex=reducible              min=24.0 latest=event_5210 next=['2025-02-13', '2025-03-13', '2025-04-13']
+    cloud_storage      monthly  step= 30 n= 5 amt=        8.00 flex=stoppable              min=None latest=event_5211 next=['2025-02-11', '2025-03-11', '2025-04-11']
+    groceries          periodic step= 10 n=18 amt=       96.82 flex=fixed                  min=None latest=event_5230 next=['2025-02-05', '2025-02-15', '2025-02-25', '2025-03-07']
+    transport          periodic step= 14 n=13 amt=       50.47 flex=fixed                  min=None latest=event_5243 next=['2025-02-08', '2025-02-22', '2025-03-08', '2025-03-22']
+    dining             periodic step= 21 n= 9 amt=      110.21 flex=reducible              min=53.5 latest=event_5252 next=['2025-02-14', '2025-03-09', '2025-03-30', '2025-04-20']
+  safe=511.55 earliest=2025-02-15 -> partial_payment/affordable_with_plan plan=2025-02-03:511.55|2025-02-15:370.01 changes=none
+    cand partial_payment  deadline=True changes=0 total=881.56 start=2025-02-03 n=2
+    cand installments     deadline=True changes=0 total=916.84 start=2025-02-03 n=2
+    cand installments     deadline=False changes=0 total=934.47 start=2025-02-06 n=3
+  daily projection (days with flows, no payment applied):
+    2025-02-03        3432.36  
+    2025-02-05        3218.12  utilities: Electricity bill:-117.42, groceries: Local market purchase:-96.82
+    2025-02-06        3155.12  insurance: Insurance policy payment:-63.00
+    2025-02-07        2948.12  education: Professional training fee:-207.00
+    2025-02-08        2897.65  transport: Rail pass:-50.47
+    2025-02-09        2779.20  healthcare: Diagnostic test:-118.45
+    2025-02-11        2771.20  cloud_storage: Cloud storage plan:-8.00
+    2025-02-13        2721.76  entertainment: Cinema and events:-49.44
+    2025-02-14        2611.55  dining: Quick-service meal:-110.21
+    2025-02-15        4902.73  salary:+2388.00, groceries: Local market purchase:-96.82
+    2025-02-22        4852.26  transport: Rail pass:-50.47
+    2025-02-25        4755.44  groceries: Local market purchase:-96.82
+    2025-03-02        4543.44  housing: Home association fee:-212.00
+    2025-03-05        4426.02  utilities: Electricity bill:-117.42
+    2025-03-06        4363.02  insurance: Insurance policy payment:-63.00
+    2025-03-07        4059.20  education: Professional training fee:-207.00, groceries: Local market purchase:-96.82
+    2025-03-08        4008.73  transport: Rail pass:-50.47
+    2025-03-09        3780.07  healthcare: Diagnostic test:-118.45, dining: Quick-service meal:-110.21
+    2025-03-11        3772.07  cloud_storage: Cloud storage plan:-8.00
+    2025-03-13        3722.63  entertainment: Cinema and events:-49.44
+    2025-03-15        6110.63  salary:+2388.00
+    2025-03-17        6013.81  groceries: Local market purchase:-96.82
+    2025-03-22        5963.34  transport: Rail pass:-50.47
+    2025-03-27        5866.52  groceries: Local market purchase:-96.82
+    2025-03-30        5756.31  dining: Quick-service meal:-110.21
+    2025-04-02        5544.31  housing: Home association fee:-212.00
+    2025-04-05        5376.42  utilities: Electricity bill:-117.42, transport: Rail pass:-50.47
+    2025-04-06        5216.60  insurance: Insurance policy payment:-63.00, groceries: Local market purchase:-96.82
+    2025-04-07        5009.60  education: Professional training fee:-207.00
+    2025-04-09        4891.15  healthcare: Diagnostic test:-118.45
+    2025-04-11        4883.15  cloud_storage: Cloud storage plan:-8.00
+    2025-04-13        4833.71  entertainment: Cinema and events:-49.44
+    2025-04-15        7221.71  salary:+2388.00
+    2025-04-16        7124.89  groceries: Local market purchase:-96.82
+    2025-04-19        7074.42  transport: Rail pass:-50.47
+    2025-04-20        6964.21  dining: Quick-service meal:-110.21
+    2025-04-26        6867.39  groceries: Local market purchase:-96.82

@@ -1,0 +1,56 @@
+request_89 user_89 scale=0.97 date=2025-11-04 amount=13756000.0 by=2026-01-15 partial=False
+  balance=27331862.01 min=12534700.0 methods=['partial_payment', 'installments'] max_m=3
+  series:
+    rent               monthly  step= 30 n= 6 amt=  3819000.00 flex=fixed                  min=None latest=event_8338 next=['2025-12-02', '2026-01-02']
+    utilities          monthly  step= 30 n= 5 amt=   761644.00 flex=fixed                  min=None latest=event_8333 next=['2025-11-06', '2025-12-06', '2026-01-06']
+    debt_repayment     monthly  step= 30 n= 5 amt=  1985500.00 flex=fixed                  min=None latest=event_8334 next=['2025-11-11', '2025-12-11', '2026-01-11']
+    streaming          monthly  step= 30 n= 5 amt=   323000.00 flex=stoppable              min=None latest=event_8335 next=['2025-11-09', '2025-12-09', '2026-01-09']
+    cloud_storage      monthly  step= 30 n= 5 amt=    81700.00 flex=stoppable              min=None latest=event_8336 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    shopping           monthly  step= 30 n= 5 amt=   646893.00 flex=reducible              min=266760.0 latest=event_8337 next=['2025-11-12', '2025-12-12', '2026-01-12']
+    groceries          periodic step=  7 n=26 amt=   673859.00 flex=fixed                  min=None latest=event_8364 next=['2025-11-09', '2025-11-16', '2025-11-23', '2025-11-30']
+    transport          periodic step=  7 n=26 amt=   406430.00 flex=fixed                  min=None latest=event_8390 next=['2025-11-10', '2025-11-17', '2025-11-24', '2025-12-01']
+    dining             periodic step= 14 n=13 amt=   394402.00 flex=reducible              min=203300.0 latest=event_8403 next=['2025-11-11', '2025-11-25', '2025-12-09', '2025-12-23']
+  safe=9523734.01 earliest=2026-01-15 -> installments/affordable_with_plan plan=2025-11-18:4768746.67|2025-12-16:4768746.67|2026-01-13:4768746.67 changes=stop:event_8336|stop:event_8335
+    cand installments     deadline=True changes=2 total=14306240.01 start=2025-11-18 n=3
+  daily projection (days with flows, no payment applied):
+    2025-11-04    27331862.01  
+    2025-11-06    26570218.01  utilities: Municipal utilities:-761644.00
+    2025-11-09    25573359.01  streaming: Video streaming plan:-323000.00, groceries: Household groceries:-673859.00
+    2025-11-10    25166929.01  transport: Commuter pass:-406430.00
+    2025-11-11    22787027.01  debt_repayment: Credit card repayment:-1985500.00, dining: Family dinner:-394402.00
+    2025-11-12    22058434.01  cloud_storage: Online backup subscription:-81700.00, shopping: Monthly shopping spend:-646893.00
+    2025-11-15    37258434.01  salary:+15200000.00
+    2025-11-16    36584575.01  groceries: Household groceries:-673859.00
+    2025-11-17    36178145.01  transport: Commuter pass:-406430.00
+    2025-11-23    35504286.01  groceries: Household groceries:-673859.00
+    2025-11-24    35097856.01  transport: Commuter pass:-406430.00
+    2025-11-25    34703454.01  dining: Family dinner:-394402.00
+    2025-11-30    34029595.01  groceries: Household groceries:-673859.00
+    2025-12-01    33623165.01  transport: Commuter pass:-406430.00
+    2025-12-02    29804165.01  rent: Shared housing rent:-3819000.00
+    2025-12-06    29042521.01  utilities: Municipal utilities:-761644.00
+    2025-12-07    28368662.01  groceries: Household groceries:-673859.00
+    2025-12-08    27962232.01  transport: Commuter pass:-406430.00
+    2025-12-09    27244830.01  streaming: Video streaming plan:-323000.00, dining: Family dinner:-394402.00
+    2025-12-11    25259330.01  debt_repayment: Credit card repayment:-1985500.00
+    2025-12-12    24530737.01  cloud_storage: Online backup subscription:-81700.00, shopping: Monthly shopping spend:-646893.00
+    2025-12-14    23856878.01  groceries: Household groceries:-673859.00
+    2025-12-15    38650448.01  salary:+15200000.00, transport: Commuter pass:-406430.00
+    2025-12-21    37976589.01  groceries: Household groceries:-673859.00
+    2025-12-22    37570159.01  transport: Commuter pass:-406430.00
+    2025-12-23    37175757.01  dining: Family dinner:-394402.00
+    2025-12-28    36501898.01  groceries: Household groceries:-673859.00
+    2025-12-29    36095468.01  transport: Commuter pass:-406430.00
+    2026-01-02    32276468.01  rent: Shared housing rent:-3819000.00
+    2026-01-04    31602609.01  groceries: Household groceries:-673859.00
+    2026-01-05    31196179.01  transport: Commuter pass:-406430.00
+    2026-01-06    30040133.01  utilities: Municipal utilities:-761644.00, dining: Family dinner:-394402.00
+    2026-01-09    29717133.01  streaming: Video streaming plan:-323000.00
+    2026-01-11    27057774.01  debt_repayment: Credit card repayment:-1985500.00, groceries: Household groceries:-673859.00
+    2026-01-12    25922751.01  cloud_storage: Online backup subscription:-81700.00, shopping: Monthly shopping spend:-646893.00, transport: Commuter pass:-406430.00
+    2026-01-15    41122751.01  salary:+15200000.00
+    2026-01-18    40448892.01  groceries: Household groceries:-673859.00
+    2026-01-19    40042462.01  transport: Commuter pass:-406430.00
+    2026-01-20    39648060.01  dining: Family dinner:-394402.00
+    2026-01-25    38974201.01  groceries: Household groceries:-673859.00
+    2026-01-26    38567771.01  transport: Commuter pass:-406430.00

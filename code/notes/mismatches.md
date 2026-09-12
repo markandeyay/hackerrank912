@@ -3,21 +3,53 @@
 Score of the engine against `dataset/sample_requests.csv` (25 rows), run with
 `python code/evaluation/main.py --llm --table -v`:
 
-| column | first full run | after the payday rule | after pass 1 | after pass 2 |
-|---|---|---|---|---|
-| affordability_status | 23 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
-| recommended_payment_method | 24 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
-| payment_plan | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
-| earliest_date_for_full_payment | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
-| spending_changes_needed | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
-| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 | 4 / 25 | **6 / 25** |
-| amount_safe_to_pay within 2 % | 11 / 25 | 16 / 25 | 17 / 25 | 17 / 25 |
-| overall exact (6 scored columns) | 118 / 150 (78.7 %) | 121 / 150 (80.7 %) | 121 / 150 (80.7 %) | **123 / 150 (82.0 %)** |
+| column | first full run | after the payday rule | after pass 1 | after pass 2 | after pass 3 |
+|---|---|---|---|---|---|
+| affordability_status | 23 / 25 | 24 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
+| recommended_payment_method | 24 / 25 | 24 / 25 | 24 / 25 | 24 / 25 | 24 / 25 |
+| payment_plan | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| earliest_date_for_full_payment | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| spending_changes_needed | 22 / 25 | 23 / 25 | 23 / 25 | 23 / 25 | 23 / 25 |
+| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 | 4 / 25 | 6 / 25 | 6 / 25 |
+| amount_safe_to_pay within 2 % | 11 / 25 | 16 / 25 | 17 / 25 | 17 / 25 | **18 / 25** |
+| overall exact (6 scored columns) | 118 / 150 (78.7 %) | 121 / 150 (80.7 %) | 121 / 150 (80.7 %) | 123 / 150 (82.0 %) | 123 / 150 (82.0 %) |
 
 Nothing is hardcoded per request; every number comes from the dataset through the rules in `state.py` / `planner.py`.
 The traces and experiments behind this page are in `notes/experiments/` (one `trace_request_XX.md` per mismatched
 sample, `reserve_hypotheses.md`, `horizon_test.md`) and the six audit reports of the improvement pass are in
 `notes/improve/` (reserve model, invariants, evidence application, outliers, explanations, tests).
+
+## Improvement pass 3 (generator reverse-engineering and boundary hardening, reports in `notes/improve3/`)
+
+Adopted:
+
+* **Short-cycle occurrences on request_date + 1 are skipped like those on request_date** (`periodic_skip_days_after_request`).
+  The occurrence-count back-solve shows the reference counted one fewer occurrence exactly in the two samples where a
+  5/7-day series lands the day after the request (06 dining, 15 transport) and never in the samples where one lands two or
+  three days after (20, 24, 21, 25). Zero cell cost on the samples, within-2 % 17 -> 18 (request_15 from +5.1 % to -1.9 %;
+  request_06 reserve from +9.7 % to +0.7 %, still one change short of the expected plan). On the hidden set it changes 28
+  amounts and 5 decisions: request_78 becomes `full_payment` with two reductions that now complete by the deadline instead
+  of a `wait` one day past it; request_214's partial split; requests 231, 267 and 274 no longer need a spending change.
+* **Tie-break margin on future-dated plan checks** (`future_plan_margin_units`): from the first future payment onwards a
+  plan must clear the minimum by one currency grid unit (1 EUR/USD, 10 INR, 100 IDR, 0.2 ZAR). It resolves numerical
+  coin tosses in the financially safer direction (statement conflict rule 4) without touching `amount_safe_to_pay`, and
+  changes no sample and no hidden row at baseline.
+
+Not adopted, with evidence: the boundary sweep found 19 hidden rows whose decision flips when every variable reserve is
+scaled by 1 % and 43 within 3 %. Rule 4 governs conflicting records, not estimation noise; the band-clamped estimator is
+unbiased around the generator's nominals, so shifting those rows to the "safer" outcome (five would become
+`not_affordable`, eleven would gain a spending change) would lower expected accuracy. The list with margins and the
+outcome under each perturbation is in `notes/improve3/3_sensitivity.md` for reference. The residual back-solve found no
+hypothesis explaining 20 of 25 samples (coarse grids, salary-proportional budgets, first/last observed amounts and
+two-significant-figure rounding all fail; the certain block is exact in every sample and 16 of 21 residuals are
+band-feasible under our occurrence counts). The occurrence study found the eight remaining misses need mutually
+incompatible interventions (payday occurrences charged before salary in 04 and 13 but not in 21, 24, 25; an extra
+between-payday occurrence for 11; a horizon-end occurrence for 10 refuted by 05), so no further scheduling rule ships.
+The edge-case sweep on the hidden set (ended income, first salaries, foreign salaries, two-option requests, the
+installment cap, deadline-missing waits, safe-equals-requested with installment-only users, dual household streams) found
+every case handled by a general rule consistent with the statement; the installment cap is one payment per month, under
+which three 3 x 31-day plans stay eligible (an `n x frequency / 30` reading would turn requests 145, 241 and 256 into
+`not_recommended`).
 
 ## Improvement pass 2 (four studies, reports in `notes/improve2/`)
 

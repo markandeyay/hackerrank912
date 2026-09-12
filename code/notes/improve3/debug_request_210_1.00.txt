@@ -1,0 +1,45 @@
+request_210 user_210 scale=1.0 date=2026-04-06 amount=1360.02 by=2026-06-23 partial=True
+  balance=3525.32 min=2000.0 methods=['partial_payment', 'installments'] max_m=5
+  series:
+    rent               monthly  step= 30 n= 6 amt=      673.20 flex=fixed                  min=None latest=event_19296 next=['2026-05-03', '2026-06-03']
+    utilities          monthly  step= 30 n= 5 amt=      158.00 flex=fixed                  min=None latest=event_19292 next=['2026-04-07', '2026-05-07', '2026-06-07']
+    cloud_storage      monthly  step= 30 n= 5 amt=       18.00 flex=stoppable              min=None latest=event_19293 next=['2026-04-13', '2026-05-13', '2026-06-13']
+    streaming          monthly  step= 30 n= 5 amt=       87.00 flex=reducible_or_stoppable min=43.5 latest=event_19294 next=['2026-04-10', '2026-05-10', '2026-06-10']
+    shopping           monthly  step= 30 n= 5 amt=      162.00 flex=fixed                  min=None latest=event_19295 next=['2026-04-13', '2026-05-13', '2026-06-13']
+    groceries          periodic step= 10 n=18 amt=      127.00 flex=fixed                  min=None latest=event_19314 next=['2026-04-10', '2026-04-20', '2026-04-30', '2026-05-10']
+    transport          periodic step= 21 n= 9 amt=       72.00 flex=fixed                  min=None latest=event_19323 next=['2026-04-14', '2026-05-11', '2026-06-01', '2026-06-22']
+    dining             periodic step= 21 n= 9 amt=      114.00 flex=reducible              min=57.0 latest=event_19332 next=['2026-04-14', '2026-05-12', '2026-06-02', '2026-06-23']
+  safe=787.32 earliest=2026-04-15 -> partial_payment/affordable_with_plan plan=2026-04-06:787.32|2026-04-15:572.70 changes=none
+    cand partial_payment  deadline=True changes=0 total=1360.02 start=2026-04-06 n=2
+    cand installments     deadline=True changes=0 total=1414.44 start=2026-04-06 n=3
+    cand installments     deadline=False changes=0 total=1441.64 start=2026-04-11 n=4
+  daily projection (days with flows, no payment applied):
+    2026-04-06        3525.32  
+    2026-04-07        3367.32  utilities: Electricity and water bill:-158.00
+    2026-04-10        3153.32  streaming: Video streaming plan:-87.00, groceries: Local market purchase:-127.00
+    2026-04-13        2973.32  cloud_storage: Online backup subscription:-18.00, shopping: Monthly shopping spend:-162.00
+    2026-04-14        2787.32  transport: Vehicle charging:-72.00, dining: Quick-service meal:-114.00
+    2026-04-15        5703.32  salary:+2916.00
+    2026-04-20        5576.32  groceries: Local market purchase:-127.00
+    2026-04-30        5449.32  groceries: Local market purchase:-127.00
+    2026-05-03        4776.12  rent: Shared housing rent:-673.20
+    2026-05-07        4618.12  utilities: Electricity and water bill:-158.00
+    2026-05-10        4404.12  streaming: Video streaming plan:-87.00, groceries: Local market purchase:-127.00
+    2026-05-11        4332.12  transport: Vehicle charging:-72.00
+    2026-05-12        4218.12  dining: Quick-service meal:-114.00
+    2026-05-13        4038.12  cloud_storage: Online backup subscription:-18.00, shopping: Monthly shopping spend:-162.00
+    2026-05-15        6954.12  salary:+2916.00
+    2026-05-20        6827.12  groceries: Local market purchase:-127.00
+    2026-05-30        6700.12  groceries: Local market purchase:-127.00
+    2026-06-01        6628.12  transport: Vehicle charging:-72.00
+    2026-06-02        6514.12  dining: Quick-service meal:-114.00
+    2026-06-03        5840.92  rent: Shared housing rent:-673.20
+    2026-06-07        5682.92  utilities: Electricity and water bill:-158.00
+    2026-06-09        5555.92  groceries: Local market purchase:-127.00
+    2026-06-10        5468.92  streaming: Video streaming plan:-87.00
+    2026-06-13        5288.92  cloud_storage: Online backup subscription:-18.00, shopping: Monthly shopping spend:-162.00
+    2026-06-15        8204.92  salary:+2916.00
+    2026-06-19        8077.92  groceries: Local market purchase:-127.00
+    2026-06-22        8005.92  transport: Vehicle charging:-72.00
+    2026-06-23        7891.92  dining: Quick-service meal:-114.00
+    2026-06-29        7764.92  groceries: Local market purchase:-127.00
