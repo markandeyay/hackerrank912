@@ -1,0 +1,340 @@
+{
+ "T01_salary_increase": {
+  "pattern_en": "Your monthly salary has increased to (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The change applies from (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "pattern_id": "Gaji bulanan Anda naik menjadi (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Perubahan ini berlaku mulai (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "Permanent salary raise to {amount} effective {date}.",
+  "count": 9
+ },
+ "T02_salary_confirmed_onetime_unspecified": {
+  "pattern_en": "Your regular salary for the next payroll is confirmed\\. Your next payslip will show the regular pay and any one-off adjustment separately",
+  "pattern_id": "Gaji rutin untuk penggajian berikutnya sudah dikonfirmasi\\. Slip gaji berikutnya akan menampilkan gaji rutin dan penyesuaian satu kali secara terpisah",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Regular salary confirmed; a one-time adjustment will appear separately but no amount is given.",
+  "count": 1
+ },
+ "T03_bonus_pending_review": {
+  "pattern_en": "Your quarterly bonus is still subject to the final performance review\\. The final amount and payment date have not been approved yet",
+  "pattern_id": "Bonus kuartalan Anda masih menunggu hasil akhir penilaian kinerja\\. Jumlah akhir dan tanggal pembayaran belum disetujui",
+  "adjustment_type": "unconfirmed_income",
+  "fields": [],
+  "gist": "Quarterly bonus not approved: amount and date unknown.",
+  "count": 8
+ },
+ "T04_temporary_reduced_pay": {
+  "pattern_en": "Your temporary monthly pay is (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The reduced amount continues for the next payroll",
+  "pattern_id": "Gaji bulanan sementara Anda adalah (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Jumlah yang lebih rendah masih berlaku untuk penggajian berikutnya",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency"
+  ],
+  "gist": "Next payroll is a temporarily reduced amount {amount}.",
+  "count": 10
+ },
+ "T05_salary_date_change": {
+  "pattern_en": "Your confirmed salary is now expected on (?P<date>\\d{4}-\\d{2}-\\d{2})\\. This replaces the payroll date shown in the earlier update",
+  "pattern_id": "Gaji yang sudah dikonfirmasi kini diperkirakan masuk pada (?P<date>\\d{4}-\\d{2}-\\d{2})\\. Tanggal ini menggantikan tanggal penggajian",
+  "adjustment_type": "salary_date_change",
+  "fields": [
+   "date"
+  ],
+  "gist": "Next confirmed salary moves to {date}.",
+  "count": 7
+ },
+ "T06_salary_reduced_unpaid_leave": {
+  "pattern_en": "Your next salary is reduced to (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The adjustment is due to approved unpaid leave",
+  "pattern_id": "Gaji berikutnya Anda dikurangi menjadi (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Penyesuaian ini karena cuti tanpa gaji yang disetujui",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency"
+  ],
+  "gist": "Next salary only is reduced to {amount} (unpaid leave).",
+  "count": 10
+ },
+ "T07_base_salary_commission_pending": {
+  "pattern_en": "Your confirmed base salary is (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The commission shown for open deals is still pending approval",
+  "pattern_id": "Gaji pokok yang dikonfirmasi adalah (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Komisi dari transaksi yang masih berjalan belum disetujui",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency"
+  ],
+  "gist": "Base salary {amount} confirmed; commission on open deals is not earned yet.",
+  "count": 9
+ },
+ "T08_seasonal_contract_ended": {
+  "pattern_en": "The current seasonal contract has ended\\. No off-season income or renewal has been confirmed",
+  "pattern_id": "Kontrak musiman saat ini telah berakhir\\. Belum ada pendapatan di luar musim atau perpanjangan kontrak yang dikonfirmasi",
+  "adjustment_type": "income_ended",
+  "fields": [],
+  "gist": "Seasonal contract ended; no further income confirmed.",
+  "count": 9
+ },
+ "T09_salary_resumes_childcare": {
+  "pattern_en": "Regular salary of (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) resumes on (?P<date>\\d{4}-\\d{2}-\\d{2})\\. A new recurring childcare payment begins in the same month",
+  "pattern_id": "Gaji rutin sebesar (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) kembali dibayarkan pada (?P<date>\\d{4}-\\d{2}-\\d{2})\\. Pembayaran penitipan anak rutin yang baru dimulai pada bulan yang sama",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "Salary {amount} resumes on {date} after leave; a new recurring childcare expense (amount unspecified) starts the same month.",
+  "count": 8
+ },
+ "T10_first_salary_credit_date": {
+  "pattern_en": "Your first salary will be (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The confirmed credit date is (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "pattern_id": "Gaji pertama Anda sebesar (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Tanggal kredit yang dikonfirmasi adalah (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "First salary {amount} confirmed for {date}.",
+  "count": 14
+ },
+ "T11_first_salary_new_employer": {
+  "pattern_en": "Your first salary from the new employer is (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. It is confirmed for (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "pattern_id": "Gaji pertama dari perusahaan baru adalah (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Pembayaran sudah dikonfirmasi untuk (?P<date>\\d{4}-\\d{2}-\\d{2})",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "First salary from new employer {amount} confirmed for {date}.",
+  "count": 7
+ },
+ "T12_first_salary_scheduled": {
+  "pattern_en": "Your first salary of (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) is scheduled for (?P<date>\\d{4}-\\d{2}-\\d{2})\\. Payroll has approved the payment",
+  "pattern_id": "Gaji pertama Anda sebesar (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) dijadwalkan pada (?P<date>\\d{4}-\\d{2}-\\d{2})\\. Tim payroll sudah menyetujui pembayaran",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "First salary {amount} approved and scheduled for {date}.",
+  "count": 6
+ },
+ "T13_foreign_salary_confirmed": {
+  "pattern_en": "Your salary of (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) is confirmed for (?P<date>\\d{4}-\\d{2}-\\d{2})\\. The receiving bank will convert it using the rate applied on the settlement date",
+  "pattern_id": "Gaji sebesar (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) dikonfirmasi untuk (?P<date>\\d{4}-\\d{2}-\\d{2})\\. Bank penerima akan mengonversinya dengan kurs pada tanggal penyelesaian",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "Foreign-currency salary {amount} confirmed for {date}; convert at the settlement-date rate.",
+  "count": 6
+ },
+ "T14_regular_plus_arrears": {
+  "pattern_en": "Your regular salary for the next payroll is (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. The same payroll includes a one-time arrears adjustment of (?P<currency2>[A-Z]{3}) (?P<amount2>\\d+(?:\\.\\d+)?)",
+  "pattern_id": "Gaji rutin Anda untuk penggajian berikutnya adalah (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Penggajian yang sama mencakup penyesuaian tunggakan satu kali sebesar (?P<currency2>[A-Z]{3}) (?P<amount2>\\d+(?:\\.\\d+)?)",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "amount2",
+   "currency2"
+  ],
+  "gist": "Regular salary {amount} plus a one-time arrears credit {amount2} on the next payroll.",
+  "count": 8
+ },
+ "T15_household_income_ended": {
+  "pattern_en": "One household employment record has ended\\. The remaining confirmed monthly salary is (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)",
+  "pattern_id": "Salah satu sumber pendapatan kerja rumah tangga telah berakhir\\. Sisa gaji bulanan yang dikonfirmasi adalah (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)",
+  "adjustment_type": "salary_amount_change",
+  "fields": [
+   "amount",
+   "currency"
+  ],
+  "gist": "One household income stream ended; remaining confirmed monthly salary is {amount}.",
+  "count": 7
+ },
+ "T16_employment_ended": {
+  "pattern_en": "Your employment has ended\\. There are no regular salary payments scheduled after the final settlement",
+  "pattern_id": "Hubungan kerja Anda telah berakhir\\. Tidak ada pembayaran gaji rutin yang dijadwalkan setelah penyelesaian akhir",
+  "adjustment_type": "income_ended",
+  "fields": [],
+  "gist": "Employment ended; no salary after the final settlement.",
+  "count": 4
+ },
+ "T17_reimbursement_not_salary": {
+  "pattern_en": "The latest employer credit is the reimbursement for your earlier work expense\\. The claim is now closed",
+  "pattern_id": "Dana terbaru dari perusahaan adalah penggantian atas biaya kerja Anda sebelumnya\\. Klaim sudah ditutup",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Employer credit is a one-off expense reimbursement, not salary; do not treat as recurring.",
+  "count": 3
+ },
+ "T18_gig_payout_pending": {
+  "pattern_en": "The next (?P<company>[A-Za-z]+) payout is still pending\\. The weekly earnings shown in the [A-Za-z]+ app can change until the payout is closed",
+  "pattern_id": "Pembayaran berikutnya dari (?P<company>[A-Za-z]+) masih tertunda\\. Penghasilan mingguan di aplikasi [A-Za-z]+ masih dapat berubah",
+  "adjustment_type": "pending_credit_not_available",
+  "fields": [
+   "company"
+  ],
+  "gist": "Gig-platform payout still pending; balance not withdrawable.",
+  "count": 8
+ },
+ "T19_rent_increase_percent": {
+  "pattern_en": "The renewed lease increases monthly rent by (?P<percent>\\d+(?:\\.\\d+)?)%",
+  "pattern_id": "Perpanjangan sewa menaikkan biaya sewa bulanan sebesar (?P<percent>\\d+(?:\\.\\d+)?)%",
+  "adjustment_type": "expense_increase",
+  "fields": [
+   "percent"
+  ],
+  "gist": "Monthly rent rises by {percent}% from the next rent payment.",
+  "count": 7
+ },
+ "T20_invoice_approved": {
+  "pattern_en": "The client approved an invoice payment of (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Settlement is expected on (?P<date>\\d{4}-\\d{2}-\\d{2}); the other submitted invoices are still awaiting approval",
+  "pattern_id": "Klien menyetujui pembayaran faktur sebesar (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?)\\. Penyelesaian diperkirakan pada (?P<date>\\d{4}-\\d{2}-\\d{2}); faktur lain yang diajukan masih menunggu persetujuan",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date"
+  ],
+  "gist": "One invoice {amount} approved, settling {date}; other invoices unconfirmed.",
+  "count": 15
+ },
+ "T21_receipt_confirms_settled_expense": {
+  "pattern_en": "(?:payment was received on|order was paid in (?P<currency>[A-Z]{3}) on) (?P<date_long>\\d{1,2} [A-Za-z]+ \\d{4})\\. The receipt has the final (?:[A-Z]{3} )?amount",
+  "pattern_id": "(?:pembayaran diterima pada|pesanan dibayar dalam (?P<currency>[A-Z]{3}) pada) (?P<date_long>\\d{1,2} [A-Za-z]+ \\d{4})\\. Kuitansi memuat jumlah akhir",
+  "adjustment_type": "no_effect",
+  "fields": [
+   "currency",
+   "date_long"
+  ],
+  "gist": "Receipt confirms a settled expense whose amount is blank in events; read amount from the linked image.",
+  "count": 2
+ },
+ "T22_wallet_charge_plus_foreign_salary": {
+  "pattern_en": "Your wallet was charged for the session at .+? on (?P<date_long2>\\d{1,2} [A-Za-z]+ \\d{4}).*?The receipt contains the final [A-Z]{3} amount\\. Your employer has confirmed a (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) salary credit for (?P<date_long>\\d{1,2} [A-Za-z]+ \\d{4})",
+  "pattern_id": "Dompet Anda dikenakan biaya untuk sesi di .+? pada (?P<date_long2>\\d{1,2} [A-Za-z]+ \\d{4}).*?Kuitansi memuat jumlah akhir [A-Z]{3}\\. Perusahaan Anda mengonfirmasi kredit gaji (?P<currency>[A-Z]{3}) (?P<amount>\\d+(?:\\.\\d+)?) untuk (?P<date_long>\\d{1,2} [A-Za-z]+ \\d{4})",
+  "adjustment_type": "one_time_confirmed_income",
+  "fields": [
+   "amount",
+   "currency",
+   "date_long"
+  ],
+  "gist": "Wallet charge confirmed (amount from image) and a foreign-currency salary {amount} confirmed for {date_long}.",
+  "count": 1
+ },
+ "T23_internal_transfer": {
+  "pattern_en": "The matching debit and credit came from a transfer between your two accounts",
+  "pattern_id": "Debit dan kredit dengan jumlah yang sama berasal dari transfer antara dua rekening Anda",
+  "adjustment_type": "internal_transfer_ignore",
+  "fields": [],
+  "gist": "Matching debit/credit pair is an own-account transfer; net zero.",
+  "count": 6
+ },
+ "T24_debit_failed_retry": {
+  "pattern_en": "The previous debit attempt failed\\. The bill is still outstanding and another debit will be attempted",
+  "pattern_id": "Upaya debit sebelumnya gagal\\. Tagihan masih belum dibayar dan debit akan dicoba lagi",
+  "adjustment_type": "payment_delayed",
+  "fields": [],
+  "gist": "Failed bill debit will be retried; the bill is still owed.",
+  "count": 4
+ },
+ "T25_card_dispute_open": {
+  "pattern_en": "The extra card charge is still being investigated\\. A reversal has not been posted to the account yet",
+  "pattern_id": "Tagihan kartu tambahan masih dalam penyelidikan\\. Dana pembalikannya belum tercatat di rekening",
+  "adjustment_type": "dispute_ignore",
+  "fields": [],
+  "gist": "Disputed duplicate card charge; no reversal yet, so the debit still counts and no credit is assumed.",
+  "count": 6
+ },
+ "T26_two_card_minimums": {
+  "pattern_en": "There are minimum payments due on two separate card accounts this month\\. A payment to one card will not cover the amount due on the other card",
+  "pattern_id": "Ada pembayaran minimum yang jatuh tempo pada dua rekening kartu terpisah bulan ini",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Two separate card minimums are both due; do not merge them as duplicates.",
+  "count": 2
+ },
+ "T27_refund_initiated_not_received": {
+  "pattern_en": "Your refund has been initiated but has not reached your account yet",
+  "pattern_id": "Pengembalian dana sudah diproses, tetapi belum masuk ke rekening Anda",
+  "adjustment_type": "pending_credit_not_available",
+  "fields": [],
+  "gist": "Merchant refund initiated but not credited.",
+  "count": 7
+ },
+ "T28_foreign_refund_processing": {
+  "pattern_en": "The foreign-currency refund is still processing\\. (?:The final home-currency credit will be calculated when the refund settles\\. )?The home-currency credit may change with the settlement-date rate",
+  "pattern_id": "Pengembalian dana dalam mata uang asing masih diproses",
+  "adjustment_type": "pending_credit_not_available",
+  "fields": [],
+  "gist": "Foreign-currency refund still processing; home-currency value unknown until settlement.",
+  "count": 6
+ },
+ "T29_foreign_bill_charged": {
+  "pattern_en": "The bill was charged in a foreign currency\\. Your bank will confirm the final home-currency amount when the transaction settles",
+  "pattern_id": "Tagihan dikenakan dalam mata uang asing\\. Bank Anda akan mengonfirmasi jumlah akhir dalam mata uang utama saat transaksi selesai",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "A bill was charged in foreign currency; convert with the settlement-date rate (still a debit).",
+  "count": 3
+ },
+ "T30_portfolio_value_up": {
+  "pattern_en": "Your portfolio.s displayed market value has increased substantially",
+  "pattern_id": "Nilai pasar portofolio Anda yang ditampilkan telah meningkat",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Unrealized portfolio gain; no cash.",
+  "count": 4
+ },
+ "T31_investment_value_down": {
+  "pattern_en": "The displayed value of the investment has fallen\\. The holding has not been sold",
+  "pattern_id": "Nilai investasi yang ditampilkan telah turun\\. Investasi tersebut belum dijual",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Unrealized investment loss; no cash.",
+  "count": 3
+ },
+ "T32_prize_claim_processing": {
+  "pattern_en": "Your prize claim has been verified and is still in payment processing\\. The payment has not been credited",
+  "pattern_id": "Klaim hadiah Anda sudah diverifikasi dan masih dalam proses pembayaran\\. Pembayaran tersebut belum masuk",
+  "adjustment_type": "pending_credit_not_available",
+  "fields": [],
+  "gist": "Prize payment verified but not credited.",
+  "count": 4
+ },
+ "T33_prize_proceeds_received": {
+  "pattern_en": "The prize proceeds have reached your account after withholding",
+  "pattern_id": "Hasil hadiah sudah masuk ke rekening Anda setelah pemotongan",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Prize already settled; one-off, no further payments.",
+  "count": 6
+ },
+ "T34_investment_sale_settled": {
+  "pattern_en": "The proceeds from your investment sale have settled in the cash account\\. The sale order is complete",
+  "pattern_id": "Hasil penjualan investasi Anda sudah masuk ke rekening tunai\\. Perintah penjualan sudah selesai",
+  "adjustment_type": "no_effect",
+  "fields": [],
+  "gist": "Investment sale proceeds already settled as cash; no more pending.",
+  "count": 3
+ },
+ "T35_scam_prize_fee": {
+  "pattern_en": "You.ve been selected for a cash prize\\. Pay the release charge today",
+  "pattern_id": "Anda terpilih untuk menerima hadiah uang tunai\\. Bayar biaya pencairan hari ini",
+  "adjustment_type": "scam_ignore",
+  "fields": [],
+  "gist": "Advance-fee prize scam; ignore entirely.",
+  "count": 2
+ }
+}
