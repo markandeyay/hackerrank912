@@ -31,6 +31,14 @@ OPTIONS = {
     "periodic_skip_request_date": True,  # short-cycle series: skip an occurrence that lands on request_date
     "periodic_max_per_cycle": 0,  # 0 = unlimited; N = at most N occurrences of a short-cycle series before the next salary
     "exclude_image_rows_from_mean": True,
+    # Short-cycle variable series (groceries/transport/dining) whose occurrence lands on a
+    # payday or within N-1 days after it are applied before that salary lands (moved to the
+    # day before payday). 0 = off. See notes/mismatches.md (payday rule).
+    "periodic_before_payday_days": 0,
+    # Conservative variable-spend forecast: every short-cycle series is reserved at least
+    # once before the first payday; if its next occurrence would fall after that payday it
+    # is brought forward to the day before the payday.
+    "periodic_at_least_once_before_payday": True,
 }
 
 # --- salary description classes ------------------------------------------------
@@ -257,6 +265,26 @@ class StateBuilder:
 
         self._build_income(st, history_credits, scheduled_salary, adjs)
         self._build_debit_series(st, history_debits, linked_targets, adjs)
+        if self.opt.get("periodic_at_least_once_before_payday") and st.salary_dates:
+            first_payday = min(d for d in st.salary_dates)
+            if first_payday > rq:
+                for s in st.series:
+                    if s.cadence != "periodic" or not s.dates:
+                        continue
+                    if s.dates[0] >= first_payday:
+                        s.dates[0] = first_payday - timedelta(days=1)
+                        s.dates.sort()
+        win = int(self.opt.get("periodic_before_payday_days") or 0)
+        if win and st.salary_dates:
+            paydays = sorted(set(st.salary_dates))
+            for s in st.series:
+                if s.cadence != "periodic":
+                    continue
+                moved = []
+                for d in s.dates:
+                    hit = [p for p in paydays if p <= d < p + timedelta(days=win)]
+                    moved.append(hit[0] - timedelta(days=1) if hit else d)
+                s.dates = moved
         return st
 
     # -- recurring debits --------------------------------------------------------

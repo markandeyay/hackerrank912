@@ -65,8 +65,29 @@ def score(results, verbose: bool = False, tol: float = 0.02) -> dict:
     return summary
 
 
+def table(results, ds) -> None:
+    """All sample rows: got/want amount, numeric gap, and per-column match marks."""
+    print(f"{'request':11s} {'got_safe':>14s} {'want_safe':>14s} {'gap':>12s} {'gap%req':>8s} {'gap%res':>8s} {'want_res':>12s}  status meth plan earl chg")
+    tot = 0.0
+    for dec, row in results:
+        exp = dec.request.expected
+        if not exp:
+            continue
+        got, want = float(row["amount_safe_to_pay"]), float(exp["amount_safe_to_pay"])
+        prof = ds.profiles[dec.request.user_id]
+        head = prof.current_available_balance - prof.minimum_balance_to_keep
+        want_res = head - want
+        gap = got - want
+        tot += abs(gap)
+        marks = " ".join("ok " if row[c] == exp[c] else "XX " for c in COLS[1:])
+        capped = " (capped)" if want >= dec.request.requested_amount - 1e-6 else ""
+        print(f"{dec.request.request_id:11s} {got:14.2f} {want:14.2f} {gap:+12.2f} {100*gap/dec.request.requested_amount:+7.2f}% {(100*gap/want_res if want_res else 0):+7.2f}% {want_res:12.2f}  {marks}{capped}")
+    print(f"total |gap| = {tot:,.2f}")
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--table", action="store_true", help="print all sample rows with the numeric gap")
     ap.add_argument("--llm", action="store_true", help="use the cached/model evidence extraction instead of the deterministic fallback")
     ap.add_argument("--horizon", type=int, default=HORIZON_DAYS)
     ap.add_argument("--verbose", "-v", action="store_true")
@@ -75,6 +96,8 @@ def main():
     ds = Dataset()
     reqs = ds.load_requests("sample_requests.csv")
     results = run(reqs, ds, use_llm=args.llm, horizon_days=args.horizon)
+    if args.table:
+        table(results, ds)
     summary = score(results, verbose=args.verbose, tol=args.tol)
     for k, v in summary.items():
         print(f"{k:36s} {v}")
