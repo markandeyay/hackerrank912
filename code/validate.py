@@ -153,7 +153,7 @@ def validate_rows(rows: list[dict], ds: Dataset, requests_file: str = "requests.
                 problems.append(f"{tag}: wait must be affordable_later")
             if edate is None:
                 problems.append(f"{tag}: wait needs an earliest_date_for_full_payment")
-            if plan and not (len(plan) == 1 and plan[0][0] == edate and abs(plan[0][1] - req.requested_amount) > -1):
+            if plan and not (len(plan) == 1 and plan[0][0] == edate and abs(plan[0][1] - req.requested_amount) <= EPS):
                 problems.append(f"{tag}: wait plan should be none or the single full payment on the earliest date")
         elif method == "not_recommended":
             if status != "not_affordable":

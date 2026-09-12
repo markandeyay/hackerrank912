@@ -39,6 +39,10 @@ OPTIONS = {
     # once before the first payday; if its next occurrence would fall after that payday it
     # is brought forward to the day before the payday.
     "periodic_at_least_once_before_payday": True,
+    # Flexible series carry minimum_allowed_amount = nominal x a category-constant fraction
+    # (0.5 for dining/entertainment/gym/streaming, 0.4 for shopping); the nominal recovered
+    # from it is used as the forecast amount instead of the noisy mean.
+    "nominal_from_minimum": True,
 }
 
 # --- salary description classes ------------------------------------------------
@@ -184,6 +188,16 @@ class StateBuilder:
         self.opt = dict(OPTIONS)
         if options:
             self.opt.update(options)
+        self.min_factor = self._minimum_factors() if self.opt.get("nominal_from_minimum") else {}
+
+    def _minimum_factors(self) -> dict[str, float]:
+        """Per category: median(amount / minimum_allowed_amount) over settled debits,
+        rounded to the nearest 0.5 (the generator uses one fraction per category)."""
+        ratios: dict[str, list[float]] = defaultdict(list)
+        for e in self.ds.events.values():
+            if e.status == "settled" and e.direction == "debit" and e.amount and e.minimum_allowed_amount:
+                ratios[e.category].append(e.amount / e.minimum_allowed_amount)
+        return {cat: round(statistics.median(v) * 2) / 2 for cat, v in ratios.items() if len(v) >= 5}
 
     # -- helpers ---------------------------------------------------------------
     def amount_of(self, ev: Event) -> float | None:
@@ -206,7 +220,7 @@ class StateBuilder:
         adjs = self.adjustments.get(req.user_id, [])
         events = ds.events_by_user.get(req.user_id, [])
         linked_targets = {e.linked_event_id for e in events if e.linked_event_id}
-        failed_with_retry = {e.linked_event_id for e in events if e.linked_event_id and e.status == "scheduled" and ds.events[e.linked_event_id].status == "failed"}
+        failed_with_retry = {e.linked_event_id for e in events if e.linked_event_id and e.status == "scheduled" and ds.events.get(e.linked_event_id) is not None and ds.events[e.linked_event_id].status == "failed"}
 
         history_debits: list[Event] = []
         history_credits: list[Event] = []
@@ -303,7 +317,7 @@ class StateBuilder:
 
         rent_pct = 0.0
         for a in adjs:
-            if a["adjustment_type"] == "expense_increase_percent" and a.get("percent") and (a.get("target") in ("rent", None, "other_expense") or True):
+            if a["adjustment_type"] == "expense_increase_percent" and a.get("percent") and (a.get("target") == "rent" or str(a.get("template_id") or "").startswith("T19")):
                 rent_pct = max(rent_pct, float(a["percent"]))
 
         for cat, rows in groups.items():
@@ -318,6 +332,11 @@ class StateBuilder:
                 continue  # not a regular series within a 6-month window
             est = self.opt.get("estimator", "mean")
             amount = statistics.median(amts) if est == "median" else amts[-1] if est == "last" else statistics.mean(amts)
+            latest_min = rows[-1][2].minimum_allowed_amount
+            if latest_min and cat in self.min_factor and all(r[2].minimum_allowed_amount == latest_min for r in rows):
+                nominal = self.to_home(latest_min * self.min_factor[cat], rows[-1][2].currency, home, rows[-1][0])
+                if 0.6 * amount <= nominal <= 1.4 * amount:
+                    amount = nominal
             if cat == "rent" and rent_pct:
                 amount *= 1 + rent_pct / 100.0
                 st.notes.append(f"rent increased by {rent_pct}% per message")

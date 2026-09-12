@@ -1,0 +1,55 @@
+INVARIANT VIOLATION TABLE
+  header/column order                                       0
+  one row per request / no duplicates                       0
+  amount_safe_to_pay range/format                           0
+  payment_plan parse/format                                 0
+  earliest_date window                                      0
+  affordable_now                                            0
+  affordable_later                                          0
+  affordable_with_plan                                      0
+  not_affordable                                            0
+  method in user's accepted methods                         0
+  full_payment plan                                         0
+  partial_payment                                           0
+  installments match option                                 0
+  installments <= max_installment_months                    0
+  spending changes                                          0
+  decision_explanation                                      0
+  amount_safe_to_pay vs headroom                            0
+  TOTAL                                                     0
+
+VIOLATIONS
+
+WARNINGS (intentional engine policy, not counted as violations)
+  earliest_date == request_date while status != affordable_now (user rejects full_payment; statement-sanctioned): 23
+    request_30: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_59: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_61: status=affordable_with_plan method=installments methods=['installments']
+    request_75: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_102: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_110: status=affordable_with_plan method=installments methods=['installments']
+    request_122: status=affordable_with_plan method=installments methods=['installments']
+    request_154: status=affordable_with_plan method=installments methods=['installments']
+    request_158: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_164: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_166: status=affordable_with_plan method=installments methods=['installments']
+    request_174: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_178: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_197: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_199: status=affordable_with_plan method=installments methods=['installments']
+    request_203: status=affordable_with_plan method=installments methods=['installments']
+    request_206: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_213: status=affordable_with_plan method=installments methods=['installments']
+    request_215: status=affordable_with_plan method=installments methods=['installments']
+    request_238: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_241: status=affordable_with_plan method=installments methods=['partial_payment', 'installments']
+    request_246: status=affordable_with_plan method=installments methods=['installments']
+    request_251: status=not_affordable method=not_recommended methods=['partial_payment', 'installments']
+  affordable_later: earliest after desired_completion_date (intentional engine policy): 3
+    request_78: earliest=2025-10-15 > desired=2025-10-14 (request_date=2025-10-02, safe=45955.21, requested=50200, methods=['full_payment', 'partial_payment'], partial_allowed=False, max_m=None)
+    request_114: earliest=2026-01-15 > desired=2026-01-14 (request_date=2026-01-04, safe=58948.02, requested=65300, methods=['full_payment'], partial_allowed=False, max_m=None)
+    request_120: earliest=2026-04-15 > desired=2026-04-14 (request_date=2026-04-06, safe=7110696.83, requested=7714000, methods=['full_payment'], partial_allowed=False, max_m=None)
+
+AMOUNT_SAFE_TO_PAY == 0 ROSTER
+  request_64 user_64 headroom(balance-min)=62473.01 requested=63700 request_date=2024-06-04 status=not_affordable method=not_recommended next_income_settlement_after_request(from events)=None
+  request_97 user_97 headroom(balance-min)=8865.89 requested=23496 request_date=2024-03-05 status=affordable_with_plan method=installments next_income_settlement_after_request(from events)=2024-03-15

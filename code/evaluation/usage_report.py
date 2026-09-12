@@ -20,6 +20,14 @@ OUT = CODE_DIR / "evaluation" / "usage_report.md"
 def main() -> None:
     n_requests = sum(1 for _ in open(DATASET_DIR / "requests.csv", encoding="utf-8")) - 1
     s = usage_summary(n_requests)
+    last_run = {}
+    lr = CODE_DIR / "cache" / "last_run.json"
+    if lr.exists():
+        import json
+
+        last_run = json.loads(lr.read_text(encoding="utf-8"))
+    used_kinds = ["image_extraction", "message_adjustment"] + (["explanation_polish"] if last_run.get("polish") else [])
+    used = {k: v for m in s["per_model"].values() for k, v in m["by_kind"].items() if k in used_kinds}
     lines = [
         "# Token usage and cost report",
         "",
@@ -34,6 +42,13 @@ def main() -> None:
         "3. `explanation_polish` - one call per request to rewrite the template `decision_explanation`; the rewrite is discarded unless every number and date survives.",
         "",
         "All calls go through `code/llm.py`, which caches results under `code/cache/` (so re-runs make zero calls) and appends usage to `usage.jsonl`.",
+        "",
+        "## Final run",
+        "",
+        (f"The final `python code/main.py` invocation ({last_run.get('ts', 'n/a')}) processed {last_run.get('n_requests', n_requests)} requests and made **{last_run.get('new_model_calls', 'n/a')} new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. "
+         + ("Explanation polishing was enabled." if last_run.get("polish") else "Explanation polishing was **off** (the default), so the `explanation_polish` calls in the log come from an earlier experimental run and did not shape the final `output.csv`; the template explanations are used.")),
+        "",
+        "Cached evidence that feeds the final output: " + ", ".join(f"{k} ({v['calls']} calls, {v['input_tokens'] + v['output_tokens']:,} tokens)" for k, v in sorted(used.items())) + ".",
         "",
         "## Providers and models",
         "",

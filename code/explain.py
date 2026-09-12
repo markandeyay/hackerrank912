@@ -43,7 +43,7 @@ def template_explanation(dec: Decision) -> str:
         s = f"Use {o.number_of_payments} installments of {money(cur, o.payment_amount)}, starting {longdate(o.first_payment_date)}. This leaves at least {mn} available."
         if plan.changes:
             parts = [f"stop the {c.series.description.lower()}" if c.action == "stop" else f"reduce the {c.series.description.lower()} to {money(cur, c.new_amount)}" for c in plan.changes]
-            lead = " and ".join(parts)
+            lead = " and ".join(parts) if len(parts) <= 2 else ", ".join(parts[:-1]) + " and " + parts[-1]
             s = lead[0].upper() + lead[1:] + f", then use {o.number_of_payments} installments of {money(cur, o.payment_amount)}, starting {longdate(o.first_payment_date)}. This keeps the {mn} minimum protected."
         return s
     if m == "partial_payment":
@@ -55,6 +55,9 @@ def template_explanation(dec: Decision) -> str:
             return f"Pay {amt} in full on {longdate(d)}. Paying earlier would take the balance below the {mn} minimum."
         return f"Wait until {longdate(d)}, then pay {amt} in full. This is after the {longdate(req.desired_completion_date)} target, but paying sooner would put the {mn} minimum at risk."
     # not_recommended
+    if dec.safe_amount >= req.requested_amount - 1e-9:
+        accepted = " or ".join(m.replace("_", " ") for m in st.profile.methods) or "no payment method"
+        return f"Do not proceed through the accepted payment methods ({accepted}). The full {amt} is safe to pay today, but the user does not consider full payment and no eligible partial-payment or installment plan is available."
     if dec.safe_amount > 0 and req.allows_partial_payment and "partial_payment" in st.profile.methods:
         return f"Do not proceed with the {amt} request. Although {money(cur, dec.safe_amount)} is available today, the full amount cannot be completed safely within 90 days."
     return f"Do not make this payment by {longdate(req.desired_completion_date)}. None of the available options keeps the {mn} minimum protected."

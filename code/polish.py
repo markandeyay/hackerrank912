@@ -26,7 +26,7 @@ SYSTEM = (
     "Do not use markdown."
 )
 
-NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
+NUM_RE = re.compile(r"\d(?:[\d,]*\d)?(?:\.\d+)?")
 
 
 def _numbers(text: str) -> list[str]:
@@ -54,6 +54,9 @@ def polish_explanation(dec: Decision, draft: str) -> str:
         print(f"polish failed for {req.request_id}: {exc}")
         return draft
     text = (res.get("explanation") or "").strip().replace("\n", " ")
-    if not text or len(text) > 400 or _numbers(text) != _numbers(draft):
+    bad = re.search(r"draft|rewrit|rewrot|output:|cancel|\bcut\b|;|  ", text, re.I)
+    same_lead = text.split(" ")[:2] == draft.split(" ")[:2]
+    keeps_changes = all(c.series.description.lower() in text.lower() for c in plan.changes)
+    if not text or len(text) > len(draft) + 20 or _numbers(text) != _numbers(draft) or bad or not same_lead or not keeps_changes:
         return draft
     return text

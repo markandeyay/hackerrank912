@@ -17,13 +17,14 @@ ANTHROPIC_API_KEY=sk-ant-...
 ANTHROPIC_MODEL=claude-sonnet-5
 ```
 
-Python 3.10+ is required (developed on 3.14). Dependencies: `pandas`, `anthropic`, `python-dotenv`, `pillow`.
+Python 3.10+ is required (developed on 3.14). Dependencies: `pandas`, `anthropic`, `python-dotenv`, `pillow`; `pytest` (in `requirements-dev.txt`) for the tests.
 
 ## Run
 
 ```bash
-python code/main.py                 # full run: model-extracted evidence (cached under code/cache/), polished explanations
-python code/main.py --no-polish     # model evidence, template explanations only
+python code/main.py                 # full run: model-extracted evidence (cached under code/cache/), template explanations
+python code/main.py --polish        # opt-in: rewrite explanations with the model (kept only when every fact survives)
+python -m pytest code/tests -q      # unit tests (pytest from requirements-dev.txt)
 python code/main.py --no-llm        # fully deterministic: regex message parsing + transcribed image amounts, no API calls
 python code/validate.py             # re-check output.csv against the output contract
 python code/evaluation/main.py -v   # score the engine against the 25 solved samples

@@ -3,20 +3,61 @@
 Score of the engine against `dataset/sample_requests.csv` (25 rows), run with
 `python code/evaluation/main.py --llm --table -v`:
 
-| column | before (2026-09-12 first full run) | after (payday rule, see below) |
-|---|---|---|
-| affordability_status | 23 / 25 | **24 / 25** |
-| recommended_payment_method | 24 / 25 | 24 / 25 |
-| payment_plan | 23 / 25 | 23 / 25 |
-| earliest_date_for_full_payment | 22 / 25 | **23 / 25** |
-| spending_changes_needed | 22 / 25 | **23 / 25** |
-| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 |
-| amount_safe_to_pay within 2 % | 11 / 25 | **16 / 25** |
-| overall exact (6 scored columns) | 118 / 150 (78.7 %) | **121 / 150 (80.7 %)** |
+| column | first full run | after the payday rule | after the improvement pass |
+|---|---|---|---|
+| affordability_status | 23 / 25 | 24 / 25 | 24 / 25 |
+| recommended_payment_method | 24 / 25 | 24 / 25 | 24 / 25 |
+| payment_plan | 23 / 25 | 23 / 25 | 23 / 25 |
+| earliest_date_for_full_payment | 22 / 25 | 23 / 25 | 23 / 25 |
+| spending_changes_needed | 22 / 25 | 23 / 25 | 23 / 25 |
+| amount_safe_to_pay exact | 4 / 25 (the four capped at `requested_amount`) | 4 / 25 | 4 / 25 |
+| amount_safe_to_pay within 2 % | 11 / 25 | 16 / 25 | **17 / 25** |
+| overall exact (6 scored columns) | 118 / 150 (78.7 %) | 121 / 150 (80.7 %) | 121 / 150 (80.7 %) |
 
 Nothing is hardcoded per request; every number comes from the dataset through the rules in `state.py` / `planner.py`.
 The traces and experiments behind this page are in `notes/experiments/` (one `trace_request_XX.md` per mismatched
-sample, `reserve_hypotheses.md`, `horizon_test.md`).
+sample, `reserve_hypotheses.md`, `horizon_test.md`) and the six audit reports of the improvement pass are in
+`notes/improve/` (reserve model, invariants, evidence application, outliers, explanations, tests).
+
+## Improvement pass (six audits) - what changed and what did not
+
+Adopted:
+
+* **Nominal amounts recovered from `minimum_allowed_amount`** (`nominal_from_minimum`): for every flexible series the
+  minimum is a category-constant fraction of the generator's nominal amount (amount / minimum is centred on exactly 2.0
+  for dining, entertainment, gym and streaming and 2.5 for shopping, with a flat noise band around it). The engine now
+  derives the factor per category from the dataset (median ratio rounded to 0.5) and uses `minimum x factor` as the
+  forecast amount for those series instead of the noisy mean. Every non-amount column is preserved and one more sample
+  (request_20) lands within 2 %; `reduce_to` savings become exact.
+* **Explanation polishing is off by default** (`--polish` to opt in). The audit of all 250 rows found the 156
+  template-only rows defect-free and every one of the 18 defects in rows the model had rewritten (leaked
+  meta-commentary, "Stop" turned into "Cancel", dropped second change). When enabled, the rewrite is now also rejected
+  if the first two words change, a change description disappears, or the text grows by more than 20 characters, and the
+  number check no longer swallows a trailing comma.
+* **Explanation for the "full amount safe today but no accepted method can deliver it" case** (request_251: the user
+  accepts only partial payment, which needs `amount_safe_to_pay < requested`, and installments, whose only option exceeds
+  `max_installment_months`); the previous text claimed no option protected the minimum.
+* **Three-change installment explanations** now read "Stop A, stop B and reduce C to X" like the full-payment variant.
+* **Code fixes from the tests**: `code/__init__.py` removed (it shadowed the standard-library `code` module and broke
+  `python -m pytest`), the wait-plan amount check in `validate.py` was a no-op, a dangling `linked_event_id` would have
+  raised, and the rent-increase message filter had a dead `or True`. 84 unit tests live in `code/tests/`
+  (`python -m pytest code/tests -q`; `requirements-dev.txt`). A clean clone with only `requirements.txt` and the two
+  environment variables reproduces the six decision columns of `output.csv` exactly, with and without a cache.
+* The usage report now states how many model calls the final invocation made (0: all evidence came from the cache) and
+  that the polish calls in the log did not shape the final output.
+
+Verified without change: the cross-column invariant audit found 0 violations in 250 rows; the outlier review flagged 65
+rows and classified none as a bug; the evidence audit found no missing, doubled or wrong-direction adjustment across the
+219 requests with a message or image, and every blank amount uses its image (image_02 the balance due, image_05 the
+704.05 figure, image_12 converted at the 2025-10-01 rate).
+
+Considered and rejected (with evidence in `notes/improve/`): the mid-range or feasible-interval midpoint for fixed
+variable categories (theoretically the right estimator for uniform noise, but it flips request_11 and gains nothing
+within 2 %); rounding nominals to 5/10/50 units (neutral or worse); moving every later payday to the message's new date
+only for the next payroll (sample request_07 expects the second payday on the 23rd as well); reserving the pending
+"possible duplicate card charge" rows despite the open dispute (the statement says to ignore duplicate records); turning
+the three `wait` recommendations whose payday is one day after the desired date into `not_recommended` (no sample
+decides it; `wait` is the only safe eligible plan and the explanation names both dates).
 
 ## Why `amount_safe_to_pay` cannot match exactly
 

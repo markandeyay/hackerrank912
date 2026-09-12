@@ -1,6 +1,6 @@
 # Token usage and cost report
 
-Generated 2026-09-12 21:00:49 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
+Generated 2026-09-12 21:56:20 UTC from `code/cache/usage.jsonl`, which records every model call made while building the cached evidence that produced the final `output.csv` (250 requests).
 
 ## Architecture recap
 
@@ -11,6 +11,12 @@ The decision engine is deterministic Python. The model is used for three narrow,
 3. `explanation_polish` - one call per request to rewrite the template `decision_explanation`; the rewrite is discarded unless every number and date survives.
 
 All calls go through `code/llm.py`, which caches results under `code/cache/` (so re-runs make zero calls) and appends usage to `usage.jsonl`.
+
+## Final run
+
+The final `python code/main.py` invocation (2026-09-12T21:56:19Z) processed 250 requests and made **0 new model calls**: every image and message extraction it needed was served from the cache built by the earlier extraction runs listed below. Explanation polishing was **off** (the default), so the `explanation_polish` calls in the log come from an earlier experimental run and did not shape the final `output.csv`; the template explanations are used.
+
+Cached evidence that feeds the final output: image_extraction (16 calls, 48,646 tokens), message_adjustment (215 calls, 451,043 tokens).
 
 ## Providers and models
 

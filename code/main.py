@@ -1,8 +1,8 @@
 """Buy or Wait? - entry point.
 
-    python code/main.py                # full run: model-extracted evidence (cached), polished explanations
+    python code/main.py                # full run: model-extracted evidence (cached), template explanations
     python code/main.py --no-llm       # fully deterministic run (regex message parsing, transcribed image amounts)
-    python code/main.py --no-polish    # model evidence but template explanations only
+    python code/main.py --polish       # additionally rewrite explanations with the model (opt-in; the template is kept unless every fact survives)
 
 Reads dataset/, writes output.csv in the repository root and validates it.
 """
@@ -23,10 +23,29 @@ from state import HORIZON_DAYS  # noqa: E402
 from validate import COLUMNS, validate_rows  # noqa: E402
 
 
+def _usage_lines() -> int:
+    from llm import USAGE_PATH
+
+    if not USAGE_PATH.exists():
+        return 0
+    with open(USAGE_PATH, "r", encoding="utf-8") as f:
+        return sum(1 for line in f if line.strip())
+
+
+def _write_last_run(n_requests: int, use_llm: bool, polish: bool, new_calls: int) -> None:
+    import json
+    import time
+
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    with open(CACHE_DIR / "last_run.json", "w", encoding="utf-8") as f:
+        json.dump({"ts": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "n_requests": n_requests, "use_llm": use_llm, "polish": polish, "new_model_calls": new_calls}, f, indent=2)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Buy or Wait? decision engine")
     ap.add_argument("--no-llm", action="store_true", help="do not call the Claude API; use the deterministic fallbacks")
-    ap.add_argument("--no-polish", action="store_true", help="keep template explanations (no explanation model calls)")
+    ap.add_argument("--polish", action="store_true", help="rewrite explanations with the model (opt-in)")
+    ap.add_argument("--no-polish", action="store_true", help=argparse.SUPPRESS)
     ap.add_argument("--requests", default="requests.csv", help="requests file inside dataset/ (default requests.csv)")
     ap.add_argument("--out", default=str(REPO_ROOT / "output.csv"))
     ap.add_argument("--horizon", type=int, default=HORIZON_DAYS)
@@ -43,8 +62,11 @@ def main() -> int:
 
     ds = Dataset()
     reqs = ds.load_requests(args.requests)
-    results = run(reqs, ds, use_llm=use_llm, horizon_days=args.horizon, polish=(use_llm and not args.no_polish))
+    polish = use_llm and args.polish and not args.no_polish
+    calls_before = _usage_lines()
+    results = run(reqs, ds, use_llm=use_llm, horizon_days=args.horizon, polish=polish)
     rows = [row for _, row in results]
+    _write_last_run(len(reqs), use_llm, polish, _usage_lines() - calls_before)
 
     out = Path(args.out)
     with open(out, "w", encoding="utf-8", newline="") as f:
